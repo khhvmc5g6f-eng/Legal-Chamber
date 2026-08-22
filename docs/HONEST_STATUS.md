@@ -35,6 +35,8 @@ Not fixed, and tracked as open gaps rather than glossed over: a full interim-app
 - **No interim-application or case-management layer exists.** Disclosure timing, strike-out/summary-judgment applications, injunctions, and case management conferences are not modelled anywhere - `workflows/five-hearing-adversarial.md` says so explicitly rather than implying its hearing-based structure covers this.
 - **Expert evidence has a one-paragraph flag in `skills/legal-litigation/SKILL.md`, not a full workflow.** Instructing an expert, independence/duty-to-the-court obligations, and expert disclosure rules are named as things to check, not built out as their own engine.
 - **Disclosure/relevance review is a manual tracking template (`workflows/disclosure-register.md`), not automated.** A human or an agent role still makes every relevance and privilege-basis decision.
+- **A bare, context-free deadline-calculation request has no dedicated routing-table row** in `skills/legal-work/SKILL.md` Step 4 - see `ROUTER_TEST_RESULTS.md` test 4. Low priority (almost every real request arrives with case context that routes correctly), not fixed, flagged rather than ignored.
+- **No CLI and no programmatic API exist at all** (`docs/SPEC_FULL_TEXT.md` Part CLXIX/CLXXII describe both). Found during the 2026-08-22 stress-test reconnaissance pass and not previously stated this plainly - see `REPOSITORY_CAPABILITY_MAP.md`.
 - **"Global, auto-detected jurisdiction"** is not implemented. There is no geolocation capability available to this system. Jurisdiction is always established by asking the user or reading an explicit per-matter/config value, see `skills/legal-work/SKILL.md`.
 
 ## Why the gap exists

@@ -83,6 +83,7 @@ legal-chamber/
 | New Zealand | `STRUCTURAL_DRAFT` | Court hierarchy, citation basics, primary-source pointers |
 | Spain | `STRUCTURAL_DRAFT` | Civil-law authority hierarchy, citation conventions, primary-source pointers |
 | France | `STRUCTURAL_DRAFT` | Civil-law authority hierarchy, citation conventions, primary-source pointers |
+| European Union (supranational) | `STRUCTURAL_DRAFT` | Added after a stress test showed a country pack (e.g. France, Spain) cannot substitute for EU-level authority (GDPR and other Regulations are directly applicable) - court hierarchy (CJEU), citation basics, primary-source pointers |
 | Everything else | `EXPERIMENTAL` (schema only) | Nothing, router will say `NO VERIFIED AUTHORITY LOCATED` and ask you to supply or research sources before proceeding |
 
 `STRUCTURAL_DRAFT` means: court hierarchy, citation style, and authority-precedence rules are recorded and believed accurate as a matter of public legal-system structure, but **no case law, specific statutory text, or procedural deadline in these packs has been independently re-verified against a live primary source in this build**, every pack file says so at the top, and every workflow that uses one re-states that before relying on it. See [`docs/HONEST_STATUS.md`](docs/HONEST_STATUS.md).

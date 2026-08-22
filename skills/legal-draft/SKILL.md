@@ -36,7 +36,7 @@ Check the document against the relevant jurisdiction pack's procedural notes and
 
 ## 5. Tag it
 
-Every draft gets `../../schemas/draft.schema.json` metadata: `ai_generated: true`, a real `verification_status`, and `human_review_status: PENDING` until an actual human reviewer changes it. Never write or imply `VERIFIED FOR FILING` yourself.
+Every draft gets `../../schemas/draft.schema.json` metadata: `ai_generated: true`, a real `verification_status`, and `human_review_status: PENDING` until an actual human reviewer changes it. Never write or imply `VERIFIED FOR FILING` yourself. `verification_status` must match what the document's own body actually says - a live stress test found a draft tagged `AUTHORITY_VERIFIED` while its own text conceded a key authority's application was uncertain. If any paragraph in the document itself hedges, flags a gap, or says something is unconfirmed, the metadata cannot claim a fuller verification state than that - downgrade the tag, don't leave the inconsistency.
 
 ## 6. Style pass last, and don't let it change meaning
 

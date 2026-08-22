@@ -22,7 +22,7 @@ Tribunal Supremo (Supreme Court - highest ordinary court, organised into five ch
 
 ## Authority hierarchy / doctrinal method
 
-Primary sources rank: the Constitution, then the Civil Code (*Código Civil*) and other codes (*Código Penal*, *Código de Comercio*, etc.) and statutes (*leyes orgánicas* then *leyes ordinarias*), then regulations (*reglamentos*). *Jurisprudencia* from the Tribunal Supremo is not formally binding precedent in the common-law sense, but *doctrina reiterada* is treated as authoritative guidance on how a code provision is to be interpreted, and departing from it requires justification. *Doctrina* (academic legal commentary) is a genuine, citable secondary source in Spanish practice, not merely persuasive colour.
+Primary sources rank: the Constitution, EU law where applicable (Spain is an EU member state - see `../eu/README.md`, not duplicated here), then the Civil Code (*Código Civil*) and other codes (*Código Penal*, *Código de Comercio*, etc.) and statutes (*leyes orgánicas* then *leyes ordinarias*), then regulations (*reglamentos*). *Jurisprudencia* from the Tribunal Supremo is not formally binding precedent in the common-law sense, but *doctrina reiterada* is treated as authoritative guidance on how a code provision is to be interpreted, and departing from it requires justification. *Doctrina* (academic legal commentary) is a genuine, citable secondary source in Spanish practice, not merely persuasive colour.
 
 ## Citation style
 

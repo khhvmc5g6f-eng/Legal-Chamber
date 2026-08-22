@@ -18,13 +18,13 @@ Never fabricate a case, citation, statute, court rule, quotation, fact, or deadl
 Identify, from the user's message and any documents already supplied:
 
 - **Matter type**, research / litigation / administrative-public-law / criminal / employment / regulatory / transactional / advisory / negotiation-ADR / academic. See `../../docs/OPERATING_RULES.md` for the full taxonomy the specialist skills below assume.
-- **Complexity tier**:
-  - `L1 QUICK`, a narrow explanation or a single research question.
-  - `L2 VERIFIED`, research plus source verification.
-  - `L3 PROFESSIONAL`, specialist research plus a second-pass review role.
-  - `L4 ADVERSARIAL`, adds an opposing-side pass and structured challenge.
-  - `L5 CHAMBERS`, the full five-hearing adversarial workflow (`../../workflows/five-hearing-adversarial.md`).
-  - `L6 COMPLEX MATTER`, multi-jurisdictional, document-heavy, appellate, or regulatory work needing parallel workstreams.
+- **Complexity tier** - the user will essentially never say a tier name. Infer it from what they're actually asking for, using these as the natural-language signals for each (not an exhaustive list - use judgment for phrasings not shown):
+  - `L1 QUICK` - "can you explain," "what does X mean," a single narrow question. No matter workspace needed.
+  - `L2 VERIFIED` - "check whether this is right," "find the law on," research with an expectation the sources are checked.
+  - `L3 PROFESSIONAL` - "review my case," "help me with my claim/dispute" with no explicit request for adversarial testing - specialist research plus a second-pass review role.
+  - `L4 ADVERSARIAL` - "what's the other side going to say," "stress-test this," "play devil's advocate" - adds an opposing-side pass and structured challenge.
+  - `L5 CHAMBERS` - "full chambers," "the full process," "run the whole thing," "moot this," or any request for opposing counsel *and* a simulated judicial outcome together - the full five-hearing adversarial workflow (`../../workflows/five-hearing-adversarial.md`).
+  - `L6 COMPLEX MATTER` - signalled by the facts, not a phrase: multiple jurisdictions in play, a large document set, or a matter that's genuinely appellate/regulatory/multi-workstream regardless of what the user calls it.
   - Escalate a tier mid-matter if the material turns out more contested or higher-stakes than first assumed; say so when you do.
 
 ## Step 2, resolve jurisdiction (ask, never infer silently)

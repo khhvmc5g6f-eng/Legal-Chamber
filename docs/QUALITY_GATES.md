@@ -18,6 +18,8 @@ A matter output cannot be represented as ready for reliance, filing, sending, or
 | 12 | Fact audit complete | No fact in the final draft traces to a source weaker than what its Fact Ledger status claims. |
 | 13 | Document compliance complete | Court/format/word-count/statement-of-truth requirements checked against the jurisdiction's procedural pack, see `courts/`. |
 
+**Before any of the above**: confirm every output the matter's stage history claims to exist actually exists as a real file under `matters/<ID>/` - see `agents/quality/ROLE.md`'s disk-vs-claim check, added after a live stress test found matters where a hand-off summary claimed a completed document that was never actually written to the workspace. A gate cannot be checked against a claim; it can only be checked against what is actually there.
+
 ## Hard failures
 
 These cannot be offset by a high score elsewhere and block release regardless of how many gates otherwise passed:

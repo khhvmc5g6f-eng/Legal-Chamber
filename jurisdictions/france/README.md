@@ -26,7 +26,7 @@ A jurisdictional dispute over which order a claim belongs to is itself resolved 
 
 ## Authority hierarchy / doctrinal method
 
-Primary sources rank: the Constitution, ratified treaties/EU law (which under Article 55 of the Constitution take precedence over ordinary statute), codified statute (*lois*, organised into codes: Code civil, Code pénal, Code de commerce, Code du travail, etc.), then regulations (*décrets*, *arrêtés*). Case law (*jurisprudence*) is not formally binding precedent - French courts are not bound by their own prior decisions in the common-law sense - but a consistent line of Cour de cassation or Conseil d'État decisions (*jurisprudence constante*) carries strong practical authority and departing from it invites cassation. *Doctrine* (academic commentary) is a genuine, actively cited secondary source shaping how codal provisions are understood.
+Primary sources rank: the Constitution, ratified treaties/EU law - see `../eu/README.md`, which this pack does not duplicate - (which under Article 55 of the Constitution take precedence over ordinary statute), codified statute (*lois*, organised into codes: Code civil, Code pénal, Code de commerce, Code du travail, etc.), then regulations (*décrets*, *arrêtés*). Case law (*jurisprudence*) is not formally binding precedent - French courts are not bound by their own prior decisions in the common-law sense - but a consistent line of Cour de cassation or Conseil d'État decisions (*jurisprudence constante*) carries strong practical authority and departing from it invites cassation. *Doctrine* (academic commentary) is a genuine, actively cited secondary source shaping how codal provisions are understood.
 
 ## Citation style
 
