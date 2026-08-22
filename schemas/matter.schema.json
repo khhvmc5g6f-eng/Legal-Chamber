@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://legal-chamber/schemas/matter.schema.json",
+  "title": "Matter",
+  "type": "object",
+  "required": ["matter_id", "matter_type", "jurisdiction", "complexity_tier", "status", "confidentiality"],
+  "properties": {
+    "matter_id": { "type": "string", "description": "Stable slug, e.g. MATTER-2026-0001" },
+    "matter_type": {
+      "type": "string",
+      "enum": ["research", "litigation", "administrative-public-law", "criminal", "employment", "regulatory", "transactional", "advisory", "negotiation-adr", "academic"]
+    },
+    "jurisdiction": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["country", "legal_system", "confidence"],
+        "properties": {
+          "country": { "type": "string" },
+          "legal_system": { "type": "string" },
+          "sub_jurisdiction": { "type": "string" },
+          "court": { "type": "string" },
+          "tribunal": { "type": "string" },
+          "regulator": { "type": "string" },
+          "governing_law": { "type": "string" },
+          "procedural_law": { "type": "string" },
+          "appellate_level": { "type": "string" },
+          "law_as_of": { "type": "string", "description": "ISO date the applicable law is being assessed as of" },
+          "citation_system": { "type": "string" },
+          "confidence": { "type": "string", "enum": ["confirmed", "asserted-by-user", "inferred-low-confidence"] }
+        }
+      }
+    },
+    "complexity_tier": { "type": "string", "enum": ["L1", "L2", "L3", "L4", "L5", "L6"] },
+    "status": {
+      "type": "string",
+      "enum": ["INTAKE", "RESEARCHING", "DRAFTING", "REVIEWING", "ADVERSARIAL_REVIEW", "HUMAN_REVIEW_PENDING", "VERIFIED_FOR_FILING", "CLOSED"]
+    },
+    "confidentiality": {
+      "type": "string",
+      "enum": ["PUBLIC", "PRIVATE", "CONFIDENTIAL", "LEGALLY_PRIVILEGED", "LITIGATION_PRIVILEGED", "WITHOUT_PREJUDICE", "WITHOUT_PREJUDICE_SAVE_AS_TO_COSTS", "COURT_RESTRICTED", "SUPPRESSED", "PERSONAL_DATA", "SPECIAL_CATEGORY_DATA", "SECRET"]
+    },
+    "conflict_check": {
+      "type": "object",
+      "properties": {
+        "parties": { "type": "array", "items": { "type": "string" } },
+        "related_entities": { "type": "array", "items": { "type": "string" } },
+        "opposing_counsel": { "type": "array", "items": { "type": "string" } },
+        "cleared": { "type": "boolean" },
+        "cleared_by": { "type": "string" }
+      }
+    },
+    "client_objective": { "type": "string", "description": "Distinct from legal outcome - what the client actually wants (compensation, reinstatement, speed, etc.)" },
+    "created": { "type": "string" },
+    "last_updated": { "type": "string" }
+  }
+}

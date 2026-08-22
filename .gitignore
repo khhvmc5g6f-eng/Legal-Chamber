@@ -1,0 +1,20 @@
+# Matter workspaces contain real client/case data - never commit them
+matters/
+*.matter.local.*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node (if any tooling is added later)
+node_modules/
+
+# Local scratch
+/tmp/
+*.local.json

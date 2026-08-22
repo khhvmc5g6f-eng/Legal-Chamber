@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://legal-chamber/schemas/draft.schema.json",
+  "title": "Draft",
+  "type": "object",
+  "required": ["draft_id", "version", "document_type", "ai_generated", "verification_status", "human_review_status"],
+  "properties": {
+    "draft_id": { "type": "string" },
+    "version": { "type": "integer", "minimum": 1 },
+    "document_type": { "type": "string" },
+    "audience": { "type": "string", "enum": ["judge", "tribunal", "regulator", "client", "opposing_lawyer", "academic_marker", "board", "expert", "witness", "public"] },
+    "purpose": { "type": "string", "description": "What this document must cause its reader to understand, accept, or do." },
+    "ai_generated": { "type": "boolean", "const": true },
+    "verification_status": { "type": "string", "enum": ["DRAFT", "RESEARCHED", "AUTHORITY_VERIFIED", "PROCEDURE_VERIFIED", "UNVERIFIED"] },
+    "human_review_status": { "type": "string", "enum": ["PENDING", "REVIEWED", "APPROVED"], "description": "Only a human reviewer sets REVIEWED or APPROVED, by editing this record directly." },
+    "filing_state": { "type": "string", "enum": ["DRAFT", "RESEARCHED", "AUTHORITY_VERIFIED", "PROCEDURE_VERIFIED", "HUMAN_REVIEW_PENDING", "VERIFIED_FOR_FILING"] },
+    "sent_or_filed": { "type": "boolean", "description": "Once true, this version is immutable - edits create a new version record, not an overwrite." },
+    "change_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from_version": { "type": "integer" },
+          "to_version": { "type": "integer" },
+          "changed": { "type": "string" },
+          "reason": { "type": "string" },
+          "authority_id": { "type": "string" },
+          "effect": { "type": "string" }
+        }
+      }
+    }
+  }
+}

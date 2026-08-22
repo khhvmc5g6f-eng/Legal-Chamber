@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://legal-chamber/schemas/authority.schema.json",
+  "title": "Authority",
+  "description": "A single verified (or explicitly not-yet-verified) legal authority - case, statute, regulation, or rule.",
+  "type": "object",
+  "required": ["authority_id", "authority_type", "citation", "jurisdiction", "verification_status"],
+  "properties": {
+    "authority_id": { "type": "string" },
+    "authority_type": { "type": "string", "enum": ["case", "statute", "regulation", "court_rule", "practice_direction", "treaty", "secondary"] },
+    "name": { "type": "string" },
+    "citation": { "type": "string" },
+    "court": { "type": "string" },
+    "jurisdiction": { "type": "string" },
+    "date": { "type": "string" },
+    "judge_or_panel": { "type": "string" },
+    "pinpoint": { "type": "string" },
+    "proposition": { "type": "string", "description": "The specific proposition this authority is cited for - checked against what it actually holds, not assumed." },
+    "treatment": { "type": "string", "enum": ["FOLLOWED", "APPLIED", "DISTINGUISHED", "CRITICISED", "OVERRULED", "UNKNOWN"] },
+    "authority_weight": { "type": "string", "enum": ["BINDING", "PERSUASIVE", "COORDINATE", "FOREIGN", "SECONDARY"] },
+    "primary_source_link": { "type": "string" },
+    "verification_status": {
+      "type": "string",
+      "enum": ["VERIFIED_PRIMARY_SOURCE", "VERIFIED_SECONDARY_SOURCE", "UNVERIFIED", "NO_VERIFIED_AUTHORITY_LOCATED"]
+    },
+    "verified_at": { "type": "string", "description": "ISO timestamp the check in verification_status was actually performed" },
+    "rejected_reason": { "type": "string", "description": "If considered and not relied upon: wrong jurisdiction / superseded / distinguishable / dicta / citation error / etc." }
+  }
+}

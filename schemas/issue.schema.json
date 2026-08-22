@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://legal-chamber/schemas/issue.schema.json",
+  "title": "Issue",
+  "type": "object",
+  "required": ["issue_id", "description", "elements", "priority"],
+  "properties": {
+    "issue_id": { "type": "string" },
+    "description": { "type": "string" },
+    "cause_of_action_or_defence": { "type": "string" },
+    "elements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["element", "burden", "standard"],
+        "properties": {
+          "element": { "type": "string" },
+          "burden": { "type": "string", "enum": ["LEGAL", "EVIDENTIAL", "REVERSE"] },
+          "standard": { "type": "string" },
+          "authority_ids": { "type": "array", "items": { "type": "string" } },
+          "fact_ids_required": { "type": "array", "items": { "type": "string" } },
+          "evidence_available_ids": { "type": "array", "items": { "type": "string" } },
+          "evidence_missing": { "type": "array", "items": { "type": "string" } },
+          "opposition_position": { "type": "string" },
+          "proof_status": { "type": "string", "enum": ["SUPPORTED", "PARTIALLY_SUPPORTED", "UNSUPPORTED"] }
+        }
+      }
+    },
+    "priority": { "type": "string", "enum": ["DISPOSITIVE", "HIGH", "MEDIUM", "LOW"] },
+    "case_killer": { "type": "boolean", "description": "True if this issue alone could end the matter regardless of broader merits (limitation, jurisdiction, standing, res judicata, etc.)" }
+  }
+}

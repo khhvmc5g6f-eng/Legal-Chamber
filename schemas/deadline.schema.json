@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://legal-chamber/schemas/deadline.schema.json",
+  "title": "Deadline",
+  "type": "object",
+  "required": ["deadline_id", "trigger", "rule_source", "calculated_date", "status", "confidence"],
+  "properties": {
+    "deadline_id": { "type": "string" },
+    "trigger": { "type": "string", "description": "The event that starts the clock, e.g. 'date of dismissal' or 'date of service'" },
+    "trigger_date": { "type": "string" },
+    "rule_source": { "type": "string", "description": "The specific rule this was calculated under - named, not recalled from memory. UNVERIFIED if not checked against a primary source this session." },
+    "calculation_method": { "type": "string", "description": "How scripts/deadline_calculator.py (or manual working) arrived at the date - excluded days, service method, deemed service, etc." },
+    "calculated_date": { "type": "string" },
+    "extendable": { "type": "boolean" },
+    "status": { "type": "string", "enum": ["UPCOMING", "MET", "MISSED", "EXTENDED", "DISPUTED"] },
+    "confidence": { "type": "string", "enum": ["VERIFIED_AGAINST_PRIMARY_SOURCE", "CALCULATED_UNVERIFIED_RULE", "ESTIMATE"] }
+  }
+}

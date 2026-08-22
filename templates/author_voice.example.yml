@@ -1,0 +1,26 @@
+# Example AUTHOR_VOICE_PROFILE - see docs/STYLE_GUIDE.md
+#
+# This is learned only from writing samples a user actually supplies, to
+# preserve how they write - never to imitate a different identifiable
+# person's authorship, and never to introduce deliberate errors "to look
+# human." Copy this file, fill it from real samples, and reference it from
+# a matter or from skills/legal-draft when drafting for that user.
+
+language: en-GB
+formality: high
+directness: high
+average_sentence_length: variable
+paragraph_style: concise
+em_dash: prohibited
+first_person: context-dependent
+rhetorical_questions: rare
+latin_terms: only-where-useful
+legalese: controlled
+headings: descriptive
+conclusion_style: decisive
+
+# Optional measured fingerprint, if you actually computed it from samples -
+# leave unset rather than guessing:
+# median_sentence_length_words: null
+# passive_voice_frequency: null
+# lexical_diversity: null

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://legal-chamber/schemas/chronology.schema.json",
+  "title": "ChronologyEvent",
+  "description": "A single dated event in a matter's chronology - see skills/legal-evidence/SKILL.md. Added after an operational review found chronology was described only in prose with no structured record, so two sessions building the same matter's timeline had no common format to reconcile against.",
+  "type": "object",
+  "required": ["event_id", "date", "description", "disputed"],
+  "properties": {
+    "event_id": { "type": "string", "description": "Stable ID, e.g. CHR-001 - see docs/ID_CONVENTIONS.md" },
+    "date": { "type": "string", "description": "ISO date. If only approximately known, use date_certainty to say so rather than asserting false precision." },
+    "date_certainty": { "type": "string", "enum": ["EXACT", "APPROXIMATE", "DISPUTED", "UNKNOWN"] },
+    "time": { "type": "string", "description": "ISO time, if known and material" },
+    "description": { "type": "string" },
+    "actor": { "type": "string" },
+    "source": { "type": "string" },
+    "evidence_ids": { "type": "array", "items": { "type": "string" }, "description": "Cross-reference to evidence.schema.json records" },
+    "fact_ids": { "type": "array", "items": { "type": "string" }, "description": "Cross-reference to fact.schema.json records - a chronology event and the facts it supports should share IDs, not drift independently" },
+    "disputed": { "type": "boolean" },
+    "dispute_note": { "type": "string" },
+    "legal_significance": { "type": "string" },
+    "contradiction_classification": { "type": "string", "enum": ["NONE", "MINOR", "EXPLAINABLE", "MATERIAL", "SERIOUS", "POTENTIALLY_DISPOSITIVE"] }
+  }
+}

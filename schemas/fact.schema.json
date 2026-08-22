@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://legal-chamber/schemas/fact.schema.json",
+  "title": "Fact",
+  "type": "object",
+  "required": ["fact_id", "proposition", "status", "materiality"],
+  "properties": {
+    "fact_id": { "type": "string" },
+    "proposition": { "type": "string" },
+    "date": { "type": "string", "description": "ISO date if known - see date_certainty for how firmly" },
+    "date_certainty": { "type": "string", "enum": ["EXACT", "APPROXIMATE", "DISPUTED", "UNKNOWN"] },
+    "chronology_event_id": { "type": "string", "description": "Cross-reference to chronology.schema.json - a fact's date and the chronology's date for the same event should share this link rather than being maintained as two independent narratives that can drift" },
+    "source": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["ESTABLISHED", "ADMITTED", "USER_ASSERTED", "DISPUTED", "INFERRED", "ASSUMED", "UNKNOWN", "CONTRADICTED"]
+    },
+    "evidence_ids": { "type": "array", "items": { "type": "string" } },
+    "contrary_evidence_ids": { "type": "array", "items": { "type": "string" } },
+    "materiality": { "type": "string", "enum": ["DISPOSITIVE", "HIGH", "MEDIUM", "LOW"] },
+    "confidence": { "type": "string", "enum": ["VERY_STRONG", "STRONG", "REASONABLE", "BALANCED", "WEAK", "VERY_WEAK"] }
+  }
+}

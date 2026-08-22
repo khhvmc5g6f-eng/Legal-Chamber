@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://legal-chamber/schemas/conclusion.schema.json",
+  "title": "LegalConclusion",
+  "description": "A single significant legal conclusion, with its supporting proof graph made explicit so it never floats free of its foundations.",
+  "type": "object",
+  "required": ["conclusion_id", "statement", "proof_status", "confidence"],
+  "properties": {
+    "conclusion_id": { "type": "string" },
+    "statement": { "type": "string" },
+    "legal_rule": { "type": "string" },
+    "supporting_authority_ids": { "type": "array", "items": { "type": "string" } },
+    "supporting_fact_ids": { "type": "array", "items": { "type": "string" } },
+    "supporting_evidence_ids": { "type": "array", "items": { "type": "string" } },
+    "opposing_proposition": { "type": "string" },
+    "opposing_authority_ids": { "type": "array", "items": { "type": "string" } },
+    "proof_status": { "type": "string", "enum": ["SUPPORTED", "PARTIALLY_SUPPORTED", "UNSUPPORTED"] },
+    "confidence": { "type": "string", "enum": ["VERY_STRONG", "STRONG", "REASONABLE", "BALANCED", "WEAK", "VERY_WEAK"] },
+    "principal_uncertainty": { "type": "string", "description": "The single biggest source of doubt in this conclusion, stated plainly" }
+  }
+}

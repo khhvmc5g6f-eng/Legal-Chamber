@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://legal-chamber/schemas/evidence.schema.json",
+  "title": "Evidence",
+  "type": "object",
+  "required": ["evidence_id", "type", "issues_supported"],
+  "properties": {
+    "evidence_id": { "type": "string" },
+    "type": { "type": "string", "enum": ["document", "email", "witness_statement", "affidavit", "expert_report", "recording", "physical", "photograph", "metadata", "other"] },
+    "source": { "type": "string" },
+    "creator": { "type": "string" },
+    "date_created": { "type": "string" },
+    "date_obtained": { "type": "string" },
+    "authenticity": { "type": "string", "enum": ["VERIFIED", "ASSERTED", "DISPUTED", "UNKNOWN"] },
+    "admissibility": { "type": "string", "enum": ["ADMISSIBLE", "LIKELY_ADMISSIBLE", "CONTESTED", "LIKELY_INADMISSIBLE", "UNKNOWN"] },
+    "confidentiality": { "type": "string" },
+    "privilege": { "type": "string", "enum": ["NONE", "LEGAL_ADVICE_PRIVILEGE", "LITIGATION_PRIVILEGE", "WITHOUT_PREJUDICE", "COMMON_INTEREST", "UNVERIFIED"] },
+    "reliability": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"] },
+    "issues_supported": { "type": "array", "items": { "type": "string" } },
+    "issues_undermined": { "type": "array", "items": { "type": "string" } },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "original_filename": { "type": "string" },
+        "original_hash": { "type": "string" },
+        "chain_of_custody": { "type": "array", "items": { "type": "string" } },
+        "custodian": { "type": "string", "description": "Who held/produced this item - required for a real disclosure log, not optional colour" },
+        "file_path": { "type": "string", "description": "Path to the actual item within matters/<ID>/evidence/ - without this the record and the file drift apart" }
+      }
+    },
+    "version": { "type": "string", "enum": ["ORIGINAL", "WORKING_COPY", "REDACTED_COPY", "COURT_COPY", "EXHIBIT_COPY"] },
+    "version_of": { "type": "string", "description": "evidence_id of the ORIGINAL this version derives from, if version is not ORIGINAL - links a redacted/working/exhibit/court copy back to its source so they aren't unrelated records with no shared key" },
+    "disclosure": {
+      "type": "object",
+      "description": "See workflows/disclosure-register.md",
+      "properties": {
+        "bundle_reference": { "type": "string", "description": "e.g. 'Bundle A, tab 12' - required before this item can appear in any filed document" },
+        "exhibit_number": { "type": "string" },
+        "page_range": { "type": "string", "description": "e.g. 'A/12/45-47' or a Bates range like 'ABC00001-ABC00003'" },
+        "disclosure_status": { "type": "string", "enum": ["NOT_YET_REVIEWED", "DISCLOSED", "WITHHELD_PRIVILEGE", "WITHHELD_OTHER", "REDACTED_AND_DISCLOSED"] },
+        "relevance_decision": { "type": "string", "enum": ["RELEVANT", "NOT_RELEVANT", "UNCERTAIN"] },
+        "reviewed_by": { "type": "string" },
+        "reviewed_date": { "type": "string" }
+      }
+    },
+    "family": { "type": "string", "description": "Shared ID linking an email/document and its attachments as one family, e.g. all items sharing 'FAM-003' belong together - without this, attachments are unrelated records with no way to reconstruct which document came with which cover email" }
+  }
+}

@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  deterministic-scripts:
+    name: Deterministic script self-tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: deadline_calculator selftest
+        run: python3 scripts/deadline_calculator.py --selftest
+      - name: citation_lint selftest
+        run: python3 scripts/citation_lint.py --selftest
+
+  schema-validation:
+    name: JSON Schema validity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install jsonschema
+        run: pip install jsonschema
+      - name: Validate every schema is well-formed JSON Schema
+        run: |
+          python3 - <<'EOF'
+          import json, sys, glob
+          from jsonschema.validators import Draft7Validator
+
+          failures = []
+          for path in glob.glob("schemas/*.schema.json"):
+              try:
+                  with open(path) as f:
+                      schema = json.load(f)
+                  Draft7Validator.check_schema(schema)
+                  print(f"OK: {path}")
+              except Exception as e:
+                  failures.append(f"{path}: {e}")
+
+          if failures:
+              print("SCHEMA VALIDATION FAILED:")
+              for f in failures:
+                  print(f"  - {f}")
+              sys.exit(1)
+          EOF
+
+  house-style-lint:
+    name: House style lint (report only)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run citation_lint over docs and skills
+        run: |
+          find skills agents jurisdictions docs -name "*.md" -print0 | xargs -0 python3 scripts/citation_lint.py
+
+  no-matter-data-committed:
+    name: Guard against committed matter data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fail if a matters/ directory was committed
+        run: |
+          if [ -d matters ] && [ -n "$(ls -A matters 2>/dev/null)" ]; then
+            echo "matters/ directory has committed content - matter workspaces must never be committed. See .gitignore and CLAUDE.md."
+            exit 1
+          fi
+          echo "OK - no committed matter data found"

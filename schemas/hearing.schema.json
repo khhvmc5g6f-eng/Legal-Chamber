@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://legal-chamber/schemas/hearing.schema.json",
+  "title": "Hearing",
+  "description": "A single hearing's record in the five-hearing adversarial workflow (see workflows/five-hearing-adversarial.md) or a legal-moot single pass. This is what makes 'hearing memory' real rather than asserted: hearing N+1's agents are isolated fresh contexts (see AGENTS.md's independence rule) and can only know what a prior hearing found by reading this record - there is no other channel. Stored at matters/<ID>/moot/hearing-<n>.json (or hearings/ if a matter adopts that subdirectory name instead - see skills/legal-work/SKILL.md).",
+  "type": "object",
+  "required": ["hearing_id", "hearing_number", "stage", "disposition"],
+  "properties": {
+    "hearing_id": { "type": "string", "description": "e.g. H-1 - see docs/ID_CONVENTIONS.md" },
+    "hearing_number": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "stage": {
+      "type": "string",
+      "enum": ["JUSTICIABILITY_AND_PLEADABILITY", "DOCTRINAL_AND_AUTHORITY_CHALLENGE", "EVIDENCE_AND_PROOF", "PROCEDURE_AND_REMEDY", "FULL_MERITS"]
+    },
+    "issues_addressed": { "type": "array", "items": { "type": "string" }, "description": "issue_id values from issue.schema.json this hearing actually engaged with" },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "finding": { "type": "string" },
+          "severity": { "type": "string", "enum": ["FATAL", "SERIOUS", "MATERIAL", "MINOR"] },
+          "issue_id": { "type": "string" }
+        }
+      }
+    },
+    "repairs_required": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "What the case theory must fix before the NEXT hearing - this is the field that makes hearing memory real. The next hearing's agents read this list before starting, and re-litigating a repaired point without addressing the repair is what 'five identical arguments is a failure' (workflows/five-hearing-adversarial.md) actually means in a checkable sense."
+    },
+    "disposition": { "type": "string", "description": "The simulated decision-maker's ruling for this hearing - may go against the user, see agents/judiciary/ROLE.md" },
+    "reasons": { "type": "string" },
+    "concessions_made": { "type": "array", "items": { "type": "string" } },
+    "hot_bench_questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": { "type": "string" },
+          "answered_from_verified_record": { "type": "boolean" },
+          "answer_summary": { "type": "string" }
+        }
+      }
+    },
+    "residual_uncertainty": { "type": "string" }
+  }
+}

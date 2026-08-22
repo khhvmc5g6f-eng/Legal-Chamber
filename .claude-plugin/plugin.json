@@ -1,0 +1,21 @@
+{
+  "name": "legal-chamber",
+  "version": "0.1.1",
+  "description": "Global legal intelligence, research, drafting, evidence, litigation, transaction, academic and adversarial reasoning system. Router skill: legal-work.",
+  "author": {
+    "name": "Legal Chamber Contributors"
+  },
+  "license": "BUSL-1.1",
+  "homepage": "https://github.com/khhvmc5g6f-eng/legal-chamber",
+  "repository": "https://github.com/khhvmc5g6f-eng/legal-chamber",
+  "keywords": [
+    "legal",
+    "law",
+    "litigation",
+    "research",
+    "drafting",
+    "agent-skills"
+  ],
+  "skills": "./skills",
+  "agents": "./agents"
+}
