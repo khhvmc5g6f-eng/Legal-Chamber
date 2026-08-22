@@ -1,0 +1,49 @@
+{
+  "$comment": "England & Wales, Sentencing Law - the guilty-plea sentence reduction under Sentencing Act 2020 s.73 and the unequivocal-indication requirement for full credit. Fresh research this session. Both nodes are post-2020/2021 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Sentencing Act 2020 s.73 fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. Plaku & Ors v The Queen [2021] EWCA Crim 568 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-SENT-001",
+      "authority_type": "statute",
+      "name": "Sentencing Act 2020, s.73",
+      "citation": "Sentencing Act 2020 s.73(1)-(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2020",
+      "date_note": "The Sentencing Code consolidation came into force 1 December 2020. The text verified this session is the current in-force (revised) version. A separate Sentencing Act 2026 (Royal Assent 22 January 2026) amends the Sentencing Act 2020 in other respects (release/recall arrangements, suspended-sentence presumptions) - no amendment to s.73's own text was found this session, but this was not exhaustively ruled out against the 2026 Act's full schedule of amendments.",
+      "proposition": "Where a court sentences an offender who has pleaded guilty, it must take into account the stage in proceedings at which the offender indicated an intention to plead guilty, and the circumstances in which that indication was given (s.73(2)(a)-(b)). This is the statutory hook for the sliding-scale guilty-plea discount (up to one-third for an indication at the first stage of proceedings) administered via the Sentencing Council's Reduction in Sentence for a Guilty Plea guideline.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2020/17/section/73",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.73(1)-(2)'s exact text."
+    },
+    {
+      "authority_id": "AUTH-EW-SENT-002",
+      "authority_type": "case",
+      "name": "Plaku and others v The Queen",
+      "citation": "[2021] EWCA Crim 568",
+      "court": "Court of Appeal (Criminal Division)",
+      "jurisdiction": "england-wales",
+      "date": "2021-04-23",
+      "proposition": "To qualify for the maximum one-third guilty-plea credit under the Sentencing Council guideline applying s.73, the offender's indication of intention to plead guilty must be unequivocal - an indication that a plea is merely 'likely' or 'probable' is not enough, since qualified language of that kind keeps open the possibility of contesting guilt and so does not deliver the systemic benefits (case progression, victim/witness relief, resource saving) the discount rewards. The Court rejected a sliding scale of credit between one-third and one-quarter based on how close an equivocal indication came to a full plea.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/crim/2021/568",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 23's unequivocal-indication holding. One secondary source was found citing this case as '[2021] EWCA Crim 588' rather than 568 - a probable transcription error, not relied on; the citation used here (568) was independently confirmed directly against the primary Find Case Law record on two separate fetches."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-SENT-002",
+      "to": "AUTH-EW-SENT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Plaku & Ors v The Queen [2021] EWCA Crim 568, para 23, fetched directly from Find Case Law and independently re-confirmed: applies s.73 via the Sentencing Council guideline, holding full credit requires an unequivocal plea indication."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the unequivocal-indication requirement for full guilty-plea credit. Does not cover the totality principle, the general purposes of sentencing (s.57), aggravating/mitigating factor guidelines, mandatory minimum sentences, or any other Sentencing Law subject - all remain unbuilt."
+}

@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Sports Law - the common-law duty of care between sporting co-participants, and its practical high threshold in fast-moving elite competition. Both cases predate BAILII's HTTP 403 block on direct WebFetch this session; the researching agent used a browser-automation tool to load the full BAILII HTML judgment text instead of WebFetch. Neither judgment carries paragraph numbers (both predate neutral-citation-style numbering), so quotes are identified by speaker rather than pinpoint paragraph.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Condon v Basi [1985] EWCA Civ 12 and Caldwell v Maguire [2001] EWCA Civ 1054 both fetched live via BAILII (bailii.org) - direct WebFetch returned HTTP 403 so a browser session was used instead to load and read the full HTML transcripts, not a summary.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-SPORTS-001",
+      "authority_type": "case",
+      "name": "Condon v Basi",
+      "citation": "[1985] EWCA Civ 12; [1985] 1 WLR 866",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "1985-04-30",
+      "judge_or_panel": "Sir John Donaldson MR, Stephen Brown LJ, Glidewell J",
+      "proposition": "Participants in competitive sport owe one another a duty of care, but the standard is objective only within the circumstances of that particular sport - not the standard that would apply to everyday life - so a higher degree of care is required of a First Division footballer than a Fourth Division footballer, and conduct within a sport's accepted risks does not breach the duty. Adopting Kitto J's approach in the Australian case Rootes v Shelton [1968] ALR 33 (not independently verified in this file). On the facts, a reckless and dangerous late tackle that broke the plaintiff's leg did breach the duty - appeal dismissed, defendant liable.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/ew/cases/EWCA/Civ/1985/12.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live via BAILII this session using a browser-automation tool after direct WebFetch returned HTTP 403 - the full HTML transcript was loaded and read, not summarized externally."
+    },
+    {
+      "authority_id": "AUTH-EW-SPORTS-002",
+      "authority_type": "case",
+      "name": "Caldwell v Maguire & Anor",
+      "citation": "[2001] EWCA Civ 1054; [2002] PIQR P6",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2001-06-27",
+      "judge_or_panel": "Lord Woolf CJ, Judge LJ, Tuckey LJ (giving the first judgment)",
+      "proposition": "Applying and sharpening Condon v Basi in the context of elite, fast-moving professional sport: because split-second decisions under competitive stress are an inevitable feature of the sport, the practical threshold for proving a breach of the co-participant duty of care is high - mere errors of judgment, oversights, or momentary lapses of skill do not amount to negligence, even where the sport's own regulator (here, a Jockey Club stewards' inquiry) has separately found the conduct to be a rule breach ('careless riding'). A regulatory finding does not equate to a finding of civil negligence. On the facts, two professional jockeys whose split-second misjudgment of racing distance seriously injured a fellow jockey were not liable - appeal dismissed.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/ew/cases/EWCA/Civ/2001/1054.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live via BAILII this session using the same browser-automation route as Condon v Basi - the full HTML transcript was loaded and read, not summarized externally."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-SPORTS-002",
+      "to": "AUTH-EW-SPORTS-001",
+      "relationship": "APPLIES",
+      "verified_via": "Caldwell v Maguire [2001] EWCA Civ 1054, per Tuckey LJ, expressly traces its high-threshold test back to Kitto J's circumstances-based standard 'adopted by Sir John Donaldson MR ... in Condon v Basi [1985] 1 WLR 866,' fetched directly via BAILII."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes forming a doctrine-and-application pair on participant duty of care. Does not cover spectator/organiser liability, restraint of trade in player contracts, the 'sporting exception' given to governing bodies' internal disciplinary decisions (e.g. Bradley v Jockey Club), or any other Sports Law subject - all remain unbuilt."
+}

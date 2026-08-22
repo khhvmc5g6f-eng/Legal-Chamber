@@ -1,0 +1,46 @@
+{
+  "$comment": "England & Wales, Criminal Law, mens rea / oblique intent. Woollin's original 1998 House of Lords judgment could not be fetched directly - BAILII returned HTTP 403, treated as final per docs/OPERATING_RULES.md; Find Case Law does not cover pre-2009 House of Lords judgments. Verified instead via a later citing Court of Appeal judgment.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Find Case Law direct fetch of a later citing judgment. BAILII's own 1998 judgment text was not independently read this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CRIM-001",
+      "authority_type": "case",
+      "name": "R v Woollin",
+      "citation": "[1998] UKHL 28; [1999] 1 AC 82",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "1998-01-01",
+      "date_note": "Year only confirmed (1998); an earlier version of this entry asserted a specific day/month ('22 July') that was not actually reported by the verifying agent - it was added during transcription without a source and has been corrected rather than left uncaught.",
+      "proposition": "A jury is not entitled to find the intention necessary for murder unless sure that death or serious bodily harm was a virtual certainty, barring some unforeseen intervention, as a result of the defendant's actions, and that the defendant appreciated that was the case - refining the earlier R v Nedrick test for oblique intent.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verification_note": "Not read directly - BAILII blocked (HTTP 403), block treated as final. Quoted verbatim within R v Royle [2013] EWCA Crim 1461 (below), fetched live."
+    },
+    {
+      "authority_id": "AUTH-EW-CRIM-002",
+      "authority_type": "case",
+      "name": "R v Royle",
+      "citation": "[2013] EWCA Crim 1461",
+      "court": "Court of Appeal (Criminal Division)",
+      "jurisdiction": "england-wales",
+      "date": "2013-01-01",
+      "date_note": "Year only confirmed via the citation itself; exact date not independently verified this session.",
+      "proposition": "Measures a trial judge's jury direction against the Woollin/Nedrick standard, quoting Woollin's virtual-certainty formulation directly at para 17 and treating it as current binding authority fifteen years on.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/crim/2013/1461"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CRIM-002",
+      "to": "AUTH-EW-CRIM-001",
+      "relationship": "FOLLOWS",
+      "verified_via": "R v Royle [2013] EWCA Crim 1461, para 17, fetched directly from Find Case Law: quotes and applies the Woollin virtual-certainty test."
+    }
+  ],
+  "what_this_is_not": "One verified node-pair confirming Woollin's virtual-certainty test for oblique intent remains good law as of 2013. Does not independently confirm Woollin's original 1998 text - see verification_note above - and does not survey the wider law on intention for murder beyond this single point."
+}

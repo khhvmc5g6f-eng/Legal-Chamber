@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Arbitration Law - the high threshold for a s.68 'serious irregularity' challenge to an arbitral award. The case is a very recent (March 2026) Commercial Court judgment, fetched live within days of its handing-down date - both nodes independently re-fetched and confirmed a second time by the orchestrating session.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Arbitration Act 1996 s.68 fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Eagle Bulk PTE Ltd v Traxys North America LLC [2026] EWHC 518 (Comm) fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-ARBITRATION-001",
+      "authority_type": "statute",
+      "name": "Arbitration Act 1996, s.68",
+      "citation": "Arbitration Act 1996 (c.23) s.68(1), (2)(a), (2)(d)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1996",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "A party to arbitral proceedings may apply to the court challenging an award on the ground of serious irregularity affecting the tribunal, the proceedings, or the award (s.68(1)). 'Serious irregularity' means an irregularity of a specified kind which the court considers has caused or will cause substantial injustice to the applicant (s.68(2) chapeau) - including failure by the tribunal to comply with its s.33 general duty of fairness (s.68(2)(a)), or failure to deal with all the issues that were put to it (s.68(2)(d)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1996/23/section/68",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-ARBITRATION-002",
+      "authority_type": "case",
+      "name": "Eagle Bulk PTE Ltd (now Star Bulk (Singapore) Pte Ltd) v Traxys North America LLC",
+      "citation": "[2026] EWHC 518 (Comm)",
+      "court": "High Court (Business and Property Courts, Commercial Court)",
+      "jurisdiction": "england-wales",
+      "date": "2026-03-09",
+      "judge_or_panel": "Butcher J",
+      "proposition": "Section 68 is a narrow, high-threshold safety valve, not a right of appeal - per the DAC Report, it is 'really designed as a long stop, only available in extreme cases, where the tribunal has gone so wrong in its conduct of the arbitration that justice calls out for it to be corrected.' A s.68(2)(a) challenge cannot be used to relitigate the tribunal's factual findings or its interpretation of documentary evidence. A s.68(2)(d) challenge requires proof that an issue existed, was put to the tribunal, was not dealt with, and caused substantial injustice - but 'if a tribunal has dealt with the issue in any way, s.68(2)(d) is inapplicable... it does not matter... that the tribunal has dealt with it well, badly or indifferently.' Both grounds failed on the facts and the application was dismissed.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/comm/2026/518",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches word-for-word consistent on paragraph 21's four-part test and paragraph 26's dismissal. High Court decision, recorded as PERSUASIVE authority weight."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-ARBITRATION-002",
+      "to": "AUTH-EW-ARBITRATION-001",
+      "relationship": "APPLIES",
+      "verified_via": "Eagle Bulk v Traxys [2026] EWHC 518 (Comm), paras 15, 21, 25-26, fetched directly from Find Case Law and independently re-confirmed: applies s.68's high threshold restrictively, rejecting both the s.68(2)(a) and s.68(2)(d) grounds because the tribunal had in fact addressed the disputed issues, however the applicant characterised the quality of that treatment."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the s.68 serious-irregularity threshold. Does not cover s.69 appeals on a point of law, s.9 stays in favour of arbitration, arbitrator appointment/removal, or any other Arbitration Law subject - all remain unbuilt."
+}

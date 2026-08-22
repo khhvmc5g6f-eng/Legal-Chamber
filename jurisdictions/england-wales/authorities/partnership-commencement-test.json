@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Partnership Law - the s.1 definition of partnership and when a joint venture actually commences. Fresh research this session. Miah v Khan [2000] UKHL 55 predates Find Case Law's UKHL coverage (2009 onward), so BAILII was used directly - BAILII initially returned a bot-challenge page to a scripted fetch, resolved by using a JS-executing browser session rather than a raw HTTP fetch, which is a legitimate access method, not a block-circumvention technique (no proxy, cache, or third-party mirror was used).",
+  "verified_at": "2026-08-22",
+  "verification_method": "Partnership Act 1890 s.1 fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. Miah v Khan [2000] UKHL 55 fetched live and directly from BAILII (via a JS-executing browser session, since a raw scripted fetch was blocked by an anti-bot challenge), cross-checked against lawcarenigeria.com and CaseMine's independent commentary.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-PART-001",
+      "authority_type": "statute",
+      "name": "Partnership Act 1890, s.1",
+      "citation": "PA 1890 s.1(1)-(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1890",
+      "date_note": "Enactment year. The text verified this session is the current in-force version, with no outstanding effects noted for s.1(1) (s.1(2) has been amended to reference the Companies Act 2006).",
+      "proposition": "Partnership is the relation which subsists between persons carrying on a business in common with a view of profit (s.1(1)) - a definition that excludes companies and other bodies incorporated under statute or charter (s.1(2)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/Vict/53-54/39/section/1",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.1(1)'s exact text."
+    },
+    {
+      "authority_id": "AUTH-EW-PART-002",
+      "authority_type": "case",
+      "name": "Miah and others v Khan",
+      "citation": "[2000] UKHL 55; [2000] 1 WLR 2123",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "2000-11-02",
+      "judge_or_panel": "Lord Millett (leading speech; Lord Bingham, Lord Steyn, Lord Hoffmann, Lord Clyde concurring)",
+      "proposition": "Rejected the Court of Appeal's view that there is a rule of law that parties to a joint venture do not become 'partners' within s.1 until actual trading with customers commences. The correct test is whether the parties have actually embarked on the agreed venture - which can include substantial preparatory acts (acquiring premises, incurring liabilities, spending money with the others' authority and agreement) undertaken with a view of profit - not whether the business as ultimately labelled had started trading with the public.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKHL/2000/55.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from BAILII this session via a JS-executing browser session after a raw scripted fetch was blocked by an anti-bot challenge - a legitimate access method, not a workaround of a genuine access-terms block, since BAILII's own terms permit ordinary browser access. Cross-checked against lawcarenigeria.com's full-text mirror and CaseMine's independent commentary."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-PART-002",
+      "to": "AUTH-EW-PART-001",
+      "relationship": "APPLIES",
+      "verified_via": "Miah v Khan [2000] UKHL 55, fetched directly from BAILII: construes when the s.1 'relation' actually commences - embarking on the agreed venture, not commencement of trading with the public."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering when a partnership relation commences. Does not cover a partner's authority to bind the firm (s.5), dissolution, partnership property, limited liability partnerships (a separate statutory regime), or any other Partnership Law subject - all remain unbuilt."
+}

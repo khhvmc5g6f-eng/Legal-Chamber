@@ -1,0 +1,66 @@
+{
+  "$comment": "England & Wales, Land Law, actual occupation as an overriding interest in registered land. Boland's original 1980 House of Lords judgment could not be fetched directly - BAILII returned HTTP 403, treated as final per docs/OPERATING_RULES.md; the judgment also predates Find Case Law's coverage. Verified instead via a later citing judgment, plus a direct fetch of the current statutory successor provision from legislation.gov.uk.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Find Case Law direct fetch of a later citing judgment, plus a direct legislation.gov.uk fetch of the current statutory text. BAILII's own 1980 judgment text was not independently read this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-LAND-001",
+      "authority_type": "case",
+      "name": "Williams & Glyn's Bank Ltd v Boland",
+      "citation": "[1981] 1 AC 487",
+      "citation_note": "The same fetched source rendered this elsewhere as '[1984] 1 AC 487' in its own text - almost certainly a garble of 1981, not an independent confirmation of a different year. [1981] 1 AC 487 is used here as the more plausible value, not asserted with full confidence.",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "1980-01-01",
+      "date_note": "Recorded as 1980 per secondary confirmation and the citing judgment's discussion; not independently confirmed via BAILII or Find Case Law this session (predates Find Case Law's coverage; BAILII blocked).",
+      "proposition": "A spouse or beneficiary with a beneficial interest in a home who is in actual occupation at the relevant time holds an interest capable of overriding a registered disposition, regardless of the purchaser's or mortgagee's lack of notice - 'actual occupation' is to be given its ordinary factual meaning. Originally decided under s.70(1)(g) Land Registration Act 1925.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verification_note": "Not read directly - BAILII blocked (HTTP 403) and the judgment predates Find Case Law's coverage. Confirmed via Link Lending Ltd v Bustard [2010] EWCA Civ 424 (below), fetched live."
+    },
+    {
+      "authority_id": "AUTH-EW-LAND-002",
+      "authority_type": "case",
+      "name": "Link Lending Ltd v Bustard",
+      "citation": "[2010] EWCA Civ 424",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2010-01-01",
+      "date_note": "Year only confirmed; exact date not independently verified this session.",
+      "proposition": "Treats Boland as good, current authority thirty years on, and discusses both s.70(1)(g) Land Registration Act 1925 and its successor, Schedule 3 paragraph 2 Land Registration Act 2002, as the old and new statutory homes of the same actual-occupation principle.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2010/424"
+    },
+    {
+      "authority_id": "AUTH-EW-LAND-003",
+      "authority_type": "statute",
+      "name": "Land Registration Act 2002, Schedule 3, paragraph 2",
+      "citation": "Land Registration Act 2002, sch 3, para 2",
+      "jurisdiction": "england-wales",
+      "proposition": "The current statutory successor to s.70(1)(g) LRA 1925 - protects an actual occupier's interest as an overriding interest against a registered disposition, subject to non-disclosure and not-reasonably-discoverable exceptions.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2002/9/schedule/3",
+      "verification_note": "Confirmed currently in force via a direct legislation.gov.uk fetch on 2026-08-22, independent of the case-law verification above."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-LAND-002",
+      "to": "AUTH-EW-LAND-001",
+      "relationship": "FOLLOWS",
+      "verified_via": "Link Lending Ltd v Bustard [2010] EWCA Civ 424, fetched directly from Find Case Law: applies Boland's actual-occupation principle."
+    },
+    {
+      "from": "AUTH-EW-LAND-002",
+      "to": "AUTH-EW-LAND-003",
+      "relationship": "APPLIES",
+      "verified_via": "Link Lending Ltd v Bustard [2010] EWCA Civ 424 discusses LRA 2002 sch 3 para 2 as the statutory successor provision to the one Boland was decided under; the successor text itself was independently confirmed live on legislation.gov.uk."
+    }
+  ],
+  "what_this_is_not": "One verified case-to-statute chain confirming the Boland actual-occupation principle transferred intact from the 1925 to the 2002 Act and remains current. Does not independently confirm Boland's original 1980 text, exact decision date, or resolve the AC citation-year discrepancy noted above - see verification_note and citation_note/date_note fields."
+}

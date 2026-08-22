@@ -13,6 +13,8 @@ Every factual proposition the matter depends on gets a `../../schemas/fact.schem
 
 Every document, statement, recording, or other item gets a `../../schemas/evidence.schema.json` record: type, source, authenticity, admissibility, privilege, reliability, and which issues it supports or undermines. Preserve provenance (original filename, hash if available, chain of custody) and never modify or overwrite an original - working copies, redacted copies, and exhibit copies are separate version records, not replacements.
 
+Privilege is not the same thing as confidentiality (see `../../docs/OPERATING_RULES.md` "Confidentiality classifications") - a document can be confidential without being privileged, or vice versa. Set the `privilege` field to `UNVERIFIED` rather than guessing when the applicable jurisdiction's privilege rules haven't actually been checked for this matter, and record confidentiality separately using that same classification list where it matters to how the item can be handled or disclosed.
+
 ## Chronology
 
 Build a dated timeline (event, actor, source, evidence, disputed?, legal significance). Actively look for:

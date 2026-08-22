@@ -1,0 +1,49 @@
+{
+  "$comment": "International Trade Law as applied in England & Wales - the autonomy principle of documentary letters of credit/performance bonds and the narrow beneficiary-fraud exception. Fresh research this session. United City Merchants v Royal Bank of Canada predates the neutral-citation system and Find Case Law's coverage; BAILII returned HTTP 403 and a secondary mirror's certificate was expired, so it is verified via 2 independent secondary sources plus the citing-judgment method through National Infrastructure Development Co Ltd v Banco Santander SA [2017] EWCA Civ 27, fetched live and directly from Find Case Law, which quotes Lord Diplock's holding directly.",
+  "verified_at": "2026-08-22",
+  "verification_method": "National Infrastructure Development Co Ltd v Banco Santander SA [2017] EWCA Civ 27 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time. United City Merchants (Investments) Ltd v Royal Bank of Canada [1983] 1 AC 168 verified via the citing-judgment method (the 2017 case quotes it directly) plus 2 independent secondary sources (vLex UK and a 7KBW chambers case note).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-ITRADE-001",
+      "authority_type": "case",
+      "name": "United City Merchants (Investments) Ltd v Royal Bank of Canada (The American Accord)",
+      "citation": "[1983] 1 AC 168; [1982] UKHL J0520-1",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "1982-05-20",
+      "judge_or_panel": "Lord Diplock (leading speech)",
+      "proposition": "A confirming/issuing bank's obligation under a documentary letter of credit is autonomous - separate and independent from the underlying contract of sale between buyer and seller. The bank must pay against documents that appear on their face to conform to the credit; disputes about performance of the underlying sale contract are not a ground to withhold or delay payment. The one established exception is beneficiary fraud: where the seller, for the purpose of drawing on the credit, fraudulently presents documents containing material representations of fact known by the seller to be untrue - captured in the maxim 'fraud unravels all'.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Predates the neutral-citation system and Find Case Law's coverage - BAILII returned HTTP 403 and a secondary mirror (swarb.co.uk) had an expired TLS certificate, both checked live this session. Verified via National Infrastructure Development Co Ltd v Banco Santander SA [2017] EWCA Civ 27 (below), which quotes Lord Diplock's fraud-exception holding directly at paragraph 19, plus independent corroboration via vLex UK (confirming case name, citation, and date) and a 7KBW chambers case note (confirming full party names and subject matter)."
+    },
+    {
+      "authority_id": "AUTH-EW-ITRADE-002",
+      "authority_type": "case",
+      "name": "National Infrastructure Development Company Ltd v Banco Santander SA",
+      "citation": "[2017] EWCA Civ 27",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2017-01-26",
+      "judge_or_panel": "Longmore LJ",
+      "proposition": "Applies the autonomy principle to on-demand performance bonds/standby letters of credit (governed by ISP98): a bank must honour a conforming demand for payment regardless of a genuine dispute under the underlying contract, unless the demand is itself fraudulent within the narrow exception derived from Lord Diplock's speech in United City Merchants. Summary judgment for the beneficiary was upheld because the guarantor bank could not establish the beneficiary's demand was fraudulent - a genuine belief that sums were due following the counterparty's repudiation was not fraud.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2017/27",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 19's 'fraud unravels all' quote from Lord Diplock."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-ITRADE-002",
+      "to": "AUTH-EW-ITRADE-001",
+      "relationship": "FOLLOWED",
+      "verified_via": "National Infrastructure Development Co Ltd v Banco Santander SA [2017] EWCA Civ 27, paras 17-19, fetched directly from Find Case Law and independently re-confirmed: applies and quotes Lord Diplock's autonomy principle and fraud exception from United City Merchants."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the autonomy principle and its fraud exception. Does not cover INCOTERMS' legal effect specifically, the Uniform Customs and Practice for Documentary Credits (UCP 600) in detail, export control/sanctions law, or any other International Trade subject - all remain unbuilt."
+}

@@ -1,0 +1,49 @@
+{
+  "$comment": "England & Wales, Restitution / Unjust Enrichment - the basic four-stage analytical test and the 'at the expense of' requirement. Fresh research this session. English unjust enrichment is judge-made law with no central statutory source, so this entry has no statute node - a forced statute node would not be genuinely load-bearing here. Banque Financiere de la Cite v Parc (Battersea) Ltd [1999] 1 AC 221 predates Find Case Law's UKHL coverage (2009 onward) and BAILII returned HTTP 403, so it is verified via the citing-judgment method through HMRC v The Investment Trust Companies [2017] UKSC 29, fetched live and directly from Find Case Law, which quotes it directly by paragraph.",
+  "verified_at": "2026-08-22",
+  "verification_method": "HMRC v The Investment Trust Companies [2017] UKSC 29 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time. Banque Financiere de la Cite v Parc (Battersea) Ltd [1999] 1 AC 221 verified via the citing-judgment method (ITC quotes it directly, with a page pincite) plus independent secondary-source corroboration (Wikipedia and a Kluwer Law Online/European Review of Private Law journal note, two independent sources consistent on citation, court, and the test's exact wording).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-REST-001",
+      "authority_type": "case",
+      "name": "Banque Financiere de la Cite v Parc (Battersea) Ltd",
+      "citation": "[1999] 1 AC 221; [1998] UKHL 7",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "1998-02-26",
+      "date_note": "Date as consistently reported in secondary sources cross-checked this session; one further secondary source (swarb.co.uk) could not be fetched due to a TLS certificate error and was not relied on for this date.",
+      "proposition": "The originating House of Lords authority for the modern structuring of an English unjust enrichment claim into four questions (per Lord Steyn): has the defendant been enriched; was the enrichment at the claimant's expense; was it unjust; and are there any defences. Lord Hoffmann in the same case gave a closely related three-part framing. This structure was subsequently adopted as settled law by the Supreme Court in HMRC v The Investment Trust Companies (below).",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Predates Find Case Law's UKHL coverage (2009 onward, confirmed live this session for a different pre-2009 House of Lords case) and BAILII returned HTTP 403 on direct fetch, confirmed live this session at bailii.org/uk/cases/UKHL/1998/7.html - the block was treated as final rather than routed around. Verified instead via HMRC v The Investment Trust Companies [2017] UKSC 29 (below), which quotes Lord Steyn's four-stage test directly with a page pincite at para 24, plus independent corroboration via Wikipedia (which also gives Lord Hoffmann's three-part framing) and a Kluwer Law Online/European Review of Private Law journal note - two independent, consistent sources."
+    },
+    {
+      "authority_id": "AUTH-EW-REST-002",
+      "authority_type": "case",
+      "name": "The Commissioners for Her Majesty's Revenue and Customs v The Investment Trust Companies",
+      "citation": "[2017] UKSC 29",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2017-04-11",
+      "judge_or_panel": "Lord Reed (leading judgment; Lord Neuberger, Lord Mance, Lord Carnwath, Lord Hodge agreeing)",
+      "proposition": "Restates and applies Lord Steyn's four-stage unjust enrichment test from Banque Financiere: (a) has the defendant been benefited/enriched, (b) was the enrichment at the claimant's expense, (c) was it unjust, (d) are there any defences. Rejects a broad, discretionary 'fairness' approach to the doctrine (para 39: 'A claim based on unjust enrichment does not create a judicial licence to meet the perceived requirements of fairness on a case-by-case basis'). On the 'at the expense of' limb specifically: where value passes through an intermediary via two separate contractual transfers (there, claimant to fund managers, managers to HMRC as VAT), those two transfers cannot be collapsed into a single transfer of value from claimant to defendant for unjust-enrichment purposes, absent a sham or artificial step.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2017/29",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on the para 24 four-stage test, its attribution to Banque Financiere, and the para 39/71-72 holdings on 'at the expense of'."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-REST-002",
+      "to": "AUTH-EW-REST-001",
+      "relationship": "APPLIES",
+      "verified_via": "HMRC v The Investment Trust Companies [2017] UKSC 29, para 24, fetched directly from Find Case Law and independently re-confirmed: quotes Lord Steyn's four-stage test from Banque Financiere by name and page pincite, and applies it (with the 'at the expense of' limb narrowed at paras 71-72)."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the basic four-stage test and one narrow point on the 'at the expense of' requirement (indirect/intermediated transfers cannot be collapsed absent a sham). Does not cover what makes an enrichment 'unjust' (the recognised unjust factors: mistake, failure of consideration, duress, undue influence, and others), defences (change of position, estoppel, illegality), proprietary restitutionary remedies, or any other Restitution subject - all remain unbuilt."
+}

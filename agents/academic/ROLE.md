@@ -18,4 +18,4 @@ Push back on grade inflation. If the other markers' scores look generous relativ
 
 ## What you must not do
 
-Do not present this feedback as an actual, official grade from the named institution - it is Legal Chamber's own assessment against the stated rubric, clearly labelled as such.
+Do not present this feedback as an actual, official grade from the named institution - it is Legal Chambers' own assessment against the stated rubric, clearly labelled as such.

@@ -1,0 +1,43 @@
+{
+  "$comment": "UK Asylum & Refugee Law - the 'well-founded fear of persecution' concept, split across two doctrinally distinct nodes deliberately NOT presented as one construing the other. Fresh research this session. Node 1 (NABA 2022 s.32) is a 2022 statutory standard-of-proof innovation; Node 2 (HJ (Iran)) is a 2010 case on the substantive meaning of 'well-founded fear' that predates and does not address s.32's standard-of-proof question. Both are genuinely leading on their own distinct sub-issues within the same Article 1(A)(2) concept - the relationship is 'same subject matter, different sub-issue', not 'case applies statute'.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Nationality and Borders Act 2022 s.32 fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. HJ (Iran) v Secretary of State for the Home Department [2010] UKSC 31 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-ASYL-001",
+      "authority_type": "statute",
+      "name": "Nationality and Borders Act 2022, s.32 - 'well-founded fear', standard of proof",
+      "citation": "NABA 2022 s.32(2), (4)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2022-06-28",
+      "date_note": "Date this section came into force. The text verified this session is the current in-force (revised) version; the page notes pending future amendments from the 2023 Act not yet applied. A related but different Act, the Illegal Migration Act 2023's ss.1-6 (inadmissibility/removal duty core), was found live this session to have been repealed on 2 December 2025 by the Border Security, Asylum and Immigration Act 2025 - that repeal does NOT touch NABA 2022 s.32, which survives independently, though Parliamentary debate on the 2025 Act recorded calls to repeal s.32 too, which has not happened as of this file's verification date.",
+      "proposition": "Introduces a two-stage, dual-standard-of-proof test for 'well-founded fear' under Article 1(A)(2) of the Refugee Convention: first, on the balance of probabilities, whether the claimant has (or is attributed) a Convention characteristic and does in fact fear persecution for it (s.32(2)); second, at the lower 'reasonable likelihood' standard, whether the claimant would actually be persecuted and not protected if returned (s.32(4)). This bifurcated standard is a genuine, contested departure from the pre-2022 position, which applied a single 'reasonable degree of likelihood' standard to every element of the refugee definition (per R v SSHD, ex p Sivakumaran [1988] AC 958 and Karanakaran v SSHD [2000] 3 All ER 449, neither independently verified in this file) - practitioner commentary describes s.32 as reversing '20 years of settled UK case law'. This is a live doctrinal fault-line, not a clean, uncontested codification.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2022/36/section/32",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.32(2) and s.32(4)'s exact text."
+    },
+    {
+      "authority_id": "AUTH-EW-ASYL-002",
+      "authority_type": "case",
+      "name": "HJ (Iran) v Secretary of State for the Home Department (and one other action)",
+      "citation": "[2010] UKSC 31",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2010-07-07",
+      "judge_or_panel": "Lord Hope (Deputy President), Lord Rodger, Lord Walker, Lord Collins, Sir John Dyson SCJ",
+      "proposition": "The leading authority on the substantive meaning of 'well-founded fear' where a claimant would in practice conceal a Convention characteristic (there, sexual orientation) on return. Rejects the 'reasonably tolerable discretion' approach (that an applicant can be refused asylum if he could safely avoid persecution by living discreetly), expressly overruling the test in J's case as 'not accurately expressed'. Sets out a staged inquiry (is the characteristic genuine; what would happen on return; the Convention does not require conformity to the receiving state's mainstream; if concealment would occur, why) culminating in the final, conclusive question: does the claimant have a well-founded fear of persecution.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2010/31",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 35's staged test and the overruling of the 'reasonably tolerable discretion' approach. This case predates NABA 2022 s.32 by 12 years and does not engage with, or construe, s.32's standard-of-proof question - it is included here as the leading authority on a different, related sub-issue within the same Article 1(A)(2) concept, not as a case interpreting Node 1."
+    }
+  ],
+  "edges": [],
+  "what_this_is_not": "Two verified nodes covering different sub-issues within 'well-founded fear' - the 2022 standard-of-proof framework, and the 2010 substantive test for concealment-based claims - deliberately not linked by an edge, since neither construes the other. Does not cover particular social group definition in depth (s.33, referenced but not independently re-verified), internal relocation, exclusion clauses, safe third country removal, the Illegal Migration Act 2023/Border Security Act 2025 removal regime, or any other Asylum & Refugee subject - all remain unbuilt. Given how fast and contested this area is, re-confirm both nodes' currency before relying on this file in any live matter."
+}

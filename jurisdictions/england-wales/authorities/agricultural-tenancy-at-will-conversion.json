@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Agricultural Law - whether a tenancy at will over agricultural land falls within AHA 1986 s.2's automatic conversion into a full agricultural tenancy from year to year. Fresh research this session. A well-known older candidate case (Gladstone v Bower, on the AHA 1948 forerunner provision) was deliberately rejected because it long predates Find Case Law's coverage and no live primary transcript could be fetched this session - Procter v Procter was used instead as it is fully primary-source verifiable end to end.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Agricultural Holdings Act 1986 s.2(1)-(2)(a) fetched live and directly from legislation.gov.uk (both the data.xht and standard page), cross-checked against the identical text as quoted verbatim inside the Court of Appeal judgment at paragraph 96. Procter & Anor v Procter & Ors [2021] EWCA Civ 167 fetched live and directly from Find Case Law.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-AGRI-001",
+      "authority_type": "statute",
+      "name": "Agricultural Holdings Act 1986, s.2",
+      "citation": "AHA 1986 s.2(1)-(2)(a)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1986",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "An agreement under which land is let to a person for use as agricultural land for an interest less than a tenancy from year to year takes effect, with the necessary modifications, as if it were an agreement for the letting of land for a tenancy from year to year - unless the agreement was approved by the Minister before it was entered into (s.2(1)-(2)(a)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1986/5/section/2",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session from legislation.gov.uk, cross-checked against the identical text quoted verbatim at paragraph 96 of Procter v Procter."
+    },
+    {
+      "authority_id": "AUTH-EW-AGRI-002",
+      "authority_type": "case",
+      "name": "Procter & Anor v Procter & Ors",
+      "citation": "[2021] EWCA Civ 167",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2021-02-12",
+      "judge_or_panel": "Lewison LJ (giving the substantive judgment on this point), Arnold LJ, Nugee LJ",
+      "proposition": "A tenancy at will over agricultural land - even one arising informally, by inference from conduct, and not from any written grant - is capable of being 'an interest less than a tenancy from year to year' within s.2(2)(a), and is therefore converted by statute into a full agricultural tenancy from year to year, attracting the whole of the Act's security-of-tenure protection. The one exception is a tenancy at will that is entirely parasitic upon and ancillary to a wholly different legal relationship (e.g. a mortgagor's attornment, or a purchaser let into possession pending completion) - the Act applies only to 'true transactions between landlord and tenant in respect of agricultural holdings' (quoting Danckwerts J in Steyning and Littlehampton BS v Wilson [1951] Ch 1018, not independently verified in this file). On the facts, the tenancy at will was a true transaction, albeit inferred from conduct, so s.2 applied.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2021/167",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session (official judgment transcript). Paragraph 96 quotes s.2(1)-(2) verbatim; paragraph 101 states the general rule and the parasitic-tenancy exception; paragraph 102 applies it to the facts; paragraph 105 records that four leading practitioner textbooks (Muir Watt and Moss, Rodgers, Scammell Densham and Williams, Woodfall) all took the same view, which the Court of Appeal endorsed as correct."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-AGRI-002",
+      "to": "AUTH-EW-AGRI-001",
+      "relationship": "APPLIES",
+      "verified_via": "Procter v Procter [2021] EWCA Civ 167, paras 96 and 101-105, fetched directly from Find Case Law: construes s.2(2)(a) as extending to informal tenancies at will inferred from conduct, subject only to the parasitic-tenancy exception."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the scope of s.2's automatic-conversion rule as applied to tenancies at will. Does not cover succession on death under Part IV, the AHA 1986/ATA 1995 boundary (fixed-term tenancies of two years or less), rent review, or any other Agricultural Law subject - all remain unbuilt."
+}

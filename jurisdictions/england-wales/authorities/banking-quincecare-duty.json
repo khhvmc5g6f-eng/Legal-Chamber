@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Banking & Finance Law - the Quincecare duty and its 2023 Supreme Court narrowing. Fresh research this session. Barclays Bank plc v Quincecare Ltd [1992] predates the neutral-citation system and Find Case Law entirely, so it is verified via the citing-judgment method through Philipp v Barclays Bank UK PLC [2023] UKSC 25, fetched live and directly from Find Case Law, which quotes it directly by paragraph.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Philipp v Barclays Bank UK PLC [2023] UKSC 25 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time. Barclays Bank plc v Quincecare Ltd [1992] 4 All ER 363 verified via the citing-judgment method (Philipp quotes it directly, with paragraph numbers) plus independent secondary-source corroboration (Wikipedia and a Bird & Bird case note, two independent, consistent sources).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-BANK-001",
+      "authority_type": "case",
+      "name": "Barclays Bank plc v Quincecare Ltd",
+      "citation": "[1992] 4 All ER 363",
+      "court": "High Court (Queen's Bench Division)",
+      "jurisdiction": "england-wales",
+      "date": "1988-02-24",
+      "date_note": "Judgment date as reported by independent secondary sources; the case is reported in the All England Law Reports at [1992], several years after judgment - a citation-year gap explained by publication lag, not an error.",
+      "judge_or_panel": "Steyn J",
+      "proposition": "A bank owes its customer a duty of care not to execute a payment instruction if the bank has reasonable grounds for believing - is 'put on inquiry' - that the instruction is an attempt to misappropriate the customer's funds, typically arising where the instruction is given by an agent (such as a director or officer) purportedly on the customer's behalf. Once put on inquiry, the bank must make inquiries to satisfy itself before acting on the instruction.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Predates the neutral-citation system and Find Case Law's coverage entirely - no primary-source fetch was attempted for that reason. Verified via Philipp v Barclays Bank UK PLC [2023] UKSC 25 (below), which quotes the case directly at paragraph 46 (confirmed on this session's own independent re-fetch of Philipp), plus independent corroboration of the case name/citation/court/holding via Wikipedia and a Bird & Bird case note - two independent, consistent sources."
+    },
+    {
+      "authority_id": "AUTH-EW-BANK-002",
+      "authority_type": "case",
+      "name": "Philipp v Barclays Bank UK PLC",
+      "citation": "[2023] UKSC 25",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2023-07-12",
+      "judge_or_panel": "Lord Leggatt (sole judgment; Lord Reed, Lord Hodge, Lord Sales, Lord Hamblen agreeing)",
+      "proposition": "Confirms and narrows the Quincecare duty: it is confined to cases where a payment instruction is given by an agent (e.g. a director or officer) acting for the customer, and does not extend to authorised push payment (APP) fraud, where the customer personally authorises the payment despite being deceived by a fraudster. Where the customer, not a dishonest agent, issues the instruction, the instruction is valid and the bank's ordinary duty is simply to execute it - refusing or delaying execution is prima facie itself a breach of duty. The Court of Appeal's broader formulation (extending Quincecare to protect customers from their own induced-but-authorised payments) was overturned as inconsistent with first principles of banking law.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2023/25",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 46's restatement of the Quincecare test and paragraph 100's holding excluding APP fraud from its scope."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-BANK-002",
+      "to": "AUTH-EW-BANK-001",
+      "relationship": "DISTINGUISHED",
+      "verified_via": "Philipp v Barclays Bank UK PLC [2023] UKSC 25, paras 46, 97 and 100, fetched directly from Find Case Law and independently re-confirmed: confirms the Quincecare duty's core test but distinguishes/excludes its application to authorised push payment fraud, where the payment instruction comes from the customer personally rather than a dishonest agent."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the Quincecare duty's core test and its confirmed scope limit. Does not cover unfair relationships under Consumer Credit Act 1974 s.140A (a real, current alternative doctrine this research also confirmed exists and is live via Smith v Royal Bank of Scotland [2023] UKSC 34 and Johnson v FirstRand Bank [2025] UKSC 33, neither independently verified in this file), payment services regulation, or any other Banking & Finance subject - all remain unbuilt."
+}

@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Food & Drug Law - the purpose-and-effect-based definition of 'medicinal product' under the Human Medicines Regulations 2012. The researching agent first pursued Food Safety Act 1990 s.14 but found no case squarely construing that provision on Find Case Law, and discarded an initial WebFetch summarization pass that had invented an unverifiable case citation - reported honestly rather than used. This entry uses the Human Medicines Regulations 2012 branch instead, where a strong, directly on-point pairing was found.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Human Medicines Regulations 2012 (SI 2012/1916) reg 2(1) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. R v Chapman & Others (Rev 1) [2017] EWCA Crim 1743 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-FOODDRUG-001",
+      "authority_type": "regulation",
+      "name": "Human Medicines Regulations 2012, reg 2(1)",
+      "citation": "Human Medicines Regulations 2012 (SI 2012/1916) reg 2(1)",
+      "court": "N/A - statutory instrument",
+      "jurisdiction": "england-wales",
+      "date": "2012",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "'Medicinal product' is defined functionally: any substance presented as having properties of preventing or treating disease (reg 2(1)(a)), or any substance that may be used or administered with a view to restoring, correcting or modifying a physiological function by pharmacological, immunological or metabolic action, or making a medical diagnosis (reg 2(1)(b)). This is the gateway definition for every substantive offence in the Regulations - a substance falls inside or outside the regime depending on its purpose and effect in context, not on its chemical identity alone.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/uksi/2012/1916/regulation/2",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-FOODDRUG-002",
+      "authority_type": "case",
+      "name": "R v Chapman & Others (Rev 1)",
+      "citation": "[2017] EWCA Crim 1743",
+      "court": "Court of Appeal (Criminal Division)",
+      "jurisdiction": "england-wales",
+      "date": "2017-11-01",
+      "judge_or_panel": "Lord Burnett of Maldon LCJ, Openshaw J, Dingemans J",
+      "proposition": "The same substance can be a 'medicinal product' in one context and not in another, because reg 2(1) requires a case-by-case, purpose-and-effect assessment rather than a fixed classification. Nitrous oxide manufactured and supplied for medical purposes falls within reg 2(1); the identical gas, packaged in catering canisters and supplied purely for recreational inhalation with no health benefit and some health risk, falls outside it. Because the gas was not a 'medicinal product,' the exempted-substance carve-out in the Psychoactive Substances Act 2016 did not apply, and the applicants' convictions for possessing a psychoactive substance with intent to supply stood - applications for permission to appeal dismissed.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/crim/2017/1743",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 32's reasoning and the dismissed disposal."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-FOODDRUG-002",
+      "to": "AUTH-EW-FOODDRUG-001",
+      "relationship": "APPLIES",
+      "verified_via": "R v Chapman [2017] EWCA Crim 1743, para 32, fetched directly from Find Case Law and independently re-confirmed: construes reg 2(1) as a purpose-and-effect test under which recreational-use nitrous oxide, with no health benefit and some health risk, falls outside 'medicinal product' even though medically-supplied nitrous oxide falls inside it."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the purpose-based medicinal product test. Does not cover Food Safety Act 1990 s.14's 'not of the quality demanded' offence (no squarely-on-point case was found - an honest gap, not a silent substitution), food labelling/allergen law, or any other Food & Drug Law subject - all remain unbuilt."
+}

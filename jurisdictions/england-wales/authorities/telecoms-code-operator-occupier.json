@@ -1,0 +1,50 @@
+{
+  "$comment": "UK Telecommunications Law - the Electronic Communications Code's operator/occupier distinction under the Communications Act 2003 Sch.3A. Fresh research this session. Both nodes are post-2003/2022 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Communications Act 2003 Sch.3A paras 9(1) and 105(1) fetched live and directly from legislation.gov.uk's in-force text. Cornerstone Telecommunications Infrastructure Ltd v Compton Beauchamp Estates Ltd [2022] UKSC 18 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against UKSCBlog and Local Government Lawyer's independent commentary.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-TELECOM-001",
+      "authority_type": "statute",
+      "name": "Communications Act 2003, Schedule 3A (Electronic Communications Code), paras 9(1) and 105(1)",
+      "citation": "Communications Act 2003 Sch.3A paras 9(1), 105(1)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2017",
+      "date_note": "The Electronic Communications Code was inserted into the Communications Act 2003 as Schedule 3A by the Digital Economy Act 2017 Sch.1. The text verified this session is the current in-force version.",
+      "proposition": "A code right in respect of land may only be conferred on an operator by an agreement between the occupier of the land and the operator (para 9(1)). 'Occupier' means the occupier of the land for the time being (para 105(1)) - a gloss that does not itself resolve who counts as occupier where an operator is already physically present on the site, the gap construed in Cornerstone v Compton Beauchamp below.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2003/21/schedule/3A/paragraph/9",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session (paras 9(1) and 105(1), two separate URLs)."
+    },
+    {
+      "authority_id": "AUTH-EW-TELECOM-002",
+      "authority_type": "case",
+      "name": "Cornerstone Telecommunications Infrastructure Ltd v Compton Beauchamp Estates Ltd",
+      "citation": "[2022] UKSC 18",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2022-06-22",
+      "judge_or_panel": "Lady Rose (giving the judgment; Lord Hodge, Lord Sales, Lord Leggatt, Lady Rose)",
+      "proposition": "Where a telecoms operator is already physically present on a site through its apparatus (there, under an expired lease, holding over), that operator is not itself the 'occupier' for Code purposes - the fundamental premise of para 9 is that operator and occupier are different persons, since the Code's conferral mechanism (an agreement between occupier and operator) presupposes two distinct parties. On the facts, the prior operator in physical occupation, not the freeholder, was the 'occupier' - meaning the freeholder itself had no code rights to confer, since it was not the occupier at all.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2022/18",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches word-for-word consistent on paragraph 117's operator/occupier holding. Cross-checked against UKSCBlog and Local Government Lawyer's independent commentary."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-TELECOM-002",
+      "to": "AUTH-EW-TELECOM-001",
+      "relationship": "APPLIES",
+      "verified_via": "Cornerstone v Compton Beauchamp [2022] UKSC 18, para 117, fetched directly from Find Case Law and independently re-confirmed twice: construes 'occupier' in para 9 as necessarily distinct from the operator seeking the code right."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the operator/occupier distinction. Does not cover Ofcom's regulatory powers generally, the Code's valuation/consideration provisions, spectrum licensing, or any other Telecommunications subject - all remain unbuilt."
+}

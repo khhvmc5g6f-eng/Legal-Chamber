@@ -1,0 +1,47 @@
+{
+  "$comment": "England & Wales, Land Law, the four requirements of a valid easement. Re Ellenborough Park's original 1955 Court of Appeal judgment could not be fetched directly - BAILII returned HTTP 403, treated as final per docs/OPERATING_RULES.md. Verified instead via a later citing judgment on Find Case Law.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Find Case Law direct fetch of a later citing judgment. BAILII's own 1955 judgment text was not independently read this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-LAND-004",
+      "authority_type": "case",
+      "name": "Re Ellenborough Park",
+      "citation": "[1956] Ch 131",
+      "citation_note": "Neutral citation (likely [1955] EWCA Civ 4) not independently re-confirmed this session - BAILII blocked. The Law Report citation [1956] Ch 131 comes from a live fetch of the citing judgment below.",
+      "court": "Court of Appeal",
+      "jurisdiction": "england-wales",
+      "date": "1955-01-01",
+      "date_note": "Year only confirmed via the citing judgment; exact date not independently verified this session.",
+      "proposition": "The four requirements of a valid easement: (i) there must be a dominant and a servient tenement; (ii) the right must accommodate the dominant tenement; (iii) the dominant and servient owners must be different persons; (iv) the right must be capable of forming the subject-matter of a grant.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verification_note": "Not read directly - BAILII blocked (HTTP 403), block treated as final. Quoted verbatim within Regency Villas Title Ltd v Diamond Resorts (Europe) Ltd [2017] EWCA Civ 238 (below), fetched live."
+    },
+    {
+      "authority_id": "AUTH-EW-LAND-005",
+      "authority_type": "case",
+      "name": "Regency Villas Title Ltd v Diamond Resorts (Europe) Ltd",
+      "citation": "[2017] EWCA Civ 238",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2017-01-01",
+      "date_note": "Year only confirmed; exact date not independently verified this session.",
+      "proposition": "Quotes Ellenborough Park's four-requirement test verbatim at para 12 and actively applies and extends it to recreational easements at para 56, treating it as good law sixty-two years on.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2017/238"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-LAND-005",
+      "to": "AUTH-EW-LAND-004",
+      "relationship": "EXTENDS",
+      "verified_via": "Regency Villas Title Ltd v Diamond Resorts (Europe) Ltd [2017] EWCA Civ 238, fetched directly from Find Case Law: applies the Ellenborough Park test and extends it to recreational easements."
+    }
+  ],
+  "what_this_is_not": "One verified node-pair confirming the Ellenborough Park test remains good law as of 2017. Does not independently confirm Ellenborough Park's original 1955 text or neutral citation - see verification_note and citation_note above. The subsequent Supreme Court decision in the SAME case, Regency Villas Title Ltd v Diamond Resorts (Europe) Ltd [2018] UKSC 57, could not be fetched this session (attempted URL returned 404) and is NOT included here - its existence and outcome are known only from secondary search corroboration, which does not meet this repo's verification bar."
+}

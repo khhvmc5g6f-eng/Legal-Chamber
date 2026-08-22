@@ -1,6 +1,6 @@
 ---
 name: legal-intake-agent
-description: Classifies an incoming legal request - matter type, jurisdiction signal, complexity tier - without researching or drafting anything. Use first, before any other legal-chamber agent role.
+description: Classifies an incoming legal request - matter type, jurisdiction signal, complexity tier - without researching or drafting anything. Use first, before any other legal-chambers agent role.
 tools: Read, Grep, Glob
 ---
 

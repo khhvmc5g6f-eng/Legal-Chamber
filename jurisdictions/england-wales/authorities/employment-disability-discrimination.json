@@ -1,0 +1,64 @@
+{
+  "$comment": "England & Wales, Employment Law, disability discrimination (Equality Act 2010 ss.15, 20-21). Promoted from real verification work already done this session in matters/M1-KESTREL/authorities/authorities.json (a live stress-test matter workspace) and examples/employment-tribunal-full-chambers/opposition/opposition_case.md, not fresh research - both were independently fetched/cross-checked at the time they were first verified, this is a reformat into the reusable Authority Graph, not a re-verification. See each entry's own verification_note for its original source trail.",
+  "verified_at": "2026-08-22",
+  "verification_method": "VERIFIED_SECONDARY_SOURCE throughout - BAILII either blocked direct fetch (HTTP 403) or was not the source located, corroborated instead via 2-4 independent secondary sources per case per docs/OPERATING_RULES.md's verification hierarchy.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-EMPL-010",
+      "authority_type": "case",
+      "name": "J v DLA Piper UK LLP",
+      "citation": "[2010] UKEAT/0263/09",
+      "court": "Employment Appeal Tribunal",
+      "jurisdiction": "england-wales",
+      "date": "2010-06-15",
+      "proposition": "Draws a real distinction between a qualifying clinical impairment and a reactive response to stressful circumstances (there, workplace stress), which does not by itself amount to a s.6 Equality Act 2010 impairment - particularly where the 'long-term' (12-month, or likely-to-last-12-month) element is not made out. Also flags that 'perceived disability' reasoning may independently apply where an employer acts because it believes someone to be disabled, whether or not that belief is later proved correct.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKEAT/2010/0263_09_1506.html",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "BAILII entry identified directly at the URL above via search; direct fetch attempted this session and returned HTTP 403. Cross-checked via Croner-i, Mental Health Law Online, and swarb.co.uk - three independent, consistent sources. The case's own disposition was to send the disability question back for reconsideration rather than resolve it against the claimant - cited here for its legal test, not as a finding of no disability on its own facts."
+    },
+    {
+      "authority_id": "AUTH-EW-EMPL-011",
+      "authority_type": "case",
+      "name": "Environment Agency v Rowan",
+      "citation": "[2008] ICR 218; [2008] IRLR 20",
+      "court": "Employment Appeal Tribunal",
+      "jurisdiction": "england-wales",
+      "date": "2008",
+      "date_note": "Year only - exact date not independently pinpointed this session.",
+      "proposition": "A reasonable-adjustments claim under (now) Equality Act 2010 ss.20-21 requires the tribunal to first identify the specific provision, criterion or practice (PCP) or physical feature, the identity of any non-disabled comparators, and the nature/extent of the substantial disadvantage, before it can assess what adjustment(s) would have been reasonable.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Located via casemine.com (not an official primary source, flagged as secondary accordingly), independently checked for consistency against how the case is described in other secondary commentary this session."
+    },
+    {
+      "authority_id": "AUTH-EW-EMPL-012",
+      "authority_type": "case",
+      "name": "Gallop v Newport City Council",
+      "citation": "[2013] EWCA Civ 1583",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2013-12-11",
+      "proposition": "An employer cannot simply 'rubber-stamp' an occupational health adviser's conclusion on disability status (or the knowledge question for discrimination-arising-from-disability and reasonable-adjustments claims, Equality Act 2010 s.15(2)) - the employer must exercise its own judgement on the primary facts, including where OH has not been asked focused questions. A real risk to an employer's knowledge defence, not a point that automatically favours it.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "http://www.bailii.org/ew/cases/EWCA/Civ/2013/1583.html",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "BAILII URL located via search but not fetched this session. Corroborated via Croner, Legal Island, and Brightmine/HR & Compliance Centre commentary."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-EMPL-010",
+      "to": "AUTH-EW-EMPL-011",
+      "relationship": "DEPENDS_ON",
+      "verified_via": "Rowan's PCP-identification requirement only becomes assessable once J v DLA Piper's threshold question (is there a qualifying impairment at all) is answered - a reasonable-adjustments claim gated by disability status cannot reach the PCP-identification stage without first clearing the impairment gate."
+    }
+  ],
+  "what_this_is_not": "Three verified nodes covering the disability-status threshold question (impairment vs reactive stress) and the two gating requirements for a reasonable-adjustments claim (PCP identification, employer knowledge). Does not cover the substantive reasonable-adjustments test itself (what counts as a reasonable adjustment once the gates are cleared), direct disability discrimination (Equality Act 2010 s.13), or victimisation (s.27) - those remain unbuilt."
+}

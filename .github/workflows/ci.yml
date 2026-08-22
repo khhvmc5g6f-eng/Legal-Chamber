@@ -18,8 +18,16 @@ jobs:
         run: python3 scripts/deadline_calculator.py --selftest
       - name: citation_lint selftest
         run: python3 scripts/citation_lint.py --selftest
+      - name: verify_citation_years selftest
+        run: python3 scripts/verify_citation_years.py --selftest
       - name: verify_matter_refs selftest
         run: python3 scripts/verify_matter_refs.py --selftest
+      - name: verify_matter_schema selftest
+        run: python3 scripts/verify_matter_schema.py --selftest
+      - name: verify_id_conventions selftest
+        run: python3 scripts/verify_id_conventions.py --selftest
+      - name: check_conflicts selftest
+        run: python3 scripts/check_conflicts.py --selftest
       - name: verify_matter_persistence selftest
         run: python3 scripts/verify_matter_persistence.py --selftest
       - name: legal_cli selftest

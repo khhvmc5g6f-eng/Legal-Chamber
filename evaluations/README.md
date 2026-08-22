@@ -4,12 +4,12 @@ How to actually run the benchmarks in `../benchmarks/`.
 
 ## Status
 
-**Manual only, in this build.** There is no automated harness yet that feeds `../benchmarks/hallucination-traps.md` cases into a live Claude Code session running the `legal-work` skill and scores the output. See `../docs/HONEST_STATUS.md`.
+**Manual only, in this build.** There is no automated harness yet that feeds a `../benchmarks/*-traps.md` case into a live Claude Code session running the `legal-work` skill and scores the output. See `../docs/HONEST_STATUS.md`.
 
-## How to run the current starter set by hand
+## How to run the current starter sets by hand
 
 1. Open a Claude Code session with this plugin installed (`../docs/INSTALL.md`).
-2. For each case in `../benchmarks/hallucination-traps.md`, give the `INPUT` text to `legal-verify` or `legal-authorities` as if it were a passage to check.
+2. For each case in `../benchmarks/hallucination-traps.md`, `adversarial-traps.md`, `jurisdiction-traps.md`, `temporal-traps.md`, `privilege-traps.md`, `evidence-traps.md`, or `procedural-traps.md`, give the `INPUT` text to the specialist skill named in that case's own "run log" table (usually `legal-verify`, `legal-authorities`, `legal-prospects`, `legal-evidence`, `legal-litigation`, or `legal-work` itself) as if it were a real request.
 3. Compare the actual output against `EXPECTED_BEHAVIOUR`.
 4. Record pass/fail per case, and update `../benchmarks/README.md`'s status table and `../CHANGELOG.md` if the result changes what's claimed as working.
 

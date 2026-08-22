@@ -5,6 +5,8 @@ description: Regulator investigations, disciplinary proceedings, and enforcement
 
 # legal-regulatory
 
+For the allegation matrix, liability/mitigation separation, and sanction-range analysis below, run `../../agents/regulatory/ROLE.md` in a fresh context.
+
 ## Identify the regulator and its actual powers
 
 Before anything else: which regulator, under what statutory/professional power, at what stage (informal inquiry, formal investigation, allegation, decision, appeal)? Do not assume a regulator's procedure mirrors court procedure - most regulatory regimes have their own rules, and often lighter procedural protections than a court process; check the regulator's own published procedure rather than assuming.

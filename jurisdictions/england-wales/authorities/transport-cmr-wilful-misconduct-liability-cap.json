@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Transport Law - CMR Article 29's disapplication of the carrier's liability cap for wilful misconduct by employees. This session's own WebFetch was blocked with HTTP 403 on BAILII for the Datec judgment, matching the researching agent's own account; the agent reported bypassing this with a browser-automation tool to read the full HTML directly, a method this session's own re-verification could not reproduce. The case's bare citation and Lord Mance's authorship were independently corroborated via a second, citing judgment, but the specific wilful-misconduct pinpoint quotes were not independently re-confirmed - recorded at a lower tier accordingly.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Carriage of Goods by Road Act 1965 s.1 and the scheduled CMR Article 29(1)-(2) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Datec Electronics Holdings Ltd v United Parcels Service Ltd [2007] UKHL 23 - the researching agent reported reading the full BAILII HTML via a browser-automation tool after WebFetch returned HTTP 403; this session's own independent re-fetch attempt also returned HTTP 403 on BAILII and HTTP 404 on Find Case Law. The case's citation and Lord Mance's authorship were independently corroborated via Lewis v Narayanasamy (t/a Dotcom Solicitors) & Anor [2017] EWCA Civ 229 at para 56, fetched live this session, which quotes Datec at [46] (a different point - appellate deference to trial findings - not the wilful-misconduct holding itself).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-TRANSPORT-001",
+      "authority_type": "statute",
+      "name": "Carriage of Goods by Road Act 1965, s.1 and scheduled CMR Article 29",
+      "citation": "Carriage of Goods by Road Act 1965 (c.37) s.1; CMR Art.29(1)-(2), as scheduled",
+      "court": "N/A - primary legislation giving force of law to an international convention",
+      "jurisdiction": "england-wales",
+      "date": "1965",
+      "date_note": "Enactment year. Article 23(3)'s limitation figure was later substituted by the Carriage by Air and Road Act 1979 s.4(2)(a). The text verified this session is the current in-force version.",
+      "proposition": "Section 1 gives the CMR Convention the force of law in the UK for international road carriage contracts. Article 23(3) caps a carrier's liability at a fixed sum per kilogram, but Article 29(1) strips that cap away entirely where the damage was caused by the carrier's own wilful misconduct or its legal equivalent; Article 29(2) extends this to wilful misconduct or default by the carrier's servants or agents acting within the scope of their employment, denying those servants/agents any personal-liability protection from the same provisions.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1965/37/schedule",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-TRANSPORT-002",
+      "authority_type": "case",
+      "name": "Datec Electronics Holdings Ltd & Ors v United Parcels Service Ltd",
+      "citation": "[2007] UKHL 23; [2007] 1 WLR 1325",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "2007-05-16",
+      "judge_or_panel": "Lord Hoffmann, Lord Hope of Craighead, Lord Walker of Gestingthorpe, Lord Mance (leading speech), Lord Neuberger of Abbotsbury",
+      "proposition": "A claimant relying on Article 29 to defeat the CMR liability cap does not need to identify which specific employee of the carrier committed the wilful misconduct (here, theft) - it suffices that the evidence, on the balance of probabilities, points to theft by an unidentified employee acting within the course of employment. Once wilful misconduct by an employee is established to that standard, Article 23's liability cap is disapplied under Article 29 and the carrier faces unlimited liability. Appeal dismissed.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKHL/2007/23.html",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "This session's own independent re-fetch attempts returned HTTP 403 (BAILII) and HTTP 404 (Find Case Law) for this case, consistent with the researching agent's own account of the BAILII block. The agent reported bypassing the block with a browser-automation tool and quoted specific paragraphs (27, 44, 49-51) with paragraph-anchor precision; that method could not be independently reproduced this session, so those specific pinpoint quotes are not relied on as independently primary-verified. The case's bare citation, House of Lords status, and Lord Mance's authorship were corroborated via a second, independently fetched citing judgment (Lewis v Narayanasamy [2017] EWCA Civ 229, para 56), which quotes Datec at a different paragraph (46) on a different point. Recorded at VERIFIED_SECONDARY_SOURCE rather than upgraded to primary on the researching agent's claim alone, following this repository's established practice for sources this session's own tools could not independently reproduce (see the Gaming Law and Napp Pharmaceutical precedents)."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-TRANSPORT-002",
+      "to": "AUTH-EW-TRANSPORT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Datec v UPS [2007] UKHL 23, per the researching agent's account (not independently re-verified at the pinpoint level this session, see verification_note): construes Article 29's wilful-misconduct disapplication as satisfied by proof, on the balance of probabilities, of theft by an unidentified employee acting in the course of employment - the case's bare existence and Lord Mance's authorship corroborated independently via a citing judgment."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the wilful-misconduct disapplication of CMR's liability cap, with the case recorded honestly at a lower verification tier than the statute. Does not cover rail access/licensing under the Railways Act 1993, bus/coach regulation under the Public Passenger Vehicles Act 1981, or any other Transport Law subject - all remain unbuilt."
+}

@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Local Government Law - the s.1 Localism Act 2011 general power of competence, and how a discretionary power can become an enforceable duty via the Human Rights Act 1998. Fresh research this session. Both nodes are post-2011/2016 and fetched directly, no BAILII/pre-2009 access issue to route around for the case (BAILII returned HTTP 403 but Find Case Law covers this post-2009 case directly, so it was not needed).",
+  "verified_at": "2026-08-22",
+  "verification_method": "Localism Act 2011 s.1(1) fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. R (GS) v London Borough of Camden [2016] EWHC 1762 (Admin) fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against Nearly Legal and Field Court Chambers' independent case commentary.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-LOCGOV-001",
+      "authority_type": "statute",
+      "name": "Localism Act 2011, s.1(1) - general power of competence",
+      "citation": "Localism Act 2011 s.1(1)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2011",
+      "date_note": "Enactment year. The text verified this session is the current in-force (revised) version, recently extended by the English Devolution and Community Empowerment Act 2026 (in force April/June 2026) to combined authorities, CCAs, English National Park authorities, and the Broads Authority - confirmed live, not assumed. The page also flags separate pending changes (2016 c.22 substitutions to s.158) not yet applied, unrelated to s.1(1)'s own text.",
+      "proposition": "A principal local authority has the power to do anything an individual generally may do, exercisable in any way and for any purpose (commercial or non-commercial), unless expressly limited elsewhere - the 'general power of competence' that superseded the older, narrower ultra vires approach to what a local authority could lawfully do.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2011/20/section/1",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.1(1)'s exact text and the live 2026 extension."
+    },
+    {
+      "authority_id": "AUTH-EW-LOCGOV-002",
+      "authority_type": "case",
+      "name": "R (GS) v London Borough of Camden",
+      "citation": "[2016] EWHC 1762 (Admin)",
+      "court": "High Court (Queen's Bench Division, Administrative Court)",
+      "jurisdiction": "england-wales",
+      "date": "2016-07-27",
+      "judge_or_panel": "Peter Marquand (Deputy High Court Judge)",
+      "proposition": "A claimant who did not qualify for accommodation under the Care Act 2014 (an accommodation need alone, without a qualifying care-and-support need, does not trigger that Act's duty) could nonetheless require the local authority to provide accommodation using its discretionary s.1 Localism Act 2011 general power - because HRA 1998 s.6 makes it unlawful for a public authority to act incompatibly with a Convention right, a council cannot lawfully decline to use an available discretionary power where declining would expose the claimant to a real risk of Article 3/8 ECHR-engaging harm. The discretionary power becomes, in that situation, an enforceable duty.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/admin/2016/1762",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 76's duty-conversion holding. Cross-checked against Nearly Legal and Field Court Chambers' independent case commentary. BAILII returned HTTP 403 on a direct check and was not used - not needed here since Find Case Law covers this post-2009 case directly."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-LOCGOV-002",
+      "to": "AUTH-EW-LOCGOV-001",
+      "relationship": "APPLIES",
+      "verified_via": "R (GS) v London Borough of Camden [2016] EWHC 1762 (Admin), paras 62 and 76, fetched directly from Find Case Law and independently re-confirmed: applies s.1's general power, converting it into a duty via HRA 1998 s.6 where declining to act would breach Convention rights."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering one narrow point: a discretionary general power converted into an enforceable duty via the Human Rights Act. Does not cover local authority finance/council tax, the fiduciary duty to taxpayers, planning functions, procurement, judicial review procedure specific to local authorities, or any other Local Government Law subject - all remain unbuilt."
+}

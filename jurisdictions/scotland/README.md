@@ -8,7 +8,7 @@ reviewer: initial repository build (not independently re-checked by a second rev
 
 # Scotland
 
-See `docs/HONEST_STATUS.md`. Scotland is a **distinct jurisdiction from England & Wales** with its own courts, procedure, and much of its own substantive law (notably in property, some contract, and criminal procedure) - never assume "UK law" collapses the two. See `docs/OPERATING_RULES.md` Part XI.
+See `docs/HONEST_STATUS.md`. Scotland is a **distinct jurisdiction from England & Wales** with its own courts, procedure, and much of its own substantive law (notably in property, some contract, and criminal procedure) - never assume "UK law" collapses the two. See `docs/SPEC_FULL_TEXT.md` Part XI.
 
 ## Court hierarchy (civil, headline)
 

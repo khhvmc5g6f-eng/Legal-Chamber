@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Gaming & Gambling Law - the objective 'cheating at gambling' test under Gambling Act 2005 s.42, as construed in Ivey v Genting Casinos. This session's own WebFetch could not decode the Supreme Court's PDF judgment (confirmed on a direct re-attempt); the researching agent reported reading it directly page-by-page, but that claim could not be independently reproduced this session. Following this repository's Napp Pharmaceutical precedent for unreadable PDFs, the case's specific paragraph-level quotes are recorded at VERIFIED_SECONDARY_SOURCE rather than upgraded to primary on the researching agent's claim alone - the outcome and core holding are independently corroborated by secondary sources instead.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Gambling Act 2005 s.42(1) and (3) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Ivey v Genting Casinos (UK) Ltd t/a Crockfords [2017] UKSC 67 - the researching agent reported reading the official supremecourt.uk judgment PDF directly; this session's own independent re-fetch of the same PDF returned an explicit 'cannot render this compressed PDF' failure. The dismissed-appeal outcome and the no-separate-dishonesty-element holding were independently corroborated via a Wikipedia summary fetched live this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-GAMING-001",
+      "authority_type": "statute",
+      "name": "Gambling Act 2005, s.42",
+      "citation": "Gambling Act 2005 (c.19) s.42(1), (3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2005",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "A person commits an offence if he cheats at gambling, or does anything for the purpose of enabling or assisting another person to cheat at gambling (s.42(1)). Without prejudice to the generality of that provision, cheating may in particular consist of actual or attempted deception or interference with the process by which gambling is conducted, or with the game/race/event to which the gambling relates (s.42(3)) - a non-exhaustive, deliberately open-textured definition.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2005/19/section/42",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-GAMING-002",
+      "authority_type": "case",
+      "name": "Ivey v Genting Casinos (UK) Ltd t/a Crockfords",
+      "citation": "[2017] UKSC 67",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2017-10-25",
+      "judge_or_panel": "Lord Neuberger, Lady Hale, Lord Kerr, Lord Hughes (leading judgment), Lord Thomas",
+      "proposition": "Section 42's concept of cheating does not require proof of a separate legal element of dishonesty - the section's open-textured wording leaves what counts as cheating to depend on the nature and rules of the particular game, assessed objectively by the court rather than by the defendant's own belief about whether the conduct was legitimate. Applying that construction, a professional gambler's 'edge-sorting' technique - manipulating an unwitting croupier into sorting high-value cards in a game of pure chance - was cheating, even though he genuinely and honestly believed it was legitimate advantage play. The appeal against the casino's refusal to pay his winnings was dismissed. The case is a real civil dispute (a professional gambler's multi-million-pound claim for withheld winnings) in which s.42's meaning was directly determinative.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.supremecourt.uk/cases/uksc-2016-0213.html",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "This session's own attempt to independently re-fetch and decode the official Supreme Court PDF judgment failed - the tool explicitly reported it could not render the compressed PDF content, on both the judgment PDF itself and a fetch of the case's press-summary page. The researching agent reported reading the PDF directly and quoted specific paragraph numbers (34-51, 76), but that claim could not be independently reproduced this session, so it is not relied on for exact pinpoint quotes here. The outcome (appeal dismissed) and the core holding (dishonesty is not a required separate element of s.42 cheating; an objective standard applies) were instead independently corroborated via a live Wikipedia fetch this session, consistent with the researching agent's account. Recorded at VERIFIED_SECONDARY_SOURCE rather than upgraded to primary, following this repository's established practice for PDFs this session's own tools cannot decode (see the Napp Pharmaceutical precedent in the Competition Law file)."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-GAMING-002",
+      "to": "AUTH-EW-GAMING-001",
+      "relationship": "APPLIES",
+      "verified_via": "Ivey v Genting Casinos [2017] UKSC 67, per the researching agent's account (not independently re-verified at the pinpoint level this session, see verification_note): construes s.42's open-textured cheating concept as not requiring proof of dishonesty, applying an objective standard instead - corroborated at the level of outcome and core holding via independent secondary source."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the objective cheating test under s.42, with the case's exact pinpoint quotes recorded honestly at a lower verification tier than the statute. Does not cover licensing/regulatory law under the Gambling Act (operating licences, the Gambling Commission's enforcement powers), problem-gambling protections, or any other Gaming & Gambling Law subject - all remain unbuilt."
+}

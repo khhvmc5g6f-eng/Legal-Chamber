@@ -1,4 +1,4 @@
-# Legal Chamber Coverage Matrix
+# Legal Chambers Coverage Matrix
 
 Every cell is backed by evidence from the live stress test on 2026-08-22 (`matters/` on disk, the workflow's structured returns, and the journal), not by re-describing the design. `M4` (Australian contract dispute) failed its first pass on a test-harness schema bug (see `DEFECT_REGISTER.md` D-07), was fixed, and reran cleanly - its results are now folded into every row below rather than left pending.
 

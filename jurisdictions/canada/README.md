@@ -37,6 +37,10 @@ Criminal Code of Canada (federal, uniform). Civil Code of Quebec (Quebec private
 - `laws-lois.justice.gc.ca` - official federal statutes
 - Each province's own official legislation site (e.g. Quebec's `legisquebec.gouv.qc.ca`) and court site
 
+## Live verification capability - CanLII API (documented, not yet wired)
+
+CanLII has a real, documented read-only REST API (`github.com/canlii/API_documentation`, confirmed live via direct fetch 2026-08-22) - case browsing/metadata, citation graphs (what cites what, structurally similar to CourtListener's `opinions-cited`), and legislation browsing. **Access requires a free API key obtained by emailing CanLII and describing the project's scope - not a self-serve signup**, so this repository cannot obtain one autonomously; a human needs to request it. Constraints once obtained: HTTPS only, 10MB max response, 10,000 results/request cap. Once a key exists, wiring this in means: (1) confirming the exact endpoint shapes against the live docs (they may have changed since this check), (2) deciding where the key is supplied (this repo has no secrets-handling mechanism - it would need to come from the user's own environment, never committed here), (3) documenting the connector here the way `../us-federal/README.md` documents CourtListener. See `../../connectors/README.md` for the full cross-jurisdiction connector inventory.
+
 ## What is NOT in this pack
 
 No province-specific procedural content verified. No populated Authority Graph. No verified procedural deadline. No Quebec civil-law doctrinal depth beyond noting it is a distinct system.

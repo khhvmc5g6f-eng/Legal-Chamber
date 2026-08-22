@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Deterministic cross-reference integrity checker for a matter workspace.
 
-Legal Chamber's schemas cross-reference each other by ID string (a chronology
+Legal Chambers' schemas cross-reference each other by ID string (a chronology
 event's fact_ids, an issue's fact_ids_required/evidence_available_ids, a
 draft's change_log authority_id, and so on - see docs/ID_CONVENTIONS.md).
 Nothing previously checked that those IDs actually resolve to a real record
@@ -92,7 +92,17 @@ def _collect_referenced_ids(matter_dir, field_pattern, field_name):
 
 
 def verify_matter(matter_dir):
-    """Returns (findings, checked_count) - findings is a list of broken-reference strings."""
+    """Returns (findings, checked_count) - findings is a list of broken-reference strings.
+
+    A nonexistent matter_dir must be a hard failure, not a clean pass - glob.glob()
+    over a missing directory just returns [], so without this check a typo'd
+    matter ID silently reported "0 references checked, no broken cross-references
+    found" instead of erroring, which is the worst possible failure direction for
+    a reference-integrity gate. Matches the isdir check verify_matter_persistence.py
+    already does correctly."""
+    if not os.path.isdir(matter_dir):
+        return [f"{matter_dir} does not exist"], 0
+
     known_ids = {
         rtype: _load_records(matter_dir, globs) for rtype, globs in RECORD_GLOBS.items()
     }
@@ -129,6 +139,12 @@ def selftest():
             failures.append(f"did not flag the dangling reference to F-999 - findings were: {findings}")
         if any("F-001" in f for f in findings):
             failures.append(f"false positive on the valid reference F-001 - findings were: {findings}")
+
+    # A nonexistent matter directory must be a hard failure, never a clean pass.
+    nonexistent = os.path.join(tempfile.gettempdir(), "verify-matter-refs-selftest-does-not-exist")
+    findings, checked = verify_matter(nonexistent)
+    if not findings:
+        failures.append("nonexistent matter directory silently reported clean - should be a hard failure")
 
     if failures:
         print("SELFTEST FAILED:")

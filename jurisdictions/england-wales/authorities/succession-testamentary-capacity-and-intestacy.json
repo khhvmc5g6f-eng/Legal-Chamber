@@ -1,0 +1,65 @@
+{
+  "$comment": "England & Wales, Succession Law - testamentary capacity and intestacy. Fresh research. Banks v Goodfellow (1870) predates any neutral-citation or Find Case Law coverage by well over a century, so it is verified via the citing-judgment method through Leonard v Leonard [2024] EWHC 321 (Ch), fetched live and directly from Find Case Law, which quotes it by paragraph.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Administration of Estates Act 1925 s.46 fetched live and directly from legislation.gov.uk's in-force text. Leonard v Leonard [2024] EWHC 321 (Ch) fetched live and directly from Find Case Law. Banks v Goodfellow (1870) LR 5 QB 549 verified via the citing-judgment method (Leonard quotes it directly, with paragraph numbers) plus independent secondary-source corroboration (Mental Health Law Online, Practical Law, and two independent case-summary sites, four sources consistent on case name, citation, court, and 6 July 1870 judgment date).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-SUCC-001",
+      "authority_type": "case",
+      "name": "Banks v Goodfellow",
+      "citation": "(1869-70) LR 5 QB 549",
+      "court": "Court of Queen's Bench",
+      "jurisdiction": "england-wales",
+      "date": "1870-07-06",
+      "judge_or_panel": "Cockburn CJ",
+      "proposition": "Established the test for testamentary capacity, still the governing test: the testator must (a) understand the nature and effect of making a will, (b) understand the extent of the property being disposed of, and (c) be able to comprehend and appreciate any claims to which effect ought to be given (e.g. the claims of family members who might otherwise expect to benefit). Unsoundness of mind does not by itself defeat capacity where it does not affect the will actually made - the delusion or disorder must bear on the specific testamentary act.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "An 1870 Court of Queen's Bench judgment, well predating both BAILII's practical coverage and Find Case Law's 2001-onward coverage - no direct primary-source fetch was attempted for that reason, confirmed live this session that Find Case Law's coverage does not reach this far back before relying on the citing-judgment method. Verified via Leonard v Leonard [2024] EWHC 321 (Ch) (below), which quotes the case directly at paragraph 138, plus independent corroboration of the case name/citation/date/holding via Mental Health Law Online, Practical Law, and two independent case-summary sites - four consistent sources."
+    },
+    {
+      "authority_id": "AUTH-EW-SUCC-002",
+      "authority_type": "case",
+      "name": "Leonard v Leonard",
+      "citation": "[2024] EWHC 321 (Ch)",
+      "court": "High Court (Chancery Division, Business and Property Courts, Property, Trusts and Probate List)",
+      "jurisdiction": "england-wales",
+      "date": "2024-02-20",
+      "proposition": "Confirms Banks v Goodfellow remains the governing test for testamentary capacity, not superseded by the Mental Capacity Act 2005's own capacity framework. Emphasises that the Banks v Goodfellow criteria are not directly medical questions but matters for judicial common-sense judgment on the whole of the evidence - a court should not over-defer to expert medical opinion on what is ultimately a legal, not clinical, question.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/ch/2024/321",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session. Quotes Banks v Goodfellow directly at paragraph 138, and states the judicial-versus-medical-question point at paragraph 140 (see edge below)."
+    },
+    {
+      "authority_id": "AUTH-EW-SUCC-003",
+      "authority_type": "statute",
+      "name": "Administration of Estates Act 1925, s.46",
+      "citation": "AEA 1925 s.46",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1925",
+      "date_note": "Enactment year. The specific text verified this session is the current in-force (revised) version, most recently amended by the Inheritance and Trustees' Powers Act 2014 (in force since 1 October 2014), which changed how the surviving spouse/civil partner's fixed statutory legacy accrues interest - not the 1925 text as originally enacted.",
+      "proposition": "Sets out the statutory order of distribution when a person dies intestate (without a valid will, or without a will disposing of the whole estate): a surviving spouse/civil partner takes the whole estate if there are no children; if there are children, the spouse/civil partner takes personal chattels, a fixed statutory legacy plus interest, and half the remainder, with the other half to the children on statutory trusts; absent a spouse/civil partner, the estate passes down a fixed hierarchy - children, then parents, then whole-blood siblings, then half-blood siblings, then grandparents, then whole-blood aunts/uncles, then half-blood aunts/uncles, and finally the Crown as bona vacantia.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1925/23/section/46",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session - confirmed as the current in-force (revised) text, last amended 1 October 2014."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-SUCC-002",
+      "to": "AUTH-EW-SUCC-001",
+      "relationship": "APPLIES",
+      "verified_via": "Leonard v Leonard [2024] EWHC 321 (Ch), paras 138 and 140, fetched directly from Find Case Law: quotes Banks v Goodfellow's test by name and applies it, while clarifying it is a judicial, not purely medical, assessment."
+    }
+  ],
+  "what_this_is_not": "Three verified nodes covering testamentary capacity (the Banks v Goodfellow test, current as of a 2024 confirmation) and the statutory intestacy distribution order. Does not cover will validity beyond capacity (formalities under the Wills Act 1837, undue influence, knowledge and approval), probate procedure, estate administration duties, family provision claims (Inheritance (Provision for Family and Dependants) Act 1975), or any other Succession Law subject - all remain unbuilt."
+}

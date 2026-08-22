@@ -1,0 +1,51 @@
+{
+  "$comment": "England & Wales, Treaty Law - the internationalist, purposive approach to construing a treaty scheduled into domestic legislation, from Buchanan/Fothergill (1978/1980) through to its 2023 restatement folding in the Vienna Convention on the Law of Treaties framework. Buchanan and Fothergill are both pre-2009 and inaccessible via direct BAILII fetch this session; verified via the citing-judgment method through JTI Polska v Jakubowski [2023] UKSC 19, which quotes both verbatim with pinpoint paragraph/page references.",
+  "verified_at": "2026-08-22",
+  "verification_method": "JTI Polska Sp. z o.o. v Jakubowski [2023] UKSC 19 fetched live and directly from Find Case Law, independently re-fetched on paragraph 22's quotation of Lord Wilberforce in James Buchanan & Co Ltd v Babco Forwarding & Shipping (UK) Ltd [1978] AC 141 - confirmed in substance, though this session's own fetch surfaced additional sentences (on dual-language texts and comparative foreign case law) beyond the specific quote the researching agent selected, both drawn from the same paragraph.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-TREATY-001",
+      "authority_type": "case",
+      "name": "James Buchanan & Co Ltd v Babco Forwarding & Shipping (UK) Ltd",
+      "citation": "[1978] AC 141",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "1977",
+      "date_note": "Decision year, per the researching agent's account - not independently pinned to an exact day this session, since the case is accessible only via its quotation inside a later judgment.",
+      "judge_or_panel": "Lord Wilberforce (quoted passage)",
+      "proposition": "The correct approach to interpreting a treaty scheduled into domestic law (here, the CMR road-carriage convention) is to read the English text in a normal manner appropriate to an international convention, unconstrained by technical rules of English law, on broad principles of general acceptation - with regard to the treaty's other authentic-language text where it assists, and to the case law of other contracting states, in order to harmonise interpretation and serve the convention's uniformity objective across all contracting states.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKHL/1980/6.html",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Not accessible directly this session (pre-2009, not on Find Case Law; BAILII blocked). Verified via the citing-judgment method: JTI Polska v Jakubowski [2023] UKSC 19, fetched live and independently re-fetched from Find Case Law, quotes this passage at paragraph 22 with a pinpoint page reference (p152D-E) to the official law report. This session's own re-fetch confirmed the core quoted sentence and surfaced further sentences from the same paragraph on dual-language texts and comparative case law, consistent with but not identical in scope to the researching agent's selected quote."
+    },
+    {
+      "authority_id": "AUTH-EW-TREATY-002",
+      "authority_type": "case",
+      "name": "JTI Polska Sp. z o.o. v Jakubowski",
+      "citation": "[2023] UKSC 19",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2023-06-14",
+      "judge_or_panel": "Lord Hamblen (leading judgment), Lord Reed, Lord Hodge, Lord Briggs, Lord Sales, Lady Rose, Lord Richards",
+      "proposition": "Applied and restated the Buchanan/Fothergill internationalist interpretive approach to the CMR convention, expressly folding it into the structured framework of Articles 31-32 of the Vienna Convention on the Law of Treaties: 'it is now generally recognised that the broad principles of general acceptation by reference to which international conventions should be interpreted include these rules of interpretation,' and it is appropriate to follow the structured approach those articles establish, not merely apply them loosely. Confirms, over four decades later and in a different factual context (excise duty on stolen cigarettes during CMR carriage), that this purposive, uniformity-seeking method - not domestic literalism - remains the operative approach to construing treaty-derived English law.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2023/19",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and consistent on paragraph 22's substance across both fetches."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-TREATY-002",
+      "to": "AUTH-EW-TREATY-001",
+      "relationship": "FOLLOWED",
+      "verified_via": "JTI Polska v Jakubowski [2023] UKSC 19, para 22, fetched directly from Find Case Law and independently re-confirmed: quotes and applies Lord Wilberforce's Buchanan approach, then expressly folds it into the Vienna Convention on the Law of Treaties Arts.31-32 framework at para 25."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the internationalist, purposive interpretive method for treaty-derived English law and its 2023 restatement. Does not cover the travaux préparatoires admissibility standard from Fothergill in detail (touched on only at JTI Polska paras 23, 30, not independently verified as a separate node here), the direct-effect/dualist status of unincorporated treaties, or any other Treaty Law subject - all remain unbuilt."
+}

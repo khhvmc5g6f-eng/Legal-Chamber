@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Legal Ethics / Professional Responsibility - the solicitor's continuing duty of confidentiality to a former client, and the two-part test for restraining a firm from acting against one. The originating House of Lords authority (Bolkiah v KPMG [1998] UKHL 52) was inaccessible this session (BAILII bot-challenge); the researching agent used the citing-judgment method via Winters v Mishcon de Reya, which quotes Bolkiah's key passage verbatim with a pinpoint law-report reference, and is itself a solicitors'-firm case rather than Bolkiah's accountancy-firm facts - arguably a tighter fit to this entry's SRA-solicitors topic.",
+  "verified_at": "2026-08-22",
+  "verification_method": "SRA Code of Conduct for Solicitors paragraph 6.3 fetched live and directly from sra.org.uk, independently re-fetched and word-for-word consistent on both attempts. Winters v Mishcon de Reya [2008] EWHC 2419 (Ch) fetched live and directly from Find Case Law, independently re-fetched and re-confirmed on paragraph 87's quotation of Lord Millett's Bolkiah speech.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-LEGALETHICS-001",
+      "authority_type": "regulation",
+      "name": "SRA Code of Conduct for Solicitors, RELs, RFLs and RSLs, paragraph 6.3",
+      "citation": "SRA Code of Conduct for Solicitors, para 6.3",
+      "court": "N/A - regulatory code",
+      "jurisdiction": "england-wales",
+      "date": "2025-04-11",
+      "date_note": "Date this version of the Code came into force. The text verified this session is the current in-force version.",
+      "proposition": "A solicitor keeps the affairs of current and former clients confidential unless disclosure is required or permitted by law or the client consents. This is a free-standing regulatory duty, not limited in time to the duration of the retainer.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.sra.org.uk/solicitors/standards-regulations/code-conduct-solicitors/",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-LEGALETHICS-002",
+      "authority_type": "case",
+      "name": "Winters v Mishcon de Reya",
+      "citation": "[2008] EWHC 2419 (Ch)",
+      "court": "High Court (Chancery Division)",
+      "jurisdiction": "england-wales",
+      "date": "2008-10-15",
+      "judge_or_panel": "Henderson J",
+      "proposition": "Applying Lord Millett's speech in Prince Jefri Bolkiah v KPMG [1999] 2 AC 222 (not independently verified in this file - accessed only via this case's own verbatim quotation), the only duty to a former client which survives termination of the retainer is a continuing duty to preserve the confidentiality of information imparted during its subsistence - the wider fiduciary duty of loyalty ends with the retainer. A former client seeking to restrain a solicitor or firm from acting against them for another client must establish (i) that the solicitor holds information confidential to them to whose disclosure they have not consented, and (ii) that the information is or may be relevant to the new, adverse matter. On the facts, the claimant's case broke down at the first stage because the information was not confidential as between him and his former client-organisation.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/ch/2008/2419",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed - both fetches consistent on paragraph 87's quotation of Lord Millett at 235C of the official law report. High Court decision, recorded as PERSUASIVE authority weight."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-LEGALETHICS-002",
+      "to": "AUTH-EW-LEGALETHICS-001",
+      "relationship": "APPLIES",
+      "verified_via": "Winters v Mishcon de Reya [2008] EWHC 2419 (Ch), paras 85-88, fetched directly from Find Case Law and independently re-confirmed: operationalises the confidentiality duty as a real courtroom remedy (an injunction restraining a firm from acting), supplying the confidentiality-plus-relevance evidentiary test that gives the regulatory duty its practical bite."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the former-client confidentiality duty and its courtroom test. Does not cover conflicts of interest between current clients, undertakings, the SRA's disciplinary/enforcement process, or any other Legal Ethics subject - all remain unbuilt."
+}

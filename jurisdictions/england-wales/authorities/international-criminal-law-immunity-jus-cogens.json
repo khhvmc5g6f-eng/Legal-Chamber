@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, International Criminal Law - immunity ratione materiae does not shield conduct that is itself a crime under international law/jus cogens, and its legislative successor in the ICC Act 2001's domestic core-crimes regime. Pinochet No 3 [1999] UKHL 17 predates BAILII/Find Case Law live access in this environment; verified via the citing-judgment method through Jones v Kingdom of Saudi Arabia [2004] EWCA Civ 1394, which quotes Pinochet's own speeches verbatim with pinpoint paragraph references. Note that Pinochet No 3 does not itself cite or apply the ICC Act 2001 (it predates the Act by two years and concerns torture under the UN Torture Convention/Criminal Justice Act 1988 s.134) - this entry pairs them as sequential steps on the same doctrinal line (case establishes the immunity principle; statute codifies the jurisdictional model for the ICC's own core crimes), not as a direct construes/applies relationship, and the edge below is labelled accordingly.",
+  "verified_at": "2026-08-22",
+  "verification_method": "International Criminal Court Act 2001 s.51(1)-(2) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. R v Bow Street Metropolitan Stipendiary Magistrate, ex parte Pinochet Ugarte (No 3) [1999] UKHL 17 verified via the citing-judgment method: Jones v Kingdom of Saudi Arabia [2004] EWCA Civ 1394 fetched live and directly from Find Case Law, independently re-fetched with paragraph 54's quotation of Lord Browne-Wilkinson confirmed in substance.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-INTLCRIM-001",
+      "authority_type": "statute",
+      "name": "International Criminal Court Act 2001, s.51",
+      "citation": "International Criminal Court Act 2001 (c.17) s.51(1)-(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2001",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "It is an offence against the law of England and Wales for a person to commit genocide, a crime against humanity, or a war crime (s.51(1)) - the domestic-effect provision that makes the Rome Statute's three core crimes prosecutable as ordinary English/Welsh criminal offences. The offence applies to acts committed in England or Wales, or committed abroad by a UK national, UK resident, or person subject to UK service jurisdiction (s.51(2)) - extraterritorial reach notwithstanding any official position the accused may hold.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2001/17/section/51",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-INTLCRIM-002",
+      "authority_type": "case",
+      "name": "R v Bow Street Metropolitan Stipendiary Magistrate, ex parte Pinochet Ugarte (No 3)",
+      "citation": "[1999] UKHL 17; [2000] 1 AC 147",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "1999-03-24",
+      "judge_or_panel": "Lord Browne-Wilkinson, Lord Goff, Lord Hope, Lord Hutton, Lord Saville, Lord Millett, Lord Phillips of Worth Matravers",
+      "proposition": "A former head of state has no immunity ratione materiae in English proceedings for conduct that is itself a crime under international law and has acquired jus cogens status - official capacity cannot convert such conduct into a protected 'state function.' On the facts, if Pinochet organised or authorised torture after the relevant date, he was not acting in a capacity that gives rise to immunity ratione materiae, because such actions were contrary to international law.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKHL/1999/17.html",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "BAILII returned HTTP 403 and Find Case Law does not index this pre-2000 House of Lords judgment. Verified via the citing-judgment method: Jones v Kingdom of Saudi Arabia [2004] EWCA Civ 1394, fetched live and directly from Find Case Law this session and independently re-fetched, quotes Lord Browne-Wilkinson's Pinochet reasoning at paragraph 54 in substance (near-identical wording on both fetches, though not a word-for-word verbatim match). Corroborated for date, panel, and outcome via two independent secondary sources (Oxford Public International Law's case report and Wikipedia). Recorded at VERIFIED_SECONDARY_SOURCE given the citing-judgment paraphrase rather than a fully verbatim primary quote."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-INTLCRIM-002",
+      "to": "AUTH-EW-INTLCRIM-001",
+      "relationship": "DISTINGUISHED",
+      "verified_via": "Pinochet No 3 [1999] UKHL 17, per its quotation in Jones v Saudi Arabia [2004] EWCA Civ 1394 para 54: establishes that immunity ratione materiae does not shield international crimes, a principle Parliament separately codified two years later for the ICC's own core crimes in s.51 - a sequential doctrinal link, not a direct construes/applies relationship, since Pinochet No 3 does not itself cite the ICC Act 2001."
+    }
+  ],
+  "what_this_is_not": "Two nodes on the same doctrinal line (immunity does not shield international crimes) rather than a direct statute-construing-case pairing - the relationship is sequential, not interpretive, and is labelled accordingly. Does not cover universal jurisdiction procedure under the ICC Act 2001's arrest-warrant provisions, the Rome Statute's complementarity principle, or any other International Criminal Law subject - all remain unbuilt."
+}

@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Medical Law - informed consent, capacity as the gateway (MCA 2005 s.1) and material-risk disclosure (Montgomery). Fresh research this session. Montgomery is a Scottish appeal but its ratio on informed consent has been treated as stating the common law of England & Wales too, reconciling the English authorities Bolam and Sidaway - noted honestly rather than treated as a purely domestic E&W case. Both nodes are post-2005/2015 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Mental Capacity Act 2005 s.1 fetched live and directly from legislation.gov.uk's in-force text (two independent fetches: summary and as-enacted, word-for-word consistent). Montgomery v Lanarkshire Health Board [2015] UKSC 11 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against 4 independent academic secondary sources for the para 87 test's exact wording.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-HEALTH-001",
+      "authority_type": "statute",
+      "name": "Mental Capacity Act 2005, s.1 - the principles",
+      "citation": "MCA 2005 s.1(1)-(6)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2007-10-01",
+      "date_note": "Date s.1 came fully into force. The text verified this session is the current in-force version.",
+      "proposition": "Before any question of risk disclosure under Montgomery can matter, a patient must have legal capacity to decide. S.1 sets five governing principles: capacity is presumed; a person is not treated as unable to decide until all practicable steps to help them have failed; an unwise decision is not itself evidence of incapacity; anything done for an incapacitated person must be in their best interests; and any intervention must be the least restrictive option achieving its purpose. This is the statutory gateway determining whether Montgomery's disclosure duty is being discharged to a person capable of exercising genuine autonomous choice.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2005/9/section/1",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session on two independent passes (summary and as-enacted text), word-for-word consistent on subsections (2) and (4)."
+    },
+    {
+      "authority_id": "AUTH-EW-HEALTH-002",
+      "authority_type": "case",
+      "name": "Montgomery v Lanarkshire Health Board",
+      "citation": "[2015] UKSC 11",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2015-03-11",
+      "judge_or_panel": "Lord Kerr and Lord Reed (joint leading judgment)",
+      "proposition": "Abandoned the Bolam (professional-practice) standard for a doctor's duty to warn a patient of risks. A doctor must take reasonable care to ensure the patient is aware of any material risk in a proposed treatment and of reasonable alternatives. Materiality is tested by whether a reasonable person in the patient's position would likely attach significance to the risk, or the doctor knows or should know this particular patient would - a patient-centred, not doctor-centred, test. The duty involves genuine dialogue, not discharged merely by providing technical information or a signed consent form.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2015/11",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches word-for-word consistent on paragraph 87's materiality test. Cross-checked against 4 independent academic secondary sources (Oxford Academic Medical Law Review, two PMC articles, Law Society of Scotland Journal) which independently reproduce the identical para 87 wording."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-HEALTH-002",
+      "to": "AUTH-EW-HEALTH-001",
+      "relationship": "APPLIES",
+      "verified_via": "Montgomery's disclosure duty presupposes a capacitous patient - the MCA 2005 s.1 capacity threshold gates whether Montgomery's material-risk test even applies, rather than the best-interests regime for incapacitated patients."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering capacity as a gateway and material-risk disclosure once capacity exists. Does not cover the best-interests test for incapacitated patients in detail, clinical negligence causation (Bolitho), end-of-life decision-making, or any other Medical Law subject - all remain unbuilt."
+}

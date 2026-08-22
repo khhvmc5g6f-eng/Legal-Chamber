@@ -40,9 +40,13 @@ Every draft gets `../../schemas/draft.schema.json` metadata: `ai_generated: true
 
 ## 6. Style pass last, and don't let it change meaning
 
+`../legal-style/SKILL.md` is this same process, callable standalone on any document at any time - use it directly on something you didn't just draft here, rather than running these steps by hand.
+
 Apply `../../docs/STYLE_GUIDE.md` (no em dashes, no stock phrasing, calibrated confidence) as the final pass, then re-check that no fact, date, citation, or quotation moved. If a template exists for this document type, start from `../../templates/` rather than freeform.
 
 **Actually run `python3 ../../scripts/citation_lint.py <the file you just wrote>` before calling a document finished.** A live audit of drafts generated during a stress test found real, uncorrected em dashes in several matters' opposition cases and research logs - "apply the style guide" as a prose instruction was not enough on its own to stop it happening; running the deterministic linter against your own output is not optional, and is the difference between a house-style rule that's aspirational and one that's checked.
+
+Before hand-fixing what the linter flags, run `python3 ../../scripts/style_fix.py --apply <the file>` - it auto-corrects the subset of stock phrases the linter catches that have a safe, same-grammatical-slot plain-English replacement (see the tool's own docstring for exactly which ones and why the list is deliberately short). It never touches a quotation, a fenced code block, or an em dash (punctuation choice there depends on clause structure it can't judge safely, so those stay flagged for you to fix by hand). Re-run `citation_lint.py` afterward - what's left is what genuinely needs a human/editorial judgement call, not a phrase swap.
 
 ## Hand off
 

@@ -1,0 +1,49 @@
+{
+  "$comment": "UK Patent Law - direct infringement under Patents Act 1977 s.60(1)(a) and the doctrine of equivalents established in Actavis v Eli Lilly. Fresh research this session. A genuine Find Case Law coverage gap was discovered and independently confirmed: this 2017 UKSC case is NOT indexed on Find Case Law (confirmed 404 on the expected URL, and absent from a site-wide search for 'Actavis Eli Lilly', both checked live) despite Find Case Law's UKSC coverage generally extending to 2017. The judgment was instead sourced directly from the Supreme Court's own website, but this session's own tools could not decode that PDF either - the case's core holding is therefore verified via multiple independent secondary sources rather than a directly-read primary text.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Patents Act 1977 s.60 fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. Actavis UK Ltd v Eli Lilly & Co [2017] UKSC 48 - case identity and the exact paragraph 66 reformulated test independently corroborated via 6 secondary sources (IPKat, Gowling WLG, Mewburn, Carpmaels & Ransford, Miller Sturt Kenyon, Schlich Ltd), all consistent word-for-word on the three-question test; the primary PDF (fetched by the researching agent via programmatic text extraction) could not be independently re-decoded by this session's own tools.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-PAT-001",
+      "authority_type": "statute",
+      "name": "Patents Act 1977, s.60(1)(a)",
+      "citation": "Patents Act 1977 s.60(1)(a)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1977",
+      "date_note": "Enactment year. The text verified this session is the current in-force version, most recently substantively amended 31 December 2023.",
+      "proposition": "A person infringes a product-claim patent if, without the proprietor's consent, while the patent is in force, they make, dispose of, offer to dispose of, use, or import the patented product, or keep it (whether for disposal or otherwise), in the UK. This defines literal/direct infringement - the doctrine of equivalents in Actavis below extends analysis beyond the claim's literal meaning to immaterial variants.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1977/37/section/60",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.60(1)(a)'s exact text."
+    },
+    {
+      "authority_id": "AUTH-EW-PAT-002",
+      "authority_type": "case",
+      "name": "Actavis UK Ltd v Eli Lilly & Co",
+      "citation": "[2017] UKSC 48",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2017-07-12",
+      "judge_or_panel": "Lord Neuberger (leading judgment; Lord Mance, Lord Clarke, Lord Sumption, Lord Hodge)",
+      "proposition": "Establishes a UK doctrine of equivalents for patent infringement. Patent infringement analysis involves two distinct issues: (i) does the variant infringe any claim as a matter of normal interpretation, and if not, (ii) does the variant nonetheless infringe because it varies from the invention in a way that is immaterial? Reformulates the Improver questions into a three-part test: does the variant achieve substantially the same result in substantially the same way as the invention; would this be obvious to the skilled person; and would such a reader have concluded the patentee nonetheless intended strict literal compliance to be essential? A 'yes, yes, no' answer establishes infringement even absent literal infringement - overruling the prior orthodoxy that claim scope was fixed by construction alone.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "This case is genuinely absent from Find Case Law's index despite its UKSC coverage generally extending back to 2017 - confirmed live via a direct 404 and a site-wide search, not assumed. The Supreme Court's own website hosts the judgment, but the PDF could not be decoded by this session's own tools. The case's identity and the exact paragraph 66 three-question test are corroborated word-for-word across 6 independent secondary sources (IPKat, Gowling WLG, Mewburn, Carpmaels & Ransford, Miller Sturt Kenyon, Schlich Ltd)."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-PAT-002",
+      "to": "AUTH-EW-PAT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Actavis v Eli Lilly [2017] UKSC 48 supplies the doctrine-of-equivalents analysis for the 'does the variant infringe' inquiry that sits alongside literal infringement under s.60(1)(a)."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering direct infringement and the doctrine of equivalents, one at primary and one at secondary verification tier (see above). Does not cover patentability requirements (s.1: novelty, inventive step, industrial application), process-claim infringement (s.60(1)(b)-(c)), indirect infringement (s.60(2)), or any other Patent Law subject - all remain unbuilt."
+}

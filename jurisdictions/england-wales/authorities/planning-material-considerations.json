@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Planning Law - the 'material considerations' test under TCPA 1990 s.70(2) and the Newbury criteria limiting what counts as material. Fresh research this session. Both nodes are post-1990/2019 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Town and Country Planning Act 1990 s.70(2) fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. R (Wright) v Resilient Energy Severndale Ltd and Forest of Dean District Council [2019] UKSC 53 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-PLAN-001",
+      "authority_type": "statute",
+      "name": "Town and Country Planning Act 1990, s.70(2)",
+      "citation": "TCPA 1990 s.70(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1990",
+      "date_note": "Enactment year. legislation.gov.uk's own page flags pending amendments (from the Infrastructure (Wales) Act 2024 and other 2026 legislation) not yet incorporated into the displayed text as of this file's verification date - confirmed live, not assumed.",
+      "proposition": "In determining a planning application, a local planning authority must have regard to the development plan so far as material, certain statutorily listed matters (post-examination neighbourhood plans, Welsh-language considerations, local finance considerations), and any other material considerations - the statutory root of the 'material considerations' doctrine, and the provision construed in Wright below.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1990/8/section/70",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.70(2)'s exact text, and both surfaced the same live pending-amendments flag, noted honestly above."
+    },
+    {
+      "authority_id": "AUTH-EW-PLAN-002",
+      "authority_type": "case",
+      "name": "R (Wright) v Resilient Energy Severndale Ltd and Forest of Dean District Council",
+      "citation": "[2019] UKSC 53",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2019-11-20",
+      "judge_or_panel": "Lord Sales (unanimous judgment)",
+      "proposition": "A promised community benefit payment (there, an annual community-fund donation offered as part of a wind-turbine planning application) is not automatically a 'material consideration' under s.70(2) merely because a local authority chooses to treat it as relevant. Re-affirms and applies the tripartite Newbury test: a consideration is material only if it is for a planning purpose and not an ulterior one, fairly and reasonably relates to the permitted development, and is not so unreasonable that no reasonable authority could have relied on it. The community fund donation failed this test - it did not affect the use of the land and amounted to an impermissible attempt to buy planning permission.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2019/53",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 44's holding that the community benefits did not affect land use and amounted to buying permission."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-PLAN-002",
+      "to": "AUTH-EW-PLAN-001",
+      "relationship": "APPLIES",
+      "verified_via": "Wright v Resilient Energy Severndale [2019] UKSC 53, paras 32 and 44, fetched directly from Find Case Law and independently re-confirmed: applies the Newbury materiality test to s.70(2), expressly noting the predecessor provision 'corresponds to what is now section 70(2) of the 1990 Act'."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering what makes a consideration material and the limits on community-benefit payments. Does not cover the National Planning Policy Framework's own status in detail, compulsory purchase, listed building/conservation area controls, or any other Planning Law subject - all remain unbuilt."
+}

@@ -1,0 +1,46 @@
+{
+  "$comment": "England & Wales, Tort Law, duty of care. Caparo's original 1990 House of Lords judgment could not be fetched directly - BAILII returned HTTP 403 and, per docs/OPERATING_RULES.md's verification hierarchy, that block was treated as final rather than routed around. Verified instead via a later primary-source judgment (Robinson v Chief Constable of West Yorkshire Police) that quotes and applies Caparo directly, fetched live from Find Case Law on 2026-08-22.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Find Case Law (caselaw.nationalarchives.gov.uk) direct fetch of a later citing judgment, per the citing-judgment method documented in docs/OPERATING_RULES.md. BAILII's own 1990 judgment text was not independently read this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-TORT-001",
+      "authority_type": "case",
+      "name": "Caparo Industries plc v Dickman",
+      "citation": "[1990] UKHL 2; [1990] 2 AC 605",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "1990-02-08",
+      "date_note": "This date was stated by the verifying agent, but the verification method (citing-judgment, not the original text) doesn't independently re-confirm it - carried over as reported, not independently re-checked.",
+      "proposition": "Duty of care in a novel situation requires (i) foreseeability of harm, (ii) a relationship of proximity, and (iii) that it be fair, just and reasonable to impose a duty (Lord Bridge's three-stage test).",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verification_note": "Not read directly - BAILII blocked (HTTP 403), block treated as final per docs/OPERATING_RULES.md. Citation and proposition confirmed via Robinson v Chief Constable of West Yorkshire Police [2018] UKSC 4 (below), which quotes it by full citation and discusses it at length."
+    },
+    {
+      "authority_id": "AUTH-EW-TORT-002",
+      "authority_type": "case",
+      "name": "Robinson v Chief Constable of West Yorkshire Police",
+      "citation": "[2018] UKSC 4",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2018-01-01",
+      "date_note": "Year only confirmed via the citation itself; exact date not independently verified this session.",
+      "proposition": "The proposition that a single Caparo test applies to all negligence claims is mistaken - Caparo's three-stage test governs novel duty situations only; established categories of duty proceed by incremental analogy to precedent, not by re-running the three-stage test each time.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2018/4"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-TORT-002",
+      "to": "AUTH-EW-TORT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Robinson v CC West Yorkshire [2018] UKSC 4, para 21, fetched directly from Find Case Law: confirms Caparo as good law but clarifies its scope (novel-duty situations, not a universal formula)."
+    }
+  ],
+  "what_this_is_not": "One verified node-pair on the Caparo duty-of-care test's current scope, as clarified by the Supreme Court in 2018. Does not survey the many other duty-of-care category cases (established relationships that don't need the Caparo test at all), and does not independently confirm Caparo's original 1990 text - see verification_note above."
+}

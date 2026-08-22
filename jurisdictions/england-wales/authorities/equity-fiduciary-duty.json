@@ -1,0 +1,69 @@
+{
+  "$comment": "England & Wales, Equity & Trusts, definition of a fiduciary and breach of fiduciary duty. Mothew's original 1996 Court of Appeal judgment could not be fetched directly - BAILII returned HTTP 403, treated as final per docs/OPERATING_RULES.md. Verified instead via two later citing judgments, both fetched live from Find Case Law.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Find Case Law direct fetch of two later citing judgments. BAILII's own 1996 judgment text was not independently read this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-EQUITY-003",
+      "authority_type": "case",
+      "name": "Bristol and West Building Society v Mothew",
+      "citation": "[1996] EWCA Civ 533; [1998] Ch 1",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "1996-07-24",
+      "date_note": "Exact date and panel (Millett, Staughton, Otton LJJ) come from a WebSearch snippet, not an independently fetched primary source - recorded with that caveat rather than omitted.",
+      "proposition": "Millett LJ's canonical test: a fiduciary is someone who has undertaken to act for or on behalf of another in a particular matter in circumstances giving rise to a relationship of trust and confidence; the distinguishing obligation of a fiduciary is the obligation of loyalty - the principal is entitled to the single-minded loyalty of the fiduciary.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verification_note": "Not read directly - BAILII blocked (HTTP 403), block treated as final. Quoted verbatim within Pengelly v Business Mortgage Finance 4 Plc [2020] EWHC 2002 (Ch) (below), fetched live."
+    },
+    {
+      "authority_id": "AUTH-EW-EQUITY-004",
+      "authority_type": "case",
+      "name": "Pengelly v Business Mortgage Finance 4 Plc",
+      "citation": "[2020] EWHC 2002 (Ch)",
+      "court": "High Court (Chancery Division)",
+      "jurisdiction": "england-wales",
+      "date": "2020-01-01",
+      "date_note": "Year only confirmed via the citation itself; exact date not independently verified this session. An earlier version of this entry asserted '24 July 2020' - suspiciously identical day/month to Mothew's own (also-unconfirmed) date in this same file, which is itself a sign it was not independently sourced. Corrected rather than left uncaught.",
+      "proposition": "Treats Mothew's fiduciary-loyalty test as binding precedent and the leading contemporary statement of fiduciary principles, twenty-four years after the original decision, quoting Millett LJ's definition directly.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/ch/2020/2002"
+    },
+    {
+      "authority_id": "AUTH-EW-EQUITY-005",
+      "authority_type": "case",
+      "name": "Filby v Mortgage Express (No 2) Ltd",
+      "citation_note": "An earlier version of this entry gave the name as plain 'Filby v Mortgage Express,' dropping '(No 2) Ltd' - corrected against the primary source.",
+      "citation": "[2004] EWCA Civ 759",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2004-06-18",
+      "judge_or_panel": "Kennedy LJ, May LJ, Hooper LJ - leading judgment by May LJ",
+      "proposition": "Counsel for the solicitors relied on Mothew (para 20) to argue a solicitor cannot be 'unknowingly' in breach of trust; May LJ sets out Mothew's reasoning and quotes Millett LJ's 'unconscious breach of duty' passage verbatim (para 25), then expressly declines to reconcile or apply it: 'It is not... necessary for present purposes to seek to reconcile this logic with what Millett LJ said... for reasons which I shall shortly explain' (para 27), going on to decide the appeal entirely on equitable subrogation/beneficial-ownership grounds (Boscawen, Banque Financière) without ruling on the breach-of-trust point Mothew was cited for (para 29).",
+      "treatment": "UNKNOWN",
+      "treatment_note": "Not FOLLOWED, APPLIED, or DISTINGUISHED - an earlier version of this entry said 'DISTINGUISHED,' which is wrong. The court discusses Mothew at length but explicitly declines to resolve the tension with it, deciding the case on unrelated grounds instead - exactly the dicta-vs-ratio situation docs/OPERATING_RULES.md's verification hierarchy (point 4) warns about. This is weak, not strong, corroboration of Mothew - it shows the case is still being engaged with 8 years on, not that its reasoning was tested and upheld.",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2004/759"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-EQUITY-004",
+      "to": "AUTH-EW-EQUITY-003",
+      "relationship": "FOLLOWS",
+      "verified_via": "Pengelly v Business Mortgage Finance 4 Plc [2020] EWHC 2002 (Ch), fetched directly from Find Case Law: quotes and applies Mothew's fiduciary-loyalty test."
+    },
+    {
+      "from": "AUTH-EW-EQUITY-005",
+      "to": "AUTH-EW-EQUITY-003",
+      "relationship": "DISCUSSES_UNRESOLVED",
+      "verified_via": "Filby v Mortgage Express (No 2) Ltd [2004] EWCA Civ 759, fetched directly (paras 20-29): discusses and quotes Mothew but expressly declines to apply or distinguish it, deciding the case on other grounds instead."
+    }
+  ],
+  "what_this_is_not": "One verified authority (Mothew) corroborated by one strong citing judgment (Pengelly, 2020, follows and applies it) and one weaker one (Filby, 2004, discusses it but doesn't resolve how it applies) - not two equally strong confirmations, as an earlier version of this file implied. Does not independently confirm Mothew's original 1996 text or exact decision date/panel - see verification_note and date_note above."
+}

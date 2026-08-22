@@ -14,9 +14,10 @@ A matter output cannot be represented as ready for reliance, filing, sending, or
 | 8 | Procedure checked | Deadlines and filing requirements were checked against `scripts/deadline_calculator.py` and the jurisdiction's procedural pack, not recalled from memory. |
 | 9 | Remedy checked | The relief sought is one the relevant decision-maker can actually grant, checked before, not after, the main drafting effort. |
 | 10 | Adversarial review complete | At minimum a steelman of the opposing case was constructed and answered; see `workflows/five-hearing-adversarial.md` for the full version. |
-| 11 | Citation audit complete | `scripts/citation_lint.py` run, and every flagged citation individually resolved (not just formatted). |
+| 11 | Citation audit complete | `scripts/citation_lint.py` run, and every flagged citation individually resolved (not just formatted); for US reporter citations, `scripts/verify_citation_years.py` also run, and any citation whose year falls outside the cited reporter edition's real date range investigated before relying on it. |
 | 12 | Fact audit complete | No fact in the final draft traces to a source weaker than what its Fact Ledger status claims. |
 | 13 | Document compliance complete | Court/format/word-count/statement-of-truth requirements checked against the jurisdiction's procedural pack, see `courts/`. |
+| 14 | Record integrity checked | `scripts/verify_matter_refs.py matters/<ID>` (every cross-referenced ID actually resolves), `scripts/verify_matter_schema.py matters/<ID>` (every record has its required fields and valid enum values), and `scripts/verify_id_conventions.py matters/<ID>` (every ID follows `docs/ID_CONVENTIONS.md`'s prefix/padding rule, no duplicates) all run clean against the matter workspace, not assumed from having followed the conventions correctly while drafting. |
 
 **Before any of the above**: confirm every output the matter's stage history claims to exist actually exists as a real file under `matters/<ID>/` - see `agents/quality/ROLE.md`'s disk-vs-claim check, added after a live stress test found matters where a hand-off summary claimed a completed document that was never actually written to the workspace. A gate cannot be checked against a claim; it can only be checked against what is actually there.
 

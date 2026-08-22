@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Mining & Natural Resources Law - Crown ownership of petroleum and the common-law default that surface ownership carries subsurface strata/mineral ownership unless severed. Fresh research this session. Both nodes are post-1998/2010 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Petroleum Act 1998 s.2 fetched live and directly from legislation.gov.uk's in-force text. Star Energy Weald Basin Ltd v Bocardo SA [2010] UKSC 35 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-MINING-001",
+      "authority_type": "statute",
+      "name": "Petroleum Act 1998, s.2",
+      "citation": "Petroleum Act 1998 s.2(1)-(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1998",
+      "date_note": "Enactment year, re-enacting the vesting provision originally in Petroleum (Production) Act 1934 s.1 (confirmed by the Star Energy judgment's own account of the legislative history, see below). The text verified this session is the current in-force version, with no outstanding effects noted.",
+      "proposition": "The Crown has the exclusive right of searching and boring for and getting petroleum existing in its natural condition in strata in Great Britain or beneath the adjacent territorial sea (s.2(1)-(2)) - a specific statutory severance of a named natural resource from ordinary surface/subsurface land ownership.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1998/17/section/2",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session."
+    },
+    {
+      "authority_id": "AUTH-EW-MINING-002",
+      "authority_type": "case",
+      "name": "Star Energy Weald Basin Ltd v Bocardo SA",
+      "citation": "[2010] UKSC 35; [2011] 1 AC 380",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2010-07-28",
+      "judge_or_panel": "Lord Hope (Deputy President), Lord Walker, Lord Brown, Lord Collins, Lord Clarke (majority 3-2)",
+      "proposition": "Statutory vesting of petroleum ownership in the Crown does not touch ownership of the physical strata/rock through which wells pass. The owner of the surface is the owner of the strata beneath it, including any minerals found there, unless there has been an alienation of them by conveyance, common law, or statute to someone else - the residual default position, not presumed away by a statutory severance of one specific resource (petroleum). Diagonal wells passing 800-2,900 feet below the claimant's land without consent, drilled to extract Crown-owned petroleum, were held to be an actionable trespass against the claimant's ownership of the strata itself.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2010/35",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches word-for-word consistent on paragraph 27's strata-ownership default rule."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-MINING-002",
+      "to": "AUTH-EW-MINING-001",
+      "relationship": "DISTINGUISHED",
+      "verified_via": "Star Energy v Bocardo [2010] UKSC 35, paras 6 and 27, fetched directly from Find Case Law and independently re-confirmed: treats the Petroleum Act's Crown vesting as a statutory severance of petroleum ownership specifically, distinct from and not displacing the claimant's separate ownership of the surrounding strata."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the petroleum/strata ownership distinction. Does not cover the Mines and Quarries Act 1954's safety regime, Coal Authority licensing under the Coal Industry Act 1994, mineral rights conveyancing generally, or any other Mining & Natural Resources subject - all remain unbuilt."
+}

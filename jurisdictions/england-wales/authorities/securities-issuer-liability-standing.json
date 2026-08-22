@@ -1,0 +1,50 @@
+{
+  "$comment": "UK Securities & Capital Markets Law - issuer liability for misleading published information under FSMA 2000 s.90A/Schedule 10A, and the standing question for intermediated (CREST) shareholders confirmed in the Tesco litigation. Fresh research this session. Both nodes are post-2000/2019 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "FSMA 2000 Schedule 10A fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. Persons Identified in Schedule 1 of the Claim Form (the 'SL Claimants') v Tesco Plc [2019] EWHC 2858 (Ch) fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against Linklaters, Herbert Smith Freehills Kramer, and an Oxford Law Blogs case note.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-SEC-001",
+      "authority_type": "statute",
+      "name": "Financial Services and Markets Act 2000, s.90A and Schedule 10A",
+      "citation": "FSMA 2000 s.90A; Sch.10A paras 3(1), 8(3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2010-10-01",
+      "date_note": "Date s.90A/Schedule 10A were substituted into FSMA 2000 by SI 2010/1192. The text verified this session is the current in-force version. This provision now sits alongside, and is more litigated than, the older s.90 listing-particulars regime, which was itself amended in January 2024.",
+      "proposition": "An issuer of securities is liable to compensate a person who acquires, continues to hold, or disposes of the securities in reliance on published information containing an untrue or misleading statement or a material omission, and suffers loss as a result (Sch.10A para 3(1)). 'Acquisition or disposal' expressly includes acquisition or disposal of 'any interest in securities' (Sch.10A para 8(3)), subject to an exception for depositary receipts, derivative instruments, or other financial instruments representing securities.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2000/8/schedule/10A",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - the second fetch surfaced the full exception clause in para 8(3) (depositary receipts/derivatives) that the first pass had not captured, now included accurately."
+    },
+    {
+      "authority_id": "AUTH-EW-SEC-002",
+      "authority_type": "case",
+      "name": "Persons Identified in Schedule 1 of the Claim Form (the 'SL Claimants') v Tesco Plc",
+      "citation": "[2019] EWHC 2858 (Ch)",
+      "court": "High Court (Chancery Division, Financial List)",
+      "jurisdiction": "england-wales",
+      "date": "2019-10-28",
+      "judge_or_panel": "Hildyard J",
+      "proposition": "The leading, first substantively litigated case on s.90A/Schedule 10A claims, arising from Tesco's 2014 accounting/profit-overstatement scandal. Held that an ultimate beneficial owner holding shares through a chain of custodians/sub-custodians in CREST holds an equitable, proprietary 'interest in securities' - characterised as 'a right to a right' flowing through a chain of trust relationships - sufficient to confer standing to sue under Schedule 10A, even though the shares are legally held by an intermediary. Tesco's strike-out application, which had argued indirect CREST holders lacked standing, was dismissed.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/ch/2019/2858",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 82's 'interest in securities' holding. Cross-checked against Linklaters, Herbert Smith Freehills Kramer, and an Oxford Law Blogs case note."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-SEC-002",
+      "to": "AUTH-EW-SEC-001",
+      "relationship": "APPLIES",
+      "verified_via": "Tesco Plc [2019] EWHC 2858 (Ch), paras 79-86, fetched directly from Find Case Law and independently re-confirmed: construes Schedule 10A's 'any interest in securities' language to include an ultimate beneficial owner's equitable interest held through a CREST custody chain."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering issuer liability's standing question for intermediated shareholders. Does not cover the substantive misleading-statement/omission test, the market abuse regime, listing/prospectus requirements generally, or any other Securities & Capital Markets subject - all remain unbuilt."
+}

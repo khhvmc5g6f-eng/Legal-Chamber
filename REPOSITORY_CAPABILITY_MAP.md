@@ -4,6 +4,8 @@ Produced by direct repository inspection (file reads, grep-based cross-reference
 
 Statuses used: `IMPLEMENTED` (works as designed, verified by inspection/execution) · `PARTIAL` (real but narrower than the spec's ambition) · `STUB` (structure exists, no real content) · `DOCUMENTATION_ONLY` (described, not actually operative) · `BROKEN` (found not to work) · `MISSING` (not present at all).
 
+**Update (later same session, 2026-08-22)**: several rows below are now stale. "Academic mode + rubric" (row 21) is no longer `STUB` - `rubrics/level7-distinction-standard.md` is a real, sourced rubric (see `rubrics/README.md`). "Regulatory workflow" (row 23) is no longer blocked on an empty `regulators/` - three real profiles now exist (`regulators/ico.md`, `regulators/cnil.md`, `regulators/ftc.md`). The two `MISSING` rows for CLI and API (rows 29-30) are superseded - both were built and selftested (`scripts/legal_cli.py`, `scripts/legal_api.py`). Kept here rather than rewritten so the version history stays legible, per `docs/HONEST_STATUS.md`'s convention.
+
 | Capability | Claimed in docs? | Implementation file(s) | Agent/skill | Dependencies | Test coverage | Status | Observed gaps |
 |---|---|---|---|---|---|---|---|
 | Matter routing (natural language → skill) | Yes, README/SKILL.md | `skills/legal-work/SKILL.md` | legal-work | none | Not executed as an automated test - see Part 3 below for a manual routing trace | PARTIAL | Routing logic is a well-specified instruction set for an LLM to follow, not a deterministic dispatcher - see Part 3, "Router Test," for what that actually means here |

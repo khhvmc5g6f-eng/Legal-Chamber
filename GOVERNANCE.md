@@ -15,7 +15,7 @@ MAINTAINER VERIFIED , a repository maintainer re-checked every primary
                        as of its stated verification date
 ```
 
-No pack may claim a level it hasn't earned. Do not invent institutional or professional endorsement, see `docs/OPERATING_RULES.md` Part CLXII.
+No pack may claim a level it hasn't earned. Do not invent institutional or professional endorsement, see `docs/SPEC_FULL_TEXT.md` Part CLXII.
 
 ## Merging jurisdiction or court content
 
@@ -26,7 +26,7 @@ A pull request touching `jurisdictions/`, `courts/`, `regulators/`, `citation/`,
 - the reviewer's name
 - what test case (if any) exercises the change
 
-Markdown compiling is not sufficient grounds for merge, see `docs/OPERATING_RULES.md` Part CLX.
+Markdown compiling is not sufficient grounds for merge, see `docs/SPEC_FULL_TEXT.md` Part CLX.
 
 ## Decision process
 

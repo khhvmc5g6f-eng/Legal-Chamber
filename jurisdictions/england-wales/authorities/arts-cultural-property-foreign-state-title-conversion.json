@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Arts & Cultural Property Law - a foreign state's rights over looted/unlawfully-excavated antiquities as 'ownership' for the purpose of an English conversion claim. Scope note: three suggested statutes (Dealing in Cultural Objects (Offences) Act 2003, Export Control Act 2002, Treasure Act 1996) were searched first and found to have no case squarely construing a specific section - reported honestly rather than forced. The Torts (Interference with Goods) Act 1977 s.1 was used instead, as the actual statutory vehicle for the claim in the strongest real cultural-property case found (Iran v Barakat Galleries). A genuine, unresolved textual discrepancy was found in s.1(c) itself during independent re-verification: two of this session's own fetches of the same legislation.gov.uk page returned different words ('at' vs 'as') at the same point in the text - recorded explicitly below rather than silently resolved.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Torts (Interference with Goods) Act 1977 s.1 fetched live and directly from legislation.gov.uk on three separate passes (HTML twice, raw XML once), with a genuine discrepancy found and recorded (see date_note). Islamic Republic of Iran v The Barakat Galleries Ltd [2007] EWCA Civ 1374 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time on paragraphs 12 and 86; the disposal outcome corroborated via three independent secondary sources since the primary-source fetch truncated before reaching it.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-ARTS-001",
+      "authority_type": "statute",
+      "name": "Torts (Interference with Goods) Act 1977, s.1",
+      "citation": "Torts (Interference with Goods) Act 1977 (c.32) s.1",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1977",
+      "date_note": "Enactment year. A genuine textual discrepancy was found this session: two independent fetches of legislation.gov.uk's HTML rendering of s.1(c) returned 'negligence so far as it results in damage to goods' (matching the Court of Appeal's own quotation of the section in Barakat para 12), while a fetch of the raw XML data endpoint (data.xht) returned 'so far AT it results' at the same point - and the researching agent independently reported the same 'at' reading on two of its own fetches, including the same raw XML route. This file does not resolve which rendering is the authoritative current text; both readings are recorded here rather than one being silently chosen.",
+      "proposition": "'Wrongful interference' or 'wrongful interference with goods' means conversion of goods (also called trover) (s.1(a)), trespass to goods (s.1(b)), negligence so far as/at it results in damage to goods or an interest in goods (s.1(c), see date_note on the wording discrepancy), or, subject to s.2, any other tort so far as it results in damage to goods or an interest in goods (s.1(d)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1977/32/section/1",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, three separate times, with a genuine 'at'/'as' discrepancy across renderings recorded in date_note rather than resolved with false confidence."
+    },
+    {
+      "authority_id": "AUTH-EW-ARTS-002",
+      "authority_type": "case",
+      "name": "Islamic Republic of Iran v The Barakat Galleries Ltd",
+      "citation": "[2007] EWCA Civ 1374",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2007-12-21",
+      "judge_or_panel": "Lord Phillips of Worth Matravers CJ, Lawrence Collins LJ, Wall LJ",
+      "proposition": "A foreign state's statutory rights over unlawfully-excavated or unlawfully-exported antiquities under its own domestic law can amount to 'ownership' and an 'immediate right to possession' recognisable under English law, sufficient to found a conversion claim under s.1 of the Torts (Interference with Goods) Act 1977 - even though an English court will not directly enforce a foreign state's export-control or forfeiture law as such. Whether Iran was 'owner' of the antiquities fell to be determined by the law of Iran as the lex situs (the place where the antiquities were when the relevant events occurred). The Court of Appeal reversed the judge below and allowed Iran's appeal, holding Iran's rights under its own National Heritage Protection legislation were sufficient to sue in conversion in England.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2007/1374",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches word-for-word consistent on paragraphs 12 and 86. The final disposal (appeal allowed) could not be reached directly, as the primary-source fetch truncated before the concluding paragraphs on both attempts; corroborated instead via three independent secondary sources (IFAR case summary, illicitculturalproperty.com, and swarb.co.uk), none of which conflicted."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-ARTS-002",
+      "to": "AUTH-EW-ARTS-001",
+      "relationship": "APPLIES",
+      "verified_via": "Iran v Barakat Galleries [2007] EWCA Civ 1374, paras 12 and 86, fetched directly from Find Case Law and independently re-confirmed: Iran's claim was brought in conversion 'as preserved by the Torts (Interference with Goods) Act 1977,' with the ownership question determined by Iranian law as the lex situs rather than by direct enforcement of Iran's own export-control statute."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the foreign-state-title route to a conversion claim over looted antiquities. Does not cover the Dealing in Cultural Objects (Offences) Act 2003's criminal offence in detail (no squarely-on-point published judgment was found - an honest gap), export licensing for cultural goods, treasure-trove reward disputes, or any other Arts & Cultural Property Law subject - all remain unbuilt."
+}

@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Disability Law - the reasonableness standard for the s.20(3) reasonable adjustments duty, fixed at a middle point between a bare unenforced request and coercive enforcement. Fresh research this session, both nodes independently re-fetched by the orchestrating session. The researching agent could not get a second independent full-text source for Paulley (BAILII 403, Supreme Court PDF fetch failed twice with a socket error) and flagged this honestly rather than papering over it.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Equality Act 2010 s.20(2)-(3) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. FirstGroup Plc v Paulley [2017] UKSC 4 fetched live and directly from Find Case Law, independently re-fetched with paragraphs 66-67 confirmed present and on-point, though the two fetches (this session's and the researching agent's) quoted different sentences from within the same paragraphs.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-DISABILITY-001",
+      "authority_type": "statute",
+      "name": "Equality Act 2010, s.20",
+      "citation": "Equality Act 2010 (c.15) s.20(2), (3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2010",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "The duty to make reasonable adjustments comprises three requirements (s.20(2)); the first is that, where a provision, criterion or practice puts a disabled person at a substantial disadvantage compared with non-disabled persons, the duty-bearer must take such steps as it is reasonable to have to take to avoid the disadvantage (s.20(3)) - a deliberately open-textured 'reasonable steps' standard, not a fixed checklist.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2010/15/section/20",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-DISABILITY-002",
+      "authority_type": "case",
+      "name": "FirstGroup Plc v Paulley",
+      "citation": "[2017] UKSC 4",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2017-01-18",
+      "judge_or_panel": "Lord Neuberger (leading judgment), Lady Hale, Lord Kerr, Lord Clarke, Lord Sumption, Lord Reed, Lord Toulson",
+      "proposition": "Fixes the s.20(3) reasonableness standard at a middle point for competing-service-user situations. A bus company's policy of instructing drivers simply to request a non-wheelchair user to vacate a wheelchair space, with no further action if the request is refused, fell short of the duty - once a refusal looks unreasonable, a driver should be expected to do more, such as rephrasing the request more firmly or considering a brief pause to encourage compliance. But an absolute rule mandating physical enforcement (compelling a passenger to move) would itself not be a reasonable step, given the practical risk of confrontation. The duty therefore requires meaningful further effort, short of coercive enforcement.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2017/4",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched - both fetches confirmed paragraphs 66-67 discuss this middle-standard point, quoting different specific sentences within those paragraphs. The researching agent could not obtain a second independent full-text source (BAILII returned HTTP 403; the Supreme Court's own PDF failed twice with a socket error) and reported this limitation honestly rather than fabricating a workaround."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-DISABILITY-002",
+      "to": "AUTH-EW-DISABILITY-001",
+      "relationship": "APPLIES",
+      "verified_via": "Paulley v FirstGroup [2017] UKSC 4, paras 46, 51, 66-67, fetched directly from Find Case Law and independently re-confirmed: construes s.20(3)'s 'reasonable steps' as requiring meaningful additional effort beyond a bare unenforced request, but stopping short of coercive/absolute enforcement."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the reasonable-adjustments middle standard for competing-user situations. Does not cover the definition of disability under s.6, physical-feature or auxiliary-aid adjustments in detail, or any other Disability Law subject - all remain unbuilt."
+}

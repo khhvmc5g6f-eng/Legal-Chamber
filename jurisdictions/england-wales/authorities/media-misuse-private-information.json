@@ -1,0 +1,25 @@
+{
+  "$comment": "England & Wales, Media & Entertainment Law - the misuse of private information tort and its two-stage test. Fresh research this session. Bloomberg LP v ZXC is post-2009 and fetched directly, no BAILII/pre-2009 access issue to route around. A precision note: the researching agent's first fetch attributed a 'distinct tort, citing Campbell v MGN' passage to paragraph 45; the orchestrating session's own independent re-fetch of paragraph 45 returned different content (on HRA s.12(4)) - the paragraph-45 attribution for the Campbell citation is therefore not independently confirmed and is NOT relied on here. Only paragraph 47's two-stage test, confirmed identically on both fetches, is used as the load-bearing quote.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Bloomberg LP v ZXC [2022] UKSC 5 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 47's two-stage test, but diverged on what paragraph 45 contains, so only the confirmed paragraph 47 content is relied on.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-MEDIA-001",
+      "authority_type": "case",
+      "name": "Bloomberg LP v ZXC",
+      "citation": "[2022] UKSC 5",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2022-02-16",
+      "proposition": "Confirms misuse of private information as a tort, doctrinally descended from breach of confidence but analytically distinct from it, and restates its settled two-stage structure: first, whether the claimant has a reasonable expectation of privacy in the information at issue; second, if so, whether that expectation is outweighed by the countervailing interest of the publisher's Article 10 freedom-of-expression right. On the facts, held that a person under criminal investigation generally has a reasonable expectation of privacy in information about that investigation before being charged, with the open-justice principle only displacing that expectation from the point of charge onward.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2022/5",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent word-for-word on paragraph 47's two-stage test. The tort's historical origin in Campbell v MGN Ltd [2004] UKHL 22 is well known and widely reported, but the specific paragraph attributing that citation within this judgment was not consistently confirmed across two fetches and is therefore not asserted here with a pinpoint paragraph reference."
+    }
+  ],
+  "edges": [],
+  "what_this_is_not": "One verified node covering the two-stage test for misuse of private information. Does not cover defamation, contempt of court, broadcasting regulation (Ofcom's content standards), or any other Media & Entertainment subject - all remain unbuilt."
+}

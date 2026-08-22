@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Public International Law - customary international law's sovereign/non-sovereign distinction as the limit on statutory state immunity for embassy employment claims. The researching agent first attempted Jones v Ministry of Interior of Saudi Arabia [2006] UKHL 26 but switched to Benkharbouche after BAILII returned an anti-bot challenge and Find Case Law 404'd for the pre-2009 case - a sound methodological choice reported honestly rather than forcing a weaker verification. This session's own independent re-fetch of Benkharbouche's disposal paragraph (79) returned text that only partially matches the researching agent's quotation, likely because the case is a combined appeal (Benkharbouche and the Libya v Janah cross-appeal) with distinct outcomes for each - both partial readings are recorded rather than one being silently preferred.",
+  "verified_at": "2026-08-22",
+  "verification_method": "State Immunity Act 1978 s.16(1)(a), in the point-in-time version as it stood when Benkharbouche was litigated, fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Benkharbouche v Secretary of State for Foreign and Commonwealth Affairs; Libya v Janah [2017] UKSC 62 fetched live and directly from Find Case Law, independently re-fetched with paragraph 76 confirmed in substance and paragraph 79 confirmed only partially (see verification_note).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-PUBLICINTL-001",
+      "authority_type": "statute",
+      "name": "State Immunity Act 1978, s.16(1)(a)",
+      "citation": "State Immunity Act 1978 (c.33) s.16(1)(a)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1978",
+      "date_note": "Enactment year. This entry uses the pre-2023 text as it stood when Benkharbouche was litigated and decided - the provision was substituted on 23 February 2023 by the State Immunity Act 1978 (Remedial) Order 2023 (SI 2023/112), made because of Benkharbouche's declaration of incompatibility. The current text now reads materially differently (limited to diplomatic agents and consular officers specifically, rather than all 'members of a mission'). Both versions confirmed live this session.",
+      "proposition": "As it stood at the time of Benkharbouche: s.4's ordinary employment-contract exception to state immunity did not apply to proceedings concerning the employment of 'members of a mission' within the meaning of the Vienna Convention on Diplomatic Relations 1961 (scheduled to the Diplomatic Privileges Act 1964) - a definition broad enough to cover embassy domestic staff regardless of how menial or non-sovereign their work was.",
+      "treatment": "OVERRULED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1978/33/section/16/2016-01-01",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session (point-in-time version), on two independent passes, word-for-word consistent both times. The provision has since been substituted by SI 2023/112, a remedial order made in direct response to the case in this file - itself strong evidence of the statute-case link."
+    },
+    {
+      "authority_id": "AUTH-EW-PUBLICINTL-002",
+      "authority_type": "case",
+      "name": "Benkharbouche v Secretary of State for Foreign and Commonwealth Affairs; Libya v Janah",
+      "citation": "[2017] UKSC 62",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2017-10-18",
+      "judge_or_panel": "Lord Sumption (sole judgment), Lord Neuberger, Lady Hale, Lord Clarke, Lord Wilson agreeing",
+      "proposition": "Customary international law's immunity for state employment claims tracks the sovereign/non-sovereign (jure imperii/jure gestionis) character of the acts in question - ordinary domestic employment at an embassy (cleaning, kitchen work) is not an exercise of sovereign authority. Because s.16(1)(a) extended immunity to any employee of a diplomatic mission irrespective of that distinction, it went further than customary international law required, and so far as it barred access to a tribunal for such claims, it was incompatible with article 6 ECHR. The claims derived from EU law were disapplied outright; the remaining claims, while barred by the Act as it then stood, were declared incompatible with article 6.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2017/62",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session. Paragraph 76's incompatibility holding was independently confirmed in substance (a close paraphrase matching the researching agent's verbatim quotation). Paragraph 79's exact disposal wording could only be partially confirmed - this session's own fetch returned 'I would therefore allow the appeals and make declarations of incomp[atibility]' before truncating, which does not straightforwardly match the researching agent's quoted 'I would dismiss the Secretary of State's appeal and affirm the order of the Court of Appeal.' Since this is a combined appeal (Benkharbouche's claim and the Libya v Janah cross-appeal), both readings may describe different parts of the same paragraph rather than conflict outright - this file records both rather than asserting either as the complete, exact text of para 79. Treatment is recorded as `SUPERSEDED` because s.16(1)(a) itself has since been amended in response to this case, not because the case's reasoning has been doubted."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-PUBLICINTL-002",
+      "to": "AUTH-EW-PUBLICINTL-001",
+      "relationship": "OVERRULED",
+      "verified_via": "Benkharbouche [2017] UKSC 62, para 76, fetched directly from Find Case Law and independently confirmed in substance: held s.16(1)(a) incompatible with article 6 ECHR to the extent it barred embassy domestic-staff employment claims; Parliament subsequently substituted the provision via SI 2023/112 in direct response."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the sovereign-act limit on statutory state immunity for employment claims. Does not cover state immunity from suit generally (the s.1 general rule, or the s.3 commercial-transaction exception), sovereign immunity in tort claims for serious human rights violations (e.g. the Jones v Saudi Arabia line, not independently verified this session), or any other Public International Law subject - all remain unbuilt."
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://legal-chamber/schemas/chronology.schema.json",
+  "$id": "https://legal-chambers/schemas/chronology.schema.json",
   "title": "ChronologyEvent",
   "description": "A single dated event in a matter's chronology - see skills/legal-evidence/SKILL.md. Added after an operational review found chronology was described only in prose with no structured record, so two sessions building the same matter's timeline had no common format to reconcile against.",
   "type": "object",

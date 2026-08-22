@@ -3,7 +3,7 @@ name: legal-work
 description: Primary router for legal tasks - research, drafting, review, evidence, litigation, contracts, regulatory, transactions, academic work, appeals, negotiation, moot/adversarial testing, authority verification, prospects analysis. Use this whenever a request involves law, a legal matter, a court/tribunal/regulator process, a contract, legal research, or legal academic work in any jurisdiction. This is the entry point - it classifies the task and loads only the specialist skill and jurisdiction pack actually needed.
 ---
 
-# legal-work, Legal Chamber Router
+# legal-work, Legal Chambers Router
 
 Read this file only. It stays small on purpose (progressive disclosure) - load the linked files below only once you know you need them.
 
@@ -18,6 +18,7 @@ Never fabricate a case, citation, statute, court rule, quotation, fact, or deadl
 Identify, from the user's message and any documents already supplied:
 
 - **Matter type**, research / litigation / administrative-public-law / criminal / employment / regulatory / transactional / advisory / negotiation-ADR / academic - this list (matching `../../schemas/matter.schema.json`'s `matter_type` enum) is the full taxonomy the specialist skills below assume; a stress test found this step previously pointed to `docs/OPERATING_RULES.md` for that taxonomy, which does not actually contain it.
+- **Practice area(s)**, the substantive subject(s) in play (Contract, Tort, Land Law, Equity & Trusts, Criminal Law, ...), distinct from matter type above - matter type is *what process* this is (litigation, transactional, ...), practice area is *what field of law* it's about. See `../../docs/PRACTICE_AREAS.md` for the reference taxonomy (roughly 90 named fields - not exhaustive, free text on the matter record, not a closed list). Record on `practice_areas` in `../../schemas/matter.schema.json`. This is classification metadata, not a substitute for the actual research/verification steps below - naming a matter "Land Law" doesn't tell you what Land Law says about it.
 - **Complexity tier** - the user will essentially never say a tier name. Infer it from what they're actually asking for, using these as the natural-language signals for each (not an exhaustive list - use judgment for phrasings not shown):
   - `L1 QUICK` - "can you explain," "what does X mean," a single narrow question. No matter workspace needed.
   - `L2 VERIFIED` - "check whether this is right," "find the law on," research with an expectation the sources are checked.
@@ -45,12 +46,12 @@ If more than one jurisdiction is plausibly relevant (conflict of laws, cross-bor
 
 ## Step 3, open or resume a matter workspace
 
-For anything above `L1`, create (or resume) `matters/<MATTER-ID>/` with the subdirectories `intake/ facts/ evidence/ chronology/ issues/ research/ authorities/ drafts/ opposition/ moot/ procedure/ costs/ prospects/ final/`. `matters/` is gitignored in this repo - it holds real matter data and must never be committed. Before ingesting anything sensitive, do a lightweight conflict check: ask about parties, related entities, and opposing counsel if this looks like it could conflict with other work you know about in this session.
+For anything above `L1`, create (or resume) `matters/<MATTER-ID>/` with the subdirectories `intake/ facts/ evidence/ chronology/ issues/ research/ authorities/ drafts/ opposition/ moot/ procedure/ costs/ prospects/ final/`. `matters/` is gitignored in this repo - it holds real matter data and must never be committed. Before ingesting anything sensitive, do a conflict check: ask about parties, related entities, and opposing counsel, then run `../../scripts/check_conflicts.py matters/ --candidate "Name One" "Name Two"` against them before writing them into the new matter's `conflict_check` block - checking only "other work you know about in this session" misses a conflict against a matter opened in an earlier session, which a deterministic scan of every existing `matters/*/intake/matter.json` catches instead. A name match is a flag to review, not itself proof of a disqualifying conflict.
 
 **Two gates before any substantive work (research, case theory, drafting) begins, not after** - a live stress test found a matter where both were skipped and work proceeded anyway:
 
 1. **Whose side is this?** Confirm and record on the matter record which party is actually the user's side before `../legal-litigation/SKILL.md`, `../../agents/solicitors/ROLE.md`, or any other case-building step runs. Do not infer this from which name appears first in the facts - ask if it isn't already unambiguous from the conversation.
-2. **Conflict check cleared?** `../../schemas/matter.schema.json`'s `conflict_check.cleared` must be explicitly set (true, with `cleared_by`, or knowingly waived by the user for a low-stakes/no-conflict-risk matter) before substantive work proceeds - not left at its default unset state while facts, issues, and authorities accumulate anyway.
+2. **Conflict check cleared?** `../../schemas/matter.schema.json`'s `conflict_check.cleared` must be explicitly set (true, with `cleared_by`, or knowingly waived by the user for a low-stakes/no-conflict-risk matter) before substantive work proceeds - not left at its default unset state while facts, issues, and authorities accumulate anyway. If the check above found a cross-matter name match, `cleared` must not be set true without the match having actually been reviewed and resolved.
 
 ## Step 4, route to a specialist skill
 
@@ -71,6 +72,7 @@ For anything above `L1`, create (or resume) `matters/<MATTER-ID>/` with the subd
 | Just verifying a specific citation/authority | `../legal-authorities/SKILL.md` |
 | Wanting prospects/likelihood of success only | `../legal-prospects/SKILL.md` |
 | A pure verification pass on already-drafted material | `../legal-verify/SKILL.md` |
+| Polishing prose/style on an existing document, not verifying it | `../legal-style/SKILL.md` |
 
 More than one may apply in sequence (e.g. `legal-research` → `legal-draft` → `legal-verify`). Route to the first one needed; each specialist skill says what to hand off to next.
 

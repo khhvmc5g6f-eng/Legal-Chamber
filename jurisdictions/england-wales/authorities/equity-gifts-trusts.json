@@ -1,0 +1,47 @@
+{
+  "$comment": "England & Wales, Equity & Trusts, benevolent construction of imperfect gifts. Choithram's original 2000 Privy Council judgment could not be fetched directly - BAILII returned HTTP 403, treated as final per docs/OPERATING_RULES.md. Verified instead via a later citing judgment on Find Case Law.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Find Case Law direct fetch of a later citing judgment. BAILII's own 2000 judgment text was not independently read this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-EQUITY-001",
+      "authority_type": "case",
+      "name": "T Choithram International SA v Pagarani",
+      "citation": "[2000] UKPC 46; [2001] 1 WLR 1",
+      "court": "Privy Council (on appeal from British Virgin Islands)",
+      "jurisdiction": "england-wales",
+      "date": "2000-11-29",
+      "date_note": "The decision date is UNVERIFIED to this precision - it comes from a BAILII page-title search snippet, not an independently fetched primary source, and is recorded here with that caveat rather than omitted.",
+      "proposition": "An effective gift, or an implied declaration of trust, can sometimes be found by benevolent construction of a donor's words and actions - a recognised exception to the general rule that equity will not perfect an imperfect gift, applicable where the donor's intention was an immediate, irrevocable disposition.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "authority_weight_note": "Privy Council decisions are persuasive, not binding, in England & Wales courts - see docs/OPERATING_RULES.md's authority hierarchy.",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verification_note": "Not read directly - BAILII blocked (HTTP 403), block treated as final. Quoted within Curtis v Pulbrook [2011] EWHC 167 (Ch) (below), fetched live."
+    },
+    {
+      "authority_id": "AUTH-EW-EQUITY-002",
+      "authority_type": "case",
+      "name": "Curtis v Pulbrook",
+      "citation": "[2011] EWHC 167 (Ch)",
+      "court": "High Court (Chancery Division)",
+      "jurisdiction": "england-wales",
+      "date": "2011-01-01",
+      "date_note": "Year only confirmed via the citation itself; exact date not independently verified this session.",
+      "proposition": "Cites Choithram, via Arden LJ's earlier analysis in Pennington v Waine, as authority for the benevolent-construction exception, treating it as good law eleven years on with no doubt cast.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/ch/2011/167"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-EQUITY-002",
+      "to": "AUTH-EW-EQUITY-001",
+      "relationship": "FOLLOWS",
+      "verified_via": "Curtis v Pulbrook [2011] EWHC 167 (Ch), fetched directly from Find Case Law: cites and applies Choithram."
+    }
+  ],
+  "what_this_is_not": "One verified node-pair confirming Choithram remains good law as of 2011. Does not independently confirm Choithram's original 2000 text or exact decision date - see verification_note and date_note above. Pennington v Waine is mentioned within the fetched Curtis v Pulbrook text but was not itself independently fetched, so it is not included here as a separate node."
+}

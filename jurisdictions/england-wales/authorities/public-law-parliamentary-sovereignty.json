@@ -1,0 +1,26 @@
+{
+  "$comment": "England & Wales, Constitutional Law, parliamentary sovereignty and the limits of prerogative power. R (Miller) v Secretary of State for Exiting the European Union ('Miller I') was verified cleanly from the start - no BAILII involvement, confirmed directly on two independent primary government sources.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Direct fetch from the UK Supreme Court's own case page and Find Case Law - both independently confirmed the same citation, holding, and quoted language.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-PUBLIC-004",
+      "authority_type": "case",
+      "name": "R (Miller) v Secretary of State for Exiting the European Union",
+      "citation": "[2017] UKSC 5",
+      "citation_note": "Not to be confused with R (Miller) v The Prime Minister [2019] UKSC 41 ('Miller II'/Cherry, the prorogation case), a separate matter filed in jurisdictions/england-wales/authorities/public-law-judicial-review-grounds.json.",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2017-01-24",
+      "judge_or_panel": "11-Justice panel, Lord Neuberger PSC presiding, 8-3 majority",
+      "proposition": "The Crown's prerogative treaty-making power cannot be used to trigger Article 50 TEU notice, because that notice is irreversible and would nullify rights created by the European Communities Act 1972 - a fundamental change to domestic law 'must be effected in the only way that the UK constitution recognises, namely by Parliamentary legislation.' Reaffirms parliamentary sovereignty as the governing constitutional principle limiting executive prerogative.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2017/5",
+      "verification_note": "Confirmed on both the Supreme Court's own case page (supremecourt.uk/cases/uksc-2016-0196) and Find Case Law, both fetched directly and both returning substantive holding text, not just metadata."
+    }
+  ],
+  "edges": [],
+  "what_this_is_not": "One directly-verified authority. Does not survey the wider body of case law on the prerogative or the subsequent European Union (Notification of Withdrawal) Act 2017 that implemented the holding. R (Miller) v The Prime Minister [2019] UKSC 41 built on, and did not displace, this case's constitutional reasoning, per secondary-source corroboration not independently re-checked in this file."
+}

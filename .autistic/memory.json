@@ -1,0 +1,54 @@
+{
+  "repo": "legal-chamber (Legal Chambers)",
+  "lastUpdated": "2026-08-22",
+  "invariants": [
+    {
+      "rule": "Every authority JSON entry's verification_status must be internally consistent with its verification_note/citation_note - VERIFIED_PRIMARY_SOURCE requires a direct fetch of the case's own text and (in this codebase's convention) a primary_source_link; anything confirmed only via a later citing judgment must be VERIFIED_SECONDARY_SOURCE.",
+      "confidence": 0.95,
+      "evidence": ["jurisdictions/england-wales/authorities/*.json", "jurisdictions/us-federal/authorities/*.json"],
+      "confirmedRuns": 1
+    },
+    {
+      "rule": "citation_lint.py's CITATION_PATTERNS entries must stay group-free (return plain strings from findall()) - reporter-name extraction uses a separate regex (_US_REPORTER_WITH_GROUP) rather than adding a capture group to the shared pattern.",
+      "confidence": 0.9,
+      "evidence": ["scripts/citation_lint.py:143,157"],
+      "confirmedRuns": 1
+    },
+    {
+      "rule": "A source's access-block (e.g. BAILII HTTP 403) is final - no proxy, cache, archive mirror, or alternate-tool workaround (including opening a blocked URL in a browser-automation tool after direct fetch was refused) is legitimate, regardless of how narrow the intended use.",
+      "confidence": 1.0,
+      "evidence": ["docs/OPERATING_RULES.md (Verification hierarchy for authority section)"],
+      "confirmedRuns": 1
+    }
+  ],
+  "contradictions": [
+    {
+      "description": "docs/HONEST_STATUS.md's 0.1.4-0.1.5 update note and LEGAL_CHAMBERS_STRESS_TEST_REPORT.md both asserted 'no populated case-law Authority Graph in any jurisdiction' and 'no programmatic API' as still-open, while both gaps had already been closed in 0.1.6 (legal_api.py) and 0.1.6/0.1.7 (Authority Graph). Version-snapshot notes in this repo are not automatically updated when the thing they describe as missing gets built later.",
+      "status": "resolved",
+      "sources": ["docs/HONEST_STATUS.md:13-15", "LEGAL_CHAMBERS_STRESS_TEST_REPORT.md:158,165-166"]
+    },
+    {
+      "description": "AI-transcribed content (authority JSON files written from a research agent's prose report, not copy-pasted) is prone to introducing false-precision detail (exact dates) that the underlying source never actually stated - confirmed in 9 of 25 date fields across the England & Wales authority files in this run. The bug pattern: a report gives only the year, and the transcriber fills in a specific day/month from general knowledge without flagging it as unsourced.",
+      "status": "resolved",
+      "sources": ["jurisdictions/england-wales/authorities/*.json (date_note fields added this run)"]
+    }
+  ],
+  "assumptions": [
+    {
+      "claim": "scripts/data/reporters.json (vendored from Free Law Project's reporters-db) stays a faithful, unmodified copy of the upstream data - citation_lint.py trusts it without re-verifying entries against the live upstream repo.",
+      "verified": true,
+      "blastRadius": "medium"
+    },
+    {
+      "claim": "Every markdown cross-reference (relative path, table row naming a file, schema field name mentioned in prose) added or touched across this session's ~20 edited/new files resolves to something real.",
+      "verified": true,
+      "blastRadius": "medium"
+    }
+  ],
+  "loadBearingNodes": [
+    { "name": "schemas/authority.schema.json", "score": 8.5 },
+    { "name": "scripts/citation_lint.py", "score": 8.0 },
+    { "name": "jurisdictions/england-wales/authorities/*.json (12 files, 27 case/statute nodes)", "score": 7.0 },
+    { "name": "scripts/data/reporters.json", "score": 5.5 }
+  ]
+}

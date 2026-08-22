@@ -1,6 +1,6 @@
 # Example: England & Wales Employment Tribunal, Full Chambers (L5)
 
-This is a real, unedited output from a live stress test (2026-08-22) of `legal-work` → `legal-litigation` → the five-hearing adversarial workflow, run against a fictional NHS unfair-dismissal/whistleblowing scenario. It is not a hand-crafted showcase - every file here is exactly what the actual agents produced, with only one change: the stress test's internal canary-fact marker (used to verify matter isolation, see `../../LEGAL_CHAMBER_STRESS_TEST_REPORT.md`) was replaced with `EXAMPLE-FIXTURE-ID` throughout. Nothing else was cleaned up, and the imperfections below were left in deliberately, per `../README.md`'s own instruction to show a gate that didn't pass and why.
+This is a real, unedited output from a live stress test (2026-08-22) of `legal-work` → `legal-litigation` → the five-hearing adversarial workflow, run against a fictional NHS unfair-dismissal/whistleblowing scenario. It is not a hand-crafted showcase - every file here is exactly what the actual agents produced, with only one change: the stress test's internal canary-fact marker (used to verify matter isolation, see `../../LEGAL_CHAMBERS_STRESS_TEST_REPORT.md`) was replaced with `EXAMPLE-FIXTURE-ID` throughout. Nothing else was cleaned up, and the imperfections below were left in deliberately, per `../README.md`'s own instruction to show a gate that didn't pass and why.
 
 ## What's here
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Legal Chamber CLI - `legal <verb> ...`.
+"""Legal Chambers CLI - `legal <verb> ...`.
 
 Two genuinely different kinds of subcommand live here, and this file is
 honest about which is which rather than blurring the line:
@@ -29,6 +29,7 @@ import argparse
 import glob
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -60,8 +61,29 @@ REASONING_VERBS = {
 }
 
 
+_MATTER_ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$")
+
+
 def matter_dir(matter_id):
-    return os.path.join(REPO_ROOT, "matters", matter_id)
+    """Resolve a matter_id to its directory under matters/, refusing anything
+    that isn't a plain slug. Without this check, a matter_id containing '..'
+    (or an absolute path) escapes matters/ entirely - CLAUDE.md rule 2 relies
+    on matters/ being gitignored specifically so real matter data never enters
+    this repo's git history, and a path-traversal matter_id would write real
+    data somewhere that protection doesn't cover. Checked twice: the regex
+    rejects '/', '\\', and '..' outright (a slug can never contain them), and
+    the resolved path is independently confirmed to still sit inside
+    matters/ as a second, defense-in-depth check."""
+    if not _MATTER_ID_RE.match(matter_id):
+        raise SystemExit(
+            f"Invalid matter_id {matter_id!r} - must be a plain slug (letters, digits, '.', '_', '-' only, "
+            "no path separators), e.g. 'MATTER-2026-0001'. Refused rather than silently sanitised."
+        )
+    base = os.path.join(REPO_ROOT, "matters")
+    resolved = os.path.realpath(os.path.join(base, matter_id))
+    if os.path.commonpath([resolved, os.path.realpath(base)]) != os.path.realpath(base):
+        raise SystemExit(f"Invalid matter_id {matter_id!r} - resolves outside matters/. Refused.")
+    return os.path.join(base, matter_id)
 
 
 # ---------------------------------------------------------------------------

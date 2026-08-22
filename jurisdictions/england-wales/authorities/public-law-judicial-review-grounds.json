@@ -1,0 +1,69 @@
+{
+  "$comment": "England & Wales, Administrative Law, Lord Diplock's three grounds of judicial review and prerogative-power justiciability (the GCHQ case). An earlier pass claimed to read this directly on BAILII by routing the fetch through a third-party text-extraction proxy after being blocked - that is exactly the source-access-terms bypass docs/OPERATING_RULES.md's verification hierarchy now prohibits, and was discarded entirely. Re-verified cleanly: BAILII's block was treated as final, and the case is confirmed instead via two later citing judgments on Find Case Law.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Find Case Law direct fetch of two later citing judgments. BAILII's own 1984 judgment text was not independently read this session (403, block respected, no proxy/workaround used).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-PUBLIC-001",
+      "authority_type": "case",
+      "name": "Council of Civil Service Unions v Minister for the Civil Service",
+      "citation": "[1985] AC 374",
+      "citation_note": "The neutral citation commonly given as [1984] UKHL 9 was NOT independently confirmed this session - BAILII blocked, and neither citing source used the neutral-citation form (both cite only the AC report). This case predates the UK's neutral citation scheme by roughly 15-17 years, so that form may be a retrospective BAILII-assigned identifier rather than a contemporaneous one - not resolved here.",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "1984-01-01",
+      "date_note": "Year only confirmed via citing sources; exact decision date not independently re-derived this session.",
+      "proposition": "Lord Diplock's three grounds of judicial review: illegality, irrationality, and procedural impropriety. Also holds that the existence and extent of a prerogative power is justiciable in principle - whether the exercise of a prerogative power (once its existence/extent is settled) is itself reviewable depends on the nature and subject matter of that particular power.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verification_note": "Not read directly - BAILII blocked (HTTP 403), block treated as final, no proxy or other workaround used. Confirmed via two independent citing judgments below. One of those citing judgments (Mohamoud) itself renders the case name imprecisely ('Council of Civil Unions v. Minister of State for the Civil Service') - a feature of that primary source's own transcript, not corrected here."
+    },
+    {
+      "authority_id": "AUTH-EW-PUBLIC-002",
+      "authority_type": "case",
+      "name": "Mohamoud v Birmingham City Council",
+      "citation": "[2014] EWCA Civ 227",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2014-01-01",
+      "date_note": "Year only confirmed; exact date not independently verified this session.",
+      "proposition": "Para 23, quoted verbatim: 'Lord Diplock summarised the grounds for judicial review as illegality, irrationality and procedural impropriety,' citing the GCHQ case thirty years after decision with no doubt cast.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2014/227"
+    },
+    {
+      "authority_id": "AUTH-EW-PUBLIC-003",
+      "authority_type": "case",
+      "name": "R (Miller) v The Prime Minister",
+      "citation": "[2019] UKSC 41",
+      "citation_note": "This is the 2019 prorogation case ('Miller II'/Cherry), a different case from R (Miller) v Secretary of State for Exiting the European Union [2017] UKSC 5 ('Miller I') on parliamentary sovereignty, filed separately in this jurisdiction pack.",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2019-01-01",
+      "date_note": "Year only confirmed via the citation itself; exact date not independently verified this session (this is the well-known prorogation case and its 24 September 2019 decision date is widely reported, but that specific fact was not tied to a fetch performed in this session, so it is not asserted here with that precision).",
+      "proposition": "Para 35: relies on the GCHQ case as authority that the existence and extent of a prerogative power is justiciable - 'if authority is required, it can be found in the decision of the House of Lords in the case of Council of Civil Service Unions v Minister for the Civil Service [1985] AC 374.' Confirms the same case also held that whether the exercise of a settled prerogative power is itself reviewable depends on its nature and subject matter.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2019/41"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-PUBLIC-002",
+      "to": "AUTH-EW-PUBLIC-001",
+      "relationship": "FOLLOWS",
+      "verified_via": "Mohamoud v Birmingham City Council [2014] EWCA Civ 227, para 23, fetched directly from Find Case Law: quotes Lord Diplock's three-grounds summary."
+    },
+    {
+      "from": "AUTH-EW-PUBLIC-003",
+      "to": "AUTH-EW-PUBLIC-001",
+      "relationship": "FOLLOWS",
+      "verified_via": "R (Miller) v The Prime Minister [2019] UKSC 41, para 35, fetched directly from Find Case Law: relies on the case for prerogative-power justiciability, without qualification, thirty-five years later."
+    }
+  ],
+  "what_this_is_not": "One verified authority corroborated by two independent, high-authority citing judgments (Court of Appeal 2014, Supreme Court 2019), confirming continued good-law status across that span. Does not independently confirm the case's original 1984 text, exact decision date, bench composition, or the [1984] UKHL 9 neutral citation form - see verification_note and citation_note above. Does not check for any negative/critical treatment beyond the absence of any found in the two sources checked."
+}

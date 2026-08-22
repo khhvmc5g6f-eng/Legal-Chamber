@@ -1,4 +1,4 @@
-# Style Guide (Legal Chamber 2.1, Authorship & Style Integrity)
+# Style Guide (Legal Chambers 2.1, Authorship & Style Integrity)
 
 Order of precedence, always:
 
@@ -15,6 +15,8 @@ Naturalness never outranks law. A stylistic pass is never allowed to change a le
 ## This is checked, not just stated
 
 A live stress test found real, uncorrected em dashes in multiple matters' generated drafts (opposition cases, research logs) despite this document existing and being referenced throughout the skill files. Reading a style guide is not the same as running it against your own output. **Any role that writes a document under `matters/<ID>/` must run `python3 scripts/citation_lint.py <the file>` before treating that document as finished**, and fix what it flags - not as an optional nicety, but as the actual mechanism that makes this house style real rather than aspirational.
+
+`scripts/style_fix.py` auto-corrects the subset of what the linter flags that has a safe, same-grammatical-slot plain-English replacement (a short, deliberately conservative list - see its docstring). It never touches a quotation, a fenced code block, an em dash, or a hedged/absolute legal claim; what it can't safely fix, it leaves for `citation_lint.py` to keep flagging. Running the fixer does not replace running the linter afterward.
 
 ## House defaults
 

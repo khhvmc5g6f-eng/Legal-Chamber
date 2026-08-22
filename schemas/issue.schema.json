@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://legal-chamber/schemas/issue.schema.json",
+  "$id": "https://legal-chambers/schemas/issue.schema.json",
   "title": "Issue",
   "type": "object",
   "required": ["issue_id", "description", "elements", "priority"],

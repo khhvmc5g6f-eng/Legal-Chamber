@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://legal-chamber/schemas/fact.schema.json",
+  "$id": "https://legal-chambers/schemas/fact.schema.json",
   "title": "Fact",
   "type": "object",
   "required": ["fact_id", "proposition", "status", "materiality"],

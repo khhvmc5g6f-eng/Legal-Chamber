@@ -28,5 +28,5 @@
   "client_objective": "UNSTATED - not yet elicited from user; scenario given is a stress-test/QA exercise, not a live client instruction",
   "created": "2026-08-22",
   "last_updated": "2026-08-22",
-  "notes": "Test/demonstration matter created to exercise the Legal Chamber router and the England & Wales jurisdiction pack against a genuinely complex multi-head ET claim, per an explicit task to actually use the system rather than describe it. No real client exists. jurisdictions/england-wales/README.md front matter was read and its verification_status (STRUCTURAL_DRAFT) checked before any reliance - see jurisdiction_note.md in this matter for what that meant in practice."
+  "notes": "Test/demonstration matter created to exercise the Legal Chambers router and the England & Wales jurisdiction pack against a genuinely complex multi-head ET claim, per an explicit task to actually use the system rather than describe it. No real client exists. jurisdictions/england-wales/README.md front matter was read and its verification_status (STRUCTURAL_DRAFT) checked before any reliance - see jurisdiction_note.md in this matter for what that meant in practice."
 }

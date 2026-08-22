@@ -1,6 +1,6 @@
 # Agent Roster
 
-Legal Chamber's agent roles live under `agents/<role>/` as prompt specifications. They are invoked through Claude Code's Agent tool, each role's `ROLE.md` becomes (or informs) the prompt for a fresh subagent context, never a persona bolted onto the same context doing everything else.
+Legal Chambers' agent roles live under `agents/<role>/` as prompt specifications. They are invoked through Claude Code's Agent tool, each role's `ROLE.md` becomes (or informs) the prompt for a fresh subagent context, never a persona bolted onto the same context doing everything else.
 
 ## Independence rule
 

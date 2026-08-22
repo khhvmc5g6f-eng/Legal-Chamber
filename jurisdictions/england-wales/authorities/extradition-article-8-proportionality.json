@@ -1,0 +1,50 @@
+{
+  "$comment": "UK Extradition Law - the s.87 human-rights gateway for Part 2/Category 2 requests and the Article 8 proportionality test in Norris. Fresh research this session. Both nodes are post-2004/2010 and fetched directly, no BAILII/pre-2009 access issue to route around (Norris is a 2010 UKSC case, within Find Case Law's coverage). A statutory mismatch in the original research brief was caught and corrected during research: s.21A is a Part 1 (Category 1, EAW-style) provision, not Part 2 - s.87 is the correct Part 2 human-rights gateway paired with Norris, a USA (Part 2) case.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Extradition Act 2003 s.87 fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. Norris v Government of the United States of America [2010] UKSC 9 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against UK Human Rights Blog and CaseMine's independent commentary.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-EXTRAD-001",
+      "authority_type": "statute",
+      "name": "Extradition Act 2003, s.87 (Human rights, Part 2/Category 2 cases)",
+      "citation": "Extradition Act 2003 s.87(1)-(3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2004-01-01",
+      "date_note": "Date the Act came into force. The text verified this session is the current in-force (revised) version.",
+      "proposition": "In a Category 2 (Part 2) extradition request, the extradition judge must decide whether the person's extradition would be compatible with the Convention rights within the meaning of the Human Rights Act 1998 (s.87(1)) - the statutory gateway through which Article 8 ECHR is litigated. If incompatible, the judge must discharge the person (s.87(2)); if compatible, the case proceeds to the Secretary of State for a decision on extradition (s.87(3)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2003/41/section/87",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.87(1)-(3)'s exact text. A related but distinct provision, s.21A (Part 1's own proportionality test, inserted 2014), was checked and correctly excluded as not applicable to this Part 2 pairing."
+    },
+    {
+      "authority_id": "AUTH-EW-EXTRAD-002",
+      "authority_type": "case",
+      "name": "Norris v Government of the United States of America (No 2)",
+      "citation": "[2010] UKSC 9",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2010-02-24",
+      "judge_or_panel": "Lord Phillips (President), Lord Hope, Lord Rodger, Lady Hale, Lord Brown, Lord Mance, Lord Judge, Lord Collins, Lord Kerr",
+      "proposition": "Establishes the leading test for when Article 8 ECHR can defeat extradition under s.87: the public interest in honouring extradition arrangements and prosecuting serious crime is very strong, and Article 8 will only outweigh it where some quite exceptionally compelling feature, or combination of features, is present. This is not a separate formal 'exceptionality' threshold test but a description of how a properly conducted proportionality assessment will, in practice, almost always come out.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2010/9",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 56's exceptionally-compelling-feature test. Cross-checked against UK Human Rights Blog and CaseMine's independent commentary. A later case, H(H) v Deputy Prosecutor of the Italian Republic, Genoa [2012] UKSC 25, refines this test where children's Article 8 rights are engaged - not independently verified in this session, a candidate for a future extension node."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-EXTRAD-002",
+      "to": "AUTH-EW-EXTRAD-001",
+      "relationship": "APPLIES",
+      "verified_via": "Norris v Government of the United States of America [2010] UKSC 9, para 56, fetched directly from Find Case Law and independently re-confirmed: supplies the operative proportionality test for the s.87 human-rights compatibility question."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the Article 8 proportionality test for Part 2 extradition requests. Does not cover Part 1 (European Arrest Warrant-style) requests, the s.21A statutory proportionality test, the bars to extradition beyond human rights (double jeopardy, passage of time, extraneous considerations), children's Article 8 rights specifically (see H(H), not independently verified), or any other Extradition Law subject - all remain unbuilt."
+}

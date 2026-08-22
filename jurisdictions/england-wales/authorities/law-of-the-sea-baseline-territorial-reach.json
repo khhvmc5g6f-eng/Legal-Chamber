@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Law of the Sea - the UNCLOS-derived baseline as the operative test for a domestic statute's territorial reach, in a genuinely domestic commercial dispute (a construction adjudication) rather than an international-law case as such. A clean illustration of how a Law of the Sea provision enacted for international-law purposes gets pulled into ordinary domestic litigation.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Territorial Sea Act 1987 s.1(1) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Van Elle Ltd v Keynvor Morlift Ltd [2023] EWHC 3137 (TCC) fetched live and directly from Find Case Law, independently re-fetched and word-for-word consistent on paragraphs 76-77.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-LAWOFSEA-001",
+      "authority_type": "statute",
+      "name": "Territorial Sea Act 1987, s.1",
+      "citation": "Territorial Sea Act 1987 (c.49) s.1(1)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1987",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "The breadth of the territorial sea adjacent to the United Kingdom is, for all purposes, 12 nautical miles (s.1(1)(a)); the baselines from which that breadth is measured are, for all purposes, those established by Order in Council (s.1(1)(b)) - delegating the actual baseline-drawing to secondary legislation, which (per s.1(5), not independently quoted in this file) governs how references to 'the territorial sea' in other enactments are construed.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1987/49/section/1",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-LAWOFSEA-002",
+      "authority_type": "case",
+      "name": "Van Elle Ltd v Keynvor Morlift Ltd",
+      "citation": "[2023] EWHC 3137 (TCC)",
+      "court": "High Court (Technology and Construction Court)",
+      "jurisdiction": "england-wales",
+      "date": "2023-12-08",
+      "judge_or_panel": "HHJ Stephen Davies (sitting as a High Court Judge)",
+      "proposition": "Used the Territorial Sea (Baselines) Order 2014 - made under s.1(1)(b) and itself incorporating UNCLOS's baseline rules, including Article 9's rule that the baseline across a river mouth runs as a straight line between points on the low-water line of its banks - to hold that 'England' for the purposes of the Housing Grants, Construction and Regeneration Act 1996 ends at the UNCLOS-derived baseline, not at a county boundary shown on an Ordnance Survey map. Piling works at Fowey Harbour, landward of that baseline (in internal waters), were therefore construction operations 'in England' and so within the adjudication statute's scope - defeating the defendant's jurisdictional challenge to enforcement of the adjudicator's award.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/tcc/2023/3137",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched - both fetches word-for-word consistent on paragraphs 76-77. BAILII returned HTTP 403 on the researching agent's attempt at a second primary mirror; not relied on. High Court decision, recorded as PERSUASIVE authority weight."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-LAWOFSEA-002",
+      "to": "AUTH-EW-LAWOFSEA-001",
+      "relationship": "APPLIES",
+      "verified_via": "Van Elle v Keynvor Morlift [2023] EWHC 3137 (TCC), paras 31-33, 76-77, fetched directly from Find Case Law and independently re-confirmed: applies the s.1(1)(b) Order-in-Council baseline (as fixed by the 2014 Order incorporating UNCLOS Art.9) as the operative test for whether works fall 'in England' under a separate domestic statute."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the baseline as the operative territorial-reach test. Does not cover fisheries jurisdiction, continental shelf/EEZ rights, piracy/maritime criminal jurisdiction, or any other Law of the Sea subject - all remain unbuilt."
+}

@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Energy Law - the statutory route for challenging an Ofgem compliance order under the Electricity Act 1989. Honest gap: Npower Direct Ltd v Ofgem [2018] EWHC 3576 (Admin) is a long judgment and this session's fetch tool truncated before reaching its final disposal paragraphs, despite two separate attempts including one specifically targeting the conclusion. Three of the judgment's grounds were independently confirmed rejected by direct fetch (paras 102, 115, 120); the fourth ground (Article 1 Protocol 1 proportionality) was mid-analysis at the last paragraph the fetch tool could reach (para 121), and the case's ultimate order/disposal could not be independently confirmed. This file records only what was directly verified and states the gap explicitly rather than asserting an unconfirmed outcome.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Electricity Act 1989 ss.25(1) and 27(1) fetched live and directly from legislation.gov.uk (exact subsection text quoted). Npower Direct Ltd v Ofgem [2018] EWHC 3576 (Admin) fetched live and directly from Find Case Law on two separate attempts, both truncating before the judgment's disposal paragraphs - the honest limit of what could be verified this session is recorded in verification_note rather than papered over.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-ENERGY-001",
+      "authority_type": "statute",
+      "name": "Electricity Act 1989, ss.25 and 27",
+      "citation": "Electricity Act 1989 (c.29) s.25(1), s.27(1)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1989",
+      "date_note": "Enactment year. The text verified this session is the current in-force version, which includes later amendments (e.g. subsections referencing the Competition Act 1998 and the Energy Act 2023) not present in the 1989 original.",
+      "proposition": "Where the Authority (Ofgem) is satisfied that a regulated person is contravening, or is likely to contravene, any relevant condition or requirement, it shall by a final order make such provision as is requisite for securing compliance (s.25(1)). A regulated person aggrieved by such an order may, within 42 days of service, apply to the court to question its validity - but only on the narrow grounds that the order's making was not within the powers of s.25, or that s.26's procedural requirements were not complied with (s.27(1)). This is a validity/vires challenge, not a full merits appeal.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1989/29/section/25",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Both subsections fetched live and directly this session from legislation.gov.uk, quoted verbatim."
+    },
+    {
+      "authority_id": "AUTH-EW-ENERGY-002",
+      "authority_type": "case",
+      "name": "Npower Direct Ltd v The Gas and Electricity Markets Authority",
+      "citation": "[2018] EWHC 3576 (Admin)",
+      "court": "High Court (Queen's Bench Division, Administrative Court)",
+      "jurisdiction": "england-wales",
+      "date": "2018",
+      "date_note": "Judgment date not independently pinned down to the day in this file - the fetch tool truncated before reaching any dating information near the judgment's end; the neutral citation year (2018) is treated as reliable.",
+      "proposition": "Npower brought a challenge under s.27 against a final order made against it by Ofgem. Of the grounds independently confirmed by direct fetch this session: a duty-of-candour ground was rejected (confirmed at para 102), a failure-to-give-reasons ground was rejected (confirmed at para 115), and an improper-purpose ground was rejected (confirmed at para 120). A fourth ground, concerning proportionality under Article 1 Protocol 1 ECHR (property rights), was still being analysed at para 121, the last paragraph reached by this session's fetch tool - its outcome, and the judgment's ultimate order/disposal, could not be independently confirmed.",
+      "treatment": "UNKNOWN",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/admin/2018/3576",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law twice this session - the first pass confirmed paragraph 15's statutory recitation exactly and the three ground-rejections at paras 102/115/120; a second, targeted attempt asking the tool to skip to the concluding paragraph returned an explicit statement that the document was truncated before the final disposal paragraphs. Treatment is recorded as UNKNOWN rather than FOLLOWED or REJECTED because the case's ultimate order was not independently confirmed - this is a deliberate honesty-over-completeness choice, not an oversight."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-ENERGY-002",
+      "to": "AUTH-EW-ENERGY-001",
+      "relationship": "APPLIES",
+      "verified_via": "Npower v Ofgem [2018] EWHC 3576 (Admin), confirmed directly from Find Case Law: an s.27 challenge to the validity of an Ofgem final order made under s.25, with three of its four grounds independently confirmed rejected at paras 102, 115 and 120."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the statutory validity-challenge mechanism and three of the four grounds actually argued against it in Npower. Does not confirm the fourth ground's outcome or the case's ultimate disposal (see honest gap above), and does not cover licence conditions generally, Ofgem's broader enforcement powers, or any other Energy Law subject - all remain unbuilt."
+}

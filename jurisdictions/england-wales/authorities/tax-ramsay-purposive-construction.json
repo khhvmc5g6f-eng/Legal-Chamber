@@ -1,0 +1,50 @@
+{
+  "$comment": "UK Tax Law - the Ramsay principle (purposive construction of tax statutes applied to composite/pre-ordained transactions) and its modern restatement in UBS/DB Group Services. Fresh research this session. W T Ramsay Ltd v IRC [1982] AC 300 predates the neutral-citation system and Find Case Law's coverage entirely, so it is verified via the citing-judgment method through UBS AG v HMRC [2016] UKSC 13, fetched live and directly from Find Case Law, which quotes it directly by page/paragraph.",
+  "verified_at": "2026-08-22",
+  "verification_method": "UBS AG v Commissioners for HMRC; DB Group Services (UK) Ltd v Commissioners for HMRC [2016] UKSC 13 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time (having failed once via a corrupted direct PDF fetch from supremecourt.uk, then successfully re-verified via Find Case Law instead). W T Ramsay Ltd v IRC [1982] AC 300 verified via the citing-judgment method (the UBS judgment quotes it directly, with a page pincite) plus an independent transcript source (uniset.ca) and a Practical Law case entry.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-TAX-001",
+      "authority_type": "case",
+      "name": "W T Ramsay Ltd v Inland Revenue Commissioners",
+      "citation": "[1982] AC 300",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "1981-03-12",
+      "date_note": "Judgment 1981, reported 1982 - a citation-year gap explained by publication lag, not an error.",
+      "judge_or_panel": "Lord Wilberforce (leading speech)",
+      "proposition": "Fiscal legislation must be construed purposively rather than through a purely linguistic, step-by-step analysis of a transaction's individual legal components. Where a scheme comprises a pre-planned, self-cancelling series of steps forming a single composite transaction, the tax statute applies to the commercial/economic effect of the transaction as a whole, not to each artificial step in isolation - a loss or gain arising at one stage of an indivisible, pre-ordained process and cancelled out at a later stage is not the kind of loss or gain the legislation targets.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Predates the neutral-citation system and Find Case Law's coverage entirely - no direct primary-source fetch was attempted for that reason. Verified via UBS AG v HMRC [2016] UKSC 13 (below), which quotes Lord Wilberforce's holding directly with a page pincite (p 326) at paragraph 62, plus an independent full-text transcript (uniset.ca) and a Practical Law case entry corroborating the case name, citation, and panel."
+    },
+    {
+      "authority_id": "AUTH-EW-TAX-002",
+      "authority_type": "case",
+      "name": "UBS AG v Commissioners for HMRC; DB Group Services (UK) Ltd v Commissioners for HMRC",
+      "citation": "[2016] UKSC 13",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2016-03-09",
+      "judge_or_panel": "Lord Reed (sole judgment; Lord Neuberger, Lord Mance, Lord Carnwath, Lord Hodge agreeing)",
+      "proposition": "Restates the Ramsay approach as the ordinary modern purposive method of statutory construction applied to tax statutes: give the provision a purposive construction to identify the nature of transaction it targets, then ask whether the actual transaction - viewed realistically, considering the overall effect of elements intended to operate together - answers that statutory description. Elements inserted into a composite transaction with no business or commercial purpose other than attracting a tax exemption will often be disregarded for fiscal purposes, depending on the true construction of the specific provision. Applied to elaborate bank bonus-avoidance share schemes (UBS's FTSE-100-trigger scheme, Deutsche Bank's leaver-condition scheme), which failed to qualify for the intended income-tax exemption because the restrictive conditions attached to the shares had no genuine commercial rationale - they existed solely to trigger the exemption.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2016/13",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 62's Ramsay-extension holding. A direct PDF fetch from supremecourt.uk failed to decode in this environment's tools; Find Case Law was used successfully instead."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-TAX-002",
+      "to": "AUTH-EW-TAX-001",
+      "relationship": "APPLIES",
+      "verified_via": "UBS AG v HMRC [2016] UKSC 13, paras 62-63 and 98, fetched directly from Find Case Law and independently re-confirmed: restates and applies the Ramsay purposive-construction approach, criticising the Court of Appeal below for adopting a literal construction instead."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the Ramsay principle and its modern restatement. Does not cover the General Anti-Abuse Rule (Finance Act 2013 Part 5 - a candidate statute checked this session but abandoned after an unverifiable amendment claim surfaced, not included here), income tax/corporation tax/VAT substantive rules, or any other Tax Law subject - all remain unbuilt."
+}

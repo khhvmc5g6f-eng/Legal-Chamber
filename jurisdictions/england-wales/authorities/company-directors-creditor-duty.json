@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Company Law - the director's common-law 'creditor duty' and its statutory hook. Fresh research this session. Both nodes are post-2007/2022 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Companies Act 2006 s.172 fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time (including checking for pending amendments - one exists, to Schedule 11A, unrelated to s.172's substantive text). BTI 2014 LLC v Sequana SA [2022] UKSC 25 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against Wikipedia's independent summary.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-COMP-001",
+      "authority_type": "statute",
+      "name": "Companies Act 2006, s.172",
+      "citation": "CA 2006 s.172(1), (3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2006",
+      "date_note": "Enactment year; the section came into force 1 October 2007. The text verified this session is the current in-force (revised) version.",
+      "proposition": "A director must act in the way they consider, in good faith, would be most likely to promote the success of the company for the benefit of its members as a whole, having regard (among other matters) to a list of non-exhaustive factors including long-term consequences, employees, business relationships, community/environment, reputation for high standards, and fairness between members (s.172(1)). This duty is expressly subject to any rule of law requiring directors, in certain circumstances, to consider or act in creditors' interests instead (s.172(3)) - the statutory hook for the common-law 'creditor duty' construed in BTI v Sequana below.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2006/46/section/172",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time. One pending amendment noted on the page (Schedule 11A paragraphs 17E-17G, from a 2026 Act) does not affect s.172's own text."
+    },
+    {
+      "authority_id": "AUTH-EW-COMP-002",
+      "authority_type": "case",
+      "name": "BTI 2014 LLC v Sequana SA and others",
+      "citation": "[2022] UKSC 25",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2022-10-05",
+      "judge_or_panel": "Lord Reed (President), Lord Hodge (Deputy President), Lord Briggs, Lady Arden, Lord Kitchin",
+      "proposition": "Confirms the common-law 'creditor duty' exists as a modulation of the s.172(1) duty, engaged via s.172(3) once directors know or ought to know the company is 'insolvent or bordering on insolvency', or that insolvent liquidation or administration is probable - a mere real-but-remote risk of future insolvency is not enough to engage the duty. On the facts, the company's insolvency was not even probable when the impugned dividend was paid, so the duty had not been engaged and the claim failed. The court was unanimous on the outcome (appeal dismissed), though the justices' reasoning diverged on points of detail.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2022/25",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time (para 88's 'insolvent or bordering on insolvency' test and para 89's rejection of a lower 'real but not remote risk' threshold both confirmed on both fetches). Cross-checked against Wikipedia's independent summary for the panel composition and outcome."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-COMP-002",
+      "to": "AUTH-EW-COMP-001",
+      "relationship": "APPLIES",
+      "verified_via": "BTI 2014 LLC v Sequana SA [2022] UKSC 25, paras 88-89, fetched directly from Find Case Law and independently re-confirmed: construes when the s.172(3) proviso activates the common-law creditor duty, rejecting a lower threshold than 'insolvent or bordering on insolvency' or a probable insolvent liquidation/administration."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering one narrow, well-settled point: the creditor duty's insolvency-proximity trigger. Does not cover directors' other general duties (ss.171, 173-177), wrongful/fraudulent trading (Insolvency Act 1986 ss.213-214), disqualification, shareholder remedies, incorporation, or any other Company Law subject - all remain unbuilt."
+}

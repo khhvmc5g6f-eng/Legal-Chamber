@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://legal-chamber/schemas/matter.schema.json",
+  "$id": "https://legal-chambers/schemas/matter.schema.json",
   "title": "Matter",
   "type": "object",
   "required": ["matter_id", "matter_type", "jurisdiction", "complexity_tier", "status", "confidentiality"],
@@ -9,6 +9,11 @@
     "matter_type": {
       "type": "string",
       "enum": ["research", "litigation", "administrative-public-law", "criminal", "employment", "regulatory", "transactional", "advisory", "negotiation-adr", "academic"]
+    },
+    "practice_areas": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Substantive subject axis, distinct from matter_type's process axis - e.g. ['tort', 'employment'] for a personal-injury element inside an employment tribunal claim. Free text, not a closed enum - see docs/PRACTICE_AREAS.md for the reference taxonomy this is meant to draw from, which is illustrative rather than exhaustive."
     },
     "jurisdiction": {
       "type": "array",

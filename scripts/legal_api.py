@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Legal Chamber programmatic API - importable Python functions, not just a CLI.
+"""Legal Chambers programmatic API - importable Python functions, not just a CLI.
 
 This module exists because docs/SPEC_FULL_TEXT.md Part CLXXII names a
 function-shaped API (createMatter(), resolveJurisdiction(), buildProofGraph(),

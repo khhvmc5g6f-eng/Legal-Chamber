@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://legal-chamber/schemas/hearing.schema.json",
+  "$id": "https://legal-chambers/schemas/hearing.schema.json",
   "title": "Hearing",
   "description": "A single hearing's record in the five-hearing adversarial workflow (see workflows/five-hearing-adversarial.md) or a legal-moot single pass. This is what makes 'hearing memory' real rather than asserted: hearing N+1's agents are isolated fresh contexts (see AGENTS.md's independence rule) and can only know what a prior hearing found by reading this record - there is no other channel. Stored at matters/<ID>/moot/hearing-<n>.json (or hearings/ if a matter adopts that subdirectory name instead - see skills/legal-work/SKILL.md).",
   "type": "object",

@@ -1,0 +1,46 @@
+{
+  "$comment": "England & Wales, Tort Law, occupiers' liability. Tomlinson's original 2003 House of Lords judgment could not be fetched directly - BAILII returned HTTP 403, treated as final per docs/OPERATING_RULES.md. Verified instead via a later citing judgment on Find Case Law.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Find Case Law direct fetch of a later citing judgment. BAILII's own 2003 judgment text was not independently read this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-TORT-003",
+      "authority_type": "case",
+      "name": "Tomlinson v Congleton Borough Council",
+      "citation": "[2003] UKHL 47",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "2003-07-31",
+      "date_note": "This date was stated by the verifying agent, but the verification method (citing-judgment, not the original text) doesn't independently re-confirm it - carried over as reported, not independently re-checked.",
+      "proposition": "Under the Occupiers' Liability Act 1984, an occupier owes no duty for injury arising from a visitor's own voluntary dangerous activity (e.g. diving into shallow water) where the danger does not arise from the state of the premises itself, and there is no duty to warn against obvious, self-evident risks a person chooses to run.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verification_note": "Not read directly - BAILII blocked (HTTP 403), block treated as final. Citation and proposition confirmed via Brown v South West Lakes Trust [2022] EWCA Civ 18 (below), which applies it as binding authority."
+    },
+    {
+      "authority_id": "AUTH-EW-TORT-004",
+      "authority_type": "case",
+      "name": "Brown v South West Lakes Trust",
+      "citation": "[2022] EWCA Civ 18",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2022-01-01",
+      "date_note": "Year only confirmed via the citation itself; exact date not independently verified this session.",
+      "proposition": "Applies the Tomlinson principle to a subsequent set of facts, treating it as binding, current authority nineteen years after the original decision.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2022/18"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-TORT-004",
+      "to": "AUTH-EW-TORT-003",
+      "relationship": "FOLLOWS",
+      "verified_via": "Brown v South West Lakes Trust [2022] EWCA Civ 18, fetched directly from Find Case Law: applies Tomlinson as current, binding authority."
+    }
+  ],
+  "what_this_is_not": "One verified node-pair confirming Tomlinson remains good law as of 2022. Does not independently confirm Tomlinson's original 2003 text - see verification_note above - and does not survey the wider Occupiers' Liability Act 1957/1984 case law beyond this single principle."
+}

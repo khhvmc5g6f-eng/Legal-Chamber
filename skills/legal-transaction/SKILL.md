@@ -5,6 +5,8 @@ description: Acquisitions, financings, property, and other corporate/commercial 
 
 # legal-transaction
 
+Each due diligence workstream below can be run as its own `../../agents/transactional/ROLE.md` instance in a fresh, isolated context - independent workstreams reviewed by one shared context risk one area's findings colouring another's.
+
 ## Due diligence workstreams
 
 Corporate, commercial, employment, regulatory, litigation, IP, data, property, finance - run each as its own workstream, and combine into a single `RED_FLAG_REPORT` and `DUE_DILIGENCE_REGISTER` (see `../legal-contract/SKILL.md` for the shared format) rather than one undifferentiated review.

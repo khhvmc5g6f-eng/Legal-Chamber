@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Health & Safety Law - the 'reasonably practicable' standard under HSWA 1974 s.2(1) and the risk/cost balancing test. Fresh research this session. R v HTM Ltd [2006] EWCA Crim 1156 is post-2009 (wait: this is 2006, pre-Find Case Law's usual UKSC/UKHL 2009 cutoff, but Find Case Law's Court of Appeal coverage runs further back and covers this case directly, confirmed by successfully fetching it). The origin of the risk/cost balancing test (Edwards v National Coal Board [1949] 1 KB 704) is reached via a two-step citation chain inside R v HTM Ltd itself (which cites Austin Rover Group Ltd v HM Inspector of Factories [1990] 1 AC 619, which in turn draws on Edwards) - neither older case was independently fetched or verified this session, so they are named only as background within R v HTM Ltd's own proposition, not as separate Authority Graph nodes.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Health and Safety at Work etc. Act 1974 s.2(1) fetched live and directly from legislation.gov.uk's in-force text. R v HTM Ltd [2006] EWCA Crim 1156 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against CMS Law and Croner-i's independent case commentary.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-HS-001",
+      "authority_type": "statute",
+      "name": "Health and Safety at Work etc. Act 1974, s.2(1) and s.40",
+      "citation": "HSWA 1974 s.2(1), s.40",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1974",
+      "date_note": "Enactment year. The text verified this session is the current in-force version, with no pending amendments listed for s.2(1) itself.",
+      "proposition": "Every employer owes a qualified statutory duty to ensure, so far as is reasonably practicable, the health, safety and welfare at work of employees (s.2(1)) - a duty to non-employees exists in similar terms under s.3(1). Once the prosecution proves a risk existed, the burden shifts to the defendant to prove it was not reasonably practicable to do more than was in fact done (s.40) - a reverse burden.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1974/37/section/2",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session."
+    },
+    {
+      "authority_id": "AUTH-EW-HS-002",
+      "authority_type": "case",
+      "name": "R v HTM Ltd",
+      "citation": "[2006] EWCA Crim 1156",
+      "court": "Court of Appeal (Criminal Division)",
+      "jurisdiction": "england-wales",
+      "date": "2006-05-22",
+      "judge_or_panel": "Latham LJ, Cooke J, Sir Richard Curtis",
+      "proposition": "Construing HSWA 1974 s.2(1) and the s.40 reverse burden, 'reasonably practicable' requires a risk/cost balancing exercise - the risk of accident weighed against the measures necessary to eliminate it, including cost - citing Austin Rover Group Ltd v HM Inspector of Factories [1990] 1 AC 619 (Lord Goff), which itself draws on the classic formulation in Edwards v National Coal Board [1949] 1 KB 704. Foreseeability of the specific mechanism of harm remains relevant to that balancing exercise. The court rejected an argument that reg.21 of the Management of Health and Safety at Work Regulations 1999 displaces the s.2(1)/s.40 'reasonably practicable' defence.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/crim/2006/1156",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 17's risk/cost balancing test and its Austin Rover/Edwards citation chain. Cross-checked against CMS Law and Croner-i's independent case commentary."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-HS-002",
+      "to": "AUTH-EW-HS-001",
+      "relationship": "APPLIES",
+      "verified_via": "R v HTM Ltd [2006] EWCA Crim 1156, para 17, fetched directly from Find Case Law and independently re-confirmed: construes 'reasonably practicable' in s.2(1)/s.40 as requiring a risk/cost balancing exercise."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the risk/cost balancing test for 'reasonably practicable'. Does not cover corporate manslaughter (Corporate Manslaughter and Corporate Homicide Act 2007), sentencing guidelines for health and safety offences, specific regulatory regimes (COSHH, work equipment), or any other Health & Safety subject - all remain unbuilt."
+}

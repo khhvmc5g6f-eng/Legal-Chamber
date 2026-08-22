@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://legal-chamber/schemas/draft.schema.json",
+  "$id": "https://legal-chambers/schemas/draft.schema.json",
   "title": "Draft",
   "type": "object",
   "required": ["draft_id", "version", "document_type", "ai_generated", "verification_status", "human_review_status"],

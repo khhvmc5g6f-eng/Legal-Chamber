@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Consumer Law - the satisfactory-quality implied term. Fresh research this session. Both nodes are post-2015/2022 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Consumer Rights Act 2015 s.9 fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. Kynaston-Mainwaring v GVE London Ltd [2022] EWCA Civ 1339 fetched live and directly from Find Case Law, cross-checked against 3 independent secondary sources (Blackstone Chambers, CaseMine, Wilmots Litigation).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CONS-001",
+      "authority_type": "statute",
+      "name": "Consumer Rights Act 2015, s.9",
+      "citation": "CRA 2015 s.9(1)-(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2015",
+      "date_note": "Enactment year; the section came into force 1 October 2015. The text verified this session is the current in-force (revised) version.",
+      "proposition": "Every contract to supply goods is treated as including a term that the goods are of satisfactory quality (s.9(1)). Quality is satisfactory if the goods meet the standard a reasonable person would consider satisfactory, taking account of any description, the price, and all other relevant circumstances (s.9(2)) - s.9(3) (not independently re-verified verbatim this session) further specifies quality includes fitness for purpose, appearance/finish, freedom from minor defects, safety, and durability.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2015/15/section/9",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.9(1) and s.9(2)'s exact text."
+    },
+    {
+      "authority_id": "AUTH-EW-CONS-002",
+      "authority_type": "case",
+      "name": "Kynaston-Mainwaring v GVE London Ltd",
+      "citation": "[2022] EWCA Civ 1339",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2022-10-19",
+      "judge_or_panel": "Green LJ, Phillips LJ, Snowden LJ",
+      "proposition": "A car (a Mercedes-Benz AMG GTC Roadster, £122,000) that was susceptible to catastrophic flooding through a blocked drainage channel, causing extensive electrical damage, was held not to be of satisfactory quality under CRA 2015 s.9 - the Court of Appeal upheld the trial judge's finding that 'a car that is capable of flooding in this way cannot be said to be of satisfactory quality'. The consumer was entitled to the final right to reject under the CRA 2015 remedial scheme, with the purchase price returned subject to a deduction for use.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2022/1339",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, cross-checked against three independent secondary sources (Blackstone Chambers, CaseMine, Wilmots Litigation) which corroborate the same citation, facts, CRA 2015 s.9 basis, and outcome (£117,000 refund after a £5,000 use deduction, plus £1,334 damages). BAILII's mirror returned HTTP 403 on direct fetch and was not used, per the standing access-terms rule."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CONS-002",
+      "to": "AUTH-EW-CONS-001",
+      "relationship": "APPLIES",
+      "verified_via": "Kynaston-Mainwaring v GVE London Ltd [2022] EWCA Civ 1339, paras 12-13, fetched directly from Find Case Law: applies the s.9 satisfactory-quality standard to find a design/manufacturing defect (flood susceptibility) breached the implied term, triggering the CRA 2015 remedial scheme."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the satisfactory-quality implied term for goods and one applied example. Does not cover the fuller CRA 2015 remedial scheme (ss.19-24, short-term right to reject, repair/replacement, price reduction), services (Part 1 Chapter 4), unfair contract terms (Part 2), digital content, or any other Consumer Law subject - all remain unbuilt."
+}

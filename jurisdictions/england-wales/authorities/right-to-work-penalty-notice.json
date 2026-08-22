@@ -1,0 +1,50 @@
+{
+  "$comment": "UK Right-to-Work Law - the s.15 civil penalty/statutory excuse framework and a very recent (July 2026) Supreme Court case on penalty notice validity. Fresh research this session. Given how recent and unusual a July 2026 UKSC citation is, this was independently re-verified with particular scrutiny before being trusted - the exact paragraph 40 quote matched word-for-word across two fully independent fetches (the researching agent's and the orchestrating session's own separate fetch), which is strong evidence against fabrication.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Immigration, Asylum and Nationality Act 2006 s.15 fetched live and directly from legislation.gov.uk's in-force text. Akbars Restaurant (Middlesbrough) Ltd v Secretary of State for the Home Department [2026] UKSC 26 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time with particular scrutiny given its very recent date, cross-checked against 4 independent secondary sources (Free Movement, LexisNexis UK, Solicitors Journal, ICLR).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-RTW-001",
+      "authority_type": "statute",
+      "name": "Immigration, Asylum and Nationality Act 2006, s.15",
+      "citation": "IANA 2006 s.15(1)-(6)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2006",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "An employer commits a breach by employing an adult subject to immigration control who lacks valid leave to work (s.15(1)), for which the Secretary of State may issue a civil penalty notice (s.15(2)). An employer is excused from the penalty if it complied with prescribed right-to-work checks (s.15(3)) - the 'statutory excuse' - unless the employer actually knew the employment was unlawful (s.15(4)). A penalty notice must state why the Secretary of State thinks the employer is liable (s.15(6)(a)) - the mandatory requirement construed in Akbars Restaurant below.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2006/13/section/15",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, cross-checked across two independently fetched page variants by the researching agent."
+    },
+    {
+      "authority_id": "AUTH-EW-RTW-002",
+      "authority_type": "case",
+      "name": "Akbars Restaurant (Middlesbrough) Ltd v Secretary of State for the Home Department",
+      "citation": "[2026] UKSC 26",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2026-07-27",
+      "judge_or_panel": "Lord Sales (Deputy President), Lord Leggatt, Lady Rose, Lord Richards, Lady Simler",
+      "proposition": "A civil penalty notice under s.15 must not merely recite the statutory language - it must specify which particular limb of s.15(1) (no leave, invalid/ceased leave, or restricted-condition leave) the Secretary of State relies on as the basis for liability. A notice that lists the grounds generically without identifying which applies fails the mandatory 'state why... liable' requirement in s.15(6)(a) and is invalid. Appeal allowed; the penalty notice quashed.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2026/26",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time by the orchestrating session separately from the researching agent - both fetches produced a word-for-word identical quote of paragraph 40, strong evidence against fabrication given how recent this case is. Cross-checked against Free Movement, LexisNexis UK, Solicitors Journal, and ICLR - four independent secondary sources, all consistent on case name, citation, and holding."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-RTW-002",
+      "to": "AUTH-EW-RTW-001",
+      "relationship": "APPLIES",
+      "verified_via": "Akbars Restaurant [2026] UKSC 26, para 40, fetched directly from Find Case Law and independently re-confirmed twice: construes s.15(6)(a)'s notice requirement as mandating identification of the specific s.15(1) limb relied on."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the penalty-notice particularisation requirement. Does not cover the right-to-work check mechanics themselves (document checks, Home Office online checking service), the criminal offence of knowingly employing an illegal worker (Immigration Act 2016 s.34), or any other Right-to-Work subject - all remain unbuilt."
+}

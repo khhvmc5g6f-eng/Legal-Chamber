@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://legal-chamber/schemas/authority.schema.json",
+  "$id": "https://legal-chambers/schemas/authority.schema.json",
   "title": "Authority",
   "description": "A single verified (or explicitly not-yet-verified) legal authority - case, statute, regulation, or rule.",
   "type": "object",
@@ -16,7 +16,7 @@
     "judge_or_panel": { "type": "string" },
     "pinpoint": { "type": "string" },
     "proposition": { "type": "string", "description": "The specific proposition this authority is cited for - checked against what it actually holds, not assumed." },
-    "treatment": { "type": "string", "enum": ["FOLLOWED", "APPLIED", "DISTINGUISHED", "CRITICISED", "OVERRULED", "UNKNOWN"] },
+    "treatment": { "type": "string", "enum": ["FOLLOWED", "APPLIED", "DISTINGUISHED", "CRITICISED", "OVERRULED", "GOOD_LAW_CURRENT", "UNKNOWN"] },
     "authority_weight": { "type": "string", "enum": ["BINDING", "PERSUASIVE", "COORDINATE", "FOREIGN", "SECONDARY"] },
     "primary_source_link": { "type": "string" },
     "verification_status": {

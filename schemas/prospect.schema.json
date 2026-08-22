@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://legal-chamber/schemas/prospect.schema.json",
+  "$id": "https://legal-chambers/schemas/prospect.schema.json",
   "title": "Prospect",
   "description": "Prospects-of-success assessment. Dimensions are shown separately, never mechanically averaged into one number.",
   "type": "object",

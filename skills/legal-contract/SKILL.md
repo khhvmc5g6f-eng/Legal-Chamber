@@ -5,9 +5,19 @@ description: Draft, review, or negotiate a contract - clause-by-clause analysis,
 
 # legal-contract
 
+For clause extraction, the position matrix, and dependency mapping below, run `../../agents/transactional/ROLE.md` in a fresh context.
+
 ## Clause extraction
 
-Pull out, per contract: parties, obligations, conditions, warranties, indemnities, liability caps, termination, renewal, payment, IP, data, confidentiality, dispute resolution, governing law, assignment, change control.
+Pull out, per contract: parties, obligations, conditions, warranties, indemnities, liability caps, termination, renewal, payment, IP, data, confidentiality, dispute resolution, governing law, assignment, restrictive covenants, audit rights, insurance, third-party rights.
+
+- **Restrictive covenants** - non-compete, exclusivity, no-solicit of customers, no-solicit of employees, and any stated exception to those restrictions. Easy to miss under a generic "obligations" read; they're a distinct, commonly-negotiated risk category with their own market-position norms (cross-checked against CUAD, the Contract Understanding Atticus Dataset, CC-BY-4.0 - see `../../docs/EXTERNAL_SOURCES.md`).
+- **Most Favored Nation** - a pricing/terms guarantee clause, not implied by any of the other buckets above. High commercial impact, easy to miss if not checked for explicitly.
+- **Audit rights, insurance, third-party beneficiary** - standard in many services/licensing agreements, absent from "obligations"/"liability caps" unless checked for by name.
+- **Right of first refusal/offer/negotiation (ROFR/ROFO/ROFN)** - relevant in supply, distribution, and equity-adjacent deals.
+- **Liquidated damages** - a distinct mechanism from a liability cap (a pre-agreed fee vs. a ceiling on recoverable loss) - don't fold it into "liability caps" without checking which one the clause actually is.
+- **"Change control" vs. "change of control" - these are not the same clause, disambiguate on sight.** "Change of control" is the M&A-trigger sense (who can terminate/must consent if ownership of a party changes) - closely related to assignment. "Change control" is the procedure for varying scope or deliverables during contract performance - an operational clause, not a risk-allocation one. Extract both separately if both are present; don't let one word cover for the other.
+- **IP** collapses several materially different questions worth asking separately when IP terms matter to the deal: who owns it (ownership assignment vs. joint ownership), who's licensed to use it (license grant, non-transferable vs. affiliate-extendable), and whether that license is perpetual/irrevocable or terminates with the agreement. IP disputes usually turn on exactly this distinction, not on "IP" as a single bucket.
 
 ## Position matrix, per clause
 
@@ -34,3 +44,4 @@ For red-flag review across a document set: produce a `RED_FLAG_REPORT` (issue, c
 
 - Need the actual redline/draft produced → `../legal-draft/SKILL.md`.
 - Need negotiation strategy around leverage, not legal merits → `../legal-negotiation/SKILL.md` (keep the two separate - a strong legal position and negotiating leverage are not the same thing).
+- Due diligence mode above is for a single contract or document set. When the review is one workstream inside a larger deal (multiple workstreams, conditions precedent, closing mechanics) → `../legal-transaction/SKILL.md`, which owns the combined `RED_FLAG_REPORT`/`DUE_DILIGENCE_REGISTER` across workstreams.

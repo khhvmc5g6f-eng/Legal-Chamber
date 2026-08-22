@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Diplomatic & Consular Law - a former diplomat's narrower residual immunity, and the unresolved question of whether exploitative domestic employment falls within the 'commercial activity' exception. Fresh research this session; the case's key paragraphs were independently re-confirmed by the orchestrating session, though the full 55-57 concurring-judgment quote was taken from the researching agent's report without a further independent re-fetch given resource constraints.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Diplomatic Privileges Act 1964 s.2(1) and scheduled Vienna Convention Articles 31(1) and 37(1) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts (partial quote for Art.31(1) on the second pass, matching the first in full where it overlapped). Reyes v Al-Malki [2017] UKSC 61 - the researching agent reported extracting the official Supreme Court PDF directly with pdfplumber after BAILII returned an anti-bot challenge and Find Case Law returned HTTP 404; not independently re-fetched at the pinpoint level by this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-DIPLOMATIC-001",
+      "authority_type": "treaty",
+      "name": "Diplomatic Privileges Act 1964, s.2(1) and scheduled Vienna Convention Arts.31(1), 37(1)",
+      "citation": "Diplomatic Privileges Act 1964 (c.81) s.2(1); Vienna Convention on Diplomatic Relations 1961, Arts.31(1), 37(1), as scheduled",
+      "court": "N/A - primary legislation giving force of law to an international convention",
+      "jurisdiction": "england-wales",
+      "date": "1964",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "The Vienna Convention Articles set out in Schedule 1 have the force of law in the UK (s.2(1)). A serving diplomatic agent enjoys immunity from the receiving State's civil and administrative jurisdiction, except for a narrow set of carve-outs including 'any professional or commercial activity exercised by the diplomatic agent in the receiving State outside his official functions' (Art.31(1)(c)). Household family members who are not nationals of the receiving State enjoy the same immunity derivatively (Art.37(1)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1964/81/schedule/1",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, consistent on the text quoted in both."
+    },
+    {
+      "authority_id": "AUTH-EW-DIPLOMATIC-002",
+      "authority_type": "case",
+      "name": "Reyes v Al-Malki",
+      "citation": "[2017] UKSC 61",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2017-10-18",
+      "judge_or_panel": "Lord Sumption (leading judgment, Lord Neuberger agreeing), Lord Wilson (concurring, Lady Hale and Lord Clarke agreeing)",
+      "proposition": "A former diplomat's immunity is narrower than a serving diplomat's: once a diplomat's posting ends, Art.31's full immunity ceases and only the residual immunity in Art.39(2) applies, confined to acts performed in the exercise of official functions while in post. Employing and mistreating a domestic servant was not such an act, so once Mr Al-Malki left his post, neither he nor his derivatively-immune wife retained any immunity for the claim - the appeal was allowed on this narrower ground. Lord Sumption's own view - that even the Art.31(1)(c) commercial-activity exception would not have applied on these facts, because merely using a trafficked servant's personal services is not itself 'carrying on a professional or commercial activity' - was obiter and expressly not joined in binding form by the other four Justices, who declined to resolve that question.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://supremecourt.uk/uploads/uksc_2016_0023_judgment_2c0c2b6cc0.pdf",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "BAILII returned an anti-bot challenge page and Find Case Law returned HTTP 404 for this case, matching the researching agent's own access-block account. The agent reported extracting the official Supreme Court PDF directly with pdfplumber after WebFetch's PDF summarizer failed to decode it, and quoted paragraphs 2, 4, 48, 51, 53, and 55-57 verbatim with pinpoint references; that extraction could not be independently reproduced this session given resource constraints, so it is recorded at VERIFIED_SECONDARY_SOURCE rather than upgraded to primary on the agent's claim alone."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-DIPLOMATIC-002",
+      "to": "AUTH-EW-DIPLOMATIC-001",
+      "relationship": "APPLIES",
+      "verified_via": "Reyes v Al-Malki [2017] UKSC 61, per the researching agent's account (not independently re-verified at the pinpoint level this session, see verification_note): construes Art.31/Art.39(2)'s scope as narrower for a former diplomat, and leaves Art.31(1)(c)'s application to exploitative domestic employment formally undecided by binding authority."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering a former diplomat's narrower residual immunity, and the genuinely open question left by Lord Sumption's obiter view. Does not cover consular (as opposed to diplomatic) immunity under the Consular Relations Act 1968, waiver of immunity, or any other Diplomatic & Consular Law subject - all remain unbuilt."
+}

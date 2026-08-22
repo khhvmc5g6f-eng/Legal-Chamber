@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Education Law - the local authority's duty to secure special educational provision specified in an EHC plan. Fresh research this session. Both nodes are post-2014/2021 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Children and Families Act 2014 s.42 fetched live and directly from legislation.gov.uk's in-force text. R (BA) v Nottinghamshire County Council [2021] EWHC 1348 (Admin) fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against IPSEA and a Lexology/Birkett Long commentary.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-EDU-001",
+      "authority_type": "statute",
+      "name": "Children and Families Act 2014, s.42",
+      "citation": "CFA 2014 s.42(1)-(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2014-09-01",
+      "date_note": "Date this section came into force. The text verified this session is the current in-force version.",
+      "proposition": "Where a local authority maintains an Education, Health and Care (EHC) plan for a child or young person, it must secure the specified special educational provision (s.42(1)-(2)); if the plan specifies health care provision, the responsible commissioning body must arrange that provision (s.42(3)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2014/6/section/42",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session."
+    },
+    {
+      "authority_id": "AUTH-EW-EDU-002",
+      "authority_type": "case",
+      "name": "R (BA) v Nottinghamshire County Council",
+      "citation": "[2021] EWHC 1348 (Admin)",
+      "court": "High Court (Queen's Bench Division, Administrative Court)",
+      "jurisdiction": "england-wales",
+      "date": "2021-05-20",
+      "judge_or_panel": "HHJ Coe QC (Deputy High Court Judge)",
+      "proposition": "Section 42 imposes an absolute and non-delegable duty on local authorities to secure the special educational provision specified in an EHC plan, following R (N) v North Tyneside Borough Council [2010] EWCA Civ 135 (not independently verified in this file). There is no 'best endeavours' defence - the authority cannot discharge the duty merely by showing it tried its best, for example by relying on a school or third party. If circumstances change, the plan itself must be revised through the statutory machinery; while it stands, the authority must implement it.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/admin/2021/1348",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches word-for-word consistent on paragraph 27's absolute-duty holding. Cross-checked against IPSEA's case summary (which also notes this reasoning has since been applied in King v Westmorland and Furness Council [2024] and HXN v London Borough of Redbridge [2024] EWHC 443 (Admin), neither independently verified here) and a Lexology/Birkett Long commentary. High Court decision, recorded as PERSUASIVE authority weight."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-EDU-002",
+      "to": "AUTH-EW-EDU-001",
+      "relationship": "APPLIES",
+      "verified_via": "R (BA) v Nottinghamshire CC [2021] EWHC 1348 (Admin), para 27, fetched directly from Find Case Law and independently re-confirmed: construes s.42 as an absolute, non-delegable duty with no best-endeavours defence."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the absolute nature of the s.42 duty. Does not cover the EHC needs assessment/plan process itself, school exclusion appeal rights, SEND Tribunal procedure, or any other Education Law subject - all remain unbuilt."
+}

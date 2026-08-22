@@ -1,12 +1,12 @@
-# Legal Chamber Full Stress Test Report
+# Legal Chambers Full Stress Test Report
 
-Date: 2026-08-22. Method: a Workflow-orchestrated live execution of the repository (~70 real agent invocations across two runs, ~16M combined tokens, ~2800 tool calls, ~65 minutes total wall-clock), not a description of expected behaviour. Every PASS below cites an actual file, a program output, or a specific quoted agent finding - see `DEFECT_REGISTER.md` and `LEGAL_CHAMBER_COVERAGE_MATRIX.md` for the itemised backing data, and `matters/` on disk (gitignored, not committed) for the raw generated case files.
+Date: 2026-08-22. Method: a Workflow-orchestrated live execution of the repository (~70 real agent invocations across two runs, ~16M combined tokens, ~2800 tool calls, ~65 minutes total wall-clock), not a description of expected behaviour. Every PASS below cites an actual file, a program output, or a specific quoted agent finding - see `DEFECT_REGISTER.md` and `LEGAL_CHAMBERS_COVERAGE_MATRIX.md` for the itemised backing data, and `matters/` on disk (gitignored, not committed) for the raw generated case files.
 
 **All 7 matters completed.** Matter 4 (Australian contract dispute) failed its first pass on a test-harness schema bug, was fixed, and reran cleanly - all 70 agents succeeded on the second run, and its result is fully incorporated below, not left pending.
 
 ## Executive Verdict
 
-Legal Chamber's architecture is genuinely operative, not merely documented. Every one of the 6 seeded hard-safety hallucination/bad-authority traps and every one of the 7 matter-embedded traps was caught - **13/13, zero misses.** Matter isolation held with zero cross-contamination across all 7 independently-verified canary facts. The judiciary simulation ruled against the user in 2 of 7 matters (M1, M2 - both dismissed), which is direct evidence against judicial sycophancy. The five-hearing moot workflow showed real round-to-round evolution in both matters that used it, not repetition.
+Legal Chambers' architecture is genuinely operative, not merely documented. Every one of the 6 seeded hard-safety hallucination/bad-authority traps and every one of the 7 matter-embedded traps was caught - **13/13, zero misses.** Matter isolation held with zero cross-contamination across all 7 independently-verified canary facts. The judiciary simulation ruled against the user in 2 of 7 matters (M1, M2 - both dismissed), which is direct evidence against judicial sycophancy. The five-hearing moot workflow showed real round-to-round evolution in both matters that used it, not repetition.
 
 The most serious finding is not a hallucination or a wrong citation - it is that **a stage's own narrative summary is not reliable evidence that the underlying work was actually persisted to disk.** Four matters (M1, M2, M4, M7) had at least one claimed output that did not exist as a real file when checked. Investigating this found its root cause: **none of the 13 agent roles in `agents/*/ROLE.md` had `Write` or `Edit` access**, despite most being designed to persist ledgers, case theories, and hearing records - a structural gap, not just a prompting one. Both the structural fix (Write/Edit access added) and the instruction-level fix (a disk-vs-claim check in the quality role) are now in place.
 
@@ -20,7 +20,7 @@ See `REPOSITORY_CAPABILITY_MAP.md` and `DEAD_COMPONENT_REPORT.md` (produced earl
 
 ## Capability Map
 
-See `LEGAL_CHAMBER_COVERAGE_MATRIX.md` for the full per-matter breakdown against all 25 required capability rows, now complete for all 7 matters. Headline: 20 of 25 rows are a clean PASS with direct evidence across all matters that exercise them. 3 rows are PARTIAL (chronology depth inconsistent; document construction and opposition both qualified by the disk-persistence finding, now fixed at the access level). 1 row (style) was not separately audited in this pass. 1 row (five-round moot) is correctly N/A outside the two `L5` matters.
+See `LEGAL_CHAMBERS_COVERAGE_MATRIX.md` for the full per-matter breakdown against all 25 required capability rows, now complete for all 7 matters. Headline: 20 of 25 rows are a clean PASS with direct evidence across all matters that exercise them. 3 rows are PARTIAL (chronology depth inconsistent; document construction and opposition both qualified by the disk-persistence finding, now fixed at the access level). 1 row (style) was not separately audited in this pass. 1 row (five-round moot) is correctly N/A outside the two `L5` matters.
 
 ## Seven Matter Results
 
@@ -155,7 +155,7 @@ No score was averaged over a critical failure - D-03/D-08 is reflected directly 
 
 ## Release Classification
 
-**BETA, upgraded from an unverified fix to a confirmed one.** No `CRITICAL` hard-release-failure condition from the spec's list was found uncorrected. The disk-vs-claim defect (D-03/D-08) was fixed both structurally (Write/Edit access) and at the instruction level, and - per `0.1.4`'s follow-up work - **that fix has now been independently confirmed by two fresh live agent invocations** (a solicitor-role run and a judiciary-role run, neither reusing any cached stress-test context): both produced real, schema-valid files on disk, each independently re-verified by the invoking agent itself (`json.load`, `ls -la`) and again by this repository's own deterministic scripts (`verify_matter_refs.py`, `verify_matter_persistence.py`, and a direct `jsonschema.validate()` check on the hearing record). This closes the single item this report previously said would justify moving off a purely provisional `BETA`. It remains `BETA`, not "release ready," because other real gaps remain open (no populated case-law Authority Graph, no CLI-level programmatic API, style compliance of generated drafts checked only once, not continuously) - see `docs/HONEST_STATUS.md` for the current full list.
+**BETA, upgraded from an unverified fix to a confirmed one.** No `CRITICAL` hard-release-failure condition from the spec's list was found uncorrected. The disk-vs-claim defect (D-03/D-08) was fixed both structurally (Write/Edit access) and at the instruction level, and - per `0.1.4`'s follow-up work - **that fix has now been independently confirmed by two fresh live agent invocations** (a solicitor-role run and a judiciary-role run, neither reusing any cached stress-test context): both produced real, schema-valid files on disk, each independently re-verified by the invoking agent itself (`json.load`, `ls -la`) and again by this repository's own deterministic scripts (`verify_matter_refs.py`, `verify_matter_persistence.py`, and a direct `jsonschema.validate()` check on the hearing record). This closes the single item this report previously said would justify moving off a purely provisional `BETA`. It remains `BETA`, not "release ready" - see `docs/HONEST_STATUS.md` for the current full list of what's still open (style compliance of generated drafts checked only once, not continuously, remains one of them; the Authority Graph and programmatic-API gaps named in earlier versions of this report have since been closed - `scripts/legal_api.py` since `0.1.6`, a populated Authority Graph in two jurisdictions since `0.1.6`/`0.1.7` - kept as historical context below rather than deleted).
 
 ## Recommended Next Development
 
@@ -163,8 +163,8 @@ Completed since this report was first written (see `CHANGELOG.md` `[0.1.4]`): th
 
 Still open:
 
-1. A programmatic (non-CLI) API - `docs/SPEC_FULL_TEXT.md` Part CLXXII's `createMatter()`/`resolveJurisdiction()`-style function surface was not built; the CLI is the only external entry point.
-2. Populate a second, third, and fourth regulator profile now that `regulators/cnil.md` has established the pattern.
+1. ~~A programmatic (non-CLI) API~~ - **done as of `0.1.6`**: `scripts/legal_api.py` provides `create_matter()`, `get_matter_status()`, `ingest_fact()`, `ingest_evidence()`, `check_filing_gates()`, `build_proof_graph()`, and reasoning-dependent functions that delegate to `claude --print`. See `docs/HONEST_STATUS.md`.
+2. ~~Populate a second, third, and fourth regulator profile~~ - **mostly done**: `regulators/ico.md` (second profile) added `0.1.6`; `regulators/ftc.md` (third profile) added later the same session as this update. Fourth still open. Also since this report: `rubrics/level7-distinction-standard.md`, the first real (sourced, de-identified) academic rubric, closing part of the M7 `RUBRIC_IMPLEMENTATION_GAP` finding above for future runs against that rubric's programme types specifically - see `rubrics/README.md` for what it does and does not cover.
 5. Re-run M7's academic-mode seeded-error test alone, narrower and more carefully instrumented, to resolve the imprecision noted in that matter's compound verdict.
 6. Consider whether any of the real generated matter workspaces from this test would make a good first populated example for the still-empty `examples/` directory, once suitably reviewed.
 

@@ -1,0 +1,50 @@
+{
+  "$comment": "UK Immigration & Nationality Law - the s.117C(5) 'unduly harsh' test for deportation of foreign criminals with a qualifying partner/child, and its authoritative interpretation in HA (Iraq). Fresh research this session, with particular care given how fast this area of law moves. A live-discovered 2026 legislative change (widening who counts as a 'foreign criminal', not the unduly-harsh test's own wording) is recorded below rather than glossed over.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Nationality, Immigration and Asylum Act 2002 s.117C fetched live and directly from legislation.gov.uk, independently re-fetched and re-confirmed a second time. HA (Iraq) v Secretary of State for the Home Department [2022] UKSC 22 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against an independent EIN (Electronic Immigration Network) case summary.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-IMM-001",
+      "authority_type": "statute",
+      "name": "Nationality, Immigration and Asylum Act 2002, s.117C(5) (Exception 2)",
+      "citation": "NIAA 2002 s.117C(5), inserted by Immigration Act 2014 s.19",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2014-07-28",
+      "date_note": "Date this provision (Part 5A) came into force. legislation.gov.uk's own page flags 'changes and effects yet to be applied to Section 117C' not yet incorporated into the displayed text as of this file's verification date - confirmed live, not assumed. Separately, s.117D(4)(a)'s definition of 'foreign criminal' (a related but distinct provision, NOT independently re-verified in this file) was found live this session to have been widened by the Sentencing Act 2026 s.45 (in force 22 March 2026, with a transitional saving for offences committed before that date) to include suspended sentences of 12 months or more - this affects who the whole s.117C regime applies to, not what 'unduly harsh' means once it does.",
+      "proposition": "For a 'foreign criminal' sentenced to under 4 years, deportation is not required if Exception 2 applies: the person has a genuine and subsisting relationship with a qualifying partner, or a genuine and subsisting parental relationship with a qualifying child, and the effect of deportation on that partner or child would be 'unduly harsh'. For sentences of 4 years or more, only 'very compelling circumstances, over and above those described in Exceptions 1 and 2' (s.117C(6)) can outweigh the public interest in deportation - a materially higher bar than 'unduly harsh'.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2002/41/section/117C",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.117C(5)'s exact text, and both surfaced the same live 'changes yet to be applied' flag on the page, noted honestly above rather than ignored."
+    },
+    {
+      "authority_id": "AUTH-EW-IMM-002",
+      "authority_type": "case",
+      "name": "HA (Iraq) v Secretary of State for the Home Department (with RA (Iraq) and AA (Nigeria))",
+      "citation": "[2022] UKSC 22",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2022-07-20",
+      "judge_or_panel": "Lord Hamblen (lead judgment; Lord Reed, Lord Leggatt, Lord Stephens, Lord Lloyd-Jones agreeing)",
+      "proposition": "Confirms the 'MK self-direction' (from MK (Sierra Leone)) as the authoritative approach to 'unduly harsh': the test poses a considerably elevated threshold ('harsh' denoting something severe or bleak; 'unduly' raising an already elevated standard still higher), applied to the real facts of the case - not, as the Secretary of State had argued, a 'notional comparator' test measuring the actual child/partner's situation against the harm deportation would necessarily cause to any child/partner in a similar position. This does not overrule KO (Nigeria) [2018] UKSC 53, which had already approved the MK self-direction - HA (Iraq) rejects only the Secretary of State's over-reading of KO (Nigeria) as introducing a stricter comparator test.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2022/22",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 41's endorsement of the MK self-direction. Cross-checked against an independent EIN (Electronic Immigration Network) case summary. No subsequent history noted on the case's own page indicating it has since been overruled or superseded."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-IMM-002",
+      "to": "AUTH-EW-IMM-001",
+      "relationship": "APPLIES",
+      "verified_via": "HA (Iraq) [2022] UKSC 22, para 41, fetched directly from Find Case Law and independently re-confirmed: supplies the authoritative interpretive standard (the MK self-direction) for applying s.117C(5)'s 'unduly harsh' language."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the interpretive standard for 'unduly harsh' under Exception 2. Does not cover Exception 1 (long residence/integration), s.117C(6)'s 'very compelling circumstances' test for 4-year+ sentences, the s.117D 'foreign criminal' definition (including its 2026 widening, noted above but not independently re-verified here), asylum/refugee protection claims, deprivation of citizenship, or any other Immigration & Nationality subject - all remain unbuilt. Given how fast this area moves, re-confirm this file's own 'changes yet to be applied' flag on s.117C before relying on it in any live matter."
+}

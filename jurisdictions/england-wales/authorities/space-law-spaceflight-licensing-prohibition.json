@@ -1,0 +1,26 @@
+{
+  "$comment": "England & Wales, Space Law - deliberately a single-node, statute-only entry, following the same pattern as this repository's AI Regulation entry. The researching agent searched Find Case Law and BAILII thoroughly (both direct citation searches and general web search) and found no case construing the Space Industry Act 2018's licensing regime, and no case construing the older Outer Space Act 1986 at all - this is a genuinely under-litigated field, stated honestly rather than forcing a weak or tangential pairing. The one live citation of the 2018 Act found in English case law (Staffordshire County Council v Sherratt [2019] EWHC 1416 (Admin), para 23) is a passing comparator reference to a different subsection (s.26(4)) inside an unrelated animal-welfare limitation-period case, cited by counsel purely as an example of modern statutory drafting technique - not a construction of the licensing prohibition, and not a space-law dispute. It is noted below for completeness but is not treated as the entry's case node.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Space Industry Act 2018 s.3(1), (6) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Find Case Law and BAILII both searched directly for citations of the Space Industry Act 2018 and the Outer Space Act 1986; the single genuine hit (Staffordshire v Sherratt) was independently cross-checked against the actual text of the subsection it cites (s.26(4)), confirmed to match, but is not on point for this entry's subject matter.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-SPACE-001",
+      "authority_type": "statute",
+      "name": "Space Industry Act 2018, s.3",
+      "citation": "Space Industry Act 2018 (c.5) s.3(1), (6)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2018",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "A person must not carry out spaceflight activities or operate a spaceport in the United Kingdom except under the authority of a licence granted under this section (s.3(1)) - the core prohibition the Act's whole licensing and enforcement regime is built around. Acting in contravention of that prohibition is a criminal offence (s.3(6)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2018/5/section/3",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    }
+  ],
+  "edges": [],
+  "what_this_is_not": "A single verified node - the core spaceflight licensing prohibition - and deliberately no case node, because a genuine, thorough search of Find Case Law and BAILII (both direct citation search and general web search) found no English & Welsh case construing this Act's licensing regime, its liability provisions (ss.34-38), or the older Outer Space Act 1986 at all. This is an honestly-recorded gap in the case law itself, not a gap in this session's research effort. Does not cover launch liability/insurance, spaceport site licensing, or any other Space Law subject - all remain unbuilt, and may remain so until a real dispute reaches an English court."
+}

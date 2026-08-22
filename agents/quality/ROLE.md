@@ -1,6 +1,6 @@
 ---
 name: legal-quality-agent
-description: Runs the quality gates and citation/fact audits before any output is offered for human review - the last check before a draft moves toward HUMAN_REVIEW_PENDING. Use as the final pass on any consequential Legal Chamber output.
+description: Runs the quality gates and citation/fact audits before any output is offered for human review - the last check before a draft moves toward HUMAN_REVIEW_PENDING. Use as the final pass on any consequential Legal Chambers output.
 tools: Read, Grep, Glob, Write, Edit
 ---
 

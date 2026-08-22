@@ -1,0 +1,48 @@
+{
+  "$comment": "England & Wales, Youth Justice - the age of criminal responsibility, the abolished doli incapax presumption, and the Article 6 effective-participation safeguard for child defendants. Fresh research this session. T v United Kingdom is an ECtHR (not domestic) judgment discussing English law directly and is the leading authority on child-defendant trial fairness that shaped subsequent domestic youth-justice practice - included for that reason, not as a domestic case.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Children and Young Persons Act 1933 s.50 and Crime and Disorder Act 1998 s.34 fetched live and directly from legislation.gov.uk's text, independently re-fetched and re-confirmed a second time. T v United Kingdom (Application no. 24724/94), ECtHR Grand Chamber, could not be independently re-rendered as a primary source in this session - the HUDOC PDF conversion endpoint returned binary/encoded content this environment's tools could not decode, and HUDOC's own search interface is JavaScript-rendered and returned no readable content either. Verified instead via independent secondary-source corroboration: Oxford Public International Law's detailed citation record (case name, application number, parallel citations across (2000) 30 EHRR 121 and [1999] ECHR 170, and judgment date, all matching), CRIN's case summary, and the researching agent's own report (which did successfully render the PDF via a different fetch call, though that render could not be independently reproduced by the orchestrating session's own separate attempts).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-YJ-001",
+      "authority_type": "statute",
+      "name": "Children and Young Persons Act 1933, s.50 (as amended), and Crime and Disorder Act 1998, s.34",
+      "citation": "CYPA 1933 s.50; CDA 1998 s.34",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1933",
+      "date_note": "CYPA 1933 s.50 as amended by CYPA 1963 s.16(1); CDA 1998 s.34 in force since 30 September 1998. legislation.gov.uk's own page for CYPA 1933 s.50 flags 'changes that may be brought into force at a future date' not yet applied as of this file's verification date - confirmed live, not assumed.",
+      "proposition": "It is conclusively (irrebuttably) presumed that no child under 10 can be guilty of any offence (CYPA 1933 s.50) - the age of criminal responsibility in England and Wales is 10. The formerly rebuttable presumption that a child aged 10-13 lacked the capacity to know their act was seriously wrong (doli incapax) was abolished with effect from 30 September 1998 (CDA 1998 s.34) - once past the age-10 floor, ordinary criminal responsibility applies without that former evidential shield.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/Geo5/23-24/12/section/50",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on the age-10 threshold and the pending-changes flag."
+    },
+    {
+      "authority_id": "AUTH-EW-YJ-002",
+      "authority_type": "case",
+      "name": "T v United Kingdom",
+      "citation": "Application no. 24724/94; (2000) 30 EHRR 121; [1999] ECHR 170",
+      "court": "European Court of Human Rights (Grand Chamber)",
+      "jurisdiction": "england-wales",
+      "date": "1999-12-16",
+      "proposition": "The attribution of criminal responsibility to a child from age 10 does not itself breach Article 3 ECHR, but a child charged with an offence must be dealt with in a manner taking full account of their age, level of maturity, and intellectual and emotional capacities, with steps taken to promote their ability to understand and participate in proceedings. On the facts - an 11-year-old tried for murder in a Crown Court with full adult formality, in public, amid intense media scrutiny - the Court found a violation of Article 6(1) because the applicant was denied effective participation in his own trial. The Court's own judgment independently recited English domestic law on the age of criminal responsibility and the abolition of doli incapax, consistent with AUTH-EW-YJ-001.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Could not be independently re-rendered as a primary source in this session - see this file's top-level verification_method for why. Corroborated by Oxford Public International Law's detailed, cross-matching citation record and CRIN's independent case summary, both consistent on case name, application number, parallel citations, and the Article 3/Article 6 holdings described here. Authority_weight recorded as PERSUASIVE (not BINDING) since this is a Strasbourg judgment discussing English law, not a domestic precedent in the binding sense."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-YJ-002",
+      "to": "AUTH-EW-YJ-001",
+      "relationship": "APPLIES",
+      "verified_via": "T v United Kingdom's own recitation of English domestic law (per independent secondary-source corroboration of the judgment's contents) matches this file's Node 1 exactly - the age-10 threshold and the 1998 abolition of doli incapax."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering criminal responsibility age and the trial-participation safeguard for children. Does not cover youth sentencing guidelines, the youth court's own procedure, secure accommodation, or any other Youth Justice subject - all remain unbuilt. The T v United Kingdom node carries a lower verification confidence than most other entries in this pack, explicitly flagged above, because this session's tools could not independently re-render the primary judgment text - treat its exact paragraph numbers/quotes as unconfirmed pending a direct human read of the HUDOC judgment."
+}

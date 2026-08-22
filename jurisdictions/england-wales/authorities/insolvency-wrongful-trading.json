@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Insolvency & Restructuring Law - wrongful trading (IA 1986 s.214) and its relationship to the common-law/equitable 'creditor duty' clarified in Sequana. Fresh research this session. Both nodes are post-1986/2022 and fetched directly, no BAILII/pre-2009 access issue to route around. This file's Node 2 (Sequana) is the same case already used in company-directors-creditor-duty.json, but this entry focuses on a different point within it - how s.214 relates to, and does not conflict with, the creditor duty - not the creditor duty's own insolvency-proximity trigger.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Insolvency Act 1986 s.214 fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. BTI 2014 LLC v Sequana SA [2022] UKSC 25 fetched live and directly from Find Case Law - this case was already independently verified earlier in this session for company-directors-creditor-duty.json; the researching agent's own attempt to independently confirm a secondary-sourced quote failed and was correctly excluded rather than carried forward, a good-faith self-correction worth preserving in the record.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-INSOLV-001",
+      "authority_type": "statute",
+      "name": "Insolvency Act 1986, s.214 - wrongful trading",
+      "citation": "IA 1986 s.214(2)-(3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1986",
+      "date_note": "Enactment year. The text verified this session is the current in-force (revised) version, as amended by the Small Business, Enterprise and Employment Act 2015 (in force 1 October 2015), which added the 'insolvent administration' limb to s.214(2)(b).",
+      "proposition": "A director (including a shadow director) can be ordered to contribute personally to a company's assets on liquidation if the company has gone into insolvent liquidation, and at some point before winding up began that person knew or ought to have concluded there was no reasonable prospect of avoiding insolvent liquidation or administration, and was a director at that time (s.214(2)) - unless they took every step to minimise creditor loss that they ought to have taken (s.214(3)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1986/45/section/214",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.214(2)'s exact text and the 2015 amendment."
+    },
+    {
+      "authority_id": "AUTH-EW-INSOLV-002",
+      "authority_type": "case",
+      "name": "BTI 2014 LLC v Sequana SA and others",
+      "citation": "[2022] UKSC 25",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2022-10-05",
+      "judge_or_panel": "Lord Reed (President), Lord Hodge (Deputy President), Lord Briggs, Lady Arden, Lord Kitchin",
+      "proposition": "Held that the common-law/equitable 'creditor duty' (the fiduciary-duty modification recognised in West Mercia Safetywear v Dodd, preserved by Companies Act 2006 s.172(3)) is a distinct legal doctrine from, but not in conflict with, s.214 wrongful trading - the two operate on different triggers, tests, and remedies and can coexist. Where s.214's own 'no reasonable prospect' trigger is met (insolvent liquidation or administration is inevitable), the creditor duty applies on the basis that shareholders no longer have any real interest in the company.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2022/25",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session (already independently verified earlier in this session for company-directors-creditor-duty.json's separate doctrinal point). The researching agent flagged and correctly excluded a secondary-sourced quote it could not locate in the primary text on its own targeted search - not carried forward here."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-INSOLV-002",
+      "to": "AUTH-EW-INSOLV-001",
+      "relationship": "APPLIES",
+      "verified_via": "BTI 2014 LLC v Sequana SA [2022] UKSC 25, paras 93-98, fetched directly from Find Case Law: distinguishes and reconciles the creditor duty from s.214 wrongful trading, holding the two coexist without conflict."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering how s.214 wrongful trading relates to the equitable creditor duty. Does not cover fraudulent trading (s.213), transactions at an undervalue or preferences (ss.238-239), the pari passu principle, administration procedure, or any other Insolvency subject - all remain unbuilt."
+}

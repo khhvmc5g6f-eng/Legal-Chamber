@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Maritime/Admiralty Law - Article 4 of the 1976 Limitation Convention, the narrow gateway for stripping a shipowner of the right to limit liability. The Atlantik Confidence's disposal paragraph (317) could not be reached through any primary-source route this session: BAILII and a Quadrant Chambers PDF both returned HTTP 403, judiciary.uk returned 404, and Find Case Law rendered two mutually contradictory 'quotes' on separate fetch attempts - a clear hallucination signal that was correctly discarded by the researching agent rather than trusted. This session's own follow-up attempt at a further independent secondary source (Steamship Mutual) also returned 404. The holding is recorded at VERIFIED_SECONDARY_SOURCE, resting on the three independent secondary sources the researching agent already found, all reproducing an identical quotation.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Merchant Shipping Act 1995 s.185(1) and the scheduled 1976 Limitation Convention Article 4 fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Kairos Shipping Ltd v Enka & Co LLC (The Atlantik Confidence) [2016] EWHC 2412 (Admlty) - paragraph 5's legal test corroborated by genuine excerpted judgment text on vlex.co.uk matching the Find Case Law render; paragraph 317's operative holding corroborated by three independent secondary sources (a law-firm update, the BDM Law blog, and a WebSearch synthesis drawing on Weightmans/Steamship Mutual/HFW/Quadrant Chambers commentary) all reproducing an identical direct quotation, since every primary-source route this session attempted was blocked, absent, or produced contradictory renders.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-MARITIME-001",
+      "authority_type": "statute",
+      "name": "Merchant Shipping Act 1995, s.185 and scheduled Limitation Convention Article 4",
+      "citation": "Merchant Shipping Act 1995 (c.21) s.185(1); 1976 Limitation Convention Art.4, as scheduled",
+      "court": "N/A - primary legislation giving force of law to an international convention",
+      "jurisdiction": "england-wales",
+      "date": "1995",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "Section 185(1) gives the Convention on Limitation of Liability for Maritime Claims 1976 the force of law in the UK. Article 4 of that Convention (Schedule 7, Part I) provides that a person liable shall not be entitled to limit his liability if it is proved that the loss resulted from his personal act or omission, committed with the intent to cause such loss, or recklessly and with knowledge that such loss would probably result - a deliberately narrow gateway, since shipowners' right to limit is otherwise near-automatic.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1995/21/schedule/7",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-MARITIME-002",
+      "authority_type": "case",
+      "name": "Kairos Shipping Ltd and another v Enka & Co LLC and others (The Atlantik Confidence)",
+      "citation": "[2016] EWHC 2412 (Admlty)",
+      "court": "High Court (Queen's Bench Division, Admiralty Court)",
+      "jurisdiction": "england-wales",
+      "date": "2016-10-11",
+      "judge_or_panel": "Teare J",
+      "proposition": "Article 4's bar on limiting liability requires proof, on a very heavy burden resting on the party challenging the right to limit, that the loss resulted from the shipowner's own personal act or omission done with intent to cause the loss or recklessly with knowledge it would probably result. On the facts, the vessel was found to have been deliberately sunk by the master and chief engineer at the request of the person who was the alter ego of the corporate Owners - satisfying Article 4's test and barring the Owners' claim for a limitation decree. This is the leading English case in which Article 4 has actually been made out at trial, considered rare precisely because the bar is designed to be very difficult to clear.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/ew/cases/EWHC/Admlty/2016/2412.html",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "BAILII, a Quadrant Chambers PDF, and this session's own further follow-up attempt (Steamship Mutual) all returned HTTP 403/404 for this case. Find Case Law's page loaded but produced two mutually contradictory 'quotes' of the same paragraph on separate fetch attempts, a clear fetch-tool reliability failure that was correctly discarded rather than trusted. Paragraph 5's legal test is corroborated by genuine excerpted judgment text from vlex.co.uk, matching the Find Case Law render on that point. Paragraph 317's operative deliberate-scuttling holding rests on three independent secondary sources (a law-firm update, the BDM Law blog, and a WebSearch synthesis of multiple firms' commentary) that all reproduce an identical direct quotation - recorded at VERIFIED_SECONDARY_SOURCE per this repository's established practice for cases where every primary-source route is blocked, absent, or unreliable."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-MARITIME-002",
+      "to": "AUTH-EW-MARITIME-001",
+      "relationship": "APPLIES",
+      "verified_via": "The Atlantik Confidence [2016] EWHC 2412 (Admlty), paras 5 and 317, corroborated per the mixed-tier verification above: the deliberate-scuttling finding satisfies Article 4's 'personal act...with intent to cause loss' limb, barring the limitation decree."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering Article 4's conduct bar. Does not cover Admiralty jurisdiction itself under the Senior Courts Act 1981 ss.20-21, collision regulations, salvage law, or any other Maritime/Admiralty Law subject - all remain unbuilt."
+}

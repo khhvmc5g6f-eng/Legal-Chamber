@@ -1,0 +1,66 @@
+{
+  "$comment": "England & Wales, Contract Law, remoteness of damages. An earlier pass claimed to read The Achilleas's original text directly on BAILII via a sandboxed browser tool after WebFetch was blocked - that is a source-access-terms bypass under docs/OPERATING_RULES.md's verification hierarchy and was discarded. Re-verified cleanly: BAILII's block was treated as final, and the case is confirmed instead via two later citing judgments on Find Case Law.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Find Case Law direct fetch of two later citing judgments. BAILII's own 2008 judgment text was not independently read this session (403, block respected); Find Case Law's own stated UKHL coverage window ('2009 to 2026') excludes this 2008 decision, confirmed by a direct 404 on the expected URL.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CONTRACT-003",
+      "authority_type": "case",
+      "name": "Transfield Shipping Inc v Mercator Shipping Inc (The Achilleas)",
+      "citation": "[2008] UKHL 48; [2009] 1 AC 61",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "2008-07-09",
+      "date_note": "This date was stated by the verifying agent, but the verification method (citing-judgment, not the original text) doesn't independently re-confirm it - carried over as reported, not independently re-checked.",
+      "proposition": "On remoteness of contractual damages, a court must first decide whether the loss is of a 'kind' or 'type' for which the contract-breaker ought fairly to be taken to have accepted responsibility (Lord Hoffmann's formulation) - layering an assumption-of-responsibility inquiry onto, rather than displacing, the classical Hadley v Baxendale (1854) 9 Exch 341 foreseeability test.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verification_note": "Not read directly - BAILII blocked (HTTP 403), block treated as final, no workaround used; also outside Find Case Law's stated UKHL coverage window. Confirmed via two independent citing judgments below."
+    },
+    {
+      "authority_id": "AUTH-EW-CONTRACT-004",
+      "authority_type": "case",
+      "name": "John Grimes Partnership Ltd v Gubbins",
+      "citation": "[2013] EWCA Civ 37",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2013-02-05",
+      "proposition": "Discusses Hadley v Baxendale and The Achilleas together at paras 10, 17, 19, and 22, including the Lord Hoffmann 'kind/type' quotation, extending its reasoning to a professional-negligence damages context five years after the original decision.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2013/37"
+    },
+    {
+      "authority_id": "AUTH-EW-CONTRACT-005",
+      "authority_type": "case",
+      "name": "Attorney General of the Virgin Islands v Global Water Associates Ltd",
+      "citation": "[2020] UKPC 18",
+      "court": "Privy Council",
+      "jurisdiction": "england-wales",
+      "date": "2020-07-13",
+      "proposition": "Per Lord Hodge: discusses The Achilleas as live authority on the boundary of the assumption-of-responsibility limitation on remoteness, twelve years after the original decision, with no indication of doubt or overruling.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "authority_weight_note": "Privy Council decisions are persuasive, not binding, in England & Wales courts.",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ukpc/2020/18"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CONTRACT-004",
+      "to": "AUTH-EW-CONTRACT-003",
+      "relationship": "EXTENDS",
+      "verified_via": "John Grimes Partnership Ltd v Gubbins [2013] EWCA Civ 37, fetched directly from Find Case Law: applies and extends The Achilleas's assumption-of-responsibility reasoning."
+    },
+    {
+      "from": "AUTH-EW-CONTRACT-005",
+      "to": "AUTH-EW-CONTRACT-003",
+      "relationship": "FOLLOWS",
+      "verified_via": "AG of the Virgin Islands v Global Water Associates Ltd [2020] UKPC 18, fetched directly from Find Case Law: discusses The Achilleas as live, unqualified authority."
+    }
+  ],
+  "what_this_is_not": "One verified authority corroborated by two independent citing judgments five and twelve years later, confirming continued good-law status across that span. Does not independently confirm The Achilleas's original 2008 text, and does not independently verify Hadley v Baxendale (1854) itself - that 1854 report predates digitisation on any source checked this session and is not separately verified here."
+}

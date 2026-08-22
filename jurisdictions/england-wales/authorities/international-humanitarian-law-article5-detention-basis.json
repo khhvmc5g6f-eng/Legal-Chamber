@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, International Humanitarian Law - Article 5 ECHR's closed list of lawful detention grounds is not displaced or supplemented by IHL/UN Security Council authority in a non-international armed conflict, absent an affirmative detention power actually reaching the individual case. The researching agent deliberately used the Court of Appeal decision [2015] EWCA Civ 843 rather than the Supreme Court's [2017] UKSC 2, after confirming the Supreme Court judgment is genuinely absent from Find Case Law's index (a direct URL guess 404'd, and a site search found only its sibling case) and BAILII/the official PDF were both unreachable - a sound, explicitly reported methodological choice rather than a forced substitution.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Human Rights Act 1998 Schedule 1, Article 5(1) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Mohammed & Ors v Secretary of State for Defence [2015] EWCA Civ 843 fetched live and directly from Find Case Law, independently re-fetched and word-for-word consistent on paragraph 9's summary of the holding.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-IHL-001",
+      "authority_type": "treaty",
+      "name": "Human Rights Act 1998, Sch.1, Article 5(1)",
+      "citation": "HRA 1998 Sch.1 Art.5(1) (ECHR)",
+      "court": "N/A - primary legislation scheduling an international convention",
+      "jurisdiction": "england-wales",
+      "date": "2000-10-02",
+      "date_note": "Date the HRA came fully into force. The text verified this session is the current in-force version.",
+      "proposition": "Everyone has the right to liberty and security of person; no one shall be deprived of liberty save in a closed, exhaustively-listed set of cases and in accordance with a procedure prescribed by law - lawful detention after conviction, non-compliance with a court order, arrest on reasonable suspicion of an offence, a minor's educational-supervision detention, detention for infectious disease/unsound mind/addiction/vagrancy, or detention to prevent unauthorised entry or pending deportation/extradition. Combat or security detention in an armed conflict is not among the listed grounds.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1998/42/schedule/1",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-IHL-002",
+      "authority_type": "case",
+      "name": "Mohammed & Ors v Secretary of State for Defence",
+      "citation": "[2015] EWCA Civ 843",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2015-07-30",
+      "judge_or_panel": "Lord Thomas of Cwmgiedd CJ, Lloyd Jones LJ, Beatson LJ",
+      "proposition": "Article 5's closed-list guarantee is not displaced or supplemented by international humanitarian law unless IHL affirmatively confers a detention power reaching the individual case. Neither UN Security Council resolutions authorising the ISAF mission in Afghanistan (which themselves limited detention to 96 hours before handover to Afghan authorities) nor customary/treaty IHL applicable to non-international armed conflicts (which, at that stage of its development, had not reached the point of conferring a right to detain in such conflicts) gave UK armed forces a freestanding legal power to detain the claimant beyond that 96-hour limit. Because no lawful basis for detention existed, and adequate procedural safeguards were absent, the detention was arbitrary and therefore contrary to Article 5.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2015/843",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched - both fetches word-for-word consistent on paragraph 9(iv)'s summary of the holding. The judgment's detailed IHL reasoning (paras 138-298) was not independently re-verified at the pinpoint level by either the researching agent or this session, due to the length of the document - only the paragraph 9 summary is asserted as exact."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-IHL-002",
+      "to": "AUTH-EW-IHL-001",
+      "relationship": "APPLIES",
+      "verified_via": "Mohammed v Secretary of State for Defence [2015] EWCA Civ 843, para 9, fetched directly from Find Case Law and independently re-confirmed: holds that absent an affirmative IHL/UNSCR detention power actually reaching the individual, Article 5's closed list of lawful grounds remains the governing standard, and detention outside it is arbitrary."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the interaction between Article 5 and IHL detention authority in a non-international armed conflict. Does not cover international armed conflict detention rules, the Geneva Conventions Act 1957's domestic offence regime, or any other International Humanitarian Law subject - all remain unbuilt."
+}

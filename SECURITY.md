@@ -2,7 +2,7 @@
 
 ## Scope
 
-This repository ships prompt-based skills, JSON Schemas, markdown reference packs, and two small dependency-free Python scripts (`scripts/deadline_calculator.py`, `scripts/citation_lint.py`). It has no server component, no database, and makes no network calls of its own.
+This repository ships prompt-based skills, JSON Schemas, markdown reference packs, and eight small dependency-free Python scripts (`scripts/citation_lint.py`, `scripts/deadline_calculator.py`, `scripts/legal_api.py`, `scripts/legal_cli.py`, `scripts/style_fix.py`, `scripts/verify_court_name.py`, `scripts/verify_matter_persistence.py`, `scripts/verify_matter_refs.py`). It has no server component and no database, and makes no network calls of its own. `legal_cli.py`/`legal_api.py` write matter-workspace files under `matters/` (gitignored, see below); every other script is read-only against the repository.
 
 ## Sensitive data handling
 

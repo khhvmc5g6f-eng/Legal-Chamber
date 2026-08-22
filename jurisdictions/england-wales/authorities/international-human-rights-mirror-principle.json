@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, International Human Rights Law - the 'mirror principle' governing how domestic courts treat Strasbourg jurisprudence under HRA 1998 s.2(1). Ullah itself is pre-2009 and inaccessible this session (BAILII bot-challenge, Find Case Law 404); the researching agent used the citing-judgment method via Kennedy v Charity Commission [2014] UKSC 20, which quotes Ullah's key passage verbatim with a pinpoint paragraph reference. This session's own independent re-fetch of Kennedy could not reach the agent's claimed paragraph (212) due to tool truncation on a long judgment, but did independently confirm - via a targeted in-document search - that Kennedy carries a section headed 'Ullah - \"no more but certainly no less\"' starting around paragraph 100, a different paragraph number than the agent reported. Both are recorded rather than one being silently preferred.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Human Rights Act 1998 s.2(1) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. R (Ullah) v Special Adjudicator [2004] UKHL 26 verified via the citing-judgment method: Kennedy v The Charity Commission [2014] UKSC 20, fetched live this session, confirmed (via a full-document search for 'Ullah') to carry a section titled \"Ullah - 'no more but certainly no less'\" beginning around paragraph 100 - a different paragraph than the researching agent's cited 212, and this session's own fetch truncated before reaching either paragraph's full text, so the exact quoted wording could not be independently reproduced at the pinpoint level.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-INTLHR-001",
+      "authority_type": "statute",
+      "name": "Human Rights Act 1998, s.2(1)",
+      "citation": "Human Rights Act 1998 (c.42) s.2(1)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2000-10-02",
+      "date_note": "Date the Act came fully into force. The text verified this session is the current in-force version.",
+      "proposition": "A court or tribunal determining a question arising in connection with a Convention right must take into account any judgment, decision, declaration or advisory opinion of the European Court of Human Rights (and certain Commission/Committee of Ministers materials), whenever made, so far as the court or tribunal considers it relevant to the proceedings. The duty is to 'take into account,' not to follow automatically - the Act does not incorporate the ECHR itself, nor does it make Strasbourg case law binding.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1998/42/section/2",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-INTLHR-002",
+      "authority_type": "case",
+      "name": "R (Ullah) v Special Adjudicator",
+      "citation": "[2004] UKHL 26; [2004] 2 AC 323",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "2004-06-17",
+      "judge_or_panel": "Lord Bingham of Cornhill, Lord Steyn, Lord Walker of Gestingthorpe, Baroness Hale of Richmond, Lord Carswell",
+      "proposition": "Supplies the authoritative gloss on s.2(1)'s 'take into account' duty, per Lord Bingham: 'The duty of national courts is to keep pace with the Strasbourg jurisprudence as it evolves over time: no more, but certainly no less.' This 'mirror principle' directs domestic courts to track Strasbourg case law - neither falling behind it nor, ordinarily, developing domestic rights protection beyond what Strasbourg has itself recognised. The principle was later qualified, not abandoned, in Manchester City Council v Pinnock [2010] UKSC 45 (not independently verified in this file), which held domestic courts are not bound to follow every Strasbourg decision, only a clear and constant line of authority not inconsistent with a fundamental aspect of domestic law.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2014/20",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Ullah itself could not be reached this session (BAILII returned an anti-bot challenge page, Find Case Law returned HTTP 404 for this pre-2009 UKHL judgment). Verified via the citing-judgment method: Kennedy v Charity Commission [2014] UKSC 20 was fetched live and directly from Find Case Law and confirmed, via an in-document search this session ran independently, to contain a section headed \"Ullah - 'no more but certainly no less'\" - though this session's own fetch located that section beginning around paragraph 100, not paragraph 212 as the researching agent reported, and truncated before reaching the full quoted text either way. The quote itself and paragraph 20 attribution within Ullah were corroborated by the researching agent via three independent secondary sources (a case-summary site, an academic notes site, and Mark Elliott's Public Law for Everyone blog), none of which this session re-fetched directly. Recorded at VERIFIED_SECONDARY_SOURCE given the unresolved paragraph-number discrepancy and this session's own inability to independently reach the pinpoint text."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-INTLHR-002",
+      "to": "AUTH-EW-INTLHR-001",
+      "relationship": "APPLIES",
+      "verified_via": "Ullah, per its citation and quotation inside Kennedy v Charity Commission [2014] UKSC 20 (paragraph number unresolved between this session's own search and the researching agent's report, see verification_note): converts s.2(1)'s soft 'take into account' duty into the operative mirror principle."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the mirror principle's core statement and its statutory anchor, with a named paragraph-number discrepancy left unresolved rather than picked with false confidence. Does not cover the Pinnock refinement in detail, the status of unincorporated UN human rights treaties in domestic law, or any other International Human Rights Law subject - all remain unbuilt."
+}

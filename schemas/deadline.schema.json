@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://legal-chamber/schemas/deadline.schema.json",
+  "$id": "https://legal-chambers/schemas/deadline.schema.json",
   "title": "Deadline",
   "type": "object",
   "required": ["deadline_id", "trigger", "rule_source", "calculated_date", "status", "confidence"],

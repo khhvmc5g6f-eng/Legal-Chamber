@@ -44,6 +44,10 @@ Code civil (1804, much amended - notably the 2016 reform of the law of obligatio
 
 For data-protection/regulatory matters specifically, see `../../regulators/cnil.md` - a real, sourced profile of CNIL's investigation stages, sanction range, and appeal route (to the Conseil d'État, not an ordinary court).
 
+## Live verification capability - Judilibre and Légifrance/PISTE (documented, not yet wired)
+
+Two real, documented APIs exist. **Judilibre** (`github.com/Cour-de-cassation/judilibre-search`, Cour de cassation's own open API) publishes pseudonymized decisions with structured sections (facts/arguments/reasoning/ruling) - confirmed live 2026-08-22. **Légifrance/PISTE** (DILA) covers codes, consolidated legislative/regulatory text, JORF, and Conseil d'État/Conseil constitutionnel/appellate case law - confirmed live and stable since April 2023. Both require free registration and OAuth2 authentication via `piste.gouv.fr` - **a human needs to complete that registration**, this repository cannot obtain credentials autonomously. Once a credential exists, wiring either in means: (1) re-confirming the exact endpoint shapes against the live docs, (2) supplying the credential from the user's own environment (never committed here, this repo has no secrets-handling mechanism), (3) documenting the connector here the way `../us-federal/README.md` documents CourtListener. See `../../connectors/README.md` for the full cross-jurisdiction connector inventory.
+
 ## What is NOT in this pack
 
 No populated jurisprudence database. No verified article-level code content. No verified procedural deadline.

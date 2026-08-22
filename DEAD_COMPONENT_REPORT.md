@@ -2,6 +2,8 @@
 
 Method: programmatic checks run against the repository on 2026-08-22 (not a manual skim). See commands below each finding - reproducible by rerunning them.
 
+**Update (later same session, 2026-08-22)**: the "Genuine gaps found" section below is now stale. A real CLI and programmatic API were built and selftested (`scripts/legal_cli.py`, `scripts/legal_api.py`) - "No CLI and no programmatic API exist" no longer holds. `regulators/` now has three real profiles (`ico.md`, `cnil.md`, `ftc.md`) plus a `README.md`, `rubrics/` has one real sourced rubric (`level7-distinction-standard.md`), and `templates/` has five real files - these are no longer "intentionally-empty stubs." Counts in section 1 and section 6 are also stale: there are now 10 jurisdiction entries (not 9) and every one of the 8 scripts in `scripts/` (not 2) carries a passing `--selftest`. Kept here rather than rewritten so the version history stays legible, per `docs/HONEST_STATUS.md`'s convention.
+
 ## 1. Reference check - every skill/agent/jurisdiction/schema/template/workflow file
 
 ```python

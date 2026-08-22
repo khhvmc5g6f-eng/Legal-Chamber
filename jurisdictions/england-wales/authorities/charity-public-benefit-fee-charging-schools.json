@@ -1,0 +1,51 @@
+{
+  "$comment": "England & Wales, Charity Law - the public benefit requirement's abolition of the old presumption, applied to fee-charging independent schools. Fresh research this session. The researching agent could not retrieve the case via caselaw.nationalarchives.gov.uk (HTTP 404 - Find Case Law's UKUT Tax & Chancery coverage does not extend back to include this 2011 decision) or BAILII (HTTP 403); the official Upper Tribunal decisions-portal PDF was used instead and read directly (WebFetch could not render the compressed PDF text, so the agent downloaded and extracted it with pypdf).",
+  "verified_at": "2026-08-22",
+  "verification_method": "Charities Act 2011 ss.1, 2, 3 and 4 fetched live and directly from legislation.gov.uk. Independent Schools Council v Charity Commission for England and Wales [2011] UKUT 421 (TCC) sourced from the official Upper Tribunal decisions portal PDF (taxandchancery_ut.decisions.tribunals.gov.uk), text extracted directly rather than relayed from a summary, cross-checked against a Modern Law Review case note and Practical Law's case analysis.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CHARITY-001",
+      "authority_type": "statute",
+      "name": "Charities Act 2011, ss.1-4",
+      "citation": "Charities Act 2011 (c.25) ss.1, 2, 3, 4",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2011",
+      "date_note": "Enactment year, consolidating the Charities Act 2006's materially identical public benefit provisions. The text verified this session is the current in-force version.",
+      "proposition": "A charity is an institution established for charitable purposes only (s.1(1)(a)). A 'charitable purpose' is a purpose that falls within one of the s.3(1) descriptions of purposes and is for the public benefit (s.2(1)). Critically, s.4(2) provides that in determining whether the public benefit requirement is satisfied in relation to any purpose falling within s.3(1), it is not to be presumed that a purpose of a particular description is for the public benefit - abolishing the old-law presumption (traceable to Re Compton [1945] Ch 123 / IRC v Pemsel categorisation, neither independently verified in this file) that purposes such as poverty relief, education, and religion were automatically for the public benefit. Section 4(3) leaves the substantive meaning of 'public benefit' to be worked out under pre-existing common law principles, not redefined by the Act.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2011/25/section/4",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "All four sections fetched live and directly from legislation.gov.uk this session."
+    },
+    {
+      "authority_id": "AUTH-EW-CHARITY-002",
+      "authority_type": "case",
+      "name": "Independent Schools Council v Charity Commission for England and Wales",
+      "citation": "[2011] UKUT 421 (TCC)",
+      "court": "Upper Tribunal (Tax and Chancery Chamber)",
+      "jurisdiction": "england-wales",
+      "date": "2011-10-13",
+      "judge_or_panel": "The Chamber President, the Hon Mr Justice Warren; Judge Alison McKenna; Judge Elizabeth Ovey",
+      "proposition": "Once a fee-charging school's benefit to those unable to pay fees passes beyond a purely de minimis or token level, there is no fixed minimum percentage or format of provision (e.g. no mandated bursary quota) that the Charity Commission can impose. Rather, applying s.4(2)'s no-presumption rule, it is for the school's own trustees - acting reasonably, in the interests of the community as a whole, and assessed against the particular circumstances of that school - to decide the extent and form of benefit provided to the poor. The Charity Commission's 2008 guidance was held to have erred in law by treating this as a more rigid, prescriptive requirement.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://taxandchancery_ut.decisions.tribunals.gov.uk/Documents/decisions/1_TheISC_v_TheCharityCommission_forEnglandWales.pdf",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Sourced from the official Upper Tribunal decisions-portal PDF, text extracted directly (not relayed from a summary) - paragraphs 215-217 quoted verbatim. Find Case Law returned HTTP 404 for this case and BAILII returned HTTP 403, so the tribunals.gov.uk original decisions portal was used as the working authoritative source instead. Cross-checked against a Modern Law Review 2012 case note (E. Synge) and Practical Law's case analysis, both independently describing it as the leading ruling on public benefit and fee-charging schools. Upper Tribunal decision, recorded as PERSUASIVE authority weight."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CHARITY-002",
+      "to": "AUTH-EW-CHARITY-001",
+      "relationship": "APPLIES",
+      "verified_via": "Independent Schools Council v Charity Commission [2011] UKUT 421 (TCC), paras 214-217, extracted directly from the official Upper Tribunal decisions-portal PDF: applies s.4(2)'s no-presumption rule to require a fact-sensitive, trustee-discretion-respecting assessment of fee-charging schools' public benefit, rather than a fixed Commission-imposed quota."
+    }
+  ],
+  "edges_note": "Decided under the materially identical Charities Act 2006 provisions, since consolidated into the 2011 Act unchanged in substance (per the researching agent's account; the 2006-to-2011 consolidation itself was not independently re-verified in this file).",
+  "what_this_is_not": "Two verified nodes covering the no-presumption rule and its application to fee-charging schools. Does not cover charity trustee duties generally, the Charity Commission's registration/removal powers, cy-pres, or any other Charity Law subject - all remain unbuilt."
+}

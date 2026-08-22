@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Civil Rights Law - indirect discrimination under s.19 does not require the claimant to prove why a PCP disadvantages the protected group, only that it does. Fresh research this session, both nodes independently re-fetched and confirmed by the orchestrating session.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Equality Act 2010 s.19(1)-(2) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Essop v Home Office (UK Border Agency); Naeem v Secretary of State for Justice [2017] UKSC 27 - the researching agent reported extracting the official Supreme Court PDF directly with pypdf after BAILII returned HTTP 403 and WebFetch's own summarizer gave inconsistent results across identical calls; this session's own independent re-fetch of paragraph 24 from Find Case Law was word-for-word consistent with the agent's quotation.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CIVILRIGHTS-001",
+      "authority_type": "statute",
+      "name": "Equality Act 2010, s.19",
+      "citation": "Equality Act 2010 (c.15) s.19(1), (2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2010",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "A person (A) discriminates against another (B) by applying a provision, criterion or practice (PCP) which is discriminatory in relation to a relevant protected characteristic of B's (s.19(1)). A PCP is discriminatory if A applies it (or would apply it) to persons who don't share B's characteristic, it puts (or would put) persons sharing that characteristic at a particular disadvantage compared with those who don't, it puts B at that disadvantage, and A cannot show it to be a proportionate means of achieving a legitimate aim (s.19(2)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2010/15/section/19",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-CIVILRIGHTS-002",
+      "authority_type": "case",
+      "name": "Essop v Home Office (UK Border Agency); Naeem v Secretary of State for Justice",
+      "citation": "[2017] UKSC 27",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2017-04-05",
+      "judge_or_panel": "Lady Hale (sole judgment, Lord Clarke, Lord Wilson, Lord Carnwath, Lord Hodge agreeing)",
+      "proposition": "Nothing in s.19(2)(b)-(c)'s text requires a claimant to explain why a PCP puts one group at a disadvantage compared with others - it is enough to show, as a matter of fact, that it does. Rejecting the Court of Appeal's gloss that a claimant must prove the causal mechanism/reason for the disparate impact, the Supreme Court held the essential element is a causal connection between the PCP and the disadvantage suffered by both the group and the individual claimant, not between the protected characteristic itself and the disadvantage - the reason for the group disadvantage, if known, may make proof easier, but establishing that reason is a matter of fact, not a legal requirement.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2017/27",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched - both fetches word-for-word consistent on paragraph 24's 'no express requirement for an explanation of the reasons why' holding."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CIVILRIGHTS-002",
+      "to": "AUTH-EW-CIVILRIGHTS-001",
+      "relationship": "APPLIES",
+      "verified_via": "Essop v Home Office [2017] UKSC 27, paras 24 and 33, fetched directly from Find Case Law and independently re-confirmed: construes s.19(2)(b)-(c) as not importing a 'reason why' requirement, lowering/clarifying the evidential burden on indirect discrimination claimants."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the no-reason-requirement holding for indirect discrimination. Does not cover direct discrimination under s.13, the s.19(2)(d) proportionate-means justification defence in detail, harassment or victimisation provisions, or any other Civil Rights Law subject - all remain unbuilt."
+}

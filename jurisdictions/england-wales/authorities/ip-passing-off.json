@@ -1,0 +1,47 @@
+{
+  "$comment": "England & Wales, Intellectual Property, the tort of passing off - the classic trinity and the goodwill-within-jurisdiction requirement. Fresh research this session, not promoted from prior work. Reckitt & Colman Products Ltd v Borden Inc [1990] UKHL 12 predates Find Case Law's UKHL coverage (2009 onward) and is a House of Lords judgment of the kind BAILII blocks automated access to (per the pattern already documented in tort-duty-of-care.json), so per docs/OPERATING_RULES.md's citing-judgment method it is verified instead via Starbucks (HK) Ltd v British Sky Broadcasting Group plc [2015] UKSC 31, fetched live and directly from Find Case Law, which quotes and applies it by paragraph.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Starbucks (HK) Ltd v British Sky Broadcasting Group plc [2015] UKSC 31 fetched live and directly from Find Case Law (caselaw.nationalarchives.gov.uk). Reckitt & Colman Products Ltd v Borden Inc [1990] UKHL 12 verified via the citing-judgment method (Starbucks quotes it directly, with paragraph numbers) plus independent secondary-source corroboration (Wikipedia, Practical Law, and a directly-hosted copy of the judgment at ip4all.co.uk, three independent, consistent sources on the case name, citation, court, and 8 February 1990 date).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-IP-001",
+      "authority_type": "case",
+      "name": "Reckitt & Colman Products Ltd v Borden Inc",
+      "citation": "[1990] UKHL 12; [1990] 1 WLR 491",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "1990-02-08",
+      "proposition": "Established the 'classic trinity' a claimant must prove to succeed in passing off: (1) goodwill or reputation attached to the claimant's goods/services in the mind of the purchasing public, (2) a misrepresentation by the defendant (whether or not intentional) leading or likely to lead the public to believe the defendant's goods/services are the claimant's, and (3) damage suffered, or likely to be suffered, by the claimant as a result. The 'Jif Lemon' case - the distinctive lemon-shaped yellow plastic container itself was held capable of denoting trade origin.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "BAILII/ICLR text not independently fetched this session - Find Case Law's own UKHL coverage runs only from 2009 (confirmed live this session for a different pre-2009 House of Lords case, see family-financial-remedies-sharing.json), so a direct fetch was not attempted for a case this pattern already establishes won't be there. Verified instead via Starbucks (HK) Ltd v British Sky Broadcasting Group plc [2015] UKSC 31 (below), which quotes Lord Oliver's classic-trinity formulation directly at paragraph 15, plus independent corroboration of the case name/citation/date via Wikipedia, Practical Law, and a directly-hosted copy of the judgment text at ip4all.co.uk."
+    },
+    {
+      "authority_id": "AUTH-EW-IP-002",
+      "authority_type": "case",
+      "name": "Starbucks (HK) Ltd v British Sky Broadcasting Group plc",
+      "citation": "[2015] UKSC 31",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2015-05-13",
+      "proposition": "Affirms Reckitt & Colman's classic-trinity framework, but holds that the first element (goodwill) requires the claimant to have actual goodwill in the jurisdiction - meaning the presence of clients or customers in England & Wales - not merely a reputation among the public there without any local business. A claimant with a strong reputation but no local customers (there, a foreign broadcaster known via satellite/online access but with no UK subscribers) cannot satisfy the goodwill element on reputation alone.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2015/31",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session. Quotes Reckitt & Colman v Borden [1990] UKHL 12 directly at paragraph 15 (see edge below)."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-IP-002",
+      "to": "AUTH-EW-IP-001",
+      "relationship": "APPLIES",
+      "verified_via": "Starbucks (HK) Ltd v Sky [2015] UKSC 31, para 15 (quoting Lord Oliver in Reckitt & Colman) and para 47 (Lord Neuberger's holding on the jurisdiction-based-customers requirement), fetched directly from Find Case Law: confirms the classic trinity as good law but narrows what satisfies its first element specifically."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering one doctrinal point in passing off - the classic trinity and its goodwill-within-jurisdiction requirement. Does not cover misrepresentation or damage in any depth, extended passing off, trade mark infringement (a distinct statutory tort under the Trade Marks Act 1994, not covered here), copyright, patents, or any other IP subject - all remain unbuilt."
+}

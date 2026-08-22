@@ -1,0 +1,51 @@
+{
+  "$comment": "England & Wales, Conflict of Laws / Private International Law - the 'necessary or proper party' jurisdictional gateway for serving foreign co-defendants and the abuse/forum-conveniens limits on it. The researching agent first attempted a more recent candidate (ID v LU & Anor [2021] EWHC 1851 (Comm)) but could not get a fully verifiable pinpoint quote after BAILII and casemine.com both returned HTTP 403 - it switched to Vedanta rather than report an under-verified claim, a sound methodological choice reported honestly.",
+  "verified_at": "2026-08-22",
+  "verification_method": "CPR Practice Direction 6B para 3.1(3) fetched live and directly from justice.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Vedanta Resources plc v Lungowe [2019] UKSC 20 fetched live and directly from Find Case Law, independently re-fetched and word-for-word consistent on paragraph 20's five-part test.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CONFLICTLAWS-001",
+      "authority_type": "court_rule",
+      "name": "CPR Practice Direction 6B, para 3.1(3)",
+      "citation": "CPR PD 6B para 3.1(3), supplementing CPR r.6.36",
+      "court": "N/A - court rule",
+      "jurisdiction": "england-wales",
+      "date": "2008",
+      "date_note": "The current PD 6B regime dates from the 2008 CPR restructuring of the former RSC Order 11 gateways. The text verified this session is the current in-force version.",
+      "proposition": "A claimant may serve a claim form out of the jurisdiction with the court's permission where a claim is made against a defendant already served (or to be served) in England, provided there is between the claimant and that defendant a real issue which it is reasonable for the court to try, and the claimant wishes to serve the claim form on another person who is a necessary or proper party to that claim - the 'anchor defendant' route for bringing a foreign co-defendant within English jurisdiction.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part06/pd_part06b",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-CONFLICTLAWS-002",
+      "authority_type": "case",
+      "name": "Vedanta Resources plc v Lungowe",
+      "citation": "[2019] UKSC 20",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2019-04-10",
+      "judge_or_panel": "Lady Hale (President), Lord Wilson, Lord Hodge, Lady Black, Lord Briggs (leading judgment)",
+      "proposition": "Decomposes the necessary-or-proper-party gateway into a five-part test: (i) a real issue to be tried against the anchor defendant, (ii) that it is reasonable for the court to try that issue, (iii) that the foreign defendant is a necessary or proper party to the claims against the anchor defendant, (iv) that the claims against the foreign defendant have a real prospect of success, and (v) that England is the proper place to bring the combined claims, or that there is a real risk claimants would not obtain substantial justice in the alternative foreign jurisdiction. Joining an anchor defendant whose sole object is manufacturing jurisdiction over a foreign defendant is an abuse of the gateway. Once jurisdiction over a UK-domiciled anchor defendant is fixed as of right, the risk of irreconcilable judgments with foreign proceedings is not an automatic trump card in the forum conveniens analysis for the foreign co-defendant - treating it as decisive was an error of principle.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2019/20",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed - both fetches word-for-word consistent on paragraph 20's five-part test."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CONFLICTLAWS-002",
+      "to": "AUTH-EW-CONFLICTLAWS-001",
+      "relationship": "APPLIES",
+      "verified_via": "Vedanta v Lungowe [2019] UKSC 20, para 20, fetched directly from Find Case Law and independently re-confirmed: decomposes PD 6B para 3.1(3)'s bare rule text into the operative five-part necessary-or-proper-party test, with an abuse limitation and a forum-conveniens gloss developed at paras 25-84."
+    }
+  ],
+  "edges_note": "A more recent candidate case (ID v LU & Anor [2021] EWHC 1851 (Comm), on whether the gateway extends to an anchor defendant who merely voluntarily submitted to jurisdiction) was considered but not used, because BAILII and casemine.com both returned HTTP 403 this session and no pinpoint-verifiable quote could be obtained - reported as a gap rather than forced with an under-verified claim.",
+  "what_this_is_not": "Two verified nodes covering the necessary-or-proper-party gateway and its abuse/forum-conveniens limits. Does not cover choice-of-law rules under retained Rome I/Rome II, the Foreign Judgments (Reciprocal Enforcement) Act 1933, or any other Conflict of Laws subject - all remain unbuilt."
+}

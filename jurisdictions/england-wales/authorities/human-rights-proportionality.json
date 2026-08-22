@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Human Rights Law - the s.6 HRA public-authority duty and the proportionality test used to assess whether an interference with a qualified Convention right is justified. Fresh research this session. Both nodes are post-2009 and fetched directly, no BAILII/pre-2009 access issue to route around - a genuine full-primary-source entry, unlike most other files in this pack.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Both nodes fetched live and directly this session: Human Rights Act 1998 s.6 from legislation.gov.uk's in-force text, Bank Mellat v HM Treasury (No 2) [2013] UKSC 39 from Find Case Law. An alternative candidate statute (HRA s.3, the interpretive obligation) was checked and rejected - legislation.gov.uk's own page flags it as excluded from application by several later Acts including the Safety of Rwanda (Asylum and Immigration) Act 2024, and its leading case (Ghaidan v Godin-Mendoza) is a pre-2009 House of Lords decision outside Find Case Law's direct coverage - s.6 and Bank Mellat were chosen instead as the cleaner, fully primary-sourced pair.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-HR-001",
+      "authority_type": "statute",
+      "name": "Human Rights Act 1998, s.6",
+      "citation": "HRA 1998 s.6(1)-(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1998",
+      "date_note": "Enactment year. The text verified this session is the current in-force (revised) version, incorporating amendments through at least April 2024.",
+      "proposition": "It is unlawful for a public authority to act in a way incompatible with a Convention right (s.6(1)), unless the authority could not have acted differently because of primary legislation, or was acting to give effect to primary legislation that cannot be read compatibly with the Convention rights (s.6(2)). This is the statutory hook creating the primary cause of action/ground of review under the Human Rights Act - it establishes unlawfulness, but does not itself supply the test for whether an interference with a qualified right is justified; that is supplied by the proportionality test below.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1998/42/section/6",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session - confirmed as the current 'Latest available (Revised)' text."
+    },
+    {
+      "authority_id": "AUTH-EW-HR-002",
+      "authority_type": "case",
+      "name": "Bank Mellat v Her Majesty's Treasury (No 2)",
+      "citation": "[2013] UKSC 39",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2013-06-19",
+      "judge_or_panel": "Lord Sumption (majority)",
+      "proposition": "Sets out the structured four-stage proportionality test now used across UK public law, including HRA claims, to determine whether an interference with a Convention right is justified: (i) whether the objective is sufficiently important to justify limiting a fundamental right, (ii) whether the measure is rationally connected to that objective, (iii) whether a less intrusive measure could have been used, and (iv) whether, given all this and the severity of the consequences, a fair balance has been struck between the individual's rights and the interests of the community. Lord Sumption notes the four limbs are 'logically separate' but 'inevitably overlap' in practice, since the same facts are often relevant to more than one.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2013/39",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, and the paragraph 20 quote independently re-fetched and confirmed a second time before being relied on here."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-HR-002",
+      "to": "AUTH-EW-HR-001",
+      "relationship": "APPLIES",
+      "verified_via": "Bank Mellat [2013] UKSC 39, para 20, fetched directly from Find Case Law and independently re-confirmed: supplies the operative proportionality methodology courts apply when assessing whether a public authority's interference with a qualified Convention right, engaging s.6 HRA, is actually justified."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the s.6 unlawfulness hook and the modern proportionality test used to resolve it where a qualified right is engaged. Does not cover which Convention rights are absolute versus qualified, the s.3 interpretive obligation (checked and deliberately not used, see $comment), s.4 declarations of incompatibility, horizontal effect, or any specific Convention article's substantive content - all remain unbuilt."
+}

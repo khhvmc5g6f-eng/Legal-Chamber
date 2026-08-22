@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Aviation Law - the meaning of 'accident' under Article 17(1) of the Montreal Convention 1999. Fresh research this session, both nodes independently re-fetched and confirmed a second time by the orchestrating session (not trusted from the researching agent's report alone).",
+  "verified_at": "2026-08-22",
+  "verification_method": "Montreal Convention 1999 Article 17(1) (as implemented by the Carriage by Air Acts (Implementation of the Montreal Convention 1999) Order 2002, SI 2002/263, Sch.1) fetched live and directly from legislation.gov.uk. Barclay v British Airways Plc [2008] EWCA Civ 1419 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time - both fetches word-for-word consistent on paragraphs 35 and 37.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-AVIATION-001",
+      "authority_type": "treaty",
+      "name": "Montreal Convention 1999, Article 17(1)",
+      "citation": "Montreal Convention 1999 Art.17(1), as implemented by SI 2002/263 Sch.1",
+      "court": "N/A - international convention, given force of law in the UK by the Carriage by Air Act 1961 s.1",
+      "jurisdiction": "england-wales",
+      "date": "2002",
+      "date_note": "Date of the implementing statutory instrument (SI 2002/263). The Convention itself was concluded in 1999. The text verified this session is the current in-force version.",
+      "proposition": "The carrier is liable for damage sustained in case of death or bodily injury of a passenger, upon condition only that the accident which caused the death or injury took place on board the aircraft or in the course of any of the operations of embarking or disembarking. The provision does not itself define 'accident.'",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/uksi/2002/263/schedule/1/made",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session from legislation.gov.uk."
+    },
+    {
+      "authority_id": "AUTH-EW-AVIATION-002",
+      "authority_type": "case",
+      "name": "Barclay v British Airways Plc",
+      "citation": "[2008] EWCA Civ 1419",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2008-12-18",
+      "judge_or_panel": "Laws LJ (lead judgment), Thomas LJ, Wilson LJ",
+      "proposition": "Article 17(1)'s undefined term 'accident' means a distinct event, not being any part of the usual, normal and expected operation of the aircraft, which happens independently of anything done or omitted by the passenger - adopting O'Connor J's reasoning in the US case Air France v Saks that a passenger's own internal reaction to the normal operation of the aircraft is not caused by an 'accident.' A passenger's slip on an inert, properly-functioning floor strip while boarding was therefore not an accident: it was her own personal reaction to a normally operating aircraft, not an external event, so Article 17 liability was never engaged and her claim failed.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2008/1419",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches word-for-word consistent on paragraph 35's accident test and paragraph 37's 'I would dismiss the appeal' outcome."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-AVIATION-002",
+      "to": "AUTH-EW-AVIATION-001",
+      "relationship": "APPLIES",
+      "verified_via": "Barclay v British Airways [2008] EWCA Civ 1419, para 35, fetched directly from Find Case Law and independently re-confirmed: construes Article 17(1)'s undefined 'accident' as a distinct event external to and independent of the passenger, not any part of the aircraft's normal operation."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the accident-definition test under Article 17(1). Does not cover denied-boarding/cancellation compensation under UK261, baggage liability under Article 17(2)-(4), the two-year limitation period under Article 35, or any other Aviation Law subject - all remain unbuilt."
+}

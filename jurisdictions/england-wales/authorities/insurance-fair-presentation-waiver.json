@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Insurance Law - the duty of fair presentation and the insurer-waiver exception under the Insurance Act 2015 s.3(5)(e). Fresh research this session. Both nodes are post-2015/2025 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Insurance Act 2015 s.3 fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. Clarendon Dental Spa LLP v Aviva Insurance Ltd [2025] EWHC 267 (Comm) fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against 6 independent secondary sources (Keoghs, Edwin Coe, Fenchurch Law, Crown Office Chambers, Lexology, Browne Jacobson).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-INS-001",
+      "authority_type": "statute",
+      "name": "Insurance Act 2015, s.3",
+      "citation": "Insurance Act 2015 s.3(1), (5)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2015",
+      "date_note": "Enactment year. The text verified this session is the current in-force (revised) version, with no outstanding effects noted on the page.",
+      "proposition": "Before a contract of insurance is entered into, the insured must make a fair presentation of the risk to the insurer (s.3(1)). Absent a specific enquiry, the insured need not disclose a circumstance that diminishes the risk, that the insurer already knows or ought to know or is presumed to know, or that the insurer waives information about (s.3(5)(a)-(e)) - the waiver exception in (e) is the point applied below.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2015/4/section/3",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.3(1) and s.3(5)'s exact text."
+    },
+    {
+      "authority_id": "AUTH-EW-INS-002",
+      "authority_type": "case",
+      "name": "Clarendon Dental Spa LLP and another v Aviva Insurance Ltd and another",
+      "citation": "[2025] EWHC 267 (Comm)",
+      "court": "High Court (Business and Property Courts, London Circuit Commercial Court)",
+      "jurisdiction": "england-wales",
+      "date": "2025-02-13",
+      "judge_or_panel": "David Quest KC (Deputy Judge)",
+      "proposition": "Where an insurer's proposal form asks a specific, narrowly-framed question (there, an insolvency question naming particular persons/categories), the insurer impliedly waives disclosure under s.3(5)(e) of matters outside that question's scope, and any ambiguity in the question is construed in the policyholder's favour. The court struck out the insurer's non-disclosure defence because the insured had correctly answered the actual question asked.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/comm/2025/267",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 44's waiver holding. Cross-checked against 6 independent secondary sources (Keoghs, Edwin Coe, Fenchurch Law, Crown Office Chambers, Lexology, Browne Jacobson), all consistent on parties, citation, judge, date, and the waiver holding."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-INS-002",
+      "to": "AUTH-EW-INS-001",
+      "relationship": "APPLIES",
+      "verified_via": "Clarendon Dental Spa LLP v Aviva Insurance Ltd [2025] EWHC 267 (Comm), para 44, fetched directly from Find Case Law and independently re-confirmed: applies s.3(5)(e)'s waiver exception, holding that asking a narrow question waives disclosure of matters beyond its scope."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the fair-presentation duty and the insurer-waiver exception on a proposal-form question. Does not cover the other s.3(5) exceptions, remedies for breach (ss.8, Schedule 1 - qualifying vs deliberate/reckless breach), warranties (ss.10-11), or any other Insurance Law subject - all remain unbuilt."
+}

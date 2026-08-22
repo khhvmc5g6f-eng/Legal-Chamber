@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for considering a contribution to Legal Chamber. This is a system that talks about law, so the bar for merging content is different from a typical dev-tool repo: **wrong here can mean a missed deadline or a fabricated citation in front of a court, not just a bug.**
+Thank you for considering a contribution to Legal Chambers. This is a system that talks about law, so the bar for merging content is different from a typical dev-tool repo: **wrong here can mean a missed deadline or a fabricated citation in front of a court, not just a bug.**
 
 ## Before you open a PR
 

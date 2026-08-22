@@ -1,0 +1,47 @@
+{
+  "$comment": "England & Wales, Criminal Law, causation in unlawful-act manslaughter. Kennedy (No. 2)'s original 2007 House of Lords judgment could not be fetched directly - BAILII returned HTTP 403, treated as final per docs/OPERATING_RULES.md; Find Case Law does not cover pre-2009 House of Lords judgments. Verified instead via a later citing Court of Appeal judgment.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Find Case Law direct fetch of a later citing judgment. BAILII's own 2007 judgment text was not independently read this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CRIM-003",
+      "authority_type": "case",
+      "name": "R v Kennedy (No. 2)",
+      "citation": "[2007] UKHL 38",
+      "pinpoint": "AC volume/page pinpoint UNRESOLVED - two independently-derived values conflict ('[2008] 1 AC 269' from general corroboration, '[2008] 1 AC 169' as transcribed within a fetched primary source, R v Evans). Neither was independently confirmed against the report itself, so neither is asserted here - the neutral citation [2007] UKHL 38 is the only citation form treated as solid.",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "2007-01-01",
+      "date_note": "Year only confirmed (2007); an earlier version of this entry asserted a specific day/month ('18 July') that was not actually reported by the verifying agent - it was added during transcription without a source and has been corrected rather than left uncaught.",
+      "proposition": "A supplier of drugs cannot be liable for manslaughter under unlawful-act-manslaughter theory when the victim makes a free, voluntary, informed act of self-injection - that act is a novus actus interveniens breaking the chain of causation from supplier to death. Confined to unlawful-act manslaughter; does not extend to gross negligence manslaughter.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verification_note": "Not read directly - BAILII blocked (HTTP 403), block treated as final. Quoted and distinguished within R v Evans [2009] EWCA Crim 650 (below), fetched live."
+    },
+    {
+      "authority_id": "AUTH-EW-CRIM-004",
+      "authority_type": "case",
+      "name": "R v Evans",
+      "citation": "[2009] EWCA Crim 650",
+      "court": "Court of Appeal (Criminal Division)",
+      "jurisdiction": "england-wales",
+      "date": "2009-01-01",
+      "date_note": "Year only confirmed via the citation itself; exact date not independently verified this session.",
+      "proposition": "Expressly distinguishes rather than doubts Kennedy (No. 2), stating it 'has no application to gross negligence manslaughter' - confirming Kennedy remains binding, good law within its own scope (unlawful-act manslaughter) two years on.",
+      "treatment": "DISTINGUISHED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/crim/2009/650"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CRIM-004",
+      "to": "AUTH-EW-CRIM-003",
+      "relationship": "DISTINGUISHES",
+      "verified_via": "R v Evans [2009] EWCA Crim 650, fetched directly from Find Case Law: confirms Kennedy is good law within unlawful-act manslaughter, but not applicable to gross negligence manslaughter."
+    }
+  ],
+  "what_this_is_not": "One verified node-pair confirming Kennedy (No. 2)'s causation principle and its confirmed scope limit, as of 2009. Does not independently confirm Kennedy's original 2007 text or resolve the AC pinpoint discrepancy noted above - see verification_note and pinpoint fields."
+}

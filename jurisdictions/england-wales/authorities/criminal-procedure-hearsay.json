@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Criminal Procedure & Evidence - the hearsay admissibility gateways under CJA 2003 s.114 and the Article 6 fair-trial challenge resolved in R v Horncastle. Fresh research this session. Both nodes are post-2003/2009 and fetched directly, no BAILII/pre-2009 access issue for the case (BAILII's own mirror returned HTTP 403 but was not needed - Find Case Law covers this 2009 UKSC case directly).",
+  "verified_at": "2026-08-22",
+  "verification_method": "Criminal Justice Act 2003 s.114 fetched live and directly from legislation.gov.uk. R v Horncastle and others [2009] UKSC 14 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against Wikipedia and UKSCBlog's independent case comment.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CRIMPROC-001",
+      "authority_type": "statute",
+      "name": "Criminal Justice Act 2003, s.114",
+      "citation": "CJA 2003 s.114(1)-(3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2003",
+      "date_note": "Enactment year. The text verified this session is the current in-force version, but legislation.gov.uk's own page flags pending future amendments (from Acts cited there as '2026 c. 2' and '2026 c. 20') not yet in force as of this file's verification date - neither affects the substantive text of s.114(1) quoted here, confirmed live this session.",
+      "proposition": "In criminal proceedings, an out-of-court statement (hearsay) is admissible for the truth of its contents only if: (a) a statutory provision in this Chapter or elsewhere makes it admissible, (b) a preserved common-law exception under s.118 applies, (c) all parties agree, or (d) the court is satisfied it is in the interests of justice to admit it - guided by the nine non-exhaustive factors in s.114(2) (probative value, other available evidence, importance to the case, reliability of the maker and of the account of the statement's making, difficulty of challenge, and resulting prejudice).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2003/44/section/114",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session."
+    },
+    {
+      "authority_id": "AUTH-EW-CRIMPROC-002",
+      "authority_type": "case",
+      "name": "R v Horncastle and others",
+      "citation": "[2009] UKSC 14; [2010] 2 AC 373",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2009-12-09",
+      "judge_or_panel": "Lord Phillips (President)",
+      "proposition": "A conviction based solely or decisively on hearsay evidence admitted under the CJA 2003 gateways (including the s.114(1)(d) interests-of-justice gateway) does not automatically breach Article 6(3)(d) ECHR. The Court declined to import the Strasbourg 'sole or decisive rule' (that a conviction may never rest solely or decisively on the untested evidence of an absent witness) as a rigid domestic requirement, holding that Parliament's CJA 2003 statutory safeguards (the s.114(2) factors, s.125's stopping power, s.126's additional exclusionary discretion, and PACE 1984 s.78) render that rule unnecessary in the English system, and that the later Strasbourg decision in Al-Khawaja does not establish otherwise.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2009/14",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 14's summary of conclusions, sub-points (2), (6), and (9). Cross-checked against Wikipedia and UKSCBlog's independent case comment. BAILII's mirror returned HTTP 403 and was not used, per the standing access-terms rule - not needed here since Find Case Law covers this post-2009 case directly."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CRIMPROC-002",
+      "to": "AUTH-EW-CRIMPROC-001",
+      "relationship": "APPLIES",
+      "verified_via": "R v Horncastle [2009] UKSC 14, para 14, fetched directly from Find Case Law and independently re-confirmed: upholds the CJA 2003 s.114 hearsay-gateway regime as Article-6-compliant without needing to apply the Strasbourg 'sole or decisive' rule as an overriding domestic principle."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the general hearsay-admissibility framework and its Article 6 compatibility. Does not cover the specific statutory hearsay exceptions (business/other documents under ss.117, 116), the preserved common-law exceptions (s.118), disclosure duties under the Criminal Procedure and Investigations Act 1996, PACE 1984's own exclusionary discretion (s.78) in detail, bad character evidence, or any other Criminal Procedure & Evidence subject - all remain unbuilt."
+}

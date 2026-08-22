@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Mediation & ADR - Churchill's reclassification of Halsey's anti-compulsion dicta as obiter, and the court's resulting power to order ADR. This session's own WebFetch could not decode the official judiciary.uk PDF (confirmed on a direct re-attempt), and BAILII returned HTTP 403; the researching agent reported extracting the PDF text directly with pypdf. A WebSearch corroboration found the same holding in near-identical wording but attributed to paragraph 65 rather than the agent's paragraph 74(ii) - both are recorded rather than one being silently preferred, since judgments commonly state a principle once and repeat it in a concluding numbered list, and this session could not independently confirm which paragraph carries which wording.",
+  "verified_at": "2026-08-22",
+  "verification_method": "CPR Part 44, rule 44.2(5)(e) fetched live and directly from justice.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Churchill v Merthyr Tydfil County Borough Council [2023] EWCA Civ 1416 - the researching agent reported extracting the official judiciary.uk PDF directly with pypdf; this session's own independent re-fetch of the same PDF failed to decode, and a BAILII fetch returned HTTP 403. The core holding was independently corroborated via WebSearch, which surfaced near-identical wording (with a differing paragraph attribution) from multiple independent secondary sources including Practical Law and LexisNexis.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-MEDIATION-001",
+      "authority_type": "court_rule",
+      "name": "Civil Procedure Rules, Part 44, rule 44.2(5)(e)",
+      "citation": "CPR 44.2(5)(e)",
+      "court": "N/A - court rule",
+      "jurisdiction": "england-wales",
+      "date": "2024",
+      "date_note": "Date of the post-Churchill amendment adding the current wording. The text verified this session is the current in-force version.",
+      "proposition": "In deciding what costs order to make, the court has regard to all the circumstances, including the conduct of the parties (rule 44.2(4)(a)) - which expressly includes whether a party failed to comply with an order for alternative dispute resolution, or unreasonably failed to engage in alternative dispute resolution (rule 44.2(5)(e)). A party's unreasonable refusal to engage in ADR is therefore an express, named factor a court may weigh in awarding costs.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part-44-general-rules-about-costs",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-MEDIATION-002",
+      "authority_type": "case",
+      "name": "Churchill v Merthyr Tydfil County Borough Council",
+      "citation": "[2023] EWCA Civ 1416",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2023-11-29",
+      "judge_or_panel": "Dame Sue Carr LCJ, Sir Geoffrey Vos MR (leading judgment), Birss LJ",
+      "proposition": "Reclassified the anti-compulsion dicta at paragraphs 9-10 of Halsey v Milton Keynes General NHS Trust [2004] EWCA Civ 576 (not independently verified in this file) as obiter, not binding ratio, on the basis that they were not a necessary part of that case's reasoning. Held affirmatively that a court can lawfully stay proceedings for, or order the parties to engage in, a non-court-based dispute resolution process, provided the order does not impair the very essence of the claimant's right to proceed to a judicial hearing and is proportionate to achieving the legitimate aim of settling the dispute fairly, quickly and at reasonable cost. The court declined to lay down fixed principles for when such an order is appropriate, leaving that to a multi-factorial assessment of the circumstances.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.judiciary.uk/wp-content/uploads/2023/11/Churchill.APPROVED-JUDGMENTS-2.pdf",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "This session's own independent re-fetch of the official judiciary.uk PDF failed to decode, and a BAILII fetch of the same case returned HTTP 403. The researching agent reported extracting the PDF text directly with pypdf and quoted paragraphs 9-10, 20-21, and 74(ii); that extraction could not be independently reproduced this session. A WebSearch corroboration surfaced the same substantive holding in near-identical wording from multiple independent secondary sources (Practical Law, LexisNexis, and others), but attributed it to paragraph 65 rather than 74(ii) - this file does not resolve that paragraph-number discrepancy, recording it honestly rather than picking one. Recorded at VERIFIED_SECONDARY_SOURCE per this repository's established practice for PDFs this session's own tools could not independently decode."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-MEDIATION-002",
+      "to": "AUTH-EW-MEDIATION-001",
+      "relationship": "APPLIES",
+      "verified_via": "Churchill v Merthyr Tydfil [2023] EWCA Civ 1416, per the researching agent's account and independently corroborated in substance via WebSearch (see verification_note on the paragraph-number discrepancy): establishes the court's power to compel ADR, which CPR 44.2(5)(e)'s costs sanction for unreasonable refusal now operates alongside rather than as the sole lever."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the court's power to compel ADR and the costs-sanction rule that operates alongside it, with the case recorded honestly at a lower verification tier and a named paragraph-number discrepancy. Does not cover mediation privilege/without-prejudice protection, arbitration (covered separately), or any other Mediation & ADR subject - all remain unbuilt."
+}

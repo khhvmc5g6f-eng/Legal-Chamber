@@ -1,0 +1,73 @@
+{
+  "$comment": "UK Electoral Law - the substantial-compliance/material-effect test for invalidating a parliamentary election. Fresh research this session. Morgan v Simpson [1975] QB 151 predates the neutral-citation system and Find Case Law's coverage, so it is verified via the citing-judgment method through Moore v Pochin [2025] EWHC 3012 (KB) - a live 2025 Election Court judgment fetched directly, which treats Morgan v Simpson as the leading authority and quotes RPA 1983 s.23(3) verbatim.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Representation of the People Act 1983 s.23(3) fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. Moore v Pochin [2025] EWHC 3012 (KB) fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time. Morgan v Simpson [1975] QB 151 verified via the citing-judgment method plus independent secondary-source corroboration (Wikipedia, giving three parallel citations across separate report series, and a vLex UK case listing).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-ELEC-001",
+      "authority_type": "statute",
+      "name": "Representation of the People Act 1983, s.23(3)",
+      "citation": "RPA 1983 s.23(3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1983",
+      "date_note": "Enactment year. The text verified this session is the current in-force (revised) version; the page notes other sections of the Act have pending future changes, but none specifically listed for s.23(3) itself.",
+      "proposition": "No parliamentary election shall be declared invalid for a breach of official duty or the election rules unless the tribunal finds either that the election was not substantially conducted in accordance with election law, or that the breach affected the result - the statutory gateway all UK election petitions on procedural-irregularity grounds must pass through.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1983/2/section/23",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.23(3)'s exact text."
+    },
+    {
+      "authority_id": "AUTH-EW-ELEC-002",
+      "authority_type": "case",
+      "name": "Morgan v Simpson",
+      "citation": "[1975] QB 151; [1974] 3 WLR 517; [1974] 3 All ER 722",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "1974",
+      "date_note": "Judgment 1974, reported 1975 - a citation-year gap explained by publication lag, not an error.",
+      "judge_or_panel": "Lord Denning MR, Stephenson LJ, Lawton LJ",
+      "proposition": "The predecessor of what is now RPA 1983 s.23(3) is not to be read as requiring both substantial non-compliance and an affected result before invalidity follows - an election must be declared invalid if either the election was conducted so badly it was not substantially in accordance with election law (regardless of effect on the result), or a breach or irregularity affected the result even though the election was otherwise substantially compliant.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Predates the neutral-citation system and Find Case Law's coverage - confirmed live this session that a direct search of Find Case Law returns no record of it. Its continuing status as leading, good law is corroborated by a primary source: Moore v Pochin [2025] EWHC 3012 (KB) (below), fetched directly and independently re-confirmed, which describes it as 'the leading authority' and quotes Lord Denning's disjunctive-reading holding. The original case name/citation/facts are further corroborated by Wikipedia (giving three parallel citations across separate report series - a strong genuineness signal) and a vLex UK case listing."
+    },
+    {
+      "authority_id": "AUTH-EW-ELEC-003",
+      "authority_type": "case",
+      "name": "Moore v Pochin",
+      "citation": "[2025] EWHC 3012 (KB)",
+      "court": "Election Court (King's Bench Division)",
+      "jurisdiction": "england-wales",
+      "date": "2025-11-18",
+      "judge_or_panel": "Bryan J, Martin Spencer J",
+      "proposition": "A live 2025 Election Court petition (Runcorn & Helsby parliamentary by-election) applying RPA 1983 s.23(3) and treating Morgan v Simpson as the leading authority on the disjunctive substantial-compliance/affected-result test - confirming the doctrine remains current, applied law rather than a dated or superseded reading. The petition was ultimately dismissed on its own facts.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/kb/2025/3012",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraphs 23-25's discussion of s.23(3) and Morgan v Simpson."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-ELEC-003",
+      "to": "AUTH-EW-ELEC-002",
+      "relationship": "FOLLOWED",
+      "verified_via": "Moore v Pochin [2025] EWHC 3012 (KB), paras 23-25, fetched directly from Find Case Law and independently re-confirmed: describes Morgan v Simpson as 'the leading authority' and applies its disjunctive reading of the substantial-compliance test."
+    },
+    {
+      "from": "AUTH-EW-ELEC-002",
+      "to": "AUTH-EW-ELEC-001",
+      "relationship": "APPLIES",
+      "verified_via": "Morgan v Simpson construes the predecessor of what is now RPA 1983 s.23(3), a construction Moore v Pochin confirms still governs the current provision."
+    }
+  ],
+  "what_this_is_not": "Three verified nodes covering the substantial-compliance/material-effect test for invalidating a parliamentary election. Does not cover local election petitions, the specific grounds for a petition (corrupt/illegal practices), voter ID requirements under the Elections Act 2022, or any other Electoral Law subject - all remain unbuilt."
+}

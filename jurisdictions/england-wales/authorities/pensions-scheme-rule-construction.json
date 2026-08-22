@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Pensions Law - the interpretive principles for construing pension scheme trust deeds and rules, and the RPI-to-CPI indexation dispute that produced them. Fresh research this session. Both nodes are post-2016/2018 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Barnardo's v Buckinghamshire and others [2018] UKSC 55 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against the UK Supreme Court's own case page. The Court of Appeal decision under appeal, [2016] EWCA Civ 1064, fetched live and directly from Find Case Law.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-PENS-001",
+      "authority_type": "case",
+      "name": "Barnardo's v Buckinghamshire and others",
+      "citation": "[2018] UKSC 55",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2018-11-07",
+      "judge_or_panel": "Lord Hodge (sole judgment; Lady Hale, Lord Wilson, Lord Sumption, Lord Briggs agreeing)",
+      "proposition": "Sets out, for the first time in a Supreme Court decision, general principles for construing pension scheme trust deeds and rules: such instruments are formal, professionally drafted, not the product of bilateral commercial negotiation, designed to operate over the long term, and relied on by non-drafting parties (the members) - so courts should give more weight to textual analysis and less to background factual matrix than in an ordinary commercial contract construed under the Rainy Sky/Arnold v Britton/Wood v Capita trilogy. On the facts, under the 1988 Barnardo's scheme rules the trustees had no power to switch the indexation measure from RPI to CPI merely because they judged CPI a better measure - the power to select a different index arose only if RPI itself ceased to be published or was officially replaced. Appeal dismissed.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2018/55",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 15's textual-analysis principle. Cross-checked against the UK Supreme Court's own case page. BAILII's copy was blocked by an anti-scraping challenge and was not used - not needed, since Find Case Law covers this post-2009 case directly."
+    },
+    {
+      "authority_id": "AUTH-EW-PENS-002",
+      "authority_type": "case",
+      "name": "Barnardo's and others v Buckinghamshire and others (Court of Appeal)",
+      "citation": "[2016] EWCA Civ 1064",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2016-11-02",
+      "judge_or_panel": "Sir Geoffrey Vos, Chancellor (dissenting); McFarlane LJ, Lewison LJ (majority)",
+      "proposition": "By a 2-1 majority, upheld the first-instance ruling that the trustees had no rule-making power to substitute CPI for RPI while RPI remained a published index. The Chancellor dissented, construing the scheme's 'General Index' definition as permitting trustee discretion to adopt a different index. This decision was the one under appeal to, and affirmed by, the Supreme Court in Barnardo's v Buckinghamshire [2018] UKSC 55 above.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2016/1064",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-PENS-001",
+      "to": "AUTH-EW-PENS-002",
+      "relationship": "FOLLOWED",
+      "verified_via": "Barnardo's v Buckinghamshire [2018] UKSC 55, fetched directly from Find Case Law and independently re-confirmed: affirms the Court of Appeal's majority holding on appeal, while adding the general pension-scheme construction principles at paras 13-15."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering pension scheme rule construction and the specific RPI/CPI indexation dispute that produced the leading principles. Does not cover trustee fiduciary duties generally, the Pension Protection Fund's role, automatic enrolment, or any other Pensions Law subject - all remain unbuilt."
+}

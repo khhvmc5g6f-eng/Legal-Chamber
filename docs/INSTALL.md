@@ -9,7 +9,7 @@ claude plugin install <this-repo-url>
 or, from a local clone:
 
 ```bash
-claude plugin install /path/to/legal-chamber
+claude plugin install /path/to/legal-chambers
 ```
 
 This registers `skills/legal-work` (and the other 15 skills) as invocable skills, and makes `agents/*` role specs available for the Agent tool to use as prompts.

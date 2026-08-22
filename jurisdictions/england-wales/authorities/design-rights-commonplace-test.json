@@ -1,0 +1,49 @@
+{
+  "$comment": "UK Design Rights - the unregistered UK design right's originality/'commonplace' test under CDPA 1988 s.213. Fresh research this session. A registered-design alternative pairing (RDA 1949 s.1B + PMS International v Magmatic Ltd, the 'Trunki' case, [2016] UKSC 12) was also fully verified but deliberately not used - the researching agent found Magmatic actually construes a Community Registered Design under EU Regulation 6/2002 Art 10, not RDA 1949 s.1B directly, and no source confirming the two provisions were treated as interchangeable in that case was found this session. The unregistered-design pairing below is the cleaner, purely domestic match. Farmers Build [1998] EWCA Civ 1900 predates Find Case Law's coverage and BAILII returned HTTP 403, so it is verified via 2 independent secondary sources.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Copyright, Designs and Patents Act 1988 s.213 fetched live and directly from legislation.gov.uk's in-force text. Farmers Build Ltd v Carier Bulk Materials Handling Ltd [1998] EWCA Civ 1900 verified via 2 independent secondary sources (a full-text mirror at lawcarenigeria.com, independently re-fetched and re-confirmed by the orchestrating session, and swarb.co.uk/CaseMine's independent case commentary) after BAILII returned HTTP 403 and Find Case Law returned 404 (this 1998 judgment predates its retrospective coverage).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-DESIGN-001",
+      "authority_type": "statute",
+      "name": "Copyright, Designs and Patents Act 1988, s.213 - unregistered design right",
+      "citation": "CDPA 1988 s.213(1)-(4)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1988",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "Design right is a property right subsisting in an original design (s.213(1)) - the shape or configuration, whole or part, internal or external, of an article (s.213(2)). A design is not 'original' for this purpose if it is commonplace in a qualifying country in the design field in question at the time of its creation (s.213(4)) - the test construed in Farmers Build below.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1988/48/section/213",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session."
+    },
+    {
+      "authority_id": "AUTH-EW-DESIGN-002",
+      "authority_type": "case",
+      "name": "Farmers Build Ltd v Carier Bulk Materials Handling Ltd and others",
+      "citation": "[1998] EWCA Civ 1900; [1999] RPC 461",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "1998-12-03",
+      "judge_or_panel": "Mummery LJ, Sir Christopher Slade, Simon Brown LJ",
+      "proposition": "The first UK unregistered design-right case to reach the Court of Appeal. Originality under s.213 is a two-stage test: (1) is the design original in the ordinary copyright sense (not copied, originated by the designer)? and (2) even if original in that sense, is it nonetheless excluded because it is 'commonplace' in the relevant design field at the time of creation? 'Commonplace' requires an objective comparison against the design corpus in evidence for that field - a design made of individually commonplace features can still qualify if the particular combination is not commonplace ('a merit and unusual design may well be created by blending together in a novel way known features').",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "This 1998 judgment predates Find Case Law's retrospective coverage (404 on direct check) and BAILII returned HTTP 403. Verified via a full-text mirror at lawcarenigeria.com, independently re-fetched and re-confirmed a second time by the orchestrating session (consistent both times on the two-stage test and the 'blending together' quote), cross-checked against swarb.co.uk and CaseMine's independent case commentary."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-DESIGN-002",
+      "to": "AUTH-EW-DESIGN-001",
+      "relationship": "APPLIES",
+      "verified_via": "Farmers Build [1998] EWCA Civ 1900, verified via independent secondary sources: construes s.213(4)'s 'commonplace' exclusion as an objective, field-specific comparative exercise."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the unregistered design right's originality/commonplace test. Does not cover registered designs (RDA 1949's 'individual character'/'informed user' test - a fully-verified alternative pairing was found but deliberately not used, see $comment), the scope of design-right infringement, or any other Design Rights subject - all remain unbuilt."
+}

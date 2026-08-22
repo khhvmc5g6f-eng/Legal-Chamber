@@ -5,6 +5,8 @@ description: Negotiation, mediation, and settlement strategy - interests, levera
 
 # legal-negotiation
 
+For the strategy work below (leverage layering, settlement modelling, concessions ladder), run `../../agents/negotiation/ROLE.md` in a fresh context that takes the merits assessment as a given input rather than re-deriving it - see "Keep merits and leverage analytically separate" below for why that separation matters.
+
 ## Keep merits and leverage analytically separate
 
 A strong legal position and strong negotiating leverage are not the same thing, and conflating them produces bad advice in both directions. Get the merits assessment from `../legal-prospects/SKILL.md` first, then layer leverage (financial pressure, delay tolerance, publicity exposure, relationship value, enforcement difficulty) on top of it, explicitly.
@@ -16,6 +18,8 @@ Model scenarios rather than pretending litigation is purely mathematical: merits
 ## Mediation prep
 
 Confidential position, opening position, interests map (not just positions), a concessions ladder, a settlement range, authority-to-settle requirements, and non-monetary terms that might unlock a deal a purely monetary negotiation would miss.
+
+Genuine settlement communications are typically `WITHOUT PREJUDICE` (or `WITHOUT PREJUDICE SAVE AS TO COSTS`, see `../../docs/OPERATING_RULES.md` "Confidentiality classifications") in a way that affects whether they can later be shown to a court - don't record or draft a without-prejudice communication as if it carries the same status as an ordinary case document, and don't assume the label applies to every negotiation communication (an opening demand made openly, for instance, may not qualify). Where that status hasn't actually been verified for the applicable jurisdiction, treat it as `UNVERIFIED` rather than assumed.
 
 ## Client objective, not just legal outcome
 

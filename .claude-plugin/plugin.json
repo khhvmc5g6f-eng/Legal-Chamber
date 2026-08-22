@@ -1,13 +1,13 @@
 {
-  "name": "legal-chamber",
-  "version": "0.1.6",
+  "name": "legal-chambers",
+  "version": "0.1.7",
   "description": "Global legal intelligence, research, drafting, evidence, litigation, transaction, academic and adversarial reasoning system. Router skill: legal-work.",
   "author": {
-    "name": "Legal Chamber Contributors"
+    "name": "Legal Chambers Contributors"
   },
   "license": "BUSL-1.1",
-  "homepage": "https://github.com/khhvmc5g6f-eng/legal-chamber",
-  "repository": "https://github.com/khhvmc5g6f-eng/legal-chamber",
+  "homepage": "https://github.com/khhvmc5g6f-eng/legal-chambers",
+  "repository": "https://github.com/khhvmc5g6f-eng/legal-chambers",
   "keywords": [
     "legal",
     "law",

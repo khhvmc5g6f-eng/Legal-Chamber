@@ -1,0 +1,50 @@
+{
+  "$comment": "UK Freedom of Information Law - the s.53(2) 'ministerial veto' and its narrow construction in R (Evans) v Attorney General (the 'Prince Charles letters'/'black spider memos' case). Fresh research this session. Both nodes are post-2000/2015 and fetched directly, no BAILII/pre-2009 access issue to route around. An initial candidate pairing (s.35, formulation of government policy) was checked and correctly abandoned mid-research when it turned out Evans's actual ratio concerns s.53(2) applied to s.37 (Royal communications), not s.35 - s.53(2) is the genuinely load-bearing provision, not forced to fit a mismatched premise.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Freedom of Information Act 2000 s.53(2) fetched live and directly from legislation.gov.uk's in-force text. R (Evans) v Attorney General [2015] UKSC 21 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against the UK Constitutional Law Association blog and UKSC Blog's independent case comments.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-FOI-001",
+      "authority_type": "statute",
+      "name": "Freedom of Information Act 2000, s.53(2) - the ministerial veto",
+      "citation": "FOIA 2000 s.53(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2000",
+      "date_note": "Enactment year. legislation.gov.uk's own page flags a pending amendment via S.I. 2026/386 affecting subsections (2), (3), and (6), not yet applied to the displayed text as of this file's verification date - confirmed live, not assumed.",
+      "proposition": "A decision notice or enforcement notice ceases to have effect if, within 20 working days of the effective date, the 'accountable person' (a Cabinet minister, the Attorney General, or equivalent) gives the Information Commissioner a certificate stating they have formed the opinion, on reasonable grounds, that there was no failure to comply with the disclosure duty. This is the statutory mechanism allowing the executive to override a Commissioner's (or, as construed in Evans below, a court's) disclosure decision.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2000/36/section/53",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, including the live flag for a pending, not-yet-applied amendment."
+    },
+    {
+      "authority_id": "AUTH-EW-FOI-002",
+      "authority_type": "case",
+      "name": "R (Evans) v Attorney General",
+      "citation": "[2015] UKSC 21",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2015-03-26",
+      "judge_or_panel": "Lord Neuberger (majority judgment on this point)",
+      "proposition": "The 'reasonable grounds' phrase in s.53(2) must be read narrowly, reflecting the constitutional principle that a court's decision binds the parties and cannot be set aside by the executive. Where the Commissioner's disclosure decision has already been affirmed by a court or tribunal after a full public hearing, a minister cannot lawfully issue a s.53(2) certificate simply because they take a different view of the same facts and arguments already considered - that alone is not 'reasonable grounds'. The certificate is confined to genuinely new circumstances not before the original tribunal, not mere disagreement with the outcome. Quashed the Attorney General's certificate purporting to block disclosure of the 'Prince Charles letters'.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2015/21",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 88's narrow-construction holding and paragraph 52's constitutional-principle framing. Cross-checked against the UK Constitutional Law Association blog and UKSC Blog's independent case comments."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-FOI-002",
+      "to": "AUTH-EW-FOI-001",
+      "relationship": "APPLIES",
+      "verified_via": "R (Evans) v Attorney General [2015] UKSC 21, paras 52 and 88, fetched directly from Find Case Law and independently re-confirmed: construes 'reasonable grounds' in s.53(2) narrowly, against the executive being able to override a court's own prior decision on the same facts."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the ministerial veto's narrow construction. Does not cover the substantive exemptions (s.35 policy formulation, s.36 prejudice to public affairs, s.37 Royal communications itself, or others), the public interest balancing test generally, absolute vs qualified exemptions, or any other Freedom of Information subject - all remain unbuilt."
+}

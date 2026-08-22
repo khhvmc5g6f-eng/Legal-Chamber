@@ -1,0 +1,26 @@
+{
+  "$comment": "England & Wales, Franchise Law. England has no dedicated franchise-specific statute (unlike the US) - franchise disputes are resolved via ordinary contract, misrepresentation, and competition law. This file covers pre-contractual misrepresentation of likely store performance, a real and recurring franchise-dispute pattern. Fresh research this session. Single case node (no separate statute node - the deceit test itself is a common-law tort, and the ECO3 Capital v Ludsin [2013] EWCA Civ 413 case it draws the four-part test from was not independently fetched this session, named only as the case's own citation, not as a separate verified node).",
+  "verified_at": "2026-08-22",
+  "verification_method": "Ali & Ors v Abbeyfield VE Ltd [2018] EWHC 669 (Ch) fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-FRAN-001",
+      "authority_type": "case",
+      "name": "Ali and others v Abbeyfield VE Ltd",
+      "citation": "[2018] EWHC 669 (Ch)",
+      "court": "High Court (Chancery Division, Business and Property Courts)",
+      "jurisdiction": "england-wales",
+      "date": "2018-03-27",
+      "judge_or_panel": "Kelyn Bacon QC (Deputy High Court Judge)",
+      "proposition": "A franchisor (here, via a joint-venture structure standard to the Vision Express franchise model) who makes specific, quantified pre-contractual representations about likely store performance (eye-test-rate projections, 'usual' overdraft repayment timelines, comparative failure-rate claims) to a prospective franchisee, without a proper evidential basis for those figures, commits fraudulent misrepresentation where the representations are false, the representor knew or was reckless as to their falsity, and the franchisee relied on them as a real and substantial (not necessarily sole) cause of their investment decision - applying the four-part deceit test (false representation; knowledge or recklessness as to falsity; intent to induce reliance; actual reliance causing loss). A standard non-reliance/waiver clause in the franchise agreement does not protect the franchisor against liability for pre-contractual statements made fraudulently - the clause here expressly carved out fraud.",
+      "treatment": "APPLIED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/ch/2018/669",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 39's fraud carve-out and paragraph 50's four-part deceit test. High Court (not Court of Appeal/Supreme Court), so recorded as PERSUASIVE rather than BINDING authority weight."
+    }
+  ],
+  "edges": [],
+  "what_this_is_not": "One verified node on pre-contractual misrepresentation in a franchise/joint-venture sale, itself an application of the general common-law deceit tort rather than franchise-specific statute (none exists in England). Does not cover implied good-faith obligations in long-term franchise/distribution contracts, termination/non-renewal disputes, restrictive covenants post-termination, or any other Franchise Law subject - all remain unbuilt."
+}

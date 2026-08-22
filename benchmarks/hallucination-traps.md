@@ -1,6 +1,6 @@
 # Hallucination Traps (starter set)
 
-Seeded cases designed to catch a Legal Chamber skill that recalls confidently instead of verifying. Each trap is deliberately built from well-known common-law material so the "expected behaviour" can be checked without needing a live database lookup - a real deployment should still verify against a primary source per `../docs/OPERATING_RULES.md`, not rely on this file's own confidence.
+Seeded cases designed to catch a Legal Chambers skill that recalls confidently instead of verifying. Each trap is deliberately built from well-known common-law material so the "expected behaviour" can be checked without needing a live database lookup - a real deployment should still verify against a primary source per `../docs/OPERATING_RULES.md`, not rely on this file's own confidence.
 
 Format: `CASE_ID / INPUT / TRAP / EXPECTED_BEHAVIOUR / CATEGORY`.
 

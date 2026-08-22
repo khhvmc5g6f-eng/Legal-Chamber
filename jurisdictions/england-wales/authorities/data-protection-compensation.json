@@ -1,0 +1,50 @@
+{
+  "$comment": "UK Data Protection Law - the material-damage requirement for compensation and the 'same interest' bar to representative actions, from Lloyd v Google LLC. This adds a first real case-law Authority Graph entry alongside the existing regulator profile (regulators/ico.md) and STRUCTURAL_DRAFT EU pack (jurisdictions/eu/), neither of which is case law. IMPORTANT: the statute node (Data Protection Act 1998 s.13) is the historic provision Lloyd actually construed - DPA 1998 was repealed and replaced by the Data Protection Act 2018/UK GDPR regime, confirmed live this session. The modern equivalent (UK GDPR Article 82 / DPA 2018 s.168) was NOT independently verified this session and must not be assumed to say the same thing.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Lloyd v Google LLC [2021] UKSC 50 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time. Data Protection Act 1998 s.13 fetched live and directly from legislation.gov.uk's as-enacted text (the current-in-force page for this Act no longer exists in the same form, since the Act has been repealed - confirmed live this session).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-DP-001",
+      "authority_type": "statute",
+      "name": "Data Protection Act 1998, s.13 (as enacted) - HISTORIC, REPEALED",
+      "citation": "DPA 1998 s.13(1)-(2)",
+      "court": "N/A - primary legislation (repealed)",
+      "jurisdiction": "england-wales",
+      "date": "1998",
+      "date_note": "Enactment year. This Act was repealed and replaced by the Data Protection Act 2018 (implementing UK GDPR), confirmed live this session. Recorded here as the historic provision actually construed in Lloyd v Google, not as current law - the modern equivalent is UK GDPR Article 82 / DPA 2018 s.168, which has NOT been independently verified in this session and should not be assumed to track s.13's wording or the Lloyd holding without its own live check.",
+      "proposition": "An individual who suffers damage by reason of a data controller's contravention of the Act's requirements is entitled to compensation for that damage (s.13(1)). Compensation for distress alone is available only if the individual also suffers damage, or the contravention relates to processing for the 'special purposes' (s.13(2)).",
+      "treatment": "OVERRULED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1998/29/section/13/enacted",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, from the as-enacted text (the Act's repeal means no current in-force revised version exists to fetch instead). 'treatment: OVERRULED' is used in the 'legislatively superseded/repealed' sense, matching the convention already used in landlord-tenant-s21-historical.json for a repealed provision, not a court overruling."
+    },
+    {
+      "authority_id": "AUTH-EW-DP-002",
+      "authority_type": "case",
+      "name": "Lloyd v Google LLC",
+      "citation": "[2021] UKSC 50",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2021-11-10",
+      "judge_or_panel": "Lord Leggatt (sole substantive judgment; Lord Reed, Lady Arden, Lord Sales, Lord Burrows agreeing)",
+      "proposition": "In a proposed representative claim under CPR 19.6 on behalf of around 4 million iPhone users against Google for alleged unlawful tracking, the Supreme Court unanimously held: (1) 'damage' in DPA 1998 s.13(1) means material damage only (para 92) - 'loss of control' of personal data alone, without proof of material damage or the distress conditions in s.13(2), is not a free-standing head of compensable loss; and (2) a representative action requires the represented class to have 'the same interest' (CPR 19.6), meaning the representative can be relied on to promote and protect the interests of the whole class on genuinely common issues (para 71) - a claim seeking a uniform per-capita sum without individualised proof of unlawful processing and resulting damage for each class member cannot proceed that way. The claim was dismissed.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2021/50",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on the para 92 material-damage holding and para 71's 'same interest' formulation. BAILII's mirror returned HTTP 403 and was not used, per the standing access-terms rule - not needed here since Find Case Law covers this post-2009 case directly."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-DP-002",
+      "to": "AUTH-EW-DP-001",
+      "relationship": "APPLIES",
+      "verified_via": "Lloyd v Google LLC [2021] UKSC 50, para 92, fetched directly from Find Case Law and independently re-confirmed: construes 'damage' in DPA 1998 s.13(1) as material damage only, rejecting a free-standing 'loss of control' head of loss."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the material-damage requirement and the representative-action bar, under a NOW-REPEALED statute. Does not cover UK GDPR/DPA 2018's own compensation provision (Article 82/s.168, not independently verified), the substantive data-protection principles, ICO enforcement powers (see regulators/ico.md for that regulator-procedure content instead), international data transfers, or any other Data Protection subject - all remain unbuilt. Anyone using this file for a live 2018-or-later matter must confirm the modern Article 82/s.168 framework applies instead, and must not assume it mirrors s.13/Lloyd without its own live check."
+}

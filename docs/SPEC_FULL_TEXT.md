@@ -1,4 +1,4 @@
-# Legal Chamber: Full Original Specification (reference / backlog)
+# Legal Chambers: Full Original Specification (reference / backlog)
 
 This is the complete specification this repository implements a first, honestly-scoped subset of. It is preserved verbatim as the backlog for future work, see `HONEST_STATUS.md` for what has actually been built so far, and `OPERATING_RULES.md` / `../CLAUDE.md` for what governs this repository's own development in the meantime.
 
@@ -30,14 +30,14 @@ The system must never reverse-engineer a preferred legal outcome and then search
 
 ### PART I: FUNDAMENTAL OPERATING RULES
 
-Legal Chamber must never fabricate: cases, neutral citations, report citations, statutes, statutory provisions, regulations, court rules, practice directions, tribunal rules, quotations, paragraph numbers, judges, court names, procedural deadlines, legal tests, academic sources, facts, evidence, correspondence, exhibits, expert opinions, or probabilities represented as empirical findings.
+Legal Chambers must never fabricate: cases, neutral citations, report citations, statutes, statutory provisions, regulations, court rules, practice directions, tribunal rules, quotations, paragraph numbers, judges, court names, procedural deadlines, legal tests, academic sources, facts, evidence, correspondence, exhibits, expert opinions, or probabilities represented as empirical findings.
 
 If information cannot be established, say `UNKNOWN`, `UNVERIFIED`, `INSUFFICIENT EVIDENCE`, or `NO VERIFIED AUTHORITY LOCATED`. Never substitute plausibility for verification.
 
 ### PART II: PRODUCT ARCHITECTURE
 
 ```
-legal-chamber/
+legal-chambers/
 ├── README.md, LICENSE, CHANGELOG.md, CONTRIBUTING.md, SECURITY.md,
 │   GOVERNANCE.md, AGENTS.md, CLAUDE.md
 ├── skills/       (legal-work, legal-research, legal-draft, legal-review,
@@ -109,7 +109,7 @@ Every matter receives `LAW_AS_OF`; every important authority receives `VERIFIED_
 
 ### PART XV: BITEMPORAL LAW MODEL
 
-Represent law with Valid Time (when the rule legally applied) and Knowledge Time (when Legal Chamber verified it), so a question about 2022 law isn't accidentally answered with 2026 law.
+Represent law with Valid Time (when the rule legally applied) and Knowledge Time (when Legal Chambers verified it), so a question about 2022 law isn't accidentally answered with 2026 law.
 
 ### PART XVI: AUTHORITY HIERARCHY
 
@@ -363,7 +363,7 @@ Surface the actual applicable institutional AI-assistance policy where known, ra
 
 ### PART CCXXXVII-CCXLI: STYLE BENCHMARK CORPUS AND TESTS / FALSE-POSITIVE AWARENESS / DETECTOR RESULT HANDLING / AUTHORSHIP EVIDENCE PACK
 
-A human may use em dashes, uniform sentences, and generic prose; a model may avoid all of them. Style signals concern prose quality, not proof of authorship. If a user supplies a detection report, Legal Chamber may explain it, compare passages against genuine drafts, and help document authorship history, never optimise specifically to defeat a subsequent detector run.
+A human may use em dashes, uniform sentences, and generic prose; a model may avoid all of them. Style signals concern prose quality, not proof of authorship. If a user supplies a detection report, Legal Chambers may explain it, compare passages against genuine drafts, and help document authorship history, never optimise specifically to defeat a subsequent detector run.
 
 ### PART CCXLII-CCXLV: NATURAL LEGAL WRITING PIPELINE / FINAL STYLE GATE / STYLE PRINCIPLE / ULTIMATE AUTHORSHIP TEST
 
@@ -374,11 +374,11 @@ AUTHOR VOICE PASS → NATURAL PROSE PASS → STYLE LINTER →
 SUBSTANTIVE REVERIFICATION → FINAL DOCUMENT
 ```
 
-Legal Chamber must never attempt to make writing appear human by making it worse, no deliberate spelling/grammar errors, no arbitrary fragments, no colloquialisms inappropriate to the forum. A skilled human legal writer does not demonstrate humanity by writing badly.
+Legal Chambers must never attempt to make writing appear human by making it worse, no deliberate spelling/grammar errors, no arbitrary fragments, no colloquialisms inappropriate to the forum. A skilled human legal writer does not demonstrate humanity by writing badly.
 
 ### FINAL OPERATING PRINCIPLE
 
-Legal Chamber must produce legal work that is correct, verifiable, evidence-based, jurisdictionally appropriate, professionally written, natural, author-consistent, and capable of surviving adversarial scrutiny. No generic padding. No invented authority. No fake sophistication. No em dashes where prohibited. No mechanical rhetorical patterns. No sacrificed legal precision. No detector-chasing.
+Legal Chambers must produce legal work that is correct, verifiable, evidence-based, jurisdictionally appropriate, professionally written, natural, author-consistent, and capable of surviving adversarial scrutiny. No generic padding. No invented authority. No fake sophistication. No em dashes where prohibited. No mechanical rhetorical patterns. No sacrificed legal precision. No detector-chasing.
 
 ```
 JURISDICTION → FACT → EVIDENCE → LAW → AUTHORITY → PROOF → APPLICATION →

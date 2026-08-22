@@ -1,0 +1,70 @@
+{
+  "$comment": "England & Wales, Family Law, financial remedies on divorce - the sharing principle. Fresh research this session, not promoted from prior work. Miller v Miller; McFarlane v McFarlane [2006] UKHL 24 predates Find Case Law's UKSC/UKHL coverage (2009 onward) and BAILII returned HTTP 403 on direct fetch, so per docs/OPERATING_RULES.md's citing-judgment method it is verified instead via Standish v Standish [2025] UKSC 26, fetched live and directly from Find Case Law, which quotes and applies it by paragraph. This deliberately mirrors the exact verification pattern already used for the pre-2009 House of Lords authorities in tort-duty-of-care.json and public-law-judicial-review-grounds.json.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Matrimonial Causes Act 1973 s.25 fetched live and directly from legislation.gov.uk's in-force text. Standish v Standish [2025] UKSC 26 fetched live and directly from Find Case Law (caselaw.nationalarchives.gov.uk). Miller v Miller; McFarlane v McFarlane [2006] UKHL 24 verified via the citing-judgment method (Standish quotes it directly, with paragraph numbers) after BAILII returned HTTP 403 and Find Case Law confirmed its own UKSC coverage does not extend back to 2006 - both facts checked live this session, not assumed.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-FAM-001",
+      "authority_type": "statute",
+      "name": "Matrimonial Causes Act 1973, s.25",
+      "citation": "MCA 1973 s.25",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1973",
+      "date_note": "Enactment year. The specific text verified this session is the current in-force (revised) version, substantially amended by the Pensions Act 2008, with earlier amendments in 1996 and 1999 - not the 1973 text as originally enacted.",
+      "proposition": "Sets out the factors a court must have regard to when exercising its powers to make a financial order on divorce (income/earning capacity/property/resources, needs/obligations/responsibilities, standard of living, age and marriage duration, disability, contributions including homemaking, conduct where inequitable to disregard, and lost benefits), with first consideration given to the welfare of any minor child of the family. This is the statutory framework the sharing, needs, and compensation principles in Miller/McFarlane and Standish (below) operate within, not a separate or competing test.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1973/18/section/25",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session - confirmed as the current 'Latest available (Revised)' text with no outstanding effects noted."
+    },
+    {
+      "authority_id": "AUTH-EW-FAM-002",
+      "authority_type": "case",
+      "name": "Miller v Miller; McFarlane v McFarlane",
+      "citation": "[2006] UKHL 24",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "2006-05-24",
+      "proposition": "Established the modern three-principle framework for achieving fairness in financial remedies on divorce: needs, compensation (for relationship-generated economic disadvantage), and sharing. On sharing specifically (Lord Nicholls): 'The parties commit themselves to sharing their lives... each is entitled to an equal share of the assets of the partnership, unless there is good reason to the contrary' - extending White v White's 'yardstick of equality' from long marriages into a general starting-point principle, subject to displacement.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "BAILII returned HTTP 403 on direct fetch this session; the block was treated as final rather than routed around, per docs/OPERATING_RULES.md. Find Case Law's own UKSC/UKHL coverage confirmed live this session to run only from 2009, so this 2006 judgment cannot be there either. Verified instead via Standish v Standish [2025] UKSC 26 (below), which quotes this case's paragraphs 9 and 16 directly and applies its framework - the citing-judgment method, not a first-party read of the 2006 text itself."
+    },
+    {
+      "authority_id": "AUTH-EW-FAM-003",
+      "authority_type": "case",
+      "name": "Standish v Standish",
+      "citation": "[2025] UKSC 26",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2025-07-02",
+      "proposition": "The sharing principle applies only to matrimonial property (the financial product of the parties' common endeavour), not non-matrimonial property (pre-marital assets, inheritances, external gifts). Introduces 'matrimonialisation' - the transformation of initially non-matrimonial property into matrimonial property through the parties' sustained treatment of it as shared over time (para 52) - but holds that a transfer made solely for tax planning purposes does not by itself matrimonialise an asset absent compelling additional evidence of genuine sharing intent (para 56).",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2025/26",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session. Quotes Miller v Miller; McFarlane v McFarlane [2006] UKHL 24 directly at paragraphs 9 and 16 (see edge below)."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-FAM-003",
+      "to": "AUTH-EW-FAM-002",
+      "relationship": "APPLIES",
+      "verified_via": "Standish v Standish [2025] UKSC 26, paras 4, 40, 43 and 49, fetched directly from Find Case Law: quotes Lord Nicholls' formulation of the sharing principle from Miller/McFarlane by paragraph number and applies it, while clarifying the principle's scope is limited to matrimonial property specifically."
+    },
+    {
+      "from": "AUTH-EW-FAM-002",
+      "to": "AUTH-EW-FAM-001",
+      "relationship": "APPLIES",
+      "verified_via": "The needs/compensation/sharing framework in Miller/McFarlane operates within, and does not displace, the s.25 statutory factors - it structures how the court's s.25 discretion is actually exercised."
+    }
+  ],
+  "what_this_is_not": "Three verified nodes covering one doctrinal point - the sharing principle's current scope (matrimonial vs non-matrimonial property, and matrimonialisation) - from statute through its 2006 foundation to its 2025 clarification. Does not cover the needs or compensation principles in any depth, pre-nuptial/post-nuptial agreements (see Radmacher v Granatino [2010] UKSC 42, located but not verified this session), children arrangements/the welfare principle (Children Act 1989), divorce process itself, domestic abuse, or any other Family Law subject - all remain unbuilt."
+}

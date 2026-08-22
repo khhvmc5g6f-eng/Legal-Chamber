@@ -4,7 +4,7 @@ Academic marking rubrics used by `../skills/legal-academic/SKILL.md` and `../age
 
 ## Status
 
-**Deliberately empty of institutional content.** No specific university's rubric is invented here - see `../docs/OPERATING_RULES.md` Part LXXXVII: "do not invent institutional rubrics." A rubric file can only be added once someone actually supplies (or points to) the real, current rubric from a named institution.
+**One real institutional rubric exists: `level7-distinction-standard.md`**, sourced from a real UK institution's published assessment regulations at the user's explicit request, with the institution's name and identifying source links withheld at the user's further request - the standing rule below still applies to every institution not yet supplied this way. Every other institution remains unbuilt - see `../docs/SPEC_FULL_TEXT.md` Part LXXXVII: "do not invent institutional rubrics." A rubric file can only be added once someone actually supplies (or points to) the real, current rubric from a named institution; `level7-distinction-standard.md` itself only contains what was genuinely verifiable that way (see its own "Provenance" section for what withheld-but-not-invented means here), and its "What this file does NOT contain" section is explicit about a real gap (qualitative grade descriptors are confirmed gated behind the source institution's student portal, not publicly accessible) rather than papering over it. This file is also this repository's current default academic-output target - see its "Target standard" section.
 
 ## Rubric file format, when one is added
 

@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Mental Health Law - the 'acid test' for deprivation of liberty and its statutory trigger under MCA 2005 s.4A. Fresh research this session. Both nodes are post-2005/2014 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Mental Capacity Act 2005 s.4A fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time. P v Cheshire West and Chester Council [2014] UKSC 19 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-MH-001",
+      "authority_type": "statute",
+      "name": "Mental Capacity Act 2005, s.4A",
+      "citation": "MCA 2005 s.4A(1)-(5)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2009-04-01",
+      "date_note": "Date s.4A was inserted, by the Mental Health Act 2007 ss.50(2)/56. legislation.gov.uk's own page flags 'changes and effects yet to be applied to Section 4A' as of this file's verification date - specifically, subsection (5)'s substitution by the Mental Capacity (Amendment) Act 2019 (the Schedule AA1 Liberty Protection Safeguards regime, meant to replace the original Schedule A1 DoLS scheme) is not yet fully implemented - confirmed live, not assumed.",
+      "proposition": "The Act does not authorise depriving a person of liberty (s.4A(1)), subject only to narrow gateways: a court order under s.16(2)(a) (s.4A(3)-(4)), or an authorisation under Schedule AA1 (s.4A(5)). This is the statutory trigger that makes it legally consequential whether given care/residential arrangements cross the threshold into 'deprivation of liberty' - the question the acid test in Cheshire West answers.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2005/9/section/4A",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on s.4A(1)'s exact text and the live pending-amendments flag on subsection (5)."
+    },
+    {
+      "authority_id": "AUTH-EW-MH-002",
+      "authority_type": "case",
+      "name": "P v Cheshire West and Chester Council and another; P and Q v Surrey County Council",
+      "citation": "[2014] UKSC 19",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2014-03-19",
+      "judge_or_panel": "Lady Hale (leading judgment)",
+      "proposition": "People who lack mental capacity have the same right to physical liberty under Article 5 ECHR as anyone else, and whether living arrangements amount to a deprivation of liberty must be assessed by the same objective standard regardless of disability, the benevolence of the placement, or whether it is domestic/family-based rather than institutional - rejecting a 'relative normality' comparator. Sets out the 'acid test': the key features, following HL v United Kingdom, are whether the person was under continuous supervision and control and was not free to leave.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2014/19",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches word-for-word consistent on paragraph 49's acid test."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-MH-002",
+      "to": "AUTH-EW-MH-001",
+      "relationship": "APPLIES",
+      "verified_via": "Cheshire West [2014] UKSC 19, para 49, fetched directly from Find Case Law and independently re-confirmed: supplies the objective test for when s.4A's deprivation-of-liberty prohibition, and its authorisation gateways, are engaged."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the acid test and its statutory trigger. Does not cover civil detention criteria under MHA 1983 ss.2-3, the Liberty Protection Safeguards regime's own procedure in detail, capacity assessment under MCA 2005 s.3, or any other Mental Health Law subject - all remain unbuilt."
+}

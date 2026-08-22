@@ -1,0 +1,50 @@
+{
+  "$comment": "UK Technology & IT Law - the Computer Misuse Act 1990 s.1/s.17(5) 'unauthorised access' offence and its leading judicial construction. Fresh research this session. IMPORTANT: this file's case node carries a genuinely unresolved discrepancy this session could not settle - two different citation years ('[2000] 2 AC 216' and '[2002] 2 AC 216') appear across secondary sources for the same case, and sources also disagree on how the House of Lords characterised the earlier case DPP v Bignell (some describe the House as questioning/distinguishing Bignell's reasoning, one WebSearch summary claimed the House 'confirmed' Bignell's conclusion - the opposite characterisation). Every attempted primary-source route (BAILII, publications.parliament.uk, Find Case Law) returned HTTP 403 or had no record, so neither discrepancy could be resolved this session. The citation year used below ([2000]) is preferred because it is consistent with the judgment date independently encoded in the official parliament.uk URL itself (jd990805 = 5 August 1999) - an ICLR report appearing the year after judgment is the normal pattern, a 3-year gap to 2002 would not be. The Bignell relationship is deliberately NOT characterised in this file's proposition, since that point is genuinely disputed across sources and unverifiable here.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Computer Misuse Act 1990 ss.1 and 17(5) fetched live and directly from legislation.gov.uk's in-force text. R v Bow Street Magistrates' Court and Allison, ex parte Government of the United States of America - primary-source access blocked on every route attempted (BAILII HTTP 403, publications.parliament.uk HTTP 403, absent from Find Case Law's coverage). Verified via 3 independent secondary sources (CPS legal guidance, Steve Hedley's UCC Internet Law course notes, vLex UK) that converge on the core 'unauthorised access is data-specific, not category-specific' holding, though they diverge on the exact citation year and the case's precise relationship to DPP v Bignell - both left unresolved and explicitly flagged rather than asserted.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-TECH-001",
+      "authority_type": "statute",
+      "name": "Computer Misuse Act 1990, s.1 and s.17(5)",
+      "citation": "CMA 1990 s.1(1), s.17(5)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1990",
+      "date_note": "Enactment year. The text verified this session is the current in-force version, as amended by the Police and Justice Act 2006, the Serious Crime Act 2015, and subsequent sentencing regulations.",
+      "proposition": "A person commits an offence if they cause a computer to perform a function with intent to secure unauthorised access to any program or data, knowing at the time that the access is unauthorised (s.1(1)). Access is 'unauthorised' if the person is not themselves entitled to control access of that kind to the program or data, and does not have consent from someone who is so entitled (s.17(5)) - the definition construed by the case below.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1990/18/section/1",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session (ss.1 and 17, two separate URLs)."
+    },
+    {
+      "authority_id": "AUTH-EW-TECH-002",
+      "authority_type": "case",
+      "name": "R v Bow Street Magistrates' Court and Allison, ex parte Government of the United States of America",
+      "citation": "[2000] 2 AC 216 (citation year disputed across sources - see this file's $comment)",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "1999-08-05",
+      "date_note": "Judgment date independently confirmed via the official parliament.uk record's own URL structure (jd990805), which is more reliable than the disputed law-report citation year - see $comment.",
+      "judge_or_panel": "Lord Steyn, Lord Hutton, Lord Saville of Newdigate, Lord Hobhouse of Woodborough, Lord Millett",
+      "proposition": "A person who has general authority to access an employer's computer system, and authority to access data of a certain kind, nonetheless commits the CMA 1990 s.1 offence if they intentionally access specific, particular data which they know a person entitled to authorise access to that data has not authorised them to access. The test for 'unauthorised access' under s.17(5) is data-specific - it asks whether authority existed over the particular data actually accessed, not merely whether the person generally holds the type of access credential involved.",
+      "treatment": "UNKNOWN",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "No primary-source text could be read this session - BAILII and publications.parliament.uk both returned HTTP 403, and Find Case Law has no record (predates its coverage). Corroborated by 3 independent secondary sources (CPS legal guidance, Steve Hedley's UCC Internet Law course notes, vLex UK) consistent on the core data-specific holding, the party names, and the factual scenario (a credit analyst accessing accounts outside her assignment). NOT relied on: any specific characterisation of how this case treats DPP v Bignell [1998] 1 Cr App R 1 (sources conflict - see $comment), and the exact law-report citation year (also conflicting - see $comment). treatment recorded as UNKNOWN rather than FOLLOWED/APPLIED because this file cannot confirm the case's current good-law status with confidence given the unresolved sourcing gaps."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-TECH-002",
+      "to": "AUTH-EW-TECH-001",
+      "relationship": "APPLIES",
+      "verified_via": "Consistently corroborated across 3 independent secondary sources: construes s.17(5)'s 'unauthorised' test as data-specific rather than category-specific."
+    }
+  ],
+  "what_this_is_not": "Two nodes, one at primary and one at a deliberately hedged secondary tier with named, unresolved sourcing gaps (see $comment) - re-verify AUTH-EW-TECH-002 against a primary source (Westlaw/LexisNexis/ICLR, or a non-bot-blocked fetch of BAILII/parliament.uk) before relying on its exact citation or its relationship to DPP v Bignell in any live matter. Does not cover software contract liability, IT project failure disputes, or any other Technology & IT subject - all remain unbuilt."
+}

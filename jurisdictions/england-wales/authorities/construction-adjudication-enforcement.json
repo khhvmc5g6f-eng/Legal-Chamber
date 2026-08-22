@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Construction Law - the statutory right to adjudication under HGCRA 1996 s.108 and the narrow jurisdiction/natural-justice gateway to resisting enforcement of an adjudicator's decision. Fresh research this session. Both nodes are post-1996/2005 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Housing Grants, Construction and Regeneration Act 1996 s.108 fetched live and directly from legislation.gov.uk's in-force text. Carillion Construction Ltd v Devonport Royal Dockyard Ltd [2005] EWCA Civ 1358 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against CMS Law's independent case commentary. The researching agent's own first fetch attributed a different (wrong) quote to paragraph 85 before self-correcting via a secondary-source cross-check - the orchestrating session's independent re-fetch confirms the corrected version.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CONST-001",
+      "authority_type": "statute",
+      "name": "Housing Grants, Construction and Regeneration Act 1996, s.108",
+      "citation": "HGCRA 1996 s.108(1), (3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1996",
+      "date_note": "Enactment year. The text verified this session is the current in-force (revised) version, as amended by the Local Democracy, Economic Development and Construction Act 2009 (in force 1 October 2011 for England & Wales).",
+      "proposition": "A party to a construction contract has the right to refer a dispute arising under the contract to adjudication under a procedure complying with this section (s.108(1)). The contract must provide in writing that the adjudicator's decision is binding until the dispute is finally determined by litigation, arbitration, or agreement (s.108(3)) - the 'pay now, argue later' interim-binding principle. If a contract does not comply, the Scheme for Construction Contracts implies these terms.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1996/53/section/108",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session."
+    },
+    {
+      "authority_id": "AUTH-EW-CONST-002",
+      "authority_type": "case",
+      "name": "Carillion Construction Ltd v Devonport Royal Dockyard Ltd",
+      "citation": "[2005] EWCA Civ 1358",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2005-11-16",
+      "judge_or_panel": "Chadwick LJ (leading judgment)",
+      "proposition": "The leading authority on enforcing adjudicators' decisions under HGCRA 1996 Part II: courts must respect and enforce an adjudicator's decision, even where it contains errors of fact, law, or procedure, unless it is plain the adjudicator answered a question that was not the one referred to him (exceeding his jurisdiction) or the way he went about the task was obviously unfair (a serious breach of natural justice). The Court of Appeal gave no encouragement to parties who comb through an adjudicator's reasons looking for tenuous technical grounds to resist paying a decision.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2005/1358",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches word-for-word consistent on paragraph 85's enforcement test. Cross-checked against CMS Law's independent case commentary."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CONST-002",
+      "to": "AUTH-EW-CONST-001",
+      "relationship": "APPLIES",
+      "verified_via": "Carillion v Devonport [2005] EWCA Civ 1358, para 85, fetched directly from Find Case Law and independently re-confirmed: sets out the narrow enforcement gateway for s.108 adjudicator decisions."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the right to adjudication and the enforcement gateway. Does not cover payment provisions (ss.109-113, including pay-less notices), extension-of-time claims, defects/final account disputes, or any other Construction Law subject - all remain unbuilt."
+}

@@ -1,0 +1,51 @@
+{
+  "$comment": "England & Wales, Water Law - whether a sewerage undertaker's statutory duty to build/enlarge sewers can found a private nuisance claim. Marcic predates BAILII/Find Case Law live access in this environment (both returned HTTP 403 to direct fetch this session); verified via the citing-judgment method through Manchester Ship Canal Company Ltd v United Utilities Water Ltd (No 2) [2024] UKSC 22, which quotes Marcic's own paragraph numbers and wording verbatim while expressly reaffirming (and narrowing) its ratio.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Water Industry Act 1991 s.94 fetched live and directly from legislation.gov.uk. Marcic v Thames Water Utilities Ltd [2003] UKHL 66 verified via the citing-judgment method: The Manchester Ship Canal Company Ltd v United Utilities Water Ltd (No 2) [2024] UKSC 22 fetched live and directly as a PDF from supremecourt.uk and its full text extracted, locating Marcic's own paragraph numbers (34-35, 54) quoted verbatim at UKSC 2024 paras 77-82. Marcic's bare existence/citation cross-checked against BAILII's case index, the House of Lords judgment listing on publications.parliament.uk, the ICLR case record, and Wikipedia - all independently consistent on citation, date, and parties.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-WATER-001",
+      "authority_type": "statute",
+      "name": "Water Industry Act 1991, s.94",
+      "citation": "Water Industry Act 1991 (c.56) s.94(1), (3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1991",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "A sewerage undertaker is under a statutory duty to provide, improve and extend a system of public sewers so as to ensure its area is effectually drained, and to make provision for emptying/treating sewage (s.94(1)). This duty is enforceable only through the s.18 statutory mechanism - by the Secretary of State, or by the Authority with the Secretary of State's consent or general authorisation (s.94(3)) - not directly by private civil action.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1991/56/section/94",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session from legislation.gov.uk."
+    },
+    {
+      "authority_id": "AUTH-EW-WATER-002",
+      "authority_type": "case",
+      "name": "Marcic v Thames Water Utilities Ltd",
+      "citation": "[2003] UKHL 66; [2004] 2 AC 42",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "2003-12-04",
+      "judge_or_panel": "Lord Nicholls of Birkenhead, Lord Steyn, Lord Hoffmann, Lord Hope of Craighead, Lord Scott of Foscote",
+      "proposition": "Where a sewerage undertaker's duty to build or enlarge sewers derives entirely from s.94(1) of the 1991 Act and would not otherwise exist at common law, a claimant cannot found a private nuisance claim on 'failure to construct new sewers.' Section 18(8) preserves common-law remedies only where the statutory contravention is not an essential ingredient of the cause of action - since the alleged nuisance here depended entirely on the statutory duty, the claim was excluded and the sole remedy lay in the s.18 enforcement mechanism (complaint to the Secretary of State/regulator), not civil action. The House of Lords unanimously rejected the claimant's nuisance and Human Rights Act claims.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKHL/2003/66.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Direct fetch of both BAILII and the official House of Lords judgment listing (publications.parliament.uk) returned HTTP 403 this session. Verified via the citing-judgment method: Manchester Ship Canal Co v United Utilities Water Ltd (No 2) [2024] UKSC 22, fetched live and directly as a PDF from supremecourt.uk this session, quotes Marcic's own paragraphs verbatim at UKSC 2024 paras 77-82, including Lord Nicholls (Marcic paras 34-35) and Lord Hoffmann (Marcic para 54), and expressly reaffirms Marcic's ratio at UKSC 2024 para 82. Marcic's citation, date, and parties independently cross-checked against BAILII's case index, the House of Lords judgment listing, the ICLR case record, and Wikipedia."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-WATER-002",
+      "to": "AUTH-EW-WATER-001",
+      "relationship": "APPLIES",
+      "verified_via": "Manchester Ship Canal [2024] UKSC 22, paras 77-82, fetched directly from supremecourt.uk, quoting Marcic verbatim: an essential ingredient of the claimant's nuisance claim was Thames Water's failure to perform the s.94(1) duty to construct a new sewer, so the claim was excluded by s.18(8)."
+    }
+  ],
+  "edges_note": "Manchester Ship Canal [2024] UKSC 22 (7-0) expressly reaffirmed Marcic's ratio but narrowed its scope: Marcic bars a nuisance claim only where the failure to construct a new sewer is the essential ingredient of the cause of action. It does not bar a nuisance or trespass claim based on actual polluting discharges from existing sewerage infrastructure - the 2024 Supreme Court held such claims are not excluded by the 1991 Act. This narrowing was confirmed via the same primary-source fetch used to verify Marcic itself, not asserted from a secondary summary.",
+  "what_this_is_not": "Two verified nodes covering the statutory-exclusivity point for failure-to-construct claims, and the scope limit confirmed by the 2024 Supreme Court narrowing. Does not cover the pollution-discharge line of claims itself in detail, abstraction licensing, flood risk management duties, or any other Water Law subject - all remain unbuilt."
+}

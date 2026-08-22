@@ -1,0 +1,50 @@
+{
+  "$comment": "UK Labour/Trade Union Law - the s.219/226 'golden formula' immunity and ballot conditions, and the Article 11 ECHR protection gap for detriment short of dismissal confirmed in Mercer. Fresh research this session. IMPORTANT VERIFICATION NOTE: the orchestrating session's own first attempt to independently re-verify Mercer's outcome via WebFetch produced an incorrect result (that the case was resolved by s.3 HRA reading-down, not a s.4 declaration) - this was caught and corrected via a targeted WebSearch cross-check against three independent sources (Linklaters, the UK Constitutional Law Association, and the Supreme Court's own official press summary), all confirming a genuine s.4 declaration was made and s.3 reading-down was expressly rejected. This is the same WebFetch-truncation failure mode the researching agent itself independently caught and flagged earlier in its own research process - recorded here as a real, demonstrated instance of why this repository's re-verification discipline exists, not a hypothetical risk.",
+  "verified_at": "2026-08-22",
+  "verification_method": "TULRCA 1992 s.219 fetched live and directly from legislation.gov.uk's in-force text. Secretary of State for Business and Trade v Mercer [2024] UKSC 12 fetched live and directly from Find Case Law; its outcome (declaration vs reading-down) was independently cross-checked against three sources after an initial WebFetch discrepancy - Linklaters, the UK Constitutional Law Association, and the Supreme Court's own official press summary, all consistent.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-TU-001",
+      "authority_type": "statute",
+      "name": "TULRCA 1992, ss.219 and 226 - the 'golden formula' and balloting requirements",
+      "citation": "TULRCA 1992 s.219(1), s.226",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1992",
+      "date_note": "Consolidation year (the immunity itself dates to the Trade Disputes Act 1906). legislation.gov.uk's own page lists numerous pending amendments under S.I. 2026/881 and the Employment Rights Act 2025, not yet applied to s.219(1)'s own text as of this file's verification date - confirmed live, not assumed. s.226(2)(a)(iia)'s 50% turnout threshold was inserted by the Trade Union Act 2016 (in force 1 March 2017); s.226(2)(a)(iii) was separately reworded and ss.226(2A)-(2F) omitted by the Employment Rights Act 2025 (in force 18 February 2026) - this is a genuinely live-amended area, re-check before relying on it.",
+      "proposition": "An act done in contemplation or furtherance of a trade dispute is not actionable in tort for inducing/threatening breach of contract (s.219(1)) - the statutory immunity underpinning industrial action in the UK, which exists as an absence of liability rather than a positive right. The immunity is conditional on compliance with the balloting code (s.226): at least 50% of those entitled to vote must have done so, with a majority in favour. Breach of the balloting conditions strips the union of immunity.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1992/52/section/219",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, including the live flag for extensive pending amendments."
+    },
+    {
+      "authority_id": "AUTH-EW-TU-002",
+      "authority_type": "case",
+      "name": "Secretary of State for Business and Trade v Mercer",
+      "citation": "[2024] UKSC 12",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2024-04-17",
+      "judge_or_panel": "Lady Simler (leading judgment)",
+      "proposition": "Once industrial action clears the ss.219/226 golden-formula/balloting gate and becomes 'protected', TULRCA s.146 provides no statutory protection against employer detriment short of dismissal (e.g. suspension) for taking part in it - only against dismissal itself. The Court held this total silence breaches the UK's positive obligation under Article 11 ECHR to secure effective enjoyment of the right to participate in a lawful strike. The Court held a Convention-compatible interpretation via s.3 HRA was not possible - it would be 'impermissible judicial legislation rather than interpretation' - and instead made a declaration under s.4 HRA that s.146 TULRCA is incompatible with Article 11, insofar as it fails to provide any protection against sanctions short of dismissal intended to deter or penalise lawful industrial action. The Court rejected the Court of Appeal's view that incompatibility arising from a legislative gap could not trigger s.4.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2024/12",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session. The specific holding on declaration-vs-reading-down required a second, targeted re-verification pass after an initial WebFetch discrepancy - see this file's top-level $comment for the full account. Confirmed via the Supreme Court's own official press summary, which states the s.4 declaration verbatim and expressly records the s.3 rejection."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-TU-002",
+      "to": "AUTH-EW-TU-001",
+      "relationship": "APPLIES",
+      "verified_via": "Mercer [2024] UKSC 12 treats ss.219/226-compliant 'protected industrial action' as the necessary predicate for its Article 11 analysis, per the statutory background at paras 16-18 of the judgment."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the protection gap for detriment short of dismissal following protected industrial action. Does not cover unfair dismissal for taking part in industrial action itself, trade union recognition, collective bargaining, or any other Labour/Trade Union subject - all remain unbuilt. Given how recently s.219/226 have been amended (as recently as February 2026), re-confirm the current text before relying on this file in any live matter."
+}

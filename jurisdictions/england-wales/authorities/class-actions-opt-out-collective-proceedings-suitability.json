@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Class Actions / Group Litigation - the suitability threshold for opt-out collective proceedings before the Competition Appeal Tribunal. Fresh research this session, both nodes independently re-fetched and confirmed a second time by the orchestrating session.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Competition Act 1998 s.47B(6) and (11) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Mastercard Incorporated and others v Walter Hugh Merricks CBE [2020] UKSC 51 - the researching agent reported extracting the official Supreme Court PDF directly with pypdf after an earlier WebFetch pass produced garbled/paraphrased text, which it discarded; not independently re-fetched at the pinpoint level by this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CLASSACT-001",
+      "authority_type": "statute",
+      "name": "Competition Act 1998, s.47B",
+      "citation": "Competition Act 1998 (c.41) s.47B(6), (11), as substituted by the Consumer Rights Act 2015",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2015-10-01",
+      "date_note": "Date the substituted s.47B came into force. The text verified this session is the current in-force version.",
+      "proposition": "Claims are eligible for inclusion in collective proceedings before the Competition Appeal Tribunal only if the Tribunal considers that they raise the same, similar or related issues of fact or law and are suitable to be brought in collective proceedings (s.47B(6)) - a deliberately low, multi-factorial bar, not a merits test. Opt-out collective proceedings bind every class member except those who opt out, or who are not UK-domiciled and do not opt in (s.47B(11)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1998/41/section/47B",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-CLASSACT-002",
+      "authority_type": "case",
+      "name": "Mastercard Incorporated and others v Walter Hugh Merricks CBE",
+      "citation": "[2020] UKSC 51",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2020-12-11",
+      "judge_or_panel": "Lord Briggs (leading judgment, Lord Thomas agreeing), Lord Kerr, Lord Sales, Lord Leggatt",
+      "proposition": "S.47B(6)'s suitability threshold does not require the claims to be suitable for an award of aggregate (as opposed to individual) damages - that is only one factor among many in the suitability assessment, not an independent precondition. Ordinary civil procedure requires a court to do its best to quantify a claimant's loss on the available evidence once a triable claim is shown, rather than deprive the claimant of a trial for forensic difficulty in quantification alone. The Competition Appeal Tribunal's refusal to certify a claim on behalf of approximately 46.2 million UK consumers, on the basis that class-wide loss could not be reliably quantified, was held to be an error of law - described as 'the most serious of the errors of law discernible in [the CAT's] judgment.'",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.supremecourt.uk/uploads/uksc_2019_0118_judgment_6dd114686b.pdf",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent reported extracting the official Supreme Court judgment PDF directly with pypdf, after discarding an earlier WebFetch pass that produced garbled/paraphrased text - a self-correction worth noting. This session's own independent re-verification did not re-fetch the case at the pinpoint level, so it is recorded at VERIFIED_SECONDARY_SOURCE per this repository's practice of not upgrading a subagent's PDF-extraction claim to primary without independent reproduction."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CLASSACT-002",
+      "to": "AUTH-EW-CLASSACT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Merricks v Mastercard [2020] UKSC 51, paras 47, 59, 61, 72, per the researching agent's PDF extraction (not independently re-verified at the pinpoint level this session): construes s.47B(6)'s suitability test as not requiring aggregate-damages suitability as a precondition, correcting the CAT's certification refusal."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the opt-out collective-proceedings suitability threshold. Does not cover CPR Part 19.III Group Litigation Orders (the non-competition GLO route), representative actions under CPR 19.8, or any other Class Actions / Group Litigation subject - all remain unbuilt."
+}

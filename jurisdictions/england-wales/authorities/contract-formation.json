@@ -1,0 +1,46 @@
+{
+  "$comment": "England & Wales, Contract Law, unilateral offer and acceptance by performance. An earlier pass claimed to read Carlill's original text directly on BAILII via a sandboxed browser tool after WebFetch was blocked - that is a source-access-terms bypass under docs/OPERATING_RULES.md's verification hierarchy and was discarded. Re-verified cleanly: BAILII's block was treated as final, and the case is confirmed instead via a later citing judgment on Find Case Law.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Find Case Law direct fetch of a later citing judgment. BAILII's own 1892/1893 judgment text was not independently read this session (403, block respected). The verifying agent noted it worked from the fetch tool's rendered text of the citing judgment rather than raw HTML, and flagged that as a source of residual (low) risk of tool-mediated paraphrasing.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CONTRACT-001",
+      "authority_type": "case",
+      "name": "Carlill v Carbolic Smoke Ball Company",
+      "citation": "[1893] 1 QB 256",
+      "citation_note": "Also commonly cited as [1892] EWCA Civ 1 / [1892] 2 QB 484 - not independently re-confirmed against BAILII this session.",
+      "court": "Court of Appeal",
+      "jurisdiction": "england-wales",
+      "date": "1892-12-07",
+      "date_note": "Decision date not independently re-confirmed this session; recorded per general corroboration.",
+      "proposition": "An advertisement offering a reward for performing a specified act can constitute a binding unilateral offer, accepted by performance of the act itself, without the offeree needing to communicate acceptance in advance; once a promisee acts on such an offer, the promisor cannot revoke it.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verification_note": "Not read directly - BAILII blocked (HTTP 403), block treated as final, no workaround used. Confirmed via Soulsbury v Soulsbury [2007] EWCA Civ 969 (below), fetched live."
+    },
+    {
+      "authority_id": "AUTH-EW-CONTRACT-002",
+      "authority_type": "case",
+      "name": "Soulsbury v Soulsbury",
+      "citation": "[2007] EWCA Civ 969",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2007-10-10",
+      "proposition": "Longmore LJ, para 49: describes the dispute as 'a classic unilateral contract of the Carlill v Carbolic Smoke Ball [1893] 1 QB 256 ... kind,' citing it approvingly, without qualification, 114 years after decision.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2007/969"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CONTRACT-002",
+      "to": "AUTH-EW-CONTRACT-001",
+      "relationship": "FOLLOWS",
+      "verified_via": "Soulsbury v Soulsbury [2007] EWCA Civ 969, para 49, fetched directly from Find Case Law: cites Carlill approvingly as the paradigm unilateral-contract authority."
+    }
+  ],
+  "what_this_is_not": "One verified node-pair confirming Carlill remains the accepted paradigm authority as of 2007. Does not independently confirm Carlill's original 1892/1893 text, exact date, or full subsequent-treatment history (followed/distinguished/doubted count beyond this one citation) - all UNKNOWN beyond what's stated above."
+}

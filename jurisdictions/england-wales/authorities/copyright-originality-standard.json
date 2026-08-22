@@ -1,0 +1,50 @@
+{
+  "$comment": "UK Copyright Law - the subsistence/originality requirement under CDPA 1988 s.1 and the post-Brexit 'author's own intellectual creation' standard confirmed in THJ v Sheridan. Fresh research this session. Both nodes are post-1988/2023 and fetched directly, no BAILII/pre-2009 access issue to route around.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Copyright, Designs and Patents Act 1988 s.1 fetched live and directly from legislation.gov.uk's in-force text. THJ Systems Ltd v Sheridan [2023] EWCA Civ 1354 fetched live and directly from Find Case Law, independently re-fetched and re-confirmed a second time, cross-checked against Lewis Silkin, Fieldfisher, and Kluwer Copyright Blog's independent commentary.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-COPY-001",
+      "authority_type": "statute",
+      "name": "Copyright, Designs and Patents Act 1988, s.1",
+      "citation": "CDPA 1988 s.1(1)-(3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1988",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "Copyright is a property right subsisting, without registration, in original literary, dramatic, musical or artistic works, sound recordings, films or broadcasts, and the typographical arrangement of published editions (s.1(1)) - but only if the work meets qualification requirements under Part I (s.1(3)). Originality is the precondition the case below construes.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1988/48/section/1",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session."
+    },
+    {
+      "authority_id": "AUTH-EW-COPY-002",
+      "authority_type": "case",
+      "name": "THJ Systems Ltd v Sheridan",
+      "citation": "[2023] EWCA Civ 1354",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2023-11-20",
+      "judge_or_panel": "Arnold LJ (leading judgment); Moylan LJ, Asplin LJ",
+      "proposition": "Confirms the correct UK test for originality is the CJEU-derived 'author's own intellectual creation' (AOIC) standard, not the older, lower English common-law 'skill and labour' test - requiring the author to have made free and creative choices stamping the work with their personal touch. This EU-derived standard survived Brexit as retained case law and remains binding on English courts, and is more demanding than the pre-Infopaq skill-and-labour approach. Where the degree of creativity in a work is low, the scope of copyright protection is correspondingly narrow, such that only a close copy would infringe.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2023/1354",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches consistent on paragraph 16's AOIC test and paragraph 23's rejection of the skill-and-labour test. Cross-checked against Lewis Silkin, Fieldfisher, and Kluwer Copyright Blog's independent commentary. Does not construe s.16(3)'s 'substantial part' infringement test directly - its narrow-scope-of-protection observation at para 27 flows from the low-creativity finding, not a direct construction of that section."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-COPY-002",
+      "to": "AUTH-EW-COPY-001",
+      "relationship": "APPLIES",
+      "verified_via": "THJ Systems Ltd v Sheridan [2023] EWCA Civ 1354, paras 15-16 and 23, fetched directly from Find Case Law and independently re-confirmed: construes s.1's originality requirement using the AOIC standard."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the originality standard for copyright subsistence. Does not cover the s.16(3) 'substantial part' infringement test directly (a candidate case for that specific point, Designers Guild v Russell Williams [2000] UKHL 58, was identified but not independently verified this session), moral rights, database right, or any other Copyright subject - all remain unbuilt."
+}

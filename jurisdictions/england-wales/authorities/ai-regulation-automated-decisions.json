@@ -1,0 +1,26 @@
+{
+  "$comment": "UK AI & Algorithmic Regulation - the automated-decision-making rules in UK GDPR. Fresh research this session, with particular care given how fast this area moves. IMPORTANT LIVE FINDING: the old 'Article 22' automated-decision-making regime, widely described in secondary literature and training data as a default prohibition with narrow exceptions, was fully substituted with a new Articles 22A-22D framework by the Data (Use and Access) Act 2025 s.80, in force 5 February 2026 - discovered live this session, not assumed. Any reference elsewhere to 'Article 22 GDPR' in its old form is now describing repealed law. DELIBERATELY A SINGLE-NODE ENTRY: the researching agent searched Find Case Law and general web sources for a UK judgment squarely deciding a claim under this new framework and found none - correctly reported as a real gap rather than forcing an unrelated case (Information Commissioner v Experian Ltd [2024] UKUT 105 (AAC) was checked and excluded: it is a transparency/Article 14 case that mentions Article 22 only once in passing, never argued or decided) into the entry.",
+  "verified_at": "2026-08-22",
+  "verification_method": "UK GDPR Article 22A fetched live and directly from legislation.gov.uk's in-force text, independently re-fetched and re-confirmed a second time, including its commencement date and what it replaced.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-AI-001",
+      "authority_type": "statute",
+      "name": "UK GDPR, Articles 22A-22D (as substituted by the Data (Use and Access) Act 2025, s.80)",
+      "citation": "UK GDPR Art.22A-22D; DUAA 2025 s.80",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2026-02-05",
+      "date_note": "Full commencement date, following a partial commencement on 19 June 2025. legislation.gov.uk's own page flags a pending, not-yet-applied amendment via S.I. 2026/386 as of this file's verification date - confirmed live, not assumed. Substitutes and replaces the entirety of the old Article 22 automated-decision-making regime.",
+      "proposition": "A decision is 'based solely on automated processing' if there is no meaningful human involvement in taking it, and is a 'significant decision' if it produces a legal effect or a similarly significant effect for the data subject (Art.22A). This reverses the pre-2026 default prohibition for ordinary (non-special-category) personal data: a controller may now lawfully make a significant decision based solely on automated processing of ordinary data without a specific Article 22 justification, subject always to mandatory safeguards (Art.22C: notice of the decision, the right to make representations, the right to human intervention, the right to contest it). Additional restrictions still apply where special-category data or certain lawful bases are used (Art.22B).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/eur/2016/679/article/22A",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched and re-confirmed a second time - both fetches consistent on Article 22A(1)-(2)'s exact text, its 5 February 2026 full-commencement date, and that it substituted the old Article 22 entirely."
+    }
+  ],
+  "edges": [],
+  "what_this_is_not": "One verified node on the new automated-decision-making framework's threshold definitions and safeguards. No case-law node exists for this file - no UK judgment squarely deciding a claim under Articles 22A-22D was found as of this file's verification date (the framework is roughly six months old), and this is stated honestly rather than filled with a mismatched case. Does not cover the EU AI Act (not applicable in the UK), algorithmic discrimination under the Equality Act 2010, automated facial recognition (see Bridges v Chief Constable of South Wales Police [2020] EWCA Civ 1058, identified but not independently verified this session, decided on DPIA-adequacy grounds rather than Article 22), or any other AI Regulation subject - all remain unbuilt. Given how recently this framework changed, re-confirm this file's own currency before relying on it in any live matter."
+}
