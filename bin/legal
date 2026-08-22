@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Thin wrapper so `legal <verb> ...` works as documented in the original spec,
+# without needing to type `python3 scripts/legal_cli.py` every time.
+# See scripts/legal_cli.py for what's actually deterministic vs reasoning-dependent.
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+exec python3 "$DIR/scripts/legal_cli.py" "$@"

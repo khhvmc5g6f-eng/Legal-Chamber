@@ -48,6 +48,7 @@ The `legal-work` router asks for (or infers from context you've already given it
 
 ```
 legal-chamber/
+├── bin/legal       CLI entry point (wraps scripts/legal_cli.py)
 ├── skills/         16 specialist skills, entry point legal-work/
 ├── agents/         13 agent role specs (intake, research, solicitors, counsel,
 │                   opposition, judiciary, quality, ...) - prompts + guardrails,
@@ -55,7 +56,8 @@ legal-chamber/
 ├── jurisdictions/  one pack per jurisdiction: authority hierarchy, citation
 │                   style, court structure, procedural basics, VERIFICATION_STATUS
 ├── courts/         cross-jurisdiction court-rule notes and templates
-├── regulators/     regulator profiles (powers, procedure, appeal routes)
+├── regulators/     regulator profiles (powers, procedure, appeal routes) -
+│                   one real profile (CNIL), rest unbuilt
 ├── citation/       citation style definitions + deterministic validator
 ├── rubrics/        academic rubric schema + evidence requirements (empty by
 │                   design - no institutional rubric is invented)
@@ -64,10 +66,14 @@ legal-chamber/
 ├── workflows/      matter lifecycle, five-hearing adversarial workflow, gates
 ├── connectors/      abstraction layer + status of each research data source
 ├── scripts/        deterministic tools: deadline calculator, citation linter,
-│                   style linter (arithmetic and pattern matching, not an LLM)
+│                   matter cross-reference and persistence checkers, and the
+│                   legal_cli.py CLI backend (arithmetic and pattern matching,
+│                   not an LLM - the CLI's reasoning-dependent verbs invoke
+│                   Claude Code itself rather than faking legal judgement)
 ├── benchmarks/      hallucination / adversarial / jurisdiction / temporal traps
 ├── evaluations/     how to run the benchmarks and read the results
-├── examples/        worked example matters
+├── examples/        worked example matters - one real one so far, taken
+│                   unedited from a live stress test
 └── docs/           status, operating rules, gates, install, contributing detail
 ```
 

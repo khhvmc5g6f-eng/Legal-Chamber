@@ -2,7 +2,21 @@
 
 All notable changes to this project are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/). Each entry corresponds to one real commit - see the git history for exact diffs.
 
-## [0.1.4] - persistence checker, style audit, first regulator profile, first example (unreleased)
+## [0.1.5] - CLI, and live re-verification of the Write-access fix (unreleased)
+
+### Added
+
+- `scripts/legal_cli.py` and `bin/legal` - a working CLI covering the original spec's verb list. Deterministic subcommands (`init`, `status`, `validate`, `lint`, `deadline`, `verify-refs`, `verify-persistence`, `jurisdictions`, `gates`, `bundle`) run entirely in Python, no model involved. Reasoning-dependent subcommands (`intake`, `research`, `draft`, `oppose`, `moot`, etc.) shell out to a live `claude --print` invocation of the actual skill file, or print the exact prompt to run yourself if the `claude` CLI isn't on PATH - never fake legal reasoning in bare Python. Selftested and wired into CI.
+
+### Verified
+
+- Ran two fresh, isolated live agent invocations (not reusing any stress-test context) specifically to confirm `0.1.3`'s Write/Edit access fix actually works: a solicitor-role run that wrote a real case theory, fact ledger, and issue tree to a new matter, and a judiciary-role run that wrote a real, schema-valid hearing record. Both independently re-verified their own output; both were then independently re-checked again with `scripts/verify_matter_refs.py`, `scripts/verify_matter_persistence.py`, and a direct `jsonschema.validate()` call. All checks passed. This was the single outstanding item keeping `LEGAL_CHAMBER_STRESS_TEST_REPORT.md`'s `BETA` classification provisional - now confirmed rather than assumed.
+
+### Noted, not resolved
+
+`docs/HONEST_STATUS.md` records a minor echo of `0.1.3`'s D-14 finding, caught by the live re-verification itself: the solicitor-role run set its matter's status to `RESEARCHING` without actually creating a `research/` directory - `scripts/verify_matter_persistence.py` correctly flagged it. Not a new defect requiring a further fix, just the checker doing its job on fresh data.
+
+## [0.1.4] - persistence checker, style audit, first regulator profile, first example
 
 ### Added
 

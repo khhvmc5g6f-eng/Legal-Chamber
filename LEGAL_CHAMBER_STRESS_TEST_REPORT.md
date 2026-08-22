@@ -155,14 +155,16 @@ No score was averaged over a critical failure - D-03/D-08 is reflected directly 
 
 ## Release Classification
 
-**BETA.** No `CRITICAL` hard-release-failure condition from the spec's list was found uncorrected (no fabricated authority, quotation, or fact reached final output uncorrected; matter isolation held across all 7 matters; the moot engine evolved; the judiciary was not systematically sycophantic; no filing-ready status was falsely granted). What keeps this from "release ready" is that the disk-vs-claim defect, while now fixed both structurally (D-08) and at the instruction level (D-03/D-05), was found operating in production-shaped conditions across more than half the matters tested, and has not yet been re-verified by a further live run confirming the fix actually closes the gap in practice. That is the definition of `BETA`: material capabilities operate, and important defects found have been fixed, but the fix itself is unverified by a fresh execution.
+**BETA, upgraded from an unverified fix to a confirmed one.** No `CRITICAL` hard-release-failure condition from the spec's list was found uncorrected. The disk-vs-claim defect (D-03/D-08) was fixed both structurally (Write/Edit access) and at the instruction level, and - per `0.1.4`'s follow-up work - **that fix has now been independently confirmed by two fresh live agent invocations** (a solicitor-role run and a judiciary-role run, neither reusing any cached stress-test context): both produced real, schema-valid files on disk, each independently re-verified by the invoking agent itself (`json.load`, `ls -la`) and again by this repository's own deterministic scripts (`verify_matter_refs.py`, `verify_matter_persistence.py`, and a direct `jsonschema.validate()` check on the hearing record). This closes the single item this report previously said would justify moving off a purely provisional `BETA`. It remains `BETA`, not "release ready," because other real gaps remain open (no populated case-law Authority Graph, no CLI-level programmatic API, style compliance of generated drafts checked only once, not continuously) - see `docs/HONEST_STATUS.md` for the current full list.
 
 ## Recommended Next Development
 
-1. Run one more matter live, post-fix, specifically to confirm the Write/Edit access change (D-08) actually results in consistent disk persistence - this is the single test that would justify moving off `BETA`.
-2. Build the companion to `scripts/verify_matter_refs.py` that this pass didn't get to: a claimed-output-vs-actual-file checker, so the quality role's disk-vs-claim instruction (D-03) has a deterministic backstop rather than relying on the agent remembering to check.
-3. Run the natural-legal-style audit this pass skipped, directly against the drafts now sitting in `matters/`.
-4. Populate the `regulators/` CNIL profile now that a real regulatory matter has demonstrated exactly what shape it needs to be.
+Completed since this report was first written (see `CHANGELOG.md` `[0.1.4]`): the persistence-vs-claim deterministic backstop, the style audit, the first regulator profile, the first populated example, and the live re-verification of the Write-access fix described above. Also added since: `scripts/legal_cli.py` / `bin/legal`, a working CLI covering the original spec's verb list (deterministic subcommands are real; reasoning-dependent subcommands invoke Claude Code live rather than faking legal judgement).
+
+Still open:
+
+1. A programmatic (non-CLI) API - `docs/SPEC_FULL_TEXT.md` Part CLXXII's `createMatter()`/`resolveJurisdiction()`-style function surface was not built; the CLI is the only external entry point.
+2. Populate a second, third, and fourth regulator profile now that `regulators/cnil.md` has established the pattern.
 5. Re-run M7's academic-mode seeded-error test alone, narrower and more carefully instrumented, to resolve the imprecision noted in that matter's compound verdict.
 6. Consider whether any of the real generated matter workspaces from this test would make a good first populated example for the still-empty `examples/` directory, once suitably reviewed.
 

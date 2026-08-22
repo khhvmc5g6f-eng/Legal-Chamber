@@ -42,4 +42,4 @@ Treaty on European Union (TEU), Treaty on the Functioning of the European Union 
 
 ## What is NOT in this pack
 
-No populated CJEU case-law database. No verified article-level text of any Regulation/Directive beyond naming them. No regulator profile - see `../../regulators/README.md`, which is deliberately empty pending real profiles (CNIL, and other national data-protection authorities acting as GDPR's "one-stop-shop" lead supervisory authority mechanism, are not documented here).
+No populated CJEU case-law database. No verified article-level text of any Regulation/Directive beyond naming them. One national data-protection regulator profile now exists - see `../../regulators/cnil.md` for France - but no other member state's supervisory authority is documented, and the GDPR "one-stop-shop" lead-supervisory-authority mechanism itself is not separately explained here.
