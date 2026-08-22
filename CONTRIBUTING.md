@@ -30,6 +30,7 @@ python3 scripts/deadline_calculator.py --selftest
 python3 scripts/verify_matter_refs.py --selftest
 python3 scripts/verify_matter_persistence.py --selftest
 python3 scripts/legal_cli.py --selftest
+python3 scripts/legal_api.py --selftest
 ```
 
 Both exit non-zero on failure and print what broke.

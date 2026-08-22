@@ -1,0 +1,53 @@
+{
+  "$comment": "First populated Authority Graph entry in this repository - see docs/OPERATING_RULES.md Part XVII. Every field below was verified live against CourtListener on 2026-08-22 (citation, court, date, judge, and the FOLLOWS edge itself confirmed via CourtListener's own opinions-cited citation-graph data, not inferred from secondary commentary), per skills/legal-authorities/SKILL.md's method. This is deliberately small (2 nodes, 1 edge) rather than broad - see docs/HONEST_STATUS.md on why depth was chosen over breadth for the first real entry.",
+  "verified_at": "2026-08-22",
+  "verification_method": "mcp CourtListener connector: search + clusters + opinions-cited endpoints, cross-checked against secondary commentary (EFF, Congress.gov CRS report LSB10616) for the relationship characterisation only - the citation and edge data themselves came from CourtListener directly",
+  "authorities": [
+    {
+      "authority_id": "AUTH-USFED-001",
+      "authority_type": "case",
+      "name": "United States v. Nosal",
+      "citation": "676 F.3d 854 (9th Cir. 2012) (en banc)",
+      "court": "Court of Appeals for the Ninth Circuit",
+      "jurisdiction": "us-federal",
+      "date": "2012-04-10",
+      "docket_number": "10-10038",
+      "courtlistener_cluster_id": 626994,
+      "courtlistener_opinion_id": 9485693,
+      "proposition": "The Computer Fraud and Abuse Act's 'exceeds authorized access' prong does not impose liability on a person who has permission to access a computer system but uses that access for an improper purpose - only on a person who accesses information they had no permission to access at all (the narrow, 'gates up or down' reading, as opposed to a purpose-based reading).",
+      "treatment": "FOLLOWED",
+      "treatment_source": "Followed and adopted by the Supreme Court in Van Buren v. United States (below) - confirmed as a direct citation via CourtListener's opinions-cited endpoint (citing_opinion 4692447 -> cited_opinion 9485693, depth 1), and via secondary commentary (EFF 2021; Congress.gov CRS Report LSB10616) describing Van Buren as resolving a circuit split by endorsing this Ninth Circuit approach.",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://www.courtlistener.com/opinion/626994/united-states-v-nosal/"
+    },
+    {
+      "authority_id": "AUTH-USFED-002",
+      "authority_type": "case",
+      "name": "Van Buren v. United States",
+      "citation": "593 U.S. 374 (2021)",
+      "court": "Supreme Court of the United States",
+      "jurisdiction": "us-federal",
+      "date": "2021-06-03",
+      "docket_number": "19-783",
+      "courtlistener_cluster_id": 4888668,
+      "courtlistener_opinion_id": 4692447,
+      "judges": "Barrett, J., delivered the opinion of the Court",
+      "citation_count_on_courtlistener": 276,
+      "proposition": "A person does not violate the CFAA's 'exceeds authorized access' provision by accessing information on a computer they are otherwise entitled to access, even if they do so for an improper purpose. Resolved a long-standing circuit split (the First, Fifth, Seventh, and Eleventh Circuits had taken the broader, purpose-based reading) by adopting the narrower 'gates-up-or-down' inquiry.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://www.courtlistener.com/opinion/4888668/van-buren-v-united-states/"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-USFED-002",
+      "to": "AUTH-USFED-001",
+      "relationship": "FOLLOWS",
+      "verified_via": "CourtListener opinions-cited endpoint - direct citation confirmed (depth 1), not inferred"
+    }
+  ],
+  "what_this_is_not": "This is 2 verified nodes and 1 verified edge on a single doctrinal question (CFAA 'exceeds authorized access'). It is not a general federal case-law database, and it does not cover the other circuits' pre-Van Buren decisions (First, Fifth, Seventh, Eleventh) that Van Buren abrogated - those citations were named in secondary commentary reviewed for this entry but not independently pulled and verified via CourtListener, and are therefore not included here rather than added on unverified confidence. See docs/OPERATING_RULES.md Part I."
+}

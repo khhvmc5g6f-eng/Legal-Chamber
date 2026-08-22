@@ -4,7 +4,7 @@ Regulator profiles: statutory/professional powers, procedure, sanction range, ap
 
 ## Status
 
-**One real profile exists: `cnil.md`** (France's data-protection regulator), added after a live stress test's regulatory-mode matter demonstrated exactly what shape one needs to be, sourced from `cnil.fr` and `conseil-etat.fr` directly. `COMMUNITY_REVIEWED`, not yet `MAINTAINER VERIFIED` - see `../GOVERNANCE.md`'s pack verification levels. Every other regulator remains **EXPERIMENTAL** with no profile built. See `../docs/HONEST_STATUS.md`.
+**Two real profiles exist**: `cnil.md` (France's data-protection regulator) and `ico.md` (the UK's Information Commissioner's Office), both `COMMUNITY_REVIEWED`, not yet `MAINTAINER VERIFIED` - see `../GOVERNANCE.md`'s pack verification levels. Sourced directly from `cnil.fr`/`conseil-etat.fr` and `ico.org.uk`/`gov.uk` respectively, not recalled from training data. Every other regulator remains **EXPERIMENTAL** with no profile built. See `../docs/HONEST_STATUS.md`.
 
 ## What a regulator profile should contain, when one is added
 

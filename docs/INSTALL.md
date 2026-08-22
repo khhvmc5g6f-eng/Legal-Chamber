@@ -36,6 +36,19 @@ If you don't want the full plugin, copy or symlink `skills/legal-work/` into you
 ./bin/legal research MATTER-001 "is there a limitation issue here"                # reasoning-dependent - invokes Claude Code, or prints guidance
 ```
 
+## Optional: the Python API
+
+`scripts/legal_api.py` exposes the same deterministic capability as importable functions, plus one genuinely new one - `build_proof_graph(matter_id)`, which constructs a real dependency graph (which facts/evidence/authorities an issue actually relies on) by following the ID cross-references a matter's own JSON records already declare. Nothing here assesses whether a case is strong - it only shows what's actually linked to what.
+
+```python
+import sys; sys.path.insert(0, "scripts")
+import legal_api
+
+legal_api.create_matter("MATTER-001", matter_type="litigation", jurisdiction="England & Wales")
+legal_api.ingest_fact("MATTER-001", {"fact_id": "F-001", "proposition": "...", "status": "USER_ASSERTED", "materiality": "HIGH"})
+graph = legal_api.build_proof_graph("MATTER-001")
+```
+
 ## First run
 
 Say something like:

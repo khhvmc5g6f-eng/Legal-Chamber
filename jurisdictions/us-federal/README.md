@@ -49,4 +49,8 @@ A citation is not verified merely because CourtListener's index contains somethi
 
 ## What is NOT in this pack
 
-No state-law coverage. No populated Authority Graph beyond "use CourtListener to build one per matter." No verified procedural deadline - FRCP/local-rule deadlines must be checked live.
+No state-law coverage. No verified procedural deadline - FRCP/local-rule deadlines must be checked live.
+
+## Populated Authority Graph (starter)
+
+`authority-graph.json` in this directory is the repository's first real, populated Authority Graph entry - 2 cases, 1 verified `FOLLOWS` edge, on the Computer Fraud and Abuse Act's "exceeds authorized access" question (*United States v. Nosal*, 676 F.3d 854 (9th Cir. 2012) (en banc), and *Van Buren v. United States*, 593 U.S. 374 (2021)). Every field, including the edge itself, was verified live against CourtListener on 2026-08-22, not recalled from training data - see the file's own `verification_method` field. It is deliberately narrow (one doctrinal question, not a general database) rather than broad-but-unverified - see `docs/HONEST_STATUS.md`.

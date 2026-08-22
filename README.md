@@ -57,7 +57,7 @@ legal-chamber/
 │                   style, court structure, procedural basics, VERIFICATION_STATUS
 ├── courts/         cross-jurisdiction court-rule notes and templates
 ├── regulators/     regulator profiles (powers, procedure, appeal routes) -
-│                   one real profile (CNIL), rest unbuilt
+│                   two real profiles (CNIL, ICO), rest unbuilt
 ├── citation/       citation style definitions + deterministic validator
 ├── rubrics/        academic rubric schema + evidence requirements (empty by
 │                   design - no institutional rubric is invented)
@@ -66,10 +66,12 @@ legal-chamber/
 ├── workflows/      matter lifecycle, five-hearing adversarial workflow, gates
 ├── connectors/      abstraction layer + status of each research data source
 ├── scripts/        deterministic tools: deadline calculator, citation linter,
-│                   matter cross-reference and persistence checkers, and the
-│                   legal_cli.py CLI backend (arithmetic and pattern matching,
-│                   not an LLM - the CLI's reasoning-dependent verbs invoke
-│                   Claude Code itself rather than faking legal judgement)
+│                   matter cross-reference and persistence checkers, the
+│                   legal_cli.py CLI backend, and legal_api.py's importable
+│                   Python functions incl. build_proof_graph() (arithmetic
+│                   and pattern matching, not an LLM - reasoning-dependent
+│                   verbs/functions invoke Claude Code itself rather than
+│                   faking legal judgement)
 ├── benchmarks/      hallucination / adversarial / jurisdiction / temporal traps
 ├── evaluations/     how to run the benchmarks and read the results
 ├── examples/        worked example matters - one real one so far, taken
@@ -81,7 +83,7 @@ legal-chamber/
 
 | Jurisdiction | Pack status | What's actually verified |
 |---|---|---|
-| US Federal | `STRUCTURAL_DRAFT` | Court hierarchy, citation basics; live case-law lookups via CourtListener are usable per-matter |
+| US Federal | `STRUCTURAL_DRAFT` | Court hierarchy, citation basics; live case-law lookups via CourtListener are usable per-matter; a first real, populated Authority Graph entry now exists (`jurisdictions/us-federal/authority-graph.json` - 2 verified nodes, 1 verified edge, on the CFAA "exceeds authorized access" question) |
 | England & Wales | `STRUCTURAL_DRAFT` | Court hierarchy, OSCOLA citation basics, primary-source pointers |
 | Scotland | `STRUCTURAL_DRAFT` | Court hierarchy, citation basics, primary-source pointers |
 | Australia | `STRUCTURAL_DRAFT` | Court hierarchy, AGLC citation basics, primary-source pointers |

@@ -50,6 +50,8 @@ England & Wales does not have a single civil or criminal code; law is a mix of s
 - `judiciary.uk` - Practice Directions, guidance
 - Official Civil Procedure Rules site (`justice.gov.uk` / `civilprocedurerules...`) for CPR text
 
+For data-protection/information-rights matters specifically, see `../../regulators/ico.md` - a real, sourced profile of the ICO's investigation stages, sanction range, and appeal route (to the First-tier Tribunal, which reviews on the merits - a different standard from CNIL's Conseil d'État route).
+
 ## What is NOT in this pack
 
 No populated Authority Graph, no verified statutory pinpoint, no verified procedural deadline. See `docs/OPERATING_RULES.md` for what must happen before any of those can be asserted as fact in a matter.

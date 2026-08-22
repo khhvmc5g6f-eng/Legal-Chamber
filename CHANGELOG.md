@@ -2,7 +2,15 @@
 
 All notable changes to this project are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/). Each entry corresponds to one real commit - see the git history for exact diffs.
 
-## [0.1.5] - CLI, and live re-verification of the Write-access fix (unreleased)
+## [0.1.6] - first populated Authority Graph, second regulator profile, programmatic API (unreleased)
+
+### Added
+
+- `jurisdictions/us-federal/authority-graph.json` - the repository's first real, populated Authority Graph entry (`docs/OPERATING_RULES.md` Part XVII): *United States v. Nosal*, 676 F.3d 854 (9th Cir. 2012) (en banc), and *Van Buren v. United States*, 593 U.S. 374 (2021), on the CFAA "exceeds authorized access" question. Every field - including the `FOLLOWS` edge itself - verified live against CourtListener's `search`, `clusters`, and `opinions-cited` endpoints (the citation edge was confirmed via CourtListener's own citation-graph data, not inferred from commentary). Deliberately narrow (2 nodes, 1 edge) rather than broad-but-unverified.
+- `regulators/ico.md` - second real regulator profile (the UK's Information Commissioner's Office), sourced live from `ico.org.uk` and `gov.uk`: investigation stages, the £17.5m/4% UK GDPR sanction cap (distinct from the EU figure), and the First-tier Tribunal merits-review appeal route (a materially different standard from CNIL's Conseil d'État legality review).
+- `scripts/legal_api.py` - a programmatic Python API alongside the CLI: `create_matter()`, `get_matter_status()`, `ingest_fact()`, `ingest_evidence()`, `check_filing_gates()` (deterministic; the gate checker honestly marks which of the 13 gates it can and can't mechanically assess), and `build_proof_graph()` - a genuinely new capability, not a CLI wrapper: constructs a real dependency graph from a matter's existing fact/evidence/issue/authority cross-references. Verified against real stress-test data (35 nodes, 57 edges on `M4-COOLABAH`) after an initial version was found not to handle the wrapped-dict JSON shape real agents actually produce - fixed and re-verified. Reasoning-dependent functions (`resolve_jurisdiction()`, `research_issue()`, etc.) delegate to the same `claude --print` pattern as the CLI, or raise `ReasoningRequiredError` with the exact prompt to run yourself.
+
+## [0.1.5] - CLI, and live re-verification of the Write-access fix
 
 ### Added
 
