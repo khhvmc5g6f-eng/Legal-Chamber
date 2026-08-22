@@ -1,0 +1,50 @@
+{
+  "$comment": "Article III standing doctrine (injury-in-fact, traceability, redressability). Every field verified live against CourtListener on 2026-08-22 (search + opinions-cited endpoints), not recalled from training data. Note: an initial search for 'Lujan v Defenders of Wildlife' surfaced an unrelated 1991 cert-stage record (500 U.S. 915) before the actual 1992 merits decision (504 U.S. 555) was found with a date-filtered search - the wrong record was not used.",
+  "verified_at": "2026-08-22",
+  "verification_method": "mcp CourtListener connector: search (type=o, court=scotus, date-filtered where the first search surfaced a non-merits record) for existence/identity/citation, opinions-cited for the citation-graph edge",
+  "authorities": [
+    {
+      "authority_id": "AUTH-USFED-STAND-001",
+      "authority_type": "case",
+      "name": "Lujan v. Defenders of Wildlife",
+      "citation": "504 U.S. 555 (1992)",
+      "court": "Supreme Court of the United States",
+      "jurisdiction": "us-federal",
+      "date": "1992-06-12",
+      "docket_number": "90-1424",
+      "courtlistener_cluster_id": 112747,
+      "courtlistener_opinion_id": 9432577,
+      "proposition": "The 'irreducible constitutional minimum' of Article III standing requires: (1) an injury in fact that is concrete, particularized, and actual or imminent; (2) a causal connection between the injury and the defendant's conduct (traceability); and (3) a likelihood that the injury will be redressed by a favourable decision (redressability). Established the modern three-part standing test.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://www.courtlistener.com/opinion/112747/lujan-v-defenders-of-wildlife/"
+    },
+    {
+      "authority_id": "AUTH-USFED-STAND-002",
+      "authority_type": "case",
+      "name": "TransUnion LLC v. Ramirez",
+      "citation": "594 U.S. 413 (2021)",
+      "court": "Supreme Court of the United States",
+      "jurisdiction": "us-federal",
+      "date": "2021-06-25",
+      "docket_number": "20-297",
+      "courtlistener_cluster_id": 4894912,
+      "courtlistener_opinion_id": 4698691,
+      "proposition": "Applies Lujan's injury-in-fact requirement to statutory-damages claims under the Fair Credit Reporting Act: a plaintiff must demonstrate concrete injury even where a federal statute creates a private cause of action for a bare procedural violation - a plaintiff cannot rely on a statutory violation alone without a concrete, real-world harm (or a harm with a close historical/common-law analogue) to satisfy Article III.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://www.courtlistener.com/opinion/4894912/transunion-llc-v-ramirez/"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-USFED-STAND-002",
+      "to": "AUTH-USFED-STAND-001",
+      "relationship": "FOLLOWS",
+      "verified_via": "CourtListener opinions-cited endpoint - citing_opinion 4698691 -> cited_opinion 9432577, depth 17 (strong, repeated reliance)"
+    }
+  ],
+  "what_this_is_not": "Two cases, one verified edge, on Article III's injury-in-fact/traceability/redressability test and its application to statutory-damages claims. Does not cover other standing doctrines (taxpayer standing, organizational standing, associational standing) not tested in this pass."
+}

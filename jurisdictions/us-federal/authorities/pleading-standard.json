@@ -1,0 +1,79 @@
+{
+  "$comment": "Federal civil pleading standard (Rule 8/12(b)(6) 'plausibility'). Every field verified live against CourtListener on 2026-08-22 (search + clusters + opinions-cited endpoints), not recalled from training data. Independently cross-checked: the Twombly/Iqbal citation, docket, cluster_id, and opinion_id values below were separately re-verified by a second live CourtListener query and matched exactly.",
+  "verified_at": "2026-08-22",
+  "verification_method": "mcp CourtListener connector: search (type=o, court=scotus/ca3) for existence/identity/citation, clusters for citation_count/precedential_status, opinions-cited for the citation-graph edges",
+  "authorities": [
+    {
+      "authority_id": "AUTH-USFED-PLEAD-001",
+      "authority_type": "case",
+      "name": "Bell Atlantic Corp. v. Twombly",
+      "citation": "550 U.S. 544 (2007)",
+      "court": "Supreme Court of the United States",
+      "jurisdiction": "us-federal",
+      "date": "2007-05-21",
+      "docket_number": "05-1126",
+      "courtlistener_cluster_id": 145730,
+      "courtlistener_opinion_id": 9435068,
+      "citation_count_on_courtlistener": 153283,
+      "precedential_status": "Published",
+      "proposition": "A complaint must contain sufficient factual matter, accepted as true, to state a claim to relief that is 'plausible on its face' - retiring the earlier 'no set of facts' standard from Conley v. Gibson for antitrust conspiracy pleading under Rule 8(a)(2), read together with Rule 12(b)(6).",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verification_note": "CourtListener's own judges field for this cluster contains an anomalous token ('Auto') in place of a justice's name, reproduced identically from both the search index and the clusters endpoint - a genuine upstream data artifact, not guessed or corrected here.",
+      "primary_source_link": "https://www.courtlistener.com/opinion/145730/bell-atlantic-corp-v-twombly/"
+    },
+    {
+      "authority_id": "AUTH-USFED-PLEAD-002",
+      "authority_type": "case",
+      "name": "Ashcroft v. Iqbal",
+      "citation": "556 U.S. 662 (2009)",
+      "court": "Supreme Court of the United States",
+      "jurisdiction": "us-federal",
+      "date": "2009-05-18",
+      "docket_number": "07-1015",
+      "courtlistener_cluster_id": 145875,
+      "courtlistener_opinion_id": 9435339,
+      "citation_count_on_courtlistener": 156552,
+      "precedential_status": "Published",
+      "proposition": "Twombly's plausibility standard applies to all civil actions under Rule 8, not only antitrust conspiracy claims. Articulates a two-step approach: (1) identify and disregard bare legal conclusions unsupported by factual allegations, then (2) assess whether the remaining well-pleaded factual allegations plausibly give rise to an entitlement to relief.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verification_note": "CourtListener's judges field for this cluster returned an incomplete panel (omitting Roberts, Scalia, Thomas, Alito) - flagged as an upstream data gap rather than supplemented from general knowledge.",
+      "primary_source_link": "https://www.courtlistener.com/opinion/145875/ashcroft-v-iqbal/"
+    },
+    {
+      "authority_id": "AUTH-USFED-PLEAD-003",
+      "authority_type": "case",
+      "name": "Fowler v. UPMC Shadyside",
+      "citation": "578 F.3d 203 (3d Cir. 2009)",
+      "court": "Court of Appeals for the Third Circuit",
+      "jurisdiction": "us-federal",
+      "date": "2009-08-18",
+      "docket_number": "07-4285",
+      "judges": "Fuentes, Jordan, Nygaard",
+      "proposition": "Applies Iqbal's two-step framework at the circuit level: disregard conclusory allegations, then assess whether the remaining well-pleaded facts nudge the claim from merely possible to plausible - one of the first circuit-level opinions to work through Iqbal's application in detail.",
+      "treatment": "APPLIED",
+      "authority_weight": "PERSUASIVE",
+      "authority_weight_note": "Binding within the Third Circuit only; persuasive elsewhere - see docs/OPERATING_RULES.md's authority hierarchy for how circuit-level authority weight varies by forum.",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://www.courtlistener.com/opinion/1177453/fowler-v-upmc-shadyside/"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-USFED-PLEAD-002",
+      "to": "AUTH-USFED-PLEAD-001",
+      "relationship": "EXTENDS",
+      "verified_via": "CourtListener opinions-cited endpoint - citing_opinion 9435339 -> cited_opinion 9435068 (citation-graph record id 300604170) confirmed. Labelled EXTENDS rather than FOLLOWS because Iqbal generalises Twombly's antitrust-context plausibility test to all civil pleading, rather than applying it in an identical context."
+    },
+    {
+      "from": "AUTH-USFED-PLEAD-003",
+      "to": "AUTH-USFED-PLEAD-002",
+      "relationship": "APPLIES",
+      "verified_via": "CourtListener opinions-cited endpoint - citing_opinion (Fowler) -> cited_opinion 9435339 (Iqbal) (citation-graph record id 269113458) confirmed direct citation."
+    }
+  ],
+  "what_this_is_not": "Three cases, two verified edges, on the plausibility pleading standard from its Supreme Court origin through one circuit-level application. Does not survey how other circuits have applied Twombly/Iqbal, which varies and was not independently verified in this pass."
+}

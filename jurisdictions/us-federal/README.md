@@ -51,6 +51,16 @@ A citation is not verified merely because CourtListener's index contains somethi
 
 No state-law coverage. No verified procedural deadline - FRCP/local-rule deadlines must be checked live.
 
-## Populated Authority Graph (starter)
+## Populated Authority Graph
 
-`authority-graph.json` in this directory is the repository's first real, populated Authority Graph entry - 2 cases, 1 verified `FOLLOWS` edge, on the Computer Fraud and Abuse Act's "exceeds authorized access" question (*United States v. Nosal*, 676 F.3d 854 (9th Cir. 2012) (en banc), and *Van Buren v. United States*, 593 U.S. 374 (2021)). Every field, including the edge itself, was verified live against CourtListener on 2026-08-22, not recalled from training data - see the file's own `verification_method` field. It is deliberately narrow (one doctrinal question, not a general database) rather than broad-but-unverified - see `docs/HONEST_STATUS.md`.
+`authority-graph.json` in this directory covers the Computer Fraud and Abuse Act's "exceeds authorized access" question (*United States v. Nosal*, 676 F.3d 854 (9th Cir. 2012) (en banc), and *Van Buren v. United States*, 593 U.S. 374 (2021)).
+
+`authorities/` holds a growing set of additional doctrinal areas, each independently verified live against CourtListener on 2026-08-22 (not recalled from training data) - chosen for direct relevance to `skills/legal-litigation/SKILL.md`'s day-one triage and case-killer checks:
+
+| File | Doctrine | Cases |
+|---|---|---|
+| `authorities/pleading-standard.json` | Federal civil pleading standard (Rule 8/12(b)(6) plausibility) | *Bell Atlantic Corp. v. Twombly* (2007), *Ashcroft v. Iqbal* (2009), *Fowler v. UPMC Shadyside* (3d Cir. 2009) |
+| `authorities/article-iii-standing.json` | Standing (injury-in-fact, traceability, redressability) | *Lujan v. Defenders of Wildlife* (1992), *TransUnion LLC v. Ramirez* (2021) |
+| `authorities/personal-jurisdiction.json` | Minimum contacts / specific jurisdiction | *International Shoe Co. v. Washington* (1945), *Ford Motor Co. v. Montana Eighth Judicial District Court* (2021) |
+
+Every case citation, docket number, and cited-authority relationship in these files was checked live via CourtListener's `search`, `clusters`, and `opinions-cited` endpoints during this session - the `opinions-cited` check in particular confirms a relationship against CourtListener's own citation-graph data rather than asserting it from commentary. Several initial searches surfaced the wrong record (a cert-stage order instead of the merits decision) and were caught and corrected before being used - see each file's own `$comment`/`verification_method` fields for exactly how. Deliberately narrow per doctrine (2-3 cases each) rather than broad-but-unverified - see `docs/HONEST_STATUS.md` for what's still pending (preliminary injunctions, summary judgment, and qualified immunity were in progress when a CourtListener hourly rate limit was hit; not yet added).

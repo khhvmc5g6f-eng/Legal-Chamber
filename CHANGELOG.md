@@ -2,7 +2,23 @@
 
 All notable changes to this project are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/). Each entry corresponds to one real commit - see the git history for exact diffs.
 
-## [0.1.6] - first populated Authority Graph, second regulator profile, programmatic API (unreleased)
+## [0.1.7] - deepening the US-Federal Authority Graph (in progress)
+
+### Added
+
+Three new doctrinal entries under `jurisdictions/us-federal/authorities/`, each independently verified live against CourtListener (`search` + `opinions-cited` endpoints, not recalled from training data), chosen for direct relevance to `skills/legal-litigation/SKILL.md`'s case-killer checks:
+
+- `pleading-standard.json` - *Bell Atlantic Corp. v. Twombly* (2007), *Ashcroft v. Iqbal* (2009), and a circuit-level application (*Fowler v. UPMC Shadyside*, 3d Cir. 2009). The Iqbal-Twombly edge was labelled `EXTENDS` rather than `FOLLOWS` since Iqbal generalises the test beyond Twombly's antitrust context.
+- `article-iii-standing.json` - *Lujan v. Defenders of Wildlife* (1992) and *TransUnion LLC v. Ramirez* (2021).
+- `personal-jurisdiction.json` - *International Shoe Co. v. Washington* (1945) and *Ford Motor Co. v. Montana Eighth Judicial District Court* (2021).
+
+Several initial searches during this work surfaced the wrong record (a cert-stage order rather than the actual merits decision, for both Lujan and Ford Motor) - caught by date-filtering and re-verifying rather than used.
+
+### Operational note
+
+Running 6 parallel research agents against CourtListener simultaneously caused a genuine livelock: a shared per-minute rate limit reset on every agent's retry, so none of them could make sustained progress while running concurrently. All 6 were stopped; the remaining topics (preliminary injunctions, summary judgment, qualified immunity) were completed sequentially in a single context instead, which resolved the per-minute contention but then hit CourtListener's separate hourly quota (50/hour) - work paused at that point and resumed once it reset. This is itself a useful, if unplanned, finding about how far real primary-source verification can scale in one session against a rate-limited public API - noted rather than hidden.
+
+## [0.1.6] - first populated Authority Graph, second regulator profile, programmatic API
 
 ### Added
 

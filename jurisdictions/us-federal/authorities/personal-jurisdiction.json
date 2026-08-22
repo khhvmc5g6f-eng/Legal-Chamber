@@ -1,0 +1,50 @@
+{
+  "$comment": "Personal jurisdiction / minimum contacts doctrine. Every field verified live against CourtListener on 2026-08-22 (search + opinions-cited endpoints), not recalled from training data. Note: initial searches for Ford Motor surfaced two 2020 cert-stage orders before the actual 2021 merits decision was found with a date-filtered search - the wrong records were not used.",
+  "verified_at": "2026-08-22",
+  "verification_method": "mcp CourtListener connector: search (type=o, court=scotus, date-filtered where the first search surfaced non-merits records) for existence/identity/citation, opinions-cited for the citation-graph edge",
+  "authorities": [
+    {
+      "authority_id": "AUTH-USFED-PJ-001",
+      "authority_type": "case",
+      "name": "International Shoe Co. v. Washington",
+      "citation": "326 U.S. 310 (1945)",
+      "court": "Supreme Court of the United States",
+      "jurisdiction": "us-federal",
+      "date": "1945-12-03",
+      "docket_number": "107",
+      "courtlistener_cluster_id": 104200,
+      "courtlistener_opinion_id": 104200,
+      "proposition": "A state court may exercise personal jurisdiction over a non-resident defendant consistent with due process where the defendant has 'certain minimum contacts' with the forum 'such that the maintenance of the suit does not offend traditional notions of fair play and substantial justice' - the foundational modern personal-jurisdiction test, superseding a purely territorial/physical-presence approach.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://www.courtlistener.com/opinion/104200/international-shoe-co-v-washington/"
+    },
+    {
+      "authority_id": "AUTH-USFED-PJ-002",
+      "authority_type": "case",
+      "name": "Ford Motor Co. v. Montana Eighth Judicial District Court",
+      "citation": "592 U.S. 351 (2021)",
+      "court": "Supreme Court of the United States",
+      "jurisdiction": "us-federal",
+      "date": "2021-03-25",
+      "docket_number": "19-368",
+      "courtlistener_cluster_id": 4867543,
+      "courtlistener_opinion_id": 4671322,
+      "proposition": "For specific (case-linked) personal jurisdiction, a plaintiff's claim need not arise directly out of the defendant's forum contacts in a strict but-for/causal sense - it is enough that the claim 'relates to' the defendant's contacts with the forum. Rejects a strict causation requirement between the defendant's forum conduct and the plaintiff's claim, applying and refining rather than overruling International Shoe's minimum-contacts framework.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "primary_source_link": "https://www.courtlistener.com/opinion/4867543/ford-motor-co-v-montana-eighth-judicial-district-court/"
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-USFED-PJ-002",
+      "to": "AUTH-USFED-PJ-001",
+      "relationship": "APPLIES",
+      "verified_via": "CourtListener opinions-cited endpoint - citing_opinion 4671322 -> cited_opinion 104200, depth 12 (strong, repeated reliance) - independently cross-confirmed twice during this session's research"
+    }
+  ],
+  "what_this_is_not": "Two cases, one verified edge, on the minimum-contacts test and its 'relates to' refinement for specific jurisdiction. Does not cover general jurisdiction (Daimler AG v. Bauman, Goodyear Dunlop Tires v. Brown) or the Bristol-Myers Squibb mass-tort forum-shopping line, which were not verified in this pass."
+}
