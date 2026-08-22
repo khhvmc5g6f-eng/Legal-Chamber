@@ -42,6 +42,8 @@ Code civil (1804, much amended - notably the 2016 reform of the law of obligatio
 - `conseil-etat.fr` / `courdecassation.fr` - official decisions of the two supreme courts
 - `conseil-constitutionnel.fr` - constitutional decisions
 
+For data-protection/regulatory matters specifically, see `../../regulators/cnil.md` - a real, sourced profile of CNIL's investigation stages, sanction range, and appeal route (to the Conseil d'État, not an ordinary court).
+
 ## What is NOT in this pack
 
 No populated jurisprudence database. No verified article-level code content. No verified procedural deadline.

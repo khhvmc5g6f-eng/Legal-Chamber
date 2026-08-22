@@ -28,6 +28,7 @@ Thank you for considering a contribution to Legal Chamber. This is a system that
 python3 scripts/citation_lint.py --selftest
 python3 scripts/deadline_calculator.py --selftest
 python3 scripts/verify_matter_refs.py --selftest
+python3 scripts/verify_matter_persistence.py --selftest
 ```
 
 Both exit non-zero on failure and print what broke.

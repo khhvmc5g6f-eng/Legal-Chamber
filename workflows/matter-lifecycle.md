@@ -7,6 +7,8 @@ HUMAN_REVIEW_PENDING → VERIFIED_FOR_FILING → CLOSED
 
 These are the `status` values on `../schemas/matter.schema.json`. A matter can move backward (e.g. `REVIEWING` finds a gap → back to `RESEARCHING`) - the lifecycle is not strictly linear, and forcing it to look linear in the record would misrepresent what actually happened.
 
+**Update `intake/matter.json`'s `status` field every time a matter actually moves to a new stage below - not just at intake.** A stress test found a matter that had completed all five moot hearings and a final disposition while its own record still read `status: "INTAKE"`. A status that isn't kept current is worse than no status at all - `scripts/verify_matter_persistence.py` and any human reviewer both rely on it being real.
+
 ## 1. INTAKE
 
 `../agents/intake/ROLE.md` classifies matter type and complexity tier. `../agents/jurisdiction/ROLE.md` resolves jurisdiction(s) - by asking, never by inference. A lightweight conflict check runs before anything sensitive is ingested (parties, related entities, opposing counsel named so far).

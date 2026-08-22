@@ -42,6 +42,8 @@ Every draft gets `../../schemas/draft.schema.json` metadata: `ai_generated: true
 
 Apply `../../docs/STYLE_GUIDE.md` (no em dashes, no stock phrasing, calibrated confidence) as the final pass, then re-check that no fact, date, citation, or quotation moved. If a template exists for this document type, start from `../../templates/` rather than freeform.
 
+**Actually run `python3 ../../scripts/citation_lint.py <the file you just wrote>` before calling a document finished.** A live audit of drafts generated during a stress test found real, uncorrected em dashes in several matters' opposition cases and research logs - "apply the style guide" as a prose instruction was not enough on its own to stop it happening; running the deterministic linter against your own output is not optional, and is the difference between a house-style rule that's aspirational and one that's checked.
+
 ## Hand off
 
 - Need a hostile read before this goes anywhere → `../legal-verify/SKILL.md` or `../legal-moot/SKILL.md`.

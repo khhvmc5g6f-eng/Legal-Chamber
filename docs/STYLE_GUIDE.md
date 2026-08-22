@@ -12,6 +12,10 @@ Order of precedence, always:
 
 Naturalness never outranks law. A stylistic pass is never allowed to change a legal proposition, a number, a date, a quotation, or a citation, see the "substantive change lock" below.
 
+## This is checked, not just stated
+
+A live stress test found real, uncorrected em dashes in multiple matters' generated drafts (opposition cases, research logs) despite this document existing and being referenced throughout the skill files. Reading a style guide is not the same as running it against your own output. **Any role that writes a document under `matters/<ID>/` must run `python3 scripts/citation_lint.py <the file>` before treating that document as finished**, and fix what it flags - not as an optional nicety, but as the actual mechanism that makes this house style real rather than aspirational.
+
 ## House defaults
 
 - `em_dash: prohibited`, replace with comma, colon, semicolon, or a full stop; never break grammar to force the substitution.

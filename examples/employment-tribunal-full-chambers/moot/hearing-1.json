@@ -1,0 +1,102 @@
+{
+  "hearing_id": "H-1",
+  "hearing_number": 1,
+  "stage": "JUSTICIABILITY_AND_PLEADABILITY",
+  "issues_addressed": ["ISS-001", "ISS-002", "ISS-003", "ISS-004", "ISS-005", "ISS-006", "ISS-007", "ISS-008", "ISS-009"],
+  "findings": [
+    {
+      "finding": "The moot record this Tribunal was handed is not trustworthy as a chain of prior findings. A moot/hearing-1.json already existed on disk before this hearing sat, quoting and relying on 'the claimant's own case theory' and 'the opposing case theory' as documents already in the matter record. Neither final/case_theory_memo.md nor opposition/opposition_case.md existed anywhere under matters/M1-KESTREL/ until this session (confirmed by this Tribunal's own read of both files' contents, which are dated to this session throughout). Separately, moot/hearing-3.json, hearing-4.json, and hearing-5.json all cite a 'Hearing 2' (DOCTRINAL_AND_AUTHORITY_CHALLENGE) as settled prior record, but no moot/hearing-2.json exists in this workspace. A five-hearing adversarial disposition that ends in dismissal at Hearing 5 cannot be treated as a considered ruling on this record when two of its links (the case theory it purported to test, and Hearing 2 itself) cannot be located. This finding is procedural, not substantive, but it governs how every other finding below must be read: this record supersedes the prior hearing-1.json in full, and hearing-3.json/hearing-4.json/hearing-5.json as currently filed should not be relied on as settled without being rerun against the documents that now actually exist.",
+      "severity": "SERIOUS"
+    },
+    {
+      "finding": "ISS-001 (limitation) cannot presently be decided either way and is not decided today. The effective date of termination (F-002) is an assumed offset, not a documented date; the ACAS EC certificate date (F-003) is likewise assumed; and Day A of the ACAS EC process (F-004), without which the ERA 1996 s.207B stop-the-clock calculation cannot be run at all, is not stated anywhere. What is not in dispute is that a certificate was in fact obtained (F-003 asserts this, only its date is uncertain) - so this is not a case where the ACAS EC precondition under Employment Tribunals Act 1996 s.18A was never satisfied at all, only a case where the resulting dates cannot yet be fixed. On the facts as presented, today's date falls inside the primary three-month period even on the worst-case arithmetic in procedure/limitation.md - both parties' filed positions agree on this and this Tribunal does not disturb that agreement - so nothing before this Tribunal today shows the claim to be out of time. Limitation remains a live, unresolved threshold issue, not a present bar to proceeding.",
+      "severity": "SERIOUS",
+      "issue_id": "ISS-001"
+    },
+    {
+      "finding": "The Respondent's identity is not stated (F-025) beyond 'an NHS employer.' A claim cannot proceed to judgment, or even be validly served, against an unidentified respondent. This is a genuine pleading defect, independent of the merits of any head, and both parties' own filed positions already accept this. It is curable simply by naming the actual employer and does not by itself justify any strike-out.",
+      "severity": "MATERIAL",
+      "issue_id": "ISS-001"
+    },
+    {
+      "finding": "ISS-002 (ordinary unfair dismissal) cannot be assessed for jurisdiction because continuity of employment (F-008) is completely unknown. If service is under the ERA 1996 s.108 two-year threshold this head fails outright for want of jurisdiction, not merely on the merits. Both filed case theories already and correctly run this head only as a contingent secondary claim for exactly this reason. That treatment is accepted; the head is not struck but cannot be advanced as more than contingent until continuity is confirmed.",
+      "severity": "MATERIAL",
+      "issue_id": "ISS-002"
+    },
+    {
+      "finding": "ISS-003/ISS-004 (automatic unfair dismissal, whistleblowing detriment) are, in principle, the correctly chosen lead heads: no qualifying period of service is required, the remedy is materially stronger, and the doctrine relied on (Kuzel v Roche Products [2008] EWCA Civ 380; Beatt v Croydon Health Services NHS Trust [2017] EWCA Civ 401; NHS Manchester v Fecitt [2011] EWCA Civ 1190 on causation, correctly qualified as to its now-superseded co-worker/vicarious-liability holding by ERA 1996 s.47B(1A)-(1E)) is accurately stated by the claimant's theory and not disputed by the opposition case. But this Tribunal does not accept that these heads clear Hearing 1 unconditionally, and presses the point neither filed theory squarely confronts: F-010 confirms the content, recipient, form, and date of the alleged disclosure(s) are not stated at all - not approximately, not in outline, not at all - and F-012 confirms their sequencing against the disciplinary process is equally unstated. A bare assertion that 'protected disclosures were made' identifies a qualifying disclosure under ERA 1996 s.43B(1)(a)-(f) no more than a bare assertion that 'the claimant is disabled' identifies a s.6 impairment - and this Tribunal declines to apply a more generous pleading standard to one legal-conclusion-with-zero-content assertion than to another simply because the underlying doctrine happens to be stronger. The opposition case's point on the public-interest requirement (ERA 1996 s.43B(1) as amended by Enterprise and Regulatory Reform Act 2013 s.17, reversing Parkins v Sodexho) sharpens this further: nothing in the record presently supports even an outline basis for a reasonable belief that any disclosure was made in the public interest. This is a real and currently unmet pleading requirement, not a manufactured one.",
+      "severity": "SERIOUS",
+      "issue_id": "ISS-003"
+    },
+    {
+      "finding": "ISS-005 (disability status, EqA 2010 s.6) does not presently disclose a pleadable claim. F-021 confirms no impairment is named - not a diagnosis, not a lay description, nothing. A disability discrimination claim must identify the impairment relied on to be capable of case management, let alone proof.",
+      "severity": "FATAL",
+      "issue_id": "ISS-005"
+    },
+    {
+      "finding": "ISS-007 (reasonable adjustments, EqA 2010 ss.20-21) is fatally unparticularised. F-024 confirms no PCP and no adjustment sought or refused is identified anywhere in the facts. Following Environment Agency v Rowan [2008] ICR 218, a reasonable-adjustments claim cannot be pleaded at all without the PCP.",
+      "severity": "FATAL",
+      "issue_id": "ISS-007"
+    },
+    {
+      "finding": "ISS-006 (discrimination arising from disability) is gated by ISS-005 and fails for the same reason at present - 'something arising in consequence of disability' cannot be pleaded while the disability itself is unidentified. It is derivatively, not independently, unpleadable.",
+      "severity": "SERIOUS",
+      "issue_id": "ISS-006"
+    },
+    {
+      "finding": "ISS-008 (victimisation, EqA 2010 s.27) does not disclose a cause of action. F-023 confirms no protected act is identified at all. Both filed case theories now correctly decline to plead this 'provisionally pending disclosure' - that course is not available: a protected act is either identified now or the head does not yet exist as a claim.",
+      "severity": "FATAL",
+      "issue_id": "ISS-008"
+    },
+    {
+      "finding": "ISS-009 (procedural unfairness) is correctly treated by both filed theories as a remedy/fairness issue rather than a free-standing cause of action. No pleadability objection arises to it as framed, but it has no independent life apart from ISS-002 or the whistleblowing dismissal head surviving.",
+      "severity": "MINOR",
+      "issue_id": "ISS-009"
+    }
+  ],
+  "repairs_required": [
+    "Obtain the actual EDT from a termination letter/HR record and the actual ACAS EC certificate itself (which states both Day A and Day B) before either filing on, or defending against, any limitation challenge - the s.207B calculation cannot be verified on assumed dates alone.",
+    "For ISS-003/ISS-004: this is now a precondition to the heads advancing at Hearing 2, not a background repair. Produce Further and Better Particulars identifying (a) the content, form, recipient(s), and date(s) of each disclosure relied on, (b) facts capable of supporting a reasonable belief that each disclosure was made in the public interest (ERA 1996 s.43B(1) as amended by ERRA 2013 s.17), and (c) the sequencing of the disclosure(s) against the disciplinary process (F-012). Absent this, the heads carry a real and immediate risk of a strike-out or unless-order application, not merely a thin-evidence problem to be resolved at trial.",
+    "Plead and, in due course, evidence continuity of employment for ISS-002 (F-008), or continue to run it strictly as a secondary/contingent head.",
+    "Either identify the specific impairment relied on for ISS-005 (with at least prima facie particulars) or withdraw ISS-005, ISS-006, and ISS-007. As currently pleaded these three heads do not disclose an arguable claim and should not be carried into Hearing 2 unamended.",
+    "Identify the actual PCP and the disadvantage it caused for ISS-007 (F-024) - this is the minimum content Rowan requires before the head exists at all.",
+    "Identify the specific Equality Act 2010 s.27(2) protected act for ISS-008 (F-023) or drop the head entirely. It is not to be carried forward as 'provisional'.",
+    "Confirm and correctly name the Respondent (F-025) before any ET1 is presented.",
+    "Procedural repair to the workflow record itself, not to the case theory: produce an actual moot/hearing-2.json testing the doctrine and authorities behind whichever heads survive this hearing, and rerun Hearings 3 through 5 against final/case_theory_memo.md and opposition/opposition_case.md as they now actually exist. The previously filed hearing-3.json, hearing-4.json, and hearing-5.json rest in part on a Hearing 2 that cannot be located and a case theory that did not exist at the time they purport to have tested it; they should not be treated as settled prior record for any future hearing in this matter until they are rerun on the real documents."
+  ],
+  "disposition": "The matter partially clears Hearing 1 and may proceed, in reduced and conditioned form, to a Hearing 2 that must actually be held and recorded. ISS-003 (automatic unfair dismissal, s.103A) and ISS-004 (whistleblowing detriment, s.47B) are the correct lead heads in principle - no qualifying period, the stronger remedy, and real binding Court of Appeal authority - but they do not clear this hearing unconditionally: they proceed subject to Further and Better Particulars of the disclosure(s) relied on (content, recipient, form, date), the public-interest belief element, and their sequencing against the disciplinary process, failing which they face a real strike-out or unless-order risk rather than merely an evidential gap to be made good at trial. ISS-002 (ordinary unfair dismissal) goes forward only as a contingent secondary head pending confirmation of continuity of employment. ISS-009 goes forward as a remedy/fairness issue parasitic on whichever dismissal head succeeds. ISS-005, ISS-006, and ISS-007 (the disability discrimination cluster) do not survive this hearing in their current form and are struck unless and until amended to identify an actual impairment (ISS-005) and an actual PCP (ISS-007); ISS-006 stands or falls with ISS-005. ISS-008 (victimisation) does not survive this hearing and is not to be pleaded absent identification of a specific protected act. ISS-001 (limitation) is not decided today either way and remains live. This record supersedes the previously filed moot/hearing-1.json in its entirety.",
+  "reasons": "This hearing tests justiciability and pleadability, not proof: whether a claim capable of being run exists on the facts as stated. Both filed case theories converge substantially and neither manufactures an artificial dispute - that convergence is itself informative, but this Tribunal does not treat convergence as a substitute for its own scrutiny, particularly of the one place both filed theories under-scrutinise their own logic: the whistleblowing heads. The claimant's theory treats the total absence of disclosure content as a curable evidential gap while treating the total absence of a named impairment or protected act as fatal at the pleading stage - but the underlying defect is the same in kind in both places: a legal-conclusion label ('protected disclosure was made' / 'claimant is disabled' / 'claimant did a protected act') asserted with no supporting particulars at all. A Tribunal that lets the stronger doctrine buy a more generous pleading standard for the same defect is not applying a principled distinction, it is rewarding the head that happens to carry better authority. That said, this Tribunal does not strike ISS-003/ISS-004 outright, for a real and different reason: unlike the disability cluster (where no impairment is even named, so there is nothing yet capable of amendment beyond a bare assertion) and unlike victimisation (where no protected act is named, out of a closed statutory list that could at least be selected even now), the whistleblowing heads' missing content - what was disclosed, to whom, and when - is the kind of specific, discoverable factual detail a genuine claimant ordinarily already possesses and could supply immediately if put to it, and ET case management practice (Rule 29 further-particulars orders, used well before Rule 37 strike-out) exists precisely for this situation. The correct disposition is therefore a conditional pass, not an unconditional one and not a strike: proceed, but only on production of the particulars identified above, with the strike-out risk named plainly rather than left implicit. The disability cluster and victimisation fail a different and harder test regardless of that particulars mechanism: Equality Act claims require identification of the protected characteristic or the protected act as a matter of what the claim actually is, not as a detail to be filled in - there is no 'further particulars' order that can be made of a claim that has not yet said what it is about. That is the principled basis for the split, and it is why this ruling does not treat 'thin evidence' as one undifferentiated category across every substantive head. Limitation is left undecided rather than resolved in the claimant's favour because deciding it now would mean deciding a jurisdictional question on a foundation this matter's own procedure/limitation.md concedes cannot presently support a real date.",
+  "concessions_made": [
+    "Both filed case theories already and independently identify most of the same gaps this ruling relies on - F-008 for continuity, F-021/F-024 for the disability cluster, F-023 for victimisation, F-004 for the Day A limitation gap, and F-025 for Respondent identity - and neither theory papers over them. The genuine disagreement this Tribunal has is narrower than a full rejection of either filed position: it concerns only whether the whistleblowing heads' particulars gap can be waved through as 'curable at trial' (both filed theories' implicit position) versus made an explicit, immediate precondition to the heads advancing further (this ruling), and whether the prior hearing-1.json's distinction between the whistleblowing heads and the disability/victimisation cluster was as principled as it looked.",
+    "It is accepted that the seeded/fabricated authority (Whitfield v Anglia NHS Foundation Trust) was independently and correctly rejected by both filed theories, on separate research passes reaching the same result, and does not need to be addressed further at this hearing.",
+    "It is accepted that neither filed theory invents a fact, an authority, or a party position not actually supported by the matter record - both are candid about the record's thinness rather than advocating past it, which is the standard this Tribunal was told to hold each side to."
+  ],
+  "hot_bench_questions": [
+    {
+      "question": "You accept the disability and victimisation heads fail for want of any named impairment or protected act. Why does 'a protected disclosure was made,' with zero stated content, not fail on the identical logic?",
+      "answered_from_verified_record": false,
+      "answer_summary": "Not resolved by either filed theory - the claimant's memo does not engage the parallel at all, and the opposition case raises the related public-interest point without pressing the pleading-parity argument itself. This Tribunal answers it directly in 'reasons' above: the disclosure heads survive only conditionally, on production of Further and Better Particulars, rather than being waved through as an evidential gap alone."
+    },
+    {
+      "question": "Has an ACAS Early Conciliation certificate actually been obtained, regardless of its date?",
+      "answered_from_verified_record": true,
+      "answer_summary": "Yes - F-003 asserts a certificate was obtained approximately one week after dismissal. Only its precise date, and the separate Day A contact date, are missing (F-004). The s.18A precondition to presenting a claim at all is therefore not in issue; only the s.207B date calculation is."
+    },
+    {
+      "question": "What is the claimant's disability for the purposes of ISS-005, in terms specific enough that this Tribunal could name it in a judgment?",
+      "answered_from_verified_record": false,
+      "answer_summary": "Not answerable - F-021 confirms no diagnosis or lay description of any impairment is stated anywhere in the record; only that OH material and sickness records exist, not what they say."
+    },
+    {
+      "question": "If continuity of employment turns out to be under two years, what happens to ISS-002?",
+      "answered_from_verified_record": true,
+      "answer_summary": "It fails outright for want of jurisdiction under ERA 1996 s.108 - which is precisely why both filed case theories already treat it as secondary to the whistleblowing heads rather than the lead theory."
+    },
+    {
+      "question": "Who is actually being sued?",
+      "answered_from_verified_record": false,
+      "answer_summary": "Not stated - F-025 confirms only 'an NHS employer' generically. No ET1 can be validly presented against an unidentified respondent."
+    }
+  ],
+  "residual_uncertainty": "This disposition rests entirely on the facts as presented in the matter record, which is thin by both filed theories' own repeated admission - no ET3, no disciplinary file, no OH report, no termination letter, and none of the disputed emails have actually been produced. Everything decided here is provisional to that extent: primary documents could immediately supply the missing disclosure content, impairment, PCP, or protected act and revive the struck heads, or could show the EDT/Day A combination puts the whole claim out of time and moot the surviving heads instead. The ISS-001 limitation question is not resolved and must not be treated as decided in the claimant's favour by omission. This Tribunal's conditional (rather than unconditional) treatment of ISS-003/ISS-004 is itself a genuine point of departure from the record this Tribunal was handed, and Hearing 2 - which must actually be held and recorded, unlike the 'Hearing 2' cited by the now-superseded hearing-3/4/5.json without ever having been filed - should treat the particulars condition set here as a live precondition, not as background colour, when it tests the Kuzel/Beatt/Fecitt doctrine."
+}

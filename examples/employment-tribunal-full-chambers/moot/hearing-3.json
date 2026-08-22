@@ -1,0 +1,92 @@
+{
+  "hearing_id": "H-3",
+  "hearing_number": 3,
+  "stage": "EVIDENCE_AND_PROOF",
+  "issues_addressed": ["ISS-001", "ISS-002", "ISS-003", "ISS-004", "ISS-009"],
+  "findings": [
+    {
+      "finding": "There is no Evidence Ledger for this matter at all - matters/M1-KESTREL has no evidence/ directory and no schemas/evidence.schema.json records exist (confirmed by inspection and by issues/README.md's own note: 'evidence_available_ids is therefore empty on every element'). Every element of every surviving head (ISS-002, ISS-003, ISS-004, ISS-009) rests on the bare assertion that a category of document exists (a termination letter, a disciplinary file, OH material, sickness records, contradictory emails, a protected disclosure) - not on the document itself, its content, or any witness account of it. Nothing before this Tribunal has moved from USER_ASSERTED/ASSUMED to ESTABLISHED in facts.json since Hearing 1 concluded.",
+      "severity": "SERIOUS",
+      "issue_id": "ISS-002"
+    },
+    {
+      "finding": "Causation for ISS-003 (s.103A 'sole or principal reason') and ISS-004 (s.47B 'materially influenced') cannot be assessed today, not even provisionally. chronology_gaps.md confirms that not one of the disputed events (protected disclosure, disciplinary process start/hearings/outcome, OH referral, sickness absence period, the contradictory emails) carries so much as a before/after ordering relative to the others or to the dismissal. Kuzel's rule that the tribunal must weigh the employer's stated reason against the claimant's alleged reason, and Fecitt's 'materially influenced' threshold, both require a timeline to apply to - there is none. This compounds rather than newly creates the Hearing 1 particularisation repair and the Hearing 2 public-interest-element repair, both of which remain unaddressed in the case theory presented at this hearing.",
+      "severity": "SERIOUS",
+      "issue_id": "ISS-003"
+    },
+    {
+      "finding": "Hearing 2's specific, named repair to authorities.json - correcting AUTH-002 (Fecitt) to note that its 'no vicarious liability for co-worker-inflicted detriment' holding was superseded by ERA 1996 s.47B(1A)-(1E) (inserted by ERRA 2013, in force for conduct on or after 25 June 2013) - has not been carried out. The record read at this hearing still states the superseded proposition without qualification. Because ISS-004 causation is squarely in issue at this hearing, this Tribunal applies the qualification itself rather than the uncorrected record, but the fact that a hearing-ordered correction to the matter's own authority file went unmade before the next hearing is itself a finding, not a housekeeping footnote.",
+      "severity": "MATERIAL",
+      "issue_id": "ISS-004"
+    },
+    {
+      "finding": "Hearing 2's repair requiring Burchell, Iceland Frozen Foods, Polkey, Chesterton Global v Nurmohamed, and J v DLA Piper to be logged in authorities.json with a documented verification trail before either side relies on them again has also not been carried out - none of the five appears in authorities.json, which still runs only to AUTH-007. The opposing case theory placed before this hearing repeats reliance on all five in materially the same terms as before. Re-relying on unlogged authorities after being told at the immediately preceding hearing exactly what logging was required, without doing it, is the same failure mode Hearing 2 identified, now recurring rather than repaired. This Tribunal will not treat any of the five as part of the verified record for this hearing's purposes.",
+      "severity": "MATERIAL",
+      "issue_id": "ISS-002"
+    },
+    {
+      "finding": "No credibility assessment is possible on this record. No witness statement, deposition, or recorded account from the claimant, any comparator, or any Respondent witness exists anywhere in the matter. Corroboration is equally absent: every fact in facts.json is tagged USER_ASSERTED, ASSUMED, DISPUTED, or UNKNOWN - none is ESTABLISHED, and none has a second independent source. A tribunal cannot weigh credibility or corroborate an account that has not yet been given in any evidential form.",
+      "severity": "MATERIAL",
+      "issue_id": "ISS-002"
+    },
+    {
+      "finding": "No admissibility ruling can presently be made on the OH material, sickness absence records, or the contradictory internal emails, because none has been produced, described, or even dated (chronology_gaps.md). In principle, OH and sickness records are special category health data under Article 9 UK GDPR / DPA 2018, but the litigation-necessity exemption ordinarily permits their disclosure and admission in Employment Tribunal proceedings where disability status or knowledge is genuinely in issue - so no anticipated bar in principle is identified. That is a statement of the applicable framework, not a finding that these documents will in fact support what either side hopes, which remains unknown.",
+      "severity": "MINOR",
+      "issue_id": "ISS-002"
+    },
+    {
+      "finding": "ISS-001 (limitation) remains exactly where Hearings 1 and 2 left it: the EDT and ACAS Day A are still assumed offsets, not documented dates, three hearings into this workflow. This is no longer simply an open jurisdictional question - it is now a live risk that has gone unaddressed for two full repair cycles, and it must be resolved before Hearing 4 tests procedural compliance on dates that may not be safe to rely on.",
+      "severity": "SERIOUS",
+      "issue_id": "ISS-001"
+    },
+    {
+      "finding": "The disability cluster (ISS-005/006/007) and victimisation (ISS-008), struck at Hearing 1 for a pleading defect and not revived at Hearing 2, are not re-litigated here. Neither case theory attempts to reintroduce them with new content at this hearing either, which is correctly consistent with the two hearings already decided.",
+      "severity": "MINOR",
+      "issue_id": "ISS-005"
+    },
+    {
+      "finding": "ISS-009 (procedural fairness/Polkey/uplift) cannot be assessed on the merits at this hearing for the same reason as before - the disciplinary file has never been produced - and its substantive assessment remains correctly reserved to Hearing 4, as Hearing 2 already directed. No change.",
+      "severity": "MINOR",
+      "issue_id": "ISS-009"
+    }
+  ],
+  "repairs_required": [
+    "Actually obtain and produce the real documents this matter has repeatedly alleged exist but never produced: the termination/dismissal letter, the ACAS EC certificate (both Day A and Day B), the protected disclosure document(s) or a witness account of them, the full disciplinary process file (investigation report, hearing minutes, outcome and appeal letters), the OH material, the sickness absence records, and the contradictory internal emails. Until at least some of these exist as schemas/evidence.schema.json records, no element of ISS-002, ISS-003, ISS-004, or ISS-009 can move past bare assertion, and Hearing 5 (full merits) cannot responsibly be run on this record.",
+    "Correct AUTH-002 in authorities.json to add the ERA 1996 s.47B(1A)-(1E)/ERRA 2013 qualification - ordered at Hearing 2, still not done.",
+    "Log Burchell, Iceland Frozen Foods, Polkey, Chesterton Global v Nurmohamed, and J v DLA Piper in authorities.json with the documented verification trail ordered at Hearing 2 (citation search, party-name search, primary-or-corroborated-secondary source, currency check), or stop relying on them - still not done, and repeated reliance without the fix is itself now a second-hearing-running finding.",
+    "Particularise the protected disclosure(s) for ISS-003/ISS-004, including the claimant's reasonable belief that disclosure was made in the public interest (ERA 1996 s.43B(1) as amended) - ordered at Hearings 1 and 2, still not done. Without this, causation cannot be tested at Hearing 4 or 5 either.",
+    "Obtain the actual EDT and ACAS Day A from primary documents before Hearing 4 - ordered at Hearings 1 and 2, still not done; this is now the third hearing running on assumed dates.",
+    "Confirm and correctly name the Respondent (F-025) - ordered at Hearings 1 and 2, still not done.",
+    "Build an actual Evidence Ledger for this matter via agents/evidence/ROLE.md / skills/legal-evidence/SKILL.md before Hearing 4 - the complete absence of one is the central finding of this hearing, not a pre-existing condition to be noted and carried forward again unchanged."
+  ],
+  "disposition": "Hearing 3 (EVIDENCE_AND_PROOF), M1-KESTREL, England & Wales Employment Tribunal, continuing the same simulated Tribunal's case-management/evidence-readiness function from Hearings 1-2. None of the surviving heads (ISS-002 as a contingent secondary head, ISS-003, ISS-004 as the lead heads, ISS-009 as a parasitic remedy/fairness issue) is struck at this hearing - that is not the question this hearing answers. But on the evidential record as it presently stands, not one element of any surviving head can be found to meet even the initial evidential burden resting on the claimant, because no evidence - no document, no witness statement, no admitted fact beyond the existence of categories of material - has actually been placed before this Tribunal. The causation case for ISS-003/ISS-004 in particular cannot be tested at all, because the timeline it depends on (disclosure before or after the disciplinary process, how long before, the actual content of what was disclosed) does not exist in any form the Tribunal can weigh. ISS-001 (limitation) remains undecided for the same reason it was undecided at Hearings 1 and 2, now compounded by two further hearings' worth of inaction on obtaining the real dates. This matter is not trial-ready. Absent the repairs below, Hearing 4 (procedure and remedy) will be testing compliance against dates this Tribunal cannot verify, and Hearing 5 (full merits) would have no factual record capable of sustaining a finding for the claimant on any contested element - a real Employment Tribunal asked to decide this case today, on this record, would have to dismiss for want of proof on every element bearing an evidential or legal burden on the claimant, not because the claim is weak but because it is, at present, entirely unevidenced.",
+  "reasons": "Hearing 3's task is to test whether the burden and standard of proof are actually capable of being met on the record, whether key evidence is admissible, whether credibility and corroboration can be assessed, whether causation can be traced, and what contradictions the evidence agent's function would surface - not to re-run Hearings 1 or 2's pleadability and doctrinal screens. Applying that standard exposes a different and more basic problem than either prior hearing found: this matter has never produced a single piece of evidence. issues/README.md and facts.json are candid about this - every fact is USER_ASSERTED, ASSUMED, DISPUTED, or UNKNOWN, evidence_available_ids is empty on every issue element, and chronology_gaps.md confirms that even the existence-only events (the disclosure, the disciplinary process, the OH referral, the sickness absence, the emails) carry no date and no ordering relative to each other. A tribunal testing proof against that record is not looking at a thin case; it is looking at a case with no evidential content to weigh at all, which is a materially more serious finding than 'weak but arguable' and had to be stated as such rather than softened into another repeat of the particularisation point already made twice. I have treated this as a distinct, proof-stage finding rather than as double-counting Hearing 1's particularisation repair or Hearing 2's public-interest-element repair, because those hearings tested whether a legally sufficient claim could be stated and whether the doctrine was correctly described; this hearing tests whether what is stated can actually be proved, and the answer on the current record is that it cannot be tested either way. I have not struck ISS-002, ISS-003, ISS-004, or ISS-009 as a result, because want of evidence at this stage is properly a disclosure and case-management problem, not a fresh pleadability defect of the kind that closed ISS-005 to ISS-008 at Hearing 1 - but I have said plainly that the case is not trial-ready and that Hearing 5 could not sustain a claimant verdict on this record, because pretending otherwise would misstate what a real tribunal would do. On authority integrity, I have treated the unmet Hearing 2 repairs (the AUTH-002 Fecitt qualification, the five unlogged opposition authorities) as live findings rather than settled history, because the case theory placed before this hearing repeats the uncorrected and unlogged positions verbatim - this is exactly the 'repeating a point without addressing its repair' failure this workflow exists to catch, occurring here on the authority-integrity axis rather than the merits axis, and on the opposition's side this time rather than the claimant's, consistent with the asymmetric finding Hearing 2 already made.",
+  "concessions_made": [
+    "Accepted that neither side has fabricated or oversold proof status: issues.json's own UNSUPPORTED/PARTIALLY_SUPPORTED tags and empty evidence_available_ids fields are an honest self-assessment of the file's actual evidentiary content, and the opposing case theory's closing observation that 'no ET3, disciplinary file, termination letter, OH report, or the disputed emails have actually been produced to test any of it against real documents, and that evidentiary gap cuts both ways' is accurate and is substantially what this hearing confirms rather than a submission this Tribunal needed to correct.",
+    "Accepted that the causation doctrine itself (Fecitt's 'materially influenced' threshold, Kuzel's non-shifting legal burden, Beatt's objective assessment of protection) remains correctly stated in principle, subject to the AUTH-002 qualification - the deficiency found at this hearing is entirely factual/evidential, not a repeat of Hearing 2's doctrinal findings.",
+    "Accepted that neither case theory attempted to revive ISS-005/006/007/008 with new content at this hearing - both correctly treated Hearing 1's strike as settled and did not re-argue it."
+  ],
+  "hot_bench_questions": [
+    {
+      "question": "You say the disciplinary process followed the disclosure. What evidence is actually before this Tribunal that it did, rather than preceded or ran independently of it?",
+      "answered_from_verified_record": false,
+      "answer_summary": "None. chronology_gaps.md confirms no date, offset, or even a before/after ordering exists for either event, and no document or witness account supplies one."
+    },
+    {
+      "question": "Setting aside what the termination letter is expected to say, has it in fact been produced, read, or quoted anywhere in this matter's record?",
+      "answered_from_verified_record": false,
+      "answer_summary": "No. F-019 confirms termination documentation is alleged to exist; F-020 confirms its content, including the stated reason for dismissal, has never been stated or produced."
+    },
+    {
+      "question": "Opposition, you again cite Burchell, Iceland Frozen Foods, Polkey, Chesterton, and DLA Piper as verified. Where in this matter's authorities.json is the verification trail Hearing 2 required before you relied on them again?",
+      "answered_from_verified_record": false,
+      "answer_summary": "Not answerable from the record - authorities.json still runs only to AUTH-007 and contains none of the five; no verification trail for them exists in research_log.md."
+    },
+    {
+      "question": "If this were listed for final hearing tomorrow with the file exactly as it stands, could the claimant discharge the evidential burden on a single contested element of ISS-003 or ISS-004?",
+      "answered_from_verified_record": true,
+      "answer_summary": "No, and the record itself supplies that answer - every relevant element is tagged UNSUPPORTED with an empty evidence_available_ids list, which is a finding this Tribunal can rely on precisely because it is what the matter's own file says of itself."
+    }
+  ],
+  "residual_uncertainty": "This finding is a snapshot of proof-readiness on a file that, by its own repeated admission across three hearings, has never had a real document or witness account placed into it - it is not a finding that the claimant's account is false, only that it is presently unevidenced. Real disclosure could change this completely: a termination letter naming 'redundancy' or 'gross misconduct' as the reason, a disciplinary file showing the process began before any disclosure was made, or a genuinely dated whistleblowing email, would each immediately supply what is missing, in either party's favour. Equally, disclosure could confirm the Respondent's likely position and leave the claimant's account uncorroborated. Nothing here should be read as predicting which way real evidence will point; it is a finding that no evidence yet exists to point either way, and that this is now a repair overdue by two prior hearings rather than a fresh discovery. ISS-001 (limitation) remains the same live, unresolved gate it was at Hearings 1 and 2, now more urgent given how much of this workflow has run on assumed dates."
+}

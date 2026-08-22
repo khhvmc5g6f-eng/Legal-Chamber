@@ -1,0 +1,231 @@
+[
+  {
+    "fact_id": "F-001",
+    "proposition": "EXAMPLE-FIXTURE-ID - tracking fact planted by the task instruction to verify this exact matter record is what downstream review reads back, not a substitute or hallucinated summary.",
+    "date_certainty": "UNKNOWN",
+    "source": "USER_ASSERTED - task instruction, not a real evidentiary fact",
+    "status": "USER_ASSERTED",
+    "materiality": "LOW",
+    "confidence": "STRONG"
+  },
+  {
+    "fact_id": "F-002",
+    "proposition": "Claimant was dismissed. Effective Date of Termination (EDT) stated only as an offset ('2 months 3 weeks before this instruction'), not as a calendar date.",
+    "date": "2026-06-01",
+    "date_certainty": "APPROXIMATE",
+    "chronology_event_id": "CHR-001",
+    "source": "USER_ASSERTED - derived by counting back from the instruction date (2026-08-22); DISPUTED chronology is itself named as a fact in this matter, so even the offset should be treated as provisional until a primary document (termination letter, HR record) fixes it",
+    "status": "ASSUMED",
+    "materiality": "DISPOSITIVE",
+    "confidence": "WEAK"
+  },
+  {
+    "fact_id": "F-003",
+    "proposition": "ACAS Early Conciliation certificate was obtained one week after dismissal (i.e. approximately 2026-06-08 on the F-002 assumption).",
+    "date": "2026-06-08",
+    "date_certainty": "APPROXIMATE",
+    "chronology_event_id": "CHR-002",
+    "source": "USER_ASSERTED",
+    "status": "ASSUMED",
+    "materiality": "DISPOSITIVE",
+    "confidence": "WEAK"
+  },
+  {
+    "fact_id": "F-004",
+    "proposition": "Date ACAS was first contacted to start Early Conciliation ('Day A' under ERA 1996 s.207B) is not stated anywhere in the facts supplied - only the certificate date ('Day B') is given.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "DISPOSITIVE",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-005",
+    "proposition": "Claimant alleges eight distinct heads of claim: (1) unfair dismissal (ordinary), (2) automatic unfair dismissal, (3) whistleblowing detriment, (4) disability discrimination, (5) failure to make reasonable adjustments, (6) discrimination arising from disability, (7) victimisation, (8) procedural unfairness (relevant to remedy/Polkey and to the ACAS Code uplift, not a free-standing cause of action).",
+    "date_certainty": "UNKNOWN",
+    "source": "USER_ASSERTED - task instruction",
+    "status": "USER_ASSERTED",
+    "materiality": "DISPOSITIVE",
+    "confidence": "STRONG"
+  },
+  {
+    "fact_id": "F-006",
+    "proposition": "Chronology is disputed, internal emails are contradictory, occupational health material and sickness absence records exist, and a disciplinary process preceded termination.",
+    "date_certainty": "UNKNOWN",
+    "source": "USER_ASSERTED - task instruction",
+    "status": "DISPUTED",
+    "materiality": "HIGH",
+    "confidence": "REASONABLE"
+  },
+  {
+    "fact_id": "F-007",
+    "proposition": "Claimant held a senior post within an NHS employer. Specific role, band/grade, and length of service are not stated.",
+    "date_certainty": "UNKNOWN",
+    "source": "USER_ASSERTED - task instruction",
+    "status": "USER_ASSERTED",
+    "materiality": "MEDIUM",
+    "confidence": "STRONG"
+  },
+  {
+    "fact_id": "F-008",
+    "proposition": "Claimant's continuity of employment (relevant to the ERA 1996 s.108 qualifying period for ordinary unfair dismissal, currently 2 years for most claims) is not stated anywhere in the facts supplied.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "DISPOSITIVE",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-009",
+    "proposition": "Claimant alleges having made one or more protected disclosures for whistleblowing purposes. That such disclosure(s) were made is the extent of what is asserted.",
+    "date_certainty": "UNKNOWN",
+    "source": "USER_ASSERTED - task instruction",
+    "status": "USER_ASSERTED",
+    "materiality": "DISPOSITIVE",
+    "confidence": "STRONG"
+  },
+  {
+    "fact_id": "F-010",
+    "proposition": "The content, recipient(s), form, and date(s) of the alleged protected disclosure(s) are not stated, so whether they meet the ERA 1996 s.43B 'qualifying disclosure' test cannot presently be assessed.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "DISPOSITIVE",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-011",
+    "proposition": "A disciplinary process was conducted against the claimant prior to dismissal.",
+    "date_certainty": "UNKNOWN",
+    "source": "USER_ASSERTED - task instruction",
+    "status": "USER_ASSERTED",
+    "materiality": "HIGH",
+    "confidence": "STRONG"
+  },
+  {
+    "fact_id": "F-012",
+    "proposition": "The sequence/timing of the disciplinary process relative to the alleged protected disclosure(s) is not stated, so whether the disciplinary process was connected to (or a pretext following) the disclosure(s), or an independent and prior process, cannot be determined on the facts given.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "DISPOSITIVE",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-013",
+    "proposition": "Contradictory internal emails exist within the material referred to in this matter.",
+    "date_certainty": "UNKNOWN",
+    "source": "USER_ASSERTED - task instruction",
+    "status": "USER_ASSERTED",
+    "materiality": "HIGH",
+    "confidence": "STRONG"
+  },
+  {
+    "fact_id": "F-014",
+    "proposition": "The content of the contradictory emails, and which specific statements within them conflict, is not stated, so no contradiction can yet be classified (MINOR/EXPLAINABLE/MATERIAL/SERIOUS/POTENTIALLY_DISPOSITIVE per skills/legal-evidence/SKILL.md) without sight of the documents themselves.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "HIGH",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-015",
+    "proposition": "Occupational health (OH) material exists relating to the claimant.",
+    "date_certainty": "UNKNOWN",
+    "source": "USER_ASSERTED - task instruction",
+    "status": "USER_ASSERTED",
+    "materiality": "HIGH",
+    "confidence": "STRONG"
+  },
+  {
+    "fact_id": "F-016",
+    "proposition": "The content of the OH material (e.g. any fitness-for-work opinion, diagnosis, prognosis, or recommended workplace adjustments) is not stated.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "DISPOSITIVE",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-017",
+    "proposition": "Sickness absence records exist for the claimant.",
+    "date_certainty": "UNKNOWN",
+    "source": "USER_ASSERTED - task instruction",
+    "status": "USER_ASSERTED",
+    "materiality": "HIGH",
+    "confidence": "STRONG"
+  },
+  {
+    "fact_id": "F-018",
+    "proposition": "The pattern, dates, duration, and stated reasons within the sickness absence records are not stated.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "HIGH",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-019",
+    "proposition": "Termination documentation exists (some written record of the dismissal, e.g. a dismissal/outcome letter).",
+    "date_certainty": "UNKNOWN",
+    "source": "USER_ASSERTED - task instruction",
+    "status": "USER_ASSERTED",
+    "materiality": "HIGH",
+    "confidence": "STRONG"
+  },
+  {
+    "fact_id": "F-020",
+    "proposition": "The stated reason given by the Respondent for dismissal (e.g. capability, conduct, some other substantial reason) is not stated anywhere in the facts supplied.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "DISPOSITIVE",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-021",
+    "proposition": "Whether the claimant has a 'disability' within the meaning of Equality Act 2010 s.6 (impairment with a substantial and long-term adverse effect on normal day-to-day activities) has not been asserted as established, admitted, or even specified (e.g. no diagnosis named) anywhere in the facts supplied - only that disability-related heads of claim are brought and that OH/sickness-absence material exists.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "DISPOSITIVE",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-022",
+    "proposition": "Whether, and from what date, the Respondent had actual or constructive knowledge of any disability is not stated.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "DISPOSITIVE",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-023",
+    "proposition": "The specific 'protected act' (Equality Act 2010 s.27(2)) relied on for the victimisation claim (e.g. bringing or supporting a discrimination complaint, giving evidence, making an allegation) is not identified in the facts supplied.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "DISPOSITIVE",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-024",
+    "proposition": "The specific reasonable adjustment(s) allegedly sought, proposed, refused, or not implemented are not identified in the facts supplied.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "DISPOSITIVE",
+    "confidence": "VERY_STRONG"
+  },
+  {
+    "fact_id": "F-025",
+    "proposition": "The identity of the Respondent (specific NHS Trust, Foundation Trust, or other NHS body) is not stated - only 'NHS employer' generically.",
+    "date_certainty": "UNKNOWN",
+    "source": "Gap in facts as supplied",
+    "status": "UNKNOWN",
+    "materiality": "MEDIUM",
+    "confidence": "VERY_STRONG"
+  }
+]

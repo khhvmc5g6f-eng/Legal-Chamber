@@ -1,0 +1,339 @@
+[
+  {
+    "issue_id": "ISS-001",
+    "description": "Whether an ET1 claim covering any of ISS-002 to ISS-009 is (or will be) in time, given the ACAS Early Conciliation precondition. A threshold, jurisdictional issue that must be resolved before any substantive element below is worth further work.",
+    "cause_of_action_or_defence": "Threshold/jurisdictional precondition, not itself a cause of action.",
+    "elements": [
+      {
+        "element": "ET1 presented within the primary 3-month period under ERA 1996 s.111(2)(a) (unfair dismissal, s.103A automatic unfair dismissal, and s.47B/s.48 whistleblowing detriment), or such further period as the Tribunal considers reasonable under s.111(2)(b), as extended by the ACAS EC stop-the-clock/one-month-extension mechanism in ERA 1996 s.207B.",
+        "burden": "LEGAL",
+        "standard": "Primary period assessed on the facts as they stand; the 'not reasonably practicable' limb under s.111(2)(b) requires more than a bare balance-of-probabilities showing - a fact-specific reasonableness test.",
+        "fact_ids_required": ["F-002", "F-003", "F-004"],
+        "evidence_available_ids": [],
+        "evidence_missing": [
+          "Actual EDT from a termination/dismissal letter or HR record",
+          "The ACAS EC certificate itself (states both Day A and Day B)",
+          "The actual date the ET1 was, or will be, presented - not stated anywhere in the facts supplied"
+        ],
+        "opposition_position": "Not yet known - no ET3 or Respondent position exists in this matter.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "ET1 presented within the primary 3-month period, or such other period as the Tribunal thinks just and equitable, under Equality Act 2010 s.123, for the discrimination-based heads (ISS-005 to ISS-008) - assessed independently of the ERA analysis above since the two statutes apply materially different tests.",
+        "burden": "LEGAL",
+        "standard": "Just and equitable to extend - a wider discretion than the unfair dismissal 'reasonably practicable' test.",
+        "fact_ids_required": ["F-002", "F-003", "F-004"],
+        "evidence_available_ids": [],
+        "evidence_missing": [
+          "Same primary documents as the element above",
+          "Identification of the specific EqA 'act complained of' and its date, which may not be the dismissal date at all - e.g. a reasonable-adjustments refusal could be an earlier or continuing act (F-024 gap)"
+        ],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      }
+    ],
+    "priority": "DISPOSITIVE",
+    "case_killer": true
+  },
+  {
+    "issue_id": "ISS-002",
+    "description": "Ordinary unfair dismissal.",
+    "cause_of_action_or_defence": "Cause of action - ERA 1996 ss.94, 98.",
+    "elements": [
+      {
+        "element": "Claimant was an employee with the continuity of employment required by ERA 1996 s.108 (currently 2 years for most claims) to bring an ordinary unfair dismissal complaint.",
+        "burden": "EVIDENTIAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-007", "F-008"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Contract of employment / statement of terms", "HR service record confirming start date and continuity"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "PARTIALLY_SUPPORTED"
+      },
+      {
+        "element": "Claimant was dismissed within the meaning of ERA 1996 s.95.",
+        "burden": "EVIDENTIAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-002"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Termination documentation (exists per F-019 but content not seen)"],
+        "opposition_position": "Not yet known - dismissal is not disputed on the facts as supplied.",
+        "proof_status": "PARTIALLY_SUPPORTED"
+      },
+      {
+        "element": "Respondent shows the reason (or principal reason) for dismissal was one of the potentially fair reasons in ERA 1996 s.98(1)-(2) (capability, conduct, redundancy, statutory restriction, or some other substantial reason).",
+        "burden": "LEGAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-020"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Termination documentation actually stating the reason", "Disciplinary process outcome letter"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "If a potentially fair reason is shown, dismissal was fair in all the circumstances under ERA 1996 s.98(4) - within the range of reasonable responses, including a reasonable investigation and ACAS Code-compliant procedure.",
+        "burden": "EVIDENTIAL",
+        "standard": "Range of reasonable responses, assessed against the underlying facts on the balance of probabilities.",
+        "fact_ids_required": ["F-011", "F-012"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Full disciplinary process file (investigation report, hearing minutes, outcome/appeal letters)", "Content of the contradictory internal emails (F-013/F-014), which may bear on whether a reasonable investigation was carried out"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      }
+    ],
+    "priority": "HIGH",
+    "case_killer": false
+  },
+  {
+    "issue_id": "ISS-003",
+    "description": "Automatic unfair dismissal for making a protected disclosure.",
+    "cause_of_action_or_defence": "Cause of action - ERA 1996 s.103A. No qualifying period of service required, unlike ISS-002.",
+    "elements": [
+      {
+        "element": "Claimant made one or more qualifying disclosures under ERA 1996 s.43B that are also protected disclosures under ss.43A, 43C-43H (made to the employer or another proper recipient).",
+        "burden": "EVIDENTIAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-009", "F-010"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["The disclosure(s) themselves - document, email, or recorded conversation with content, recipient, and date", "Any grievance or internal report referencing the disclosure"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "The reason (or principal reason) for dismissal was that the claimant made a protected disclosure.",
+        "burden": "LEGAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-012", "F-020"],
+        "authority_ids": ["AUTH-003", "AUTH-004"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Chronology placing the disclosure(s) before the disciplinary process/dismissal (see chronology/chronology_gaps.md)", "Termination documentation's stated reason, to compare against the reason claimant alleges"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      }
+    ],
+    "priority": "DISPOSITIVE",
+    "case_killer": false
+  },
+  {
+    "issue_id": "ISS-004",
+    "description": "Whistleblowing detriment (short of dismissal).",
+    "cause_of_action_or_defence": "Cause of action - ERA 1996 s.47B, remedy/burden mechanics in s.48.",
+    "elements": [
+      {
+        "element": "Claimant made a protected disclosure (shared element with ISS-003).",
+        "burden": "EVIDENTIAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-009", "F-010"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Same as ISS-003 first element"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "Claimant was subjected to a detriment (short of dismissal - e.g. the disciplinary process itself, adverse treatment reflected in the contradictory emails) by the employer or a co-worker.",
+        "burden": "EVIDENTIAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-011", "F-013"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Specific detrimental acts identified and dated", "Content of the contradictory emails (F-013/F-014)"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "The protected disclosure was a ground for the detriment - once claimant shows disclosure plus detriment, ERA 1996 s.48(2) places the burden on the Respondent to show the disclosure was not a ground for the treatment.",
+        "burden": "REVERSE",
+        "standard": "Materially influenced the treatment - a lower threshold than s.103A's 'sole or principal reason'.",
+        "fact_ids_required": ["F-012"],
+        "authority_ids": ["AUTH-002"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Respondent's contemporaneous rationale for the disciplinary process and any adverse treatment"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      }
+    ],
+    "priority": "HIGH",
+    "case_killer": false
+  },
+  {
+    "issue_id": "ISS-005",
+    "description": "Threshold disability status - a gateway issue for ISS-006 and ISS-007, both of which fail if this element is not made out.",
+    "cause_of_action_or_defence": "Gateway element, not itself a free-standing cause of action - Equality Act 2010 s.6, Sch 1.",
+    "elements": [
+      {
+        "element": "Claimant has a physical or mental impairment which has a substantial and long-term adverse effect on their ability to carry out normal day-to-day activities.",
+        "burden": "LEGAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-021", "F-015", "F-016", "F-017", "F-018"],
+        "evidence_available_ids": [],
+        "evidence_missing": [
+          "Medical/OH evidence establishing diagnosis, substantiality, and longevity of effect (content of the OH material at F-015/F-016 has not been seen)",
+          "Sickness absence pattern showing duration (content of F-017/F-018 has not been seen)",
+          "Any GP/consultant evidence"
+        ],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      }
+    ],
+    "priority": "DISPOSITIVE",
+    "case_killer": false
+  },
+  {
+    "issue_id": "ISS-006",
+    "description": "Discrimination arising from disability.",
+    "cause_of_action_or_defence": "Cause of action - Equality Act 2010 s.15. Gated by ISS-005.",
+    "elements": [
+      {
+        "element": "Claimant was subjected to unfavourable treatment (e.g. disciplinary action, dismissal).",
+        "burden": "EVIDENTIAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-011", "F-002"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Specifics of the unfavourable treatment and its stated rationale"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "PARTIALLY_SUPPORTED"
+      },
+      {
+        "element": "The unfavourable treatment was because of something arising in consequence of the claimant's disability (e.g. disability-related sickness absence triggering the disciplinary process).",
+        "burden": "EVIDENTIAL",
+        "standard": "Balance of probabilities on the initial facts, then the Equality Act 2010 s.136 burden-shift applies (see ISS-006 third element).",
+        "fact_ids_required": ["F-017", "F-018", "F-021"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Whether the disciplinary process was absence-related or conduct-related at all - the stated reason for dismissal is not known (F-020)"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "Respondent knew, or could reasonably have been expected to know, of the disability (s.15(2) knowledge defence).",
+        "burden": "LEGAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-022", "F-015", "F-016"],
+        "authority_ids": ["AUTH-005"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["OH reports actually notifying the employer of the condition and its effects"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "If unfavourable treatment and the disability-connection are shown, Respondent shows the treatment was a proportionate means of achieving a legitimate aim (objective justification).",
+        "burden": "REVERSE",
+        "standard": "Balance of probabilities / proportionality assessment.",
+        "fact_ids_required": [],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Respondent's stated aim and evidence of proportionality - nothing supplied"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      }
+    ],
+    "priority": "HIGH",
+    "case_killer": false
+  },
+  {
+    "issue_id": "ISS-007",
+    "description": "Failure to make reasonable adjustments.",
+    "cause_of_action_or_defence": "Cause of action - Equality Act 2010 ss.20-21. Gated by ISS-005.",
+    "elements": [
+      {
+        "element": "A provision, criterion or practice (PCP) applied by the Respondent (or a physical feature, or absence of an auxiliary aid) put the claimant at a substantial disadvantage compared with persons who are not disabled.",
+        "burden": "EVIDENTIAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-024", "F-021"],
+        "authority_ids": ["AUTH-006"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Identification of the actual PCP and the actual adjustment(s) sought - not stated at all (F-024)"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "Respondent knew or ought reasonably to have known both of the disability and of the substantial disadvantage.",
+        "burden": "LEGAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-022"],
+        "authority_ids": ["AUTH-005"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Same OH/HR notification evidence as ISS-006 third element"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "Respondent failed to take such steps as it was reasonable to take to avoid the disadvantage.",
+        "burden": "REVERSE",
+        "standard": "Balance of probabilities / reasonableness, following the Equality Act 2010 s.136 burden-shift once the claimant shows facts from which a contravention could be found.",
+        "fact_ids_required": ["F-024"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Any adjustment request, OH recommendation, and Respondent's response to it - none supplied"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      }
+    ],
+    "priority": "HIGH",
+    "case_killer": false
+  },
+  {
+    "issue_id": "ISS-008",
+    "description": "Victimisation.",
+    "cause_of_action_or_defence": "Cause of action - Equality Act 2010 s.27.",
+    "elements": [
+      {
+        "element": "Claimant did a protected act under s.27(2) (e.g. bringing discrimination proceedings, giving evidence, making an allegation of a contravention of the Equality Act 2010), or the Respondent believed the claimant had done or might do a protected act.",
+        "burden": "EVIDENTIAL",
+        "standard": "Balance of probabilities.",
+        "fact_ids_required": ["F-023"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Identification of the specific protected act relied on - not stated at all (F-023)"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "Respondent subjected the claimant to a detriment because of the protected act (or the belief about it).",
+        "burden": "REVERSE",
+        "standard": "Balance of probabilities on the initial facts, then the Equality Act 2010 s.136 burden-shift.",
+        "fact_ids_required": ["F-011", "F-002"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Causal link evidence between the protected act and the disciplinary process/dismissal"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      }
+    ],
+    "priority": "MEDIUM",
+    "case_killer": false
+  },
+  {
+    "issue_id": "ISS-009",
+    "description": "Procedural unfairness - relevant to the ERA 1996 s.98(4) fairness assessment and to remedy (Polkey deduction; ACAS Code uplift). Not a free-standing cause of action.",
+    "cause_of_action_or_defence": "Remedy/fairness-assessment issue, not a cause of action - relevant to ISS-002 and to quantum across the unfair dismissal heads.",
+    "elements": [
+      {
+        "element": "Whether the Respondent followed a fair procedure, assessed against the ACAS Code of Practice 1 on Disciplinary and Grievance Procedures.",
+        "burden": "EVIDENTIAL",
+        "standard": "Balance of probabilities as to what was actually done.",
+        "fact_ids_required": ["F-011", "F-012"],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Full disciplinary process file - same gap as ISS-002 fourth element"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "If procedure was unfair, whether and to what percentage compensation should be reduced for the chance dismissal would have occurred anyway with a fair procedure (Polkey).",
+        "burden": "EVIDENTIAL",
+        "standard": "Percentage-chance assessment, with the underlying facts found on the balance of probabilities.",
+        "fact_ids_required": [],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Cannot be assessed until the true reason for dismissal (F-020) and the disciplinary file are known"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      },
+      {
+        "element": "If the Respondent unreasonably failed to comply with the ACAS Code, an uplift of up to 25% may be applied to compensation under the Trade Union and Labour Relations (Consolidation) Act 1992 s.207A.",
+        "burden": "EVIDENTIAL",
+        "standard": "Balance of probabilities as to non-compliance, then a percentage judgment.",
+        "fact_ids_required": [],
+        "evidence_available_ids": [],
+        "evidence_missing": ["Same disciplinary file gap"],
+        "opposition_position": "Not yet known.",
+        "proof_status": "UNSUPPORTED"
+      }
+    ],
+    "priority": "MEDIUM",
+    "case_killer": false
+  }
+]

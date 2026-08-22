@@ -4,7 +4,7 @@ Worked example matters showing the skills, schemas, and workflows actually being
 
 ## Status
 
-**Not built in this version.** See `../docs/HONEST_STATUS.md` and its roadmap: the recommended first example is one matter type, one jurisdiction (e.g. an unfair-dismissal question in England & Wales, or a contract dispute in US Federal via the CourtListener connector), run fully through `legal-work` → `legal-research` → `legal-verify` → the quality gates, with every authority actually checked against a primary source rather than illustrated schematically.
+**One real example exists: `employment-tribunal-full-chambers/`** - an unedited England & Wales `L5 CHAMBERS` employment tribunal matter taken directly from a live stress test (2026-08-22), not hand-crafted. See its own `README.md` for what it demonstrates and the honest gate results, including a real, left-in imperfection (a stale matter-status field). Every other matter type/jurisdiction combination remains unbuilt - see `../docs/HONEST_STATUS.md`.
 
 ## What a good example should demonstrate
 

@@ -1,0 +1,32 @@
+{
+  "matter_id": "M1-KESTREL",
+  "canary_fact": "EXAMPLE-FIXTURE-ID",
+  "matter_type": "employment",
+  "jurisdiction": [
+    {
+      "country": "United Kingdom",
+      "legal_system": "common-law",
+      "sub_jurisdiction": "England & Wales (explicitly NOT Scotland or Northern Ireland - distinct UK jurisdictions per agents/jurisdiction/ROLE.md)",
+      "tribunal": "Employment Tribunal (England & Wales), with appeal route to Employment Appeal Tribunal",
+      "governing_law": "Employment Rights Act 1996 (unfair dismissal ss.94/98/103A, whistleblowing detriment s.47B, time limit s.111/s.207B - verified live against legislation.gov.uk 2026-08-22); Equality Act 2010 (disability discrimination Part 5, ss.15/20/21/26/27, time limit s.123 - verified live against legislation.gov.uk 2026-08-22); Public Interest Disclosure Act 1998 (inserted the ERA whistleblowing provisions)",
+      "procedural_law": "Employment Tribunals Act 1996 s.18A (mandatory ACAS Early Conciliation); Employment Tribunals Rules of Procedure - NOT verified this session, named only, see jurisdictions/england-wales/README.md",
+      "law_as_of": "2026-08-22",
+      "citation_system": "OSCOLA / neutral citation",
+      "confidence": "asserted-by-user"
+    }
+  ],
+  "complexity_tier": "L6",
+  "status": "INTAKE",
+  "confidentiality": "PRIVATE",
+  "conflict_check": {
+    "parties": ["Claimant: senior NHS employee (unnamed)", "Respondent: NHS employer body (unnamed)"],
+    "related_entities": [],
+    "opposing_counsel": [],
+    "cleared": false,
+    "cleared_by": null
+  },
+  "client_objective": "UNSTATED - not yet elicited from user; scenario given is a stress-test/QA exercise, not a live client instruction",
+  "created": "2026-08-22",
+  "last_updated": "2026-08-22",
+  "notes": "Test/demonstration matter created to exercise the Legal Chamber router and the England & Wales jurisdiction pack against a genuinely complex multi-head ET claim, per an explicit task to actually use the system rather than describe it. No real client exists. jurisdictions/england-wales/README.md front matter was read and its verification_status (STRUCTURAL_DRAFT) checked before any reliance - see jurisdiction_note.md in this matter for what that meant in practice."
+}

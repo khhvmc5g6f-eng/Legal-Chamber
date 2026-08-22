@@ -4,7 +4,7 @@ Regulator profiles: statutory/professional powers, procedure, sanction range, ap
 
 ## Status
 
-**EXPERIMENTAL.** No regulator profile has been built yet in this version. See `../docs/HONEST_STATUS.md`.
+**One real profile exists: `cnil.md`** (France's data-protection regulator), added after a live stress test's regulatory-mode matter demonstrated exactly what shape one needs to be, sourced from `cnil.fr` and `conseil-etat.fr` directly. `COMMUNITY_REVIEWED`, not yet `MAINTAINER VERIFIED` - see `../GOVERNANCE.md`'s pack verification levels. Every other regulator remains **EXPERIMENTAL** with no profile built. See `../docs/HONEST_STATUS.md`.
 
 ## What a regulator profile should contain, when one is added
 

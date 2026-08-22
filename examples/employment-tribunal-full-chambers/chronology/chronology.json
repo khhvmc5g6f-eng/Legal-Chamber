@@ -1,0 +1,43 @@
+[
+  {
+    "event_id": "CHR-001",
+    "date": "2026-06-01",
+    "date_certainty": "APPROXIMATE",
+    "description": "Effective Date of Termination (dismissal). Date is estimated by counting back 'two months three weeks' from the instruction date (2026-08-22); it is not fixed by any primary document (termination letter, HR record) supplied in this matter.",
+    "actor": "Respondent (NHS employer body, unnamed - see F-025)",
+    "source": "USER_ASSERTED - offset stated in task instruction, arithmetic performed this session",
+    "evidence_ids": [],
+    "fact_ids": ["F-002"],
+    "disputed": true,
+    "dispute_note": "EDT stated only as a relative offset ('2 months 3 weeks before this instruction'), not as a calendar date, and not as an admitted or documented fact. 'Two months three weeks' is also not a precise unit (months vary 28-31 days), so even the offset arithmetic carries some slack. The real EDT must come from a termination letter or HR record before this date is relied on for any filed document.",
+    "legal_significance": "Anchors the primary 3-month limitation period for unfair dismissal and whistleblowing detriment (ERA 1996 s.111/s.48) and, separately, the Equality Act 2010 s.123 discrimination time limit if the dismissal itself is the 'act complained of' for any discrimination head. See procedure/limitation.md for the full calculation and its caveats.",
+    "contradiction_classification": "NONE"
+  },
+  {
+    "event_id": "CHR-002",
+    "date": "2026-06-08",
+    "date_certainty": "APPROXIMATE",
+    "description": "ACAS Early Conciliation certificate obtained (Day B under ERA 1996 s.207B), stated to be approximately one week after dismissal.",
+    "actor": "ACAS / Claimant",
+    "source": "USER_ASSERTED - offset stated in task instruction, arithmetic performed this session against the CHR-001 assumption",
+    "evidence_ids": [],
+    "fact_ids": ["F-003"],
+    "disputed": true,
+    "dispute_note": "Only the certificate date (Day B) is given. The date ACAS was first contacted to start Early Conciliation (Day A, ERA 1996 s.207B) is not stated at all (see F-004) - the s.207B stop-the-clock/extension calculation needs both, and cannot be completed from this event alone. The certificate itself would state both dates and has not been supplied.",
+    "legal_significance": "Fixes Day B for the s.207B calculation. Without Day A, the true extended limitation date cannot be calculated to a real value - only illustrated (see procedure/limitation.md).",
+    "contradiction_classification": "NONE"
+  },
+  {
+    "event_id": "CHR-003",
+    "date": "2026-08-22",
+    "date_certainty": "EXACT",
+    "description": "Date this instruction was given and the matter opened. This is the only fixed calendar date anywhere in the facts supplied; CHR-001 and CHR-002 are both derived by counting backward from it using the stated offsets, and are not independently fixed dates in their own right.",
+    "actor": "N/A - instruction/matter-opening date, not a party act",
+    "source": "System date at matter creation",
+    "evidence_ids": [],
+    "fact_ids": [],
+    "disputed": false,
+    "legal_significance": "Base point for the offset arithmetic behind F-002/F-003/CHR-001/CHR-002. Also confirms that, on the assumed EDT, today falls inside the primary 3-month unfair dismissal/whistleblowing limitation period either way (2 months 3 weeks is less than 3 months) - a REASONABLE, not VERIFIED, conclusion per procedure/limitation.md, since it rests on an assumed EDT.",
+    "contradiction_classification": "NONE"
+  }
+]
