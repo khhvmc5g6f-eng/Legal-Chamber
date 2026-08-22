@@ -1,0 +1,71 @@
+---
+regulator: NCSBN (National Council of State Boards of Nursing) — coordinating body, NOT a licensing or disciplinary authority
+jurisdiction: United States (federal-level coordination; actual licensure/discipline is state-based)
+verification_status: COMMUNITY_REVIEWED
+last_reviewed: 2026-08-22
+reviewer: added as the nursing-side companion to fsmb.md, for the same reason — the US has no single national nurse-licensing regulator, and this profile says so honestly rather than dressing NCSBN up as one. Includes the California Board of Registered Nursing (BRN) as a real, live-verified worked example, chosen to match fsmb.md's Medical Board of California example and virtual-hospital's existing us-california jurisdiction pack. Sourced via live browser fetches against ncsbn.org, rn.ca.gov, and leginfo.legislature.ca.gov, not recalled from training data.
+---
+
+# NCSBN — and the California Board of Registered Nursing as a worked example
+
+**NCSBN is not itself a licensing or disciplinary authority.** Like FSMB on the physician side (see `fsmb.md`), NCSBN cannot issue, suspend, or revoke a nursing license. Nurse licensure and discipline in the United States is run by each state's/territory's own **nursing regulatory body (NRB)** — commonly called a "board of nursing" — under that jurisdiction's own **Nurse Practice Act**. This profile covers what NCSBN actually is, then works through one real state board — the **California Board of Registered Nursing (BRN)** — the same way `fsmb.md` works through the Medical Board of California, and for the same reason: California is a jurisdiction `virtual-hospital` already models (`us-california`), so the two repositories can cross-reference honestly.
+
+## What NCSBN actually is
+
+Per `ncsbn.org/about/` (checked 2026-08-22): NCSBN's own stated mission is "NCSBN empowers and supports nursing regulators in their mandate to protect the public" — note the verbs: *empowers and supports*, not *licenses* or *disciplines*. Its stated vision is "Leading regulatory excellence worldwide," and its "strategic initiative statement" is "We protect the public and the trust in nursing by providing innovative regulatory solutions, insights and expertise" — again a support/solutions framing directed at the boards, not a direct regulatory-authority claim over individual nurses.
+
+Per `ncsbn.org/nursing-regulation/about-nursing-regulatory-bodies.page` (checked 2026-08-22), NCSBN's own page draws the licensing-authority line explicitly: "Nursing Regulatory Bodies (NRBs) are the governmental agencies responsible for the regulation of nursing practice," established by "State and territorial governments ... 100+ years ago" — NRBs, not NCSBN, "issue licenses to practice nursing" and "monitor licensees' compliance to jurisdictional laws" and "take action against nurses who exhibit unsafe nursing practice." The same page states "All 59 NRBs in the U.S. are members of NCSBN" (the count exceeds 50 because it includes DC and several US territories, mirroring the FSMB structure on the physician side). Each NRB's authority runs from its jurisdiction's own **Nurse Practice Act**, which per this page covers licensure qualifications, permitted nursing titles, scope of practice, and consequences of non-compliance — again, jurisdiction-specific law, not a federal or NCSBN-issued rule.
+
+NCSBN's actual functions, verified on `ncsbn.org/about/`:
+
+- **NCLEX administration.** NCSBN develops and administers the **National Council Licensure Examination** (NCLEX-RN for registered nurses, and a separate NCLEX-PN track) — the standardized exam most US jurisdictions require before licensure, but the licensing decision itself (including what score or additional requirements to demand) remains with each NRB.
+- **Model Act and Model Rules.** Per the "Model Act and Rules Advancement" objective on the same page, NCSBN maintains a **Model Act & Rules** framework covering "licensure, governance, practice, education, and discipline," offered to member boards as a template — adoption is a state-by-state legislative/regulatory choice, not automatic or binding.
+- **Licensure compacts.** NCSBN administers the **Nurse Licensure Compact (NLC)**, which lets a nurse licensed in one compact-member state practice in any other compact-member state without a separate license, and is pursuing an analogous **APRN Compact** for advanced practice registered nurses (per the "Championing the APRN Compact" objective on the same page). Compact membership is a state-by-state legislative decision — a state is not automatically bound merely because it is an NCSBN member. This profile did not independently verify whether California is a current NLC member state; that is a live-changing legislative fact better checked at compact-adoption-tracking time than asserted here.
+- **Regulatory data and metrics.** Per the "Regulatory Metrics Modernization" objective on the same page, NCSBN builds shared data infrastructure for member boards — again support infrastructure, not a licensing decision.
+
+**No NCSBN-level appeal route exists** for a nurse disciplined by a state board, for the same reason as FSMB: NCSBN does not make discipline decisions. Appeals run entirely within the disciplining state's own administrative and judicial system, shown below for California.
+
+## Worked example: California Board of Registered Nursing (BRN)
+
+### Investigation stages
+
+Per `rn.ca.gov/enforcement/complaint.shtml` (checked 2026-08-22): the Board's authority runs from the **Nursing Practice Act**, located in the California Business and Professions Code, "to protect the public health, safety and welfare." Complaints may allege gross negligence/incompetence, unprofessional conduct, license-application fraud, misrepresentation, substance abuse, mental illness, or unlicensed activity. The Board's jurisdiction is limited to RNs it licenses, applicants, and people holding themselves out as RNs — the same page provides a lengthy referral table sending complaints about other license types (LVN/PT, physicians, pharmacists, facilities, etc.) to the correct separate California board or agency, underscoring how fragmented California's own healthcare-regulator landscape is even at the state level.
+
+Process, per the same page:
+
+1. **Acknowledgment.** The Board sends written notice of receipt to the complainant **within 10 days**.
+2. **Triage.** Complaints alleging the most serious harm (gross negligence/incompetence, patient abuse) get priority handling.
+3. **Investigation.** The complaint is investigated by the **Department of Consumer Affairs (DCA) Division of Investigation** and/or the Board's own nursing consultants. If no violation is substantiated, the case is closed and the complainant notified.
+4. **Resolution track.** A substantiated violation warranting formal action proceeds to **informal or formal disciplinary proceedings**; a case involving unlicensed or criminal activity is instead referred to the local district attorney for prosecution — the same civil/criminal fork seen in the MBC example in `fsmb.md`.
+5. **Confidentiality during investigation.** Investigation details remain confidential unless/until disciplinary or criminal action is actually taken, at which point some information becomes public record.
+
+The Board also runs an **Intervention Program** (Business and Professions Code § 2770, current text checked on `leginfo.legislature.ca.gov`, 2026-08-22) — a confidential, voluntary rehabilitation alternative to traditional discipline for nurses whose practice may be impaired by chemical dependency or mental illness, explicitly intended by the Legislature to catch impairment "long before public harm occurs." A complainant is not notified whether a nurse enters or completes this program, by law.
+
+### Statutory and procedural basis (shared with MBC)
+
+Per **Business and Professions Code § 2750** (current text, `leginfo.legislature.ca.gov`, checked 2026-08-22): "The proceedings under this article shall be conducted in accordance with Chapter 5 (commencing with Section 11500) of Part 1 of Division 3 of Title 2 of the Government Code, and the board shall have all the powers granted therein." This is the **same Administrative Procedure Act chapter** that governs the Medical Board of California's disciplinary hearings in `fsmb.md` — meaning BRN discipline runs through the same ALJ-hearing, proposed-decision, Board-panel-review structure described there, rather than a separate nursing-specific procedural framework. This profile treats that as a genuine structural fact (both boards cite the identical Government Code chapter), not an assumption that the two boards behave identically in every particular.
+
+**Grounds for discipline** are set out in **Business and Professions Code § 2761** (current text checked 2026-08-22), including: incompetence or gross negligence; a conviction for practicing medicine without a license; advertising violations; and — notably — discipline or license denial by *another* state's board or *another* California health-professional licensing board being treated as conclusive evidence supporting BRN action, once that other decision is certified. **Section 2762** separately makes it unprofessional conduct for a licensee to obtain, possess, prescribe (outside authorized scope), self-administer, or unsafely use a controlled substance or dangerous drug, or to be convicted of an offense involving such substances, or to falsify related records — the nursing-specific analogue to the DEA/controlled-substances concerns covered in `dea.md`.
+
+### Sanction range
+
+Because § 2750 imports the Government Code Chapter 5 (§ 11500 et seq.) administrative-adjudication framework rather than listing a nursing-specific sanction menu the way Business and Professions Code § 2227 does explicitly for MBC (see `fsmb.md`), BRN's disciplinary sanctions are, per that same statutory cross-reference, drawn from the same category of administrative powers: license revocation, suspension, and probation are confirmed available (Business and Professions Code § 2764, current text checked 2026-08-22, refers to "the lapsing or suspension of a license by operation of law or by order or decision of the board" and to the Board's power "to render a decision suspending or revoking such license"). This profile did **not** independently verify, this session, a nursing-specific public-reprimand provision equivalent to MBC's § 2227(a)(4), nor did it independently re-verify the specific minimum reinstatement-wait periods after revocation (a commonly cited figure of at least three years, reducible to not less than one year at Board discretion, appeared in a secondary-source search summary but was not independently rendered from `leginfo.legislature.ca.gov` this session) — both are flagged `UNVERIFIED` at the primary-source-this-session standard rather than asserted as confirmed.
+
+### Appeal route and forum
+
+Because BRN discipline runs through the identical Government Code Chapter 5 framework as MBC discipline (confirmed by the explicit § 2750 cross-reference above), the same appeal mechanics verified in `fsmb.md` apply here by the same statutory logic: **Government Code § 11521** reconsideration before the Board itself (30-day window), followed by a **Code of Civil Procedure § 1094.5** petition for a writ of administrative mandamus in California **Superior Court**. This profile did not separately re-fetch § 11521 or § 1094.5 specifically in a BRN-discipline context this session (they were verified in the MBC context in `fsmb.md`); citing them here rests on the explicit § 2750 statutory cross-reference to the same Government Code chapter, not on an independent BRN-specific fetch of those two sections, and that distinction is stated here rather than blurred.
+
+## What is NOT in this profile
+
+No coverage of the other 58 US nursing regulatory bodies — BRN was chosen as one verified worked example, matching `fsmb.md`'s MBC example and `virtual-hospital`'s `us-california` pack. No independent verification of a BRN-specific public-reprimand sanction or exact reinstatement-wait-period statute. No independent BRN-specific re-fetch of Government Code § 11521 or CCP § 1094.5 (both were verified in the MBC context and are cited here via the § 2750 statutory cross-reference, not a separate fetch). No coverage of LVN/LPN or psychiatric technician licensure, which per BRN's own complaint-process page is handled by the *separate* California Board of Vocational Nursing and Psychiatric Technicians, not BRN. No independent verification of California's current Nurse Licensure Compact membership status. No coverage of advanced practice registered nurse (APRN)-specific scope-of-practice or prescriptive-authority rules, which differ from base RN licensure and were not checked this session.
+
+## Primary sources checked
+
+- `ncsbn.org/about/` — NCSBN mission/vision/strategic statement, NCLEX administration, Model Act & Rules objective, NLC/APRN Compact objectives
+- `ncsbn.org/nursing-regulation/about-nursing-regulatory-bodies.page` — explicit statement that NRBs (not NCSBN) issue licenses and take disciplinary action; 59-NRB membership count; Nurse Practice Act structure
+- `rn.ca.gov/enforcement/complaint.shtml` — BRN complaint intake/triage/investigation process, DCA Division of Investigation, 10-day acknowledgment rule, informal/formal proceedings vs. DA referral, Intervention Program description
+- `leginfo.legislature.ca.gov` (Business and Professions Code § 2750) — statutory cross-reference importing Government Code Chapter 5 (§ 11500 et seq.) administrative-hearing framework
+- `leginfo.legislature.ca.gov` (Business and Professions Code § 2761) — grounds for discipline, including reciprocal treatment of other-board/other-state discipline as conclusive evidence
+- `leginfo.legislature.ca.gov` (Business and Professions Code § 2762) — controlled-substance/dangerous-drug unprofessional-conduct grounds
+- `leginfo.legislature.ca.gov` (Business and Professions Code § 2764) — Board's retained jurisdiction and power to suspend/revoke despite lapse or surrender
+- `leginfo.legislature.ca.gov` (Business and Professions Code § 2770) — Intervention Program legislative intent and voluntary-alternative-to-discipline framing
