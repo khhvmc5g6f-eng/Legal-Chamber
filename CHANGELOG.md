@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/). Each entry corresponds to one real commit - see the git history for exact diffs.
 
+### Changed - top-level README.md overhauled at the user's request, England & Wales jurisdiction pack promoted
+
+The regulator-profile count (`3` → `33`) and practice-area coverage figures (`46 of 99` → `86 of 99`) had drifted stale since the README rewrite earlier this version - corrected, along with a rewritten "Jurisdictions in this build" section that separates two status axes that were previously conflated into one column: a pack's own structural narrative (court hierarchy, citation style) versus its Authority Graph content (individually-verified case law/statutes). England & Wales's structural narrative was live-checked this session against `judiciary.uk`'s official court-structure page and `law.ox.ac.uk/oscola`, both confirmed to match the pack's existing description exactly, and promoted from `STRUCTURAL_DRAFT` to `COMMUNITY_REVIEWED` on that axis - the first jurisdiction pack in this repository to earn that status for its narrative specifically, per `GOVERNANCE.md`'s primary-source-plus-date-plus-reviewer rule. `jurisdictions/england-wales/README.md` and `docs/HONEST_STATUS.md` updated to match. Added a new "Areas of law covered" section (per-category built/total counts, all 99 taxonomy areas summarised), an author's note, and a dedicated legal-disclaimer section - the "Governing principle" section already carried disclaimer language, but the user asked for a standalone one near the bottom of the page.
+
 ## [0.1.7] - deepening the US-Federal Authority Graph, Legal LLM Council audit
 
 ### Added

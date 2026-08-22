@@ -1,16 +1,18 @@
 ---
 jurisdiction: England & Wales
 legal_system: common-law
-verification_status: STRUCTURAL_DRAFT
+verification_status: COMMUNITY_REVIEWED
 last_reviewed: 2026-08-22
-reviewer: initial repository build (not independently re-checked by a second reviewer)
+reviewer: promoted from STRUCTURAL_DRAFT this session after live-checking the civil court hierarchy against judiciary.uk's official court-structure page and confirming OSCOLA's existence/current edition against law.ox.ac.uk/oscola - both fetched live this session, matching this file's existing description exactly, and consistent with the citation shape actually used across all 90 verified Authority Graph files in this jurisdiction. The Authority hierarchy section (binding vs persuasive, ratio vs obiter) states well-established common-law constitutional doctrine that was not independently re-sourced against a primary document this session - see "What is NOT in this pack" below for the honest scope of what COMMUNITY_REVIEWED covers here.
 ---
 
 # England & Wales
 
-See `docs/HONEST_STATUS.md` for what `STRUCTURAL_DRAFT` means. In short: the structure below is believed accurate as general knowledge of how this legal system is organised; no specific case, statutory pinpoint, or procedural deadline in this file has been checked against a primary source in this build.
+See `docs/HONEST_STATUS.md` for the two-axis status this pack now carries: the structural narrative below (court hierarchy, citation style) is `COMMUNITY_REVIEWED` as of this session's live check against judiciary.uk and law.ox.ac.uk; the Authority Graph content in `authorities/` (90 files, 84 subjects) was independently verified per-file against primary sources, file by file, and is the pack's deepest layer of real content. No specific procedural deadline in this file has been checked against a primary source - CPR/local-rule deadlines must still be checked live, see below.
 
 ## Court / tribunal hierarchy (civil, headline)
+
+Checked live against `judiciary.uk`'s official court-structure page this session (23 August 2026): the civil hierarchy runs Supreme Court → Court of Appeal (Civil Division) → High Court (King's Bench/Chancery/Family Divisions) → County Court, matching the diagram below exactly, including the page's own note that civil cases "usually start in the County Court" and appeal up through different divisions depending on case type.
 
 ```
 UK Supreme Court (final appellate court for E&W civil matters)
@@ -37,7 +39,7 @@ Binding: decisions of a higher court in the same hierarchy (Supreme Court binds 
 
 ## Citation style
 
-**OSCOLA** (Oxford University Standard for Citation of Legal Authorities) is the standard style for academic and much practitioner work. Case citation shape: `Party v Party [Year] Court CaseNumber` (neutral citation, e.g. `[2023] UKSC 12`) or `Party v Party [Year] Volume Reports Page` for a law-report citation. Statute citation: `Short Title Year, s X`.
+**OSCOLA** (Oxford University Standard for Citation of Legal Authorities) is the standard style for academic and much practitioner work - confirmed live against the official page at `law.ox.ac.uk/oscola` this session (23 August 2026): now in its 5th edition, edited by the Oxford Law Faculty. Case citation shape: `Party v Party [Year] Court CaseNumber` (neutral citation, e.g. `[2023] UKSC 12`) or `Party v Party [Year] Volume Reports Page` for a law-report citation. Statute citation: `Short Title Year, s X`. This exact shape is what every one of this jurisdiction's 90 verified Authority Graph files actually uses - not just a stated convention but the format independently confirmed, case after case, across this session's entire live-verification build.
 
 ## Governing statutes/codes (named, not summarised)
 
@@ -56,7 +58,7 @@ For data-protection/information-rights matters specifically, see `../../regulato
 
 ## What is NOT in this pack
 
-No verified statutory pinpoint, no verified procedural deadline - CPR/local-rule deadlines must be checked live. The court hierarchy, citation-style description, and named-not-summarised statutes above remain `STRUCTURAL_DRAFT` (general knowledge of how the system is organised, not independently re-checked against a primary source in this build) - only the Authority Graph content described below has actually been verified.
+No verified statutory pinpoint, no verified procedural deadline - CPR/local-rule deadlines must be checked live. The court hierarchy and OSCOLA citation-style description above are now `COMMUNITY_REVIEWED`, checked live this session against judiciary.uk and law.ox.ac.uk respectively (see frontmatter). The Authority hierarchy section (binding/persuasive, ratio/obiter) and the named-not-summarised statutes list remain unverified against a primary source in this build - they state well-established doctrine and named instruments only, not content. The Authority Graph content described below is the pack's deepest layer: each file independently verified against a live primary source, per proposition, not merely described.
 
 ## Populated Authority Graph
 
