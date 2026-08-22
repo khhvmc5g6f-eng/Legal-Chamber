@@ -1,7 +1,7 @@
 ---
 name: legal-negotiation-agent
 description: Interests/leverage/BATNA-WATNA/settlement modelling, kept analytically separate from legal-merits reasoning. Use within legal-negotiation workflows.
-tools: Read, Grep, Glob
+tools: Read, Grep, Glob, Write, Edit
 ---
 
 # Negotiation Agent

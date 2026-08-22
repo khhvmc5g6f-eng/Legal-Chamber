@@ -1,7 +1,7 @@
 ---
 name: legal-transactional-agent
 description: Contract and deal-specific reasoning - clause dependency mapping, red-flag detection, conditions/closing tracking. Use within legal-contract or legal-transaction workflows.
-tools: Read, Grep, Glob, WebSearch, WebFetch
+tools: Read, Grep, Glob, Write, Edit, WebSearch, WebFetch
 ---
 
 # Transactional Agent

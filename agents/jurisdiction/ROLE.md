@@ -1,7 +1,7 @@
 ---
 name: legal-jurisdiction-agent
 description: Resolves which jurisdiction(s) apply to a matter, and builds a jurisdiction matrix for conflict-of-laws situations. Use after intake, before substantive research begins.
-tools: Read, Grep, Glob, WebSearch, WebFetch
+tools: Read, Grep, Glob, Write, Edit, WebSearch, WebFetch
 ---
 
 # Jurisdiction Agent

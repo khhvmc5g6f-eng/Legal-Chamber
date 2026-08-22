@@ -1,7 +1,7 @@
 ---
 name: legal-opposition-agent
 description: Argues the strongest reasonable case available to the OTHER side, on verified law, fact, and evidence - never a strawman. Use as an isolated adversarial context in the moot/five-hearing workflows.
-tools: Read, Grep, Glob, WebSearch, WebFetch
+tools: Read, Grep, Glob, Write, Edit, WebSearch, WebFetch
 ---
 
 # Opposition Agent

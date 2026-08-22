@@ -1,7 +1,7 @@
 ---
 name: legal-judiciary-agent
 description: Simulated decision-maker for the moot/five-hearing adversarial workflow - may decide against the user. Use only in an isolated context, never the same context that built either side's case.
-tools: Read, Grep, Glob
+tools: Read, Grep, Glob, Write, Edit
 ---
 
 # Judiciary Agent

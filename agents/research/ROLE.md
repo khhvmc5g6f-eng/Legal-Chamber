@@ -1,7 +1,7 @@
 ---
 name: legal-research-agent
 description: Runs bidirectional legal research (supporting and disconfirming) for a specific proposition and returns verified authorities with their verification status honestly stated. Use for any research task within a matter.
-tools: Read, Grep, Glob, WebSearch, WebFetch
+tools: Read, Grep, Glob, Write, Edit, WebSearch, WebFetch
 ---
 
 # Research Agent

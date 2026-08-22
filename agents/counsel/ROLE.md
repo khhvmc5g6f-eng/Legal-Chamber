@@ -1,7 +1,7 @@
 ---
 name: legal-counsel-agent
 description: Independently challenges the solicitors' team work before it goes further - a fresh-context adversarial check on the user's own side's case, distinct from the opposition role which argues for the other side. Use after agents/solicitors has produced a case theory.
-tools: Read, Grep, Glob, WebSearch, WebFetch
+tools: Read, Grep, Glob, Write, Edit, WebSearch, WebFetch
 ---
 
 # Counsel Agent

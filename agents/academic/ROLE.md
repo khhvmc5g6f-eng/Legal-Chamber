@@ -1,7 +1,7 @@
 ---
 name: legal-academic-marking-agent
 description: Marking-panel role for academic mode - assesses knowledge/issues, analysis/application, research/authority, critical evaluation, or structure/presentation, plus a sceptical external-examiner pass. Use only for feedback/self-assessment, never to fabricate an institution's actual grade.
-tools: Read, Grep, Glob
+tools: Read, Grep, Glob, Write, Edit
 ---
 
 # Academic Marking Agent

@@ -1,7 +1,7 @@
 ---
 name: legal-evidence-agent
 description: Builds and maintains the Fact Ledger, Evidence Ledger, and chronology for a matter - classifies fact status, maps evidence to issues, flags contradictions and missing documents. Use for evidence-organisation tasks within a matter.
-tools: Read, Grep, Glob
+tools: Read, Grep, Glob, Write, Edit
 ---
 
 # Evidence Agent

@@ -1,7 +1,7 @@
 ---
 name: legal-regulatory-agent
 description: Regulator/disciplinary-matter reasoning - allegation matrix, liability/mitigation separation, sanction-range and appeal-route analysis. Use within legal-regulatory workflows.
-tools: Read, Grep, Glob, WebSearch, WebFetch
+tools: Read, Grep, Glob, Write, Edit, WebSearch, WebFetch
 ---
 
 # Regulatory Agent

@@ -2,6 +2,12 @@
 
 Legal Chamber's own governing rule (`docs/OPERATING_RULES.md`, Part I) forbids fabricating legal authority. This file exists so that rule applies to the repository's own marketing, not just its output. Read this before trusting anything else in the repo about "what Legal Chamber can do."
 
+## Live seven-matter stress test (2026-08-22)
+
+After the review pass below, a further Workflow-orchestrated stress test actually ran the repository - 6 seeded hard-safety hallucination traps plus 7 simulated legal matters (employment tribunal, judicial review, US federal litigation, Australian contract dispute, French/EU regulatory, NZ appeal, academic assessment), each executed by real agents reading and following the actual skill/agent files, not described. Full results: `LEGAL_CHAMBER_STRESS_TEST_REPORT.md`, `DEFECT_REGISTER.md`, `LEGAL_CHAMBER_COVERAGE_MATRIX.md`.
+
+Headline: 13/13 seeded fabrication traps caught, zero cross-matter data leakage, the simulated judiciary ruled against the user in 2 of 7 matters (not sycophantic), and the five-hearing moot showed genuine round-to-round evolution. Twelve real defects were found and fixed, the most significant being that **none of the 13 agent roles in `agents/*/ROLE.md` had `Write` access** despite being designed to persist ledgers and case documents - the structural reason several matters had a stage claim an output that didn't actually exist on disk. Also fixed: a missing EU-level jurisdiction pack (country packs alone can't answer an EU-law question), a chronology schema that couldn't record an event with a genuinely unknown date, no gating on conflict-check clearance or confirming which party is the user's side before substantive work proceeds, and a new deterministic cross-reference checker (`scripts/verify_matter_refs.py`) to catch dangling fact/evidence/chronology IDs. Current release classification: `BETA` - see the full report for why, and for what would need to happen to move past it (principally: a fresh live run confirming the Write-access fix actually results in consistent persistence).
+
 ## Independent review pass (2026-08-22)
 
 Before this build was pushed, five independent review agents (a judge-lens read of the adversarial workflow, a solicitor-lens read of the practice skills, a paralegal-lens read of the operational schemas, a live fact-check of all 8 jurisdiction packs against WebSearch results, and a technical/code review of the scripts, schemas, and CI) were run against the actual files on disk, not against a description of them. This found and led to fixing:

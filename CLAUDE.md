@@ -16,4 +16,4 @@ This file governs Claude Code sessions editing *this repository's own source*. I
 - Each `skills/*/SKILL.md` stays small (progressive disclosure), link out to `agents/`, `jurisdictions/`, `schemas/`, and `workflows/` rather than inlining their content.
 - JSON Schemas in `schemas/` are the source of truth for record shape. If a workflow doc describes a field a schema doesn't have, fix the schema, don't let them drift.
 - Deterministic logic (dates, arithmetic, citation-pattern checks) belongs in `scripts/`, not in a skill's prose instructions, see `docs/OPERATING_RULES.md` "deterministic tools first."
-- Run `scripts/citation_lint.py` and `scripts/deadline_calculator.py --selftest` before committing changes that touch citation or deadline logic.
+- Run `scripts/citation_lint.py`, `scripts/deadline_calculator.py --selftest`, and `scripts/verify_matter_refs.py --selftest` before committing changes that touch citation, deadline, or schema cross-reference logic.

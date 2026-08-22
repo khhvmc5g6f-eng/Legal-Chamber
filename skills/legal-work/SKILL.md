@@ -17,7 +17,7 @@ Never fabricate a case, citation, statute, court rule, quotation, fact, or deadl
 
 Identify, from the user's message and any documents already supplied:
 
-- **Matter type**, research / litigation / administrative-public-law / criminal / employment / regulatory / transactional / advisory / negotiation-ADR / academic. See `../../docs/OPERATING_RULES.md` for the full taxonomy the specialist skills below assume.
+- **Matter type**, research / litigation / administrative-public-law / criminal / employment / regulatory / transactional / advisory / negotiation-ADR / academic - this list (matching `../../schemas/matter.schema.json`'s `matter_type` enum) is the full taxonomy the specialist skills below assume; a stress test found this step previously pointed to `docs/OPERATING_RULES.md` for that taxonomy, which does not actually contain it.
 - **Complexity tier** - the user will essentially never say a tier name. Infer it from what they're actually asking for, using these as the natural-language signals for each (not an exhaustive list - use judgment for phrasings not shown):
   - `L1 QUICK` - "can you explain," "what does X mean," a single narrow question. No matter workspace needed.
   - `L2 VERIFIED` - "check whether this is right," "find the law on," research with an expectation the sources are checked.
@@ -46,6 +46,11 @@ If more than one jurisdiction is plausibly relevant (conflict of laws, cross-bor
 ## Step 3, open or resume a matter workspace
 
 For anything above `L1`, create (or resume) `matters/<MATTER-ID>/` with the subdirectories `intake/ facts/ evidence/ chronology/ issues/ research/ authorities/ drafts/ opposition/ moot/ procedure/ costs/ prospects/ final/`. `matters/` is gitignored in this repo - it holds real matter data and must never be committed. Before ingesting anything sensitive, do a lightweight conflict check: ask about parties, related entities, and opposing counsel if this looks like it could conflict with other work you know about in this session.
+
+**Two gates before any substantive work (research, case theory, drafting) begins, not after** - a live stress test found a matter where both were skipped and work proceeded anyway:
+
+1. **Whose side is this?** Confirm and record on the matter record which party is actually the user's side before `../legal-litigation/SKILL.md`, `../../agents/solicitors/ROLE.md`, or any other case-building step runs. Do not infer this from which name appears first in the facts - ask if it isn't already unambiguous from the conversation.
+2. **Conflict check cleared?** `../../schemas/matter.schema.json`'s `conflict_check.cleared` must be explicitly set (true, with `cleared_by`, or knowingly waived by the user for a low-stakes/no-conflict-risk matter) before substantive work proceeds - not left at its default unset state while facts, issues, and authorities accumulate anyway.
 
 ## Step 4, route to a specialist skill
 
