@@ -1,0 +1,50 @@
+{
+  "$comment": "Spain, Civil Law (Contract/Obligations) - article 1258 CC's principle that contractual binding force extends beyond express terms to whatever good faith, usage, and law require, and its very recent (May 2025) application to fill a genuine gap: the absence of any statutory notice requirement for terminating an indefinite-term exclusive distribution contract. CENDOJ presented a bot-detection CAPTCHA gate on the document-view route specifically (distinct from the DNS-level block hit on other Spain research passes), correctly declined rather than solved.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Codigo Civil art.1258 - boe.es returned ECONNREFUSED across four distinct attempts including a live browser navigation; corroborated via two independent secondary sources agreeing verbatim, and independently confirmed via WebSearch this session against multiple further sources including an academic article. STS 801/2025 - the researching agent fetched CENDOJ's own search-results metadata page live via a real browser session (ROJ, ECLI, ponente, resolution/recurso numbers all confirmed primary), but the document-view route presented a CAPTCHA gate that was correctly declined; the full-text Fundamento de Derecho quotes came from a secondary source's verbatim reproduction, cross-checked against two further independent sources agreeing on citation/ECLI/ponente data, and independently confirmed via WebSearch this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-ESP-CONTRACT-001",
+      "authority_type": "statute",
+      "name": "Codigo Civil, articulo 1258",
+      "citation": "Real Decreto de 24 de julio de 1889 (Codigo Civil), art.1258",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "spain",
+      "date": "1889",
+      "date_note": "Enactment year of the Codigo Civil. Not independently re-fetched from BOE this session due to a persistent connection-level block - see verification_note.",
+      "proposition": "Los contratos se perfeccionan por el mero consentimiento, y desde entonces obligan, no solo al cumplimiento de lo expresamente pactado, sino tambien a todas las consecuencias que, segun su naturaleza, sean conformes a la buena fe, al uso y a la ley. [English: contracts are formed by mere consent, and from that moment bind the parties not only to what was expressly agreed, but to every consequence that, given the contract's nature, accords with good faith, usage, and law - the doctrinal basis for 'integrating' gaps a contract's own terms leave open.]",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.boe.es",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "boe.es returned ECONNREFUSED to four distinct attempts (direct WebFetch to two URL forms, the domain root, and a live browser navigation reporting 'denied or failed'). The exact text was corroborated via two independent secondary sources (Iberley, Conceptos Juridicos) agreeing verbatim, and independently re-confirmed via WebSearch this session against multiple further sources, including a peer-reviewed academic article specifically analysing this article's 'contextual conception of contractual good faith.'"
+    },
+    {
+      "authority_id": "AUTH-ESP-CONTRACT-002",
+      "authority_type": "case",
+      "name": "Sentencia del Tribunal Supremo 801/2025",
+      "citation": "STS (Sala Primera, Civil) 801/2025, de 20 de mayo de 2025; ECLI:ES:TS:2025:2220",
+      "court": "Tribunal Supremo (Sala de lo Civil)",
+      "jurisdiction": "spain",
+      "date": "2025-05-20",
+      "judge_or_panel": "Ponente: Manuel Almenar Belenguer",
+      "proposition": "Applies art.1258 (together with art.7 CC and, for commercial contracts, art.57 CCom) to fill a genuine statutory gap: Spanish law imposes no notice requirement for terminating an indefinite-term exclusive distribution contract, and the contract itself was silent. The court held termination of such a relationship must nonetheless be exercised in good faith, and on the facts (a long-term, high-volume exclusive distribution relationship) a notice period of at least six months should have been given. Critically, the court cabins the doctrine: the mere absence of reasonable notice does not automatically trigger indemnification - the conduct must actually be characterisable as contrary to good faith and must have caused proven, quantified loss (art.1258 CC and art.2:301(2) of the Principles of European Contract Law). [English: absence of notice alone is not enough - bad faith plus proven damage is required for damages to follow.]",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.poderjudicial.es",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent fetched CENDOJ's own search-results metadata (ROJ, ECLI, ponente, resolution/recurso numbers, resumen) live via a real browser session driving the CENDOJ search UI directly - primary-verified for that metadata. The document-view route presented a CAPTCHA bot-detection gate ('Control > Descargas masivas'), which was correctly declined rather than solved, per this repository's rules. The verbatim Fundamento de Derecho Segundo quotes instead came from a secondary source's (Iberley) full-text reproduction, several thousand words and internally consistent with the pattern of a real judgment (citing dozens of prior STS decisions by number/date), cross-checked against citation/ECLI/ponente data independently confirmed by two further sources (vLex, a law-firm case note). This session's own independent WebSearch further confirmed the six-month notice finding and the good-faith-plus-damage cabining requirement via multiple genuine independent sources."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-ESP-CONTRACT-002",
+      "to": "AUTH-ESP-CONTRACT-001",
+      "relationship": "APPLIES",
+      "verified_via": "STS 801/2025, Fundamento de Derecho Segundo, per the researching agent's mixed primary/secondary sourcing and independently confirmed via WebSearch this session: applies art.1258's good-faith integration principle to require reasonable notice before terminating an indefinite exclusive distribution contract, while cabining the resulting liability to cases of actual bad faith and proven damage."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering good-faith contractual integration and its very recent application to distribution-contract termination - Spain's fourth populated Authority Graph entry in this repository. Does not cover contract formation's other elements (objeto, causa) in detail, the doctrine of implied terms more generally, or any other Spanish Contract Law subject - all remain unbuilt."
+}

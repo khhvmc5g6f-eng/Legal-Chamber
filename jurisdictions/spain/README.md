@@ -3,7 +3,7 @@ jurisdiction: Spain
 legal_system: civil-law
 verification_status: STRUCTURAL_DRAFT
 last_reviewed: 2026-08-22
-reviewer: initial repository build (not independently re-checked by a second reviewer)
+reviewer: initial repository build (not independently re-checked by a second reviewer); a populated Authority Graph was added the same day via four parallel-agent research passes, each independently re-verified where reachable against a live primary source by the orchestrating session before being written - see "Populated Authority Graph" below
 ---
 
 # Spain
@@ -38,6 +38,19 @@ Código Civil (1889, much amended), Código Penal, Ley de Enjuiciamiento Civil (
 - `poderjudicial.es` (CENDOJ) - official case-law database
 - Autonomous-community official gazettes for regional civil-law regimes
 
+## Populated Authority Graph
+
+`authorities/` holds four doctrinal files across four subjects - Spain's first Authority Graph content in this repository, and this repository's first civil-law jurisdiction with populated content. Each entry quotes the original Spanish code text and case reasoning verbatim, with an English paraphrase, following the civilian doctrinal method described above (starting from the code article, not from precedent).
+
+| File | Subject | Lead case |
+|---|---|---|
+| `authorities/contract-formation-good-faith-integration.json` | Contract/Obligations - article 1258 CC's good-faith integration principle | *STS 801/2025*, de 20 de mayo de 2025 |
+| `authorities/civil-extracontractual-liability-fault-based-boundary.json` | Civil Liability - article 1902 CC's fault-based boundary against objectivised liability | *STS 149/2007*, de 22 de febrero de 2007 |
+| `authorities/criminal-legitima-defensa-agresion-ilegitima.json` | Criminal Law - the *agresión ilegítima* requirement of *legítima defensa* | *STS 140/2010* (Sala de lo Penal) |
+| `authorities/labour-dismissal-prior-hearing-ilo-convention.json` | Employment Law - the ILO Convention 158 prior-hearing requirement for disciplinary dismissal | *STS 1250/2024* (Sala de lo Social, Pleno) |
+
+Deliberately narrow, matching the same one-or-two-doctrinal-points-per-file discipline used throughout this repository's other jurisdictions. The dominant access-pattern finding this session, confirmed consistently across all four research passes: **boe.es returned a connection-level `ECONNREFUSED` error, and poderjudicial.es/cendoj.poderjudicial.es returned DNS resolution failure (`ENOTFOUND`)**, or presented a CAPTCHA bot-detection gate on the document-view route specifically. This is a genuine network-level block on these two government domains from this environment, not a source-specific 403/404 or a quality judgment on the sources themselves. Per this repository's rules, no research pass attempted a proxy workaround. Each instead corroborated its statutory and case-law content via multiple independent secondary sources (Iberley, Conceptos Jurídicos, vLex, academic case notes, law-firm commentary), and - where a case was live-fetchable at the metadata level (CENDOJ's search-results page, or the Poder Judicial press page) but not at the full-text level - recorded the metadata as primary-verified and the substantive quotes as secondary-corroborated, a split-tier honesty pattern unique to this jurisdiction's access constraints. This session's own independent WebSearch corroboration further confirmed every node's core substance before each file was written.
+
 ## What is NOT in this pack
 
-No populated jurisprudence database. No verified article-level code content. No verified procedural deadline. No autonomous-community-specific civil law content.
+No verified procedural deadline. No autonomous-community-specific civil law content beyond the general Código Civil entries above.

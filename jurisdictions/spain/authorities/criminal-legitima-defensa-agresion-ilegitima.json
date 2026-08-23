@@ -1,0 +1,50 @@
+{
+  "$comment": "Spain, Criminal Law (Derecho Penal) - THE FIRST POPULATED AUTHORITY GRAPH ENTRY FOR SPAIN. Article 20.4 CP's three-requirement self-defence exemption (legitima defensa), and the Tribunal Supremo's strict construction of the 'agresion ilegitima' requirement as demanding a real, present or imminent attack. BOE (boe.es) returned a connection-level ECONNREFUSED error and poderjudicial.es/cendoj.poderjudicial.es returned DNS resolution failure (ENOTFOUND) to the researching agent across every URL path tried - a genuine environment-level network block, not a source-specific 403/404, confirmed consistently across all four Spain research passes this session.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Codigo Penal (Ley Organica 10/1995) art.20.4 - boe.es was unreachable (ECONNREFUSED at the connection level, confirmed on this session's own follow-up attempt too) to both the researching agent and this session's own independent re-attempt; the exact text was corroborated via three independent secondary sources agreeing verbatim, and further independently confirmed via WebSearch this session including a source directly quoting the official BOE PDF text. STS 140/2010 (Sala de lo Penal) - CENDOJ/poderjudicial.es were unreachable (DNS failure); corroborated via a directly-fetched secondary source (vlex.es) plus a further independent multi-source search converging on identical case facts and quotes, and independently confirmed in substance via WebSearch this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-ESP-CRIMINAL-001",
+      "authority_type": "statute",
+      "name": "Codigo Penal, articulo 20.4",
+      "citation": "Ley Organica 10/1995, de 23 de noviembre, del Codigo Penal, art.20.4",
+      "court": "N/A - primary legislation (organic law)",
+      "jurisdiction": "spain",
+      "date": "1995",
+      "date_note": "Enactment year. Not independently re-fetched from BOE this session due to a persistent connection-level block (ECONNREFUSED) - see verification_note.",
+      "proposition": "Exentos de responsabilidad criminal: el que obre en defensa de la persona o derechos propios o ajenos, siempre que concurran los requisitos siguientes: Primero, agresion ilegitima (for defence of property, an attack constituting a crime that puts the property in grave imminent danger; for defence of a dwelling, unlawful entry); Segundo, necesidad racional del medio empleado para impedirla o repelerla; Tercero, falta de provocacion suficiente por parte del defensor. [English: exempt from criminal liability is a person who acts in defence of their own or another's person or rights, provided three cumulative requirements concur: an unlawful aggression, the rational necessity of the means employed to prevent or repel it, and the absence of sufficient provocation by the defender.]",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "boe.es returned ECONNREFUSED at the connection level to both the researching agent (multiple distinct URLs, HTML and PDF) and this session's own independent re-attempt - a network-level block, not a page-specific error. The exact text was corroborated via three independent secondary sources (Gerson Vidal Abogado, Conceptos Juridicos, Codigo Penal Espana) agreeing verbatim on all three requirements, and further independently confirmed via WebSearch this session, including a source citing the official BOE consolidated PDF directly."
+    },
+    {
+      "authority_id": "AUTH-ESP-CRIMINAL-002",
+      "authority_type": "case",
+      "name": "Sentencia del Tribunal Supremo 140/2010",
+      "citation": "STS (Sala de lo Penal) 140/2010, de 23 de febrero de 2010; ECLI:ES:TS:2010:996",
+      "court": "Tribunal Supremo (Sala Segunda, de lo Penal)",
+      "jurisdiction": "spain",
+      "date": "2010-02-23",
+      "judge_or_panel": "Ponente: Miguel Colmenero Menendez de Luarca",
+      "proposition": "Construes the first requirement of art.20.4 strictly: 'agresion ilegitima' must be a real, present or imminent attack, not merely words or a preceding verbal dispute. On the facts (injuries inflicted with an axe following a verbal altercation), because the record showed no immediate objective aggression by the victim preceding the defendant's violent response, the court denied both the full exemption (eximente completa) and the incomplete/mitigating variant (eximente incompleta, art.21.1 in relation to art.20.4). [English: a prior verbal reproach does not itself constitute the unlawful aggression the statute requires.]",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.poderjudicial.es",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "CENDOJ/poderjudicial.es returned DNS resolution failure (ENOTFOUND) to both the researching agent and this session's own independent domain-level check - a genuine technical block. The researching agent fetched a directly-hosted secondary source (vlex.es) reproducing Fundamento Juridico Quinto verbatim, cross-checked against a second independent multi-source WebSearch (an academic thesis, a law-firm blog, a case-brief document, Iustel case notes) converging on identical citation, ponente, subject matter, and quoted reasoning. This session's own independent WebSearch further confirmed the case's substance and requirement structure."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-ESP-CRIMINAL-002",
+      "to": "AUTH-ESP-CRIMINAL-001",
+      "relationship": "APPLIES",
+      "verified_via": "STS 140/2010, Fundamento Juridico Quinto, per the researching agent's secondary-source corroboration and independently confirmed via WebSearch this session: narrows art.20.4's 'agresion ilegitima' requirement to a real, present or imminent attack, excluding mere words or a prior dispute."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the agresion ilegitima requirement of Spanish self-defence law - Spain's first-ever populated Authority Graph entry in this repository. Does not cover the necesidad racional or falta de provocacion requirements in detail, the eximente incompleta's sentencing effect, or any other Spanish Criminal Law subject - all remain unbuilt."
+}

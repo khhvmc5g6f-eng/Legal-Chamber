@@ -1,0 +1,50 @@
+{
+  "$comment": "Spain, Civil Law - the general fault-based (subjective) clause of extracontractual liability, and the Tribunal Supremo's policing of its boundary against an emerging trend toward objectivised/strict liability. Article 1902 CC is Spain's functional equivalent of the common-law tort of negligence, applied via the civilian doctrinal method (starting from the code text, not from precedent).",
+  "verified_at": "2026-08-22",
+  "verification_method": "Codigo Civil art.1902 - boe.es was unreachable (ECONNREFUSED); corroborated via two independent secondary sources agreeing verbatim, plus a third independent WebSearch synthesis this session. STS 149/2007 - CENDOJ/poderjudicial.es were unreachable (ENOTFOUND); corroborated via two independent full-text/quote sources agreeing verbatim on the substantive holding, a third independent search converging on the same case metadata, a fourth corroborating case (STS 831/2007) using near-identical language, and independently confirmed via WebSearch this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-ESP-CIVIL-001",
+      "authority_type": "statute",
+      "name": "Codigo Civil, articulo 1902",
+      "citation": "Real Decreto de 24 de julio de 1889 (Codigo Civil), art.1902",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "spain",
+      "date": "1889",
+      "date_note": "Enactment year of the Codigo Civil. Not independently re-fetched from BOE this session due to a persistent connection-level block - see verification_note.",
+      "proposition": "El que por accion u omision causa dano a otro, interviniendo culpa o negligencia, esta obligado a reparar el dano causado. [English: a person who, by an act or omission, causes damage to another, where fault or negligence is present, is obliged to repair the damage caused - Spain's general fault-based clause of extracontractual liability, requiring action/omission, culpa or negligencia (the diligence of a 'buen padre de familia' under art.1104 CC, not independently verified in this file), and a causal link, applying when there is no prior contractual relationship between the parties.]",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.boe.es",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "boe.es returned ECONNREFUSED at the connection level to the researching agent's every attempt. The exact text was corroborated via two independent secondary sources (Iberley, Conceptos Juridicos) agreeing verbatim, and independently re-confirmed via WebSearch this session against multiple further sources, all quoting identical wording."
+    },
+    {
+      "authority_id": "AUTH-ESP-CIVIL-002",
+      "authority_type": "case",
+      "name": "Sentencia del Tribunal Supremo 149/2007",
+      "citation": "STS (Sala Primera, Civil) 149/2007, de 22 de febrero de 2007",
+      "court": "Tribunal Supremo (Sala de lo Civil, Seccion 1a)",
+      "jurisdiction": "spain",
+      "date": "2007-02-22",
+      "judge_or_panel": "Ponente: Juan Antonio Xiol Rios",
+      "proposition": "Construes art.1902's culpa requirement as a bulwark against an emerging trend toward objectivised (strict) civil liability in Spanish tort litigation: 'la jurisprudencia no ha llegado al extremo de erigir el riesgo como criterio de responsabilidad con fundamento en el art.1902 del Codigo civil,' rejecting a reading of civil liability inconsistent with the Code's own fault-based structure. The burden of proving fault remains on the claimant; burden-shifting is confined to narrow, judicially-defined exceptions (extraordinary risk, grossly disproportionate damage, or the defendant's failure to cooperate in proof-taking), which the court treats as an application of the 'proximity/ease of proof' principle rather than a general shift to strict liability. [English: mere risk-creation or the occurrence of harm alone does not itself satisfy art.1902 - fault must still be proven.] This reasoning is reiterated doctrine, not a one-off: a companion case (STS 831/2007, 17 de julio de 2007, not independently verified in this file) uses near-identical language.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.poderjudicial.es",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "CENDOJ/poderjudicial.es returned DNS resolution failure (ENOTFOUND) to the researching agent's every attempt, and iustel.com returned HTTP 403. The researching agent fetched two independent secondary sources (vlex.es, civil-mercantil.com) agreeing verbatim on the substantive Fundamento Juridico Tercero holding, cross-checked against a third independent WebSearch converging on the same case metadata (recurso 3278/1999, ponente Xiol Rios, Audiencia Provincial de Asturias origin) without being prompted with those details. This session's own independent WebSearch further confirmed the case's core holding and reasoning."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-ESP-CIVIL-002",
+      "to": "AUTH-ESP-CIVIL-001",
+      "relationship": "APPLIES",
+      "verified_via": "STS 149/2007, Fundamento Juridico Tercero, per the researching agent's secondary-source corroboration and independently confirmed via WebSearch this session: polices art.1902's culpa requirement against pressure toward objectivised liability, confining burden-shifting to narrow, judicially-defined exceptions."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the fault-based boundary of extracontractual liability - Spain's second populated Authority Graph entry in this repository. Does not cover the specific strict-liability exceptions (extraordinary risk, defendant non-cooperation) in detail, vicarious liability under art.1903, or any other Spanish Civil Law subject - all remain unbuilt."
+}

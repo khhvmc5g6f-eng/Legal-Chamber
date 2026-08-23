@@ -1,0 +1,50 @@
+{
+  "$comment": "Spain, Labour Law (Derecho Laboral) - Article 55 ET's formal requirements for disciplinary dismissal, and the Tribunal Supremo's very recent (November 2024) construction holding that ILO Convention 158's prior-hearing requirement applies alongside it via direct applicability. This is a genuine, very recent doctrinal shift (the court itself says it is 'rectifying' its own prior doctrine), captured while current.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Estatuto de los Trabajadores art.55 - boe.es returned ECONNREFUSED across six distinct URL attempts; corroborated via three independent secondary sources agreeing verbatim, elevated by the Tribunal Supremo's own verbatim quotation of the same text inside the judgment being used as the case node, and independently confirmed via WebSearch this session. STS 1250/2024 - the official Poder Judicial/CGPJ press page was fetched directly for case identification and holding summary; the verbatim Fundamento Juridico quotes came from a third-party-hosted reproduction of the CENDOJ export after CENDOJ's own document viewer would not render full text, independently confirmed in substance via WebSearch this session.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-ESP-LABOUR-001",
+      "authority_type": "statute",
+      "name": "Estatuto de los Trabajadores, articulo 55",
+      "citation": "Real Decreto Legislativo 2/2015, de 23 de octubre (texto refundido del Estatuto de los Trabajadores), art.55",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "spain",
+      "date": "2015",
+      "date_note": "Enactment year of the consolidated text. Not independently re-fetched from BOE this session due to a persistent connection-level block - see verification_note.",
+      "proposition": "A disciplinary dismissal (despido disciplinario) must be notified to the worker in writing, stating the facts giving rise to it and the effective date; collective agreements may add further formal requirements, and heightened procedures apply to worker representatives and union-affiliated employees (art.55.1). If formal requirements are not met, the employer has a 20-day window to re-issue a compliant dismissal (art.55.2). Dismissal is classified as fair (procedente), unfair (improcedente), or void (nulo) - fair only if the alleged breach is proven and the form was respected (art.55.3-4); a fair dismissal validates termination without severance or back pay (art.55.7). The article does not itself contain any general duty to hear the worker before dismissal.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.boe.es",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "boe.es returned ECONNREFUSED across six distinct URL paths tried by the researching agent. The exact text was corroborated via three independent secondary sources (Iberley, Sede Judicial, Conceptos Juridicos) agreeing verbatim, and elevated by the Tribunal Supremo's own verbatim quotation of art.55.1-.2 inside STS 1250/2024's Fundamento Juridico Tercero.5 - a primary judicial source reproducing the statutory text for construction purposes. This session's own independent WebSearch further confirmed the article's structure and current relevance."
+    },
+    {
+      "authority_id": "AUTH-ESP-LABOUR-002",
+      "authority_type": "case",
+      "name": "Sentencia del Tribunal Supremo 1250/2024",
+      "citation": "STS (Sala de lo Social, Pleno) 1250/2024, de 18 de noviembre de 2024; ECLI:ES:TS:2024:5454",
+      "court": "Tribunal Supremo (Sala de lo Social, Pleno)",
+      "jurisdiction": "spain",
+      "date": "2024-11-18",
+      "judge_or_panel": "Ponente: Maria Luz Garcia Paredes (en Pleno)",
+      "proposition": "Construes art.55.1's silence on any general prior-hearing duty: Article 7 of ILO Convention 158 (ratified by Spain and directly applicable under art.96 of the Constitution) supplies an additional, generally applicable requirement that the worker be given a genuine opportunity to defend against the charges before a disciplinary dismissal, which art.55.1 ET does not itself contain. The court expressly describes this as 'rectifying' its own prior doctrine. A dismissal effected without such a hearing will not satisfy the formal requirements for a dismissal to be declared procedente under art.55.4, subject only to the Convention's own exception where prior hearing 'cannot reasonably be required of the employer' - which the court held applied to dismissals predating this judgment, since prior case law did not require the hearing. [English: going forward, Spanish employers must generally give a worker a genuine opportunity to respond to disciplinary allegations before dismissal, even though this is not written into the domestic statute itself.]",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.poderjudicial.es",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The official Poder Judicial/CGPJ press page was fetched directly by the researching agent for case identification and holding summary (VERIFIED_PRIMARY_SOURCE tier for that part). CENDOJ's own document viewer at poderjudicial.es/search would not render full text (search-UI shell only), so the verbatim Fundamento Juridico quotes (Tercero.3, Tercero.5, Tercero.7, Tercero.9) came from a third-party-hosted reproduction of the CENDOJ export, internally self-consistent (Roj/ECLI/Id Cendoj header block matched the officially reported case) but not a direct primary-source fetch of that specific text - recorded at VERIFIED_SECONDARY_SOURCE accordingly. This session's own independent WebSearch corroborated the core holding, including the doctrinal-shift and temporal-exception points, via multiple genuine academic and law-firm sources."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-ESP-LABOUR-002",
+      "to": "AUTH-ESP-LABOUR-001",
+      "relationship": "APPLIES",
+      "verified_via": "STS 1250/2024, Fundamento Juridico Tercero.3, .5, .7, .9, per the researching agent's mixed primary/secondary sourcing and independently confirmed via WebSearch this session: holds ILO Convention 158's prior-hearing requirement applies alongside art.55 ET's formal requirements via direct applicability, expressly rectifying prior Tribunal Supremo doctrine."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the prior-hearing requirement newly read into disciplinary dismissal law - Spain's third populated Authority Graph entry in this repository. Does not cover collective dismissal (despido colectivo) procedures, the severance/indemnizacion calculation itself, or any other Spanish Labour Law subject - all remain unbuilt."
+}
