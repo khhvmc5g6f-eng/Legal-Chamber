@@ -1,0 +1,50 @@
+{
+  "$comment": "Scotland, Agricultural Law - crofting, a genuinely unique feature of Scots law with no equivalent anywhere in England & Wales: a distinctive small-scale land tenure regulated by its own dedicated tribunal, the Scottish Land Court. Note the correct short title is the Crofters (Scotland) Act 1993, not 'Crofting (Scotland) Act 1993' as sometimes assumed. A Crofting and Scottish Land Court Act 2026 (asp 17, Royal Assent 18 May 2026) will reform this area and merge the Land Court with the Lands Tribunal for Scotland - not yet reflected in the operative text verified this session, flagged for future attention.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Crofters (Scotland) Act 1993 ss.12-13 fetched live and directly from legislation.gov.uk, independently re-fetched by the orchestrating session and word-for-word consistent. Malone v Pattinson, Scottish Land Court SLC/39/17, fetched live directly from the Scottish Land Court's own site via a genuine browser session, independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on the key holding.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-AGRICULTURAL-001",
+      "authority_type": "statute",
+      "name": "Crofters (Scotland) Act 1993, sections 12-13",
+      "citation": "Crofters (Scotland) Act 1993, s.12(1), s.13(1)-(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "scotland",
+      "date": "1993-01-01",
+      "date_note": "Consolidating Act, in force 1993. The Crofting Reform (Scotland) Act 2010 later inserted residency/cultivation duties (ss.5AA-5C) elsewhere in the Act, relevant context for the paired case below. A further Crofting and Scottish Land Court Act 2026 received Royal Assent 18 May 2026 but its reforms are not yet reflected in the text verified this session.",
+      "proposition": "A crofter may, failing agreement with the landlord, apply to the Scottish Land Court for an order authorising acquisition of the croft land tenanted by him (s.12(1)). The Land Court may authorise the acquisition, subject to agreed or Court-specified terms including the price, or refuse the application (s.13(1)). The Court must refuse if satisfied by the landlord either that the order would cause the landlord a substantial degree of hardship (s.13(2)(a)), or that it would be substantially detrimental to the interests of sound management of the landlord's estate (s.13(2)(b)) - these are the only two statutory grounds on which a right-to-buy application can be defeated.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1993/44/section/13",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from legislation.gov.uk by the researching agent (multiple independent passes), independently re-fetched by the orchestrating session and word-for-word consistent on s.13(2)(a) and (2)(b)."
+    },
+    {
+      "authority_id": "AUTH-SCOT-AGRICULTURAL-002",
+      "authority_type": "case",
+      "name": "Malone v Pattinson",
+      "citation": "Malone v Pattinson, Scottish Land Court, Case Ref SLC/39/17; 2018 SLCR 90",
+      "court": "Scottish Land Court",
+      "jurisdiction": "scotland",
+      "date": "2018-10-10",
+      "judge_or_panel": "Iain F Maclean, Deputy Chairman, and Tom Campbell",
+      "proposition": "Applies the s.13(2) hardship/sound-management defences to a landlord's opposition to a crofter's right-to-buy application, where the landlord's central argument was that the crofter was in breach of the residency/cultivation duties inserted by the Crofting Reform (Scotland) Act 2010, making the order substantially detrimental to sound estate management under s.13(2)(b). The Land Court held, para 81: 'The Respondent, for the reasons given, having failed to satisfy us as to either of the matters set out in paragraphs (a) and (b) of section 13(2) of the 1993 Act, we repel the Respondent's five pleas in law and make an order authorising the Applicant in terms of section 13(1)(a) of the 1993 Act to acquire the croft land at Croft 305 tenanted by him' - allowing 42 days for the parties to agree the acquisition's terms and price. This is the Land Court's own leading construction of the statutory hardship/sound-management defences.",
+      "treatment": "APPLIED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "http://www.scottish-land-court.org.uk/decisions/SLC.39.17.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent via a genuine browser session at the Scottish Land Court's own official site (a plain WebFetch attempt returned a TLS certificate mismatch, not a CAPTCHA or bot-block; the browser tool itself, not a proxy, succeeded). Independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on paragraph 81's operative holding."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-AGRICULTURAL-002",
+      "to": "AUTH-SCOT-AGRICULTURAL-001",
+      "relationship": "APPLIES",
+      "verified_via": "Malone v Pattinson, SLC/39/17, paragraph 81, fetched via a genuine browser session at the Scottish Land Court's own site and independently re-confirmed: applies s.13(2)'s hardship/sound-management defences, rejecting both and granting the crofter's right-to-buy application."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the crofter's statutory right to buy and its hardship/sound-management defences, as construed by the Scottish Land Court itself. Does not cover the definition of croft/crofter under s.3, the statutory-condition-breach complaint procedure under s.5A, general agricultural tenancies outside crofting, or the forthcoming Crofting and Scottish Land Court Act 2026's reforms - all remain unbuilt or unverified."
+}

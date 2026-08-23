@@ -1,0 +1,50 @@
+{
+  "$comment": "Scotland, Mental Health Law - the criteria for a Compulsory Treatment Order (CTO) under the Mental Health (Care and Treatment) (Scotland) Act 2003, a genuinely distinct statutory scheme from England & Wales's Mental Health Act 1983, with its own tribunal (the Mental Health Tribunal for Scotland). The paired case's specific paragraph-level reasoning sits on redaction-flattened image pages of the source PDF that the orchestrating session's own PDF-text-extraction tools could not read - the case's identity, date, statutory basis, and disposal were independently confirmed from the document's readable pages, but the exact wording of the s.64(5)(d) reasoning quoted below rests on the researching agent's own read via a rendered browser session, not independently re-extracted character-for-character by the orchestrating session.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Mental Health (Care and Treatment) (Scotland) Act 2003 s.64(5) fetched live and directly from legislation.gov.uk, independently re-fetched by the orchestrating session and word-for-word consistent. Mental Health Tribunal for Scotland decision MHTS/4/26/04/01073/S063 fetched live and directly as a PDF from the Tribunal's own official domain; the orchestrating session independently re-fetched the same PDF and confirmed the case reference, date, and disposal from its readable pages, but could not independently re-extract the specific paragraph-level reasoning quoted below, which sits on image-only pages in the PDF's text layer.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-MENTALHEALTH-001",
+      "authority_type": "statute",
+      "name": "Mental Health (Care and Treatment) (Scotland) Act 2003, section 64(5)",
+      "citation": "Mental Health (Care and Treatment) (Scotland) Act 2003, s.64(5)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "scotland",
+      "date": "2005-10-05",
+      "date_note": "The 2003 Act's main provisions, including s.64, came into force 5 October 2005. A 2015 amending Act (asp 9) inserted further subsections (8A)/(8B) not affecting the s.64(5) criteria quoted here; the version verified this session is the current text.",
+      "proposition": "The Mental Health Tribunal for Scotland may make a Compulsory Treatment Order only if satisfied of six conditions: (a) the patient has a mental disorder; (b) medical treatment likely to prevent the disorder worsening or alleviate its symptoms/effects is available; (c) without such treatment there would be a significant risk to the patient's health, safety, or welfare, or to another person's safety; (d) because of the mental disorder, the patient's ability to make decisions about that treatment is significantly impaired; (e) making the order is necessary; and (f) where hospital detention is not considered necessary, such other conditions as regulations specify.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/asp/2003/13/section/64",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from legislation.gov.uk by the researching agent, independently re-fetched by the orchestrating session and word-for-word consistent on subsection (5)(a)-(f) in full."
+    },
+    {
+      "authority_id": "AUTH-SCOT-MENTALHEALTH-002",
+      "authority_type": "case",
+      "name": "Mental Health Tribunal for Scotland decision (S63 CTO application)",
+      "citation": "Mental Health Tribunal for Scotland, Case No MHTS/4/26/04/01073/S063, Full Findings and Reasons, hearing 6 May 2026",
+      "court": "Mental Health Tribunal for Scotland",
+      "jurisdiction": "scotland",
+      "date": "2026-05-06",
+      "judge_or_panel": "Convener, Medical Member, General Member (names redacted in the published decision)",
+      "proposition": "Applies the s.64(5) criteria to a first-hearing s.63 CTO application, contested specifically on the s.64(5)(d) significantly-impaired-decision-making criterion by the patient's curator ad litem. The Tribunal found: 'Owing to her learning disability, [patient's] ability to make decisions about the provision of medical treatment is significantly impaired. She has very limited insight into either her physical or mental health. She is unable to take in information, retain information and weigh information up' (para 24), and that a hospital-based CTO was 'necessary and the least restrictive option' given the patient's inability to give informed consent to her care and treatment (para 25). The Tribunal unanimously granted the CTO with measures under s.66(1)(a) and (b) for six months (para 26), confirmed on the readable pages of the decision as: 'The tribunal decided to grant the application and made a CTO with measures under section 66(1)(a) and (b) of the 2003 Act for 6 months.'",
+      "treatment": "APPLIED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://www.mhtscotland.gov.uk/media/0npn0kw2/2_ms_ffr_01073_s063_redacted.pdf",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent as a PDF from the Mental Health Tribunal for Scotland's own official domain, read directly (not via a lossy web-summarization pass). Independently re-fetched by the orchestrating session, which confirmed the case reference (MHTS/4/26/04/01073/S063), hearing date (6 May 2026), and disposal (CTO granted, s.66(1)(a)-(b), 6 months) word-for-word from the PDF's readable pages (paras 1-10) - but could not independently re-extract the specific paragraph 24-26 reasoning quotes, which sit on pages the orchestrating session's PDF-text-extraction tools (pypdf, pdfplumber) read as empty, evidently because those pages are redaction-flattened images rather than a text layer. The researching agent's own quotes for those paragraphs are recorded as reported, not independently re-verified character-for-character."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-MENTALHEALTH-002",
+      "to": "AUTH-SCOT-MENTALHEALTH-001",
+      "relationship": "APPLIES",
+      "verified_via": "Mental Health Tribunal for Scotland decision MHTS/4/26/04/01073/S063, paragraphs 24-26, fetched directly as a PDF from the Tribunal's own site: applies the s.64(5)(d) significantly-impaired-decision-making criterion and s.64(5)(e) necessity criterion, granting a hospital-based CTO."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the CTO criteria and a first-instance tribunal application of the significantly-impaired-decision-making ground. The tribunal decision's PERSUASIVE (not BINDING) authority_weight reflects that a first-instance Tribunal decision does not bind other Tribunal panels. Does not cover short-term detention certificates (a distinct, lower threshold under s.44), appeals to the Court of Session/Sheriff Principal, or any other Scots mental-health-law subject - all remain unbuilt. Three candidate appellate cases investigated by the researching agent (MH v MHTS [2019] CSIH 28, LA v MHTS (Sheriff Principal, 2011), G v MHTS [2011] CSIH 55) were found not squarely on point (constitution/remote-hearing, short-term-detention criteria, and excessive-security-transfer issues respectively) and were not used, reported honestly rather than force-fitted."
+}

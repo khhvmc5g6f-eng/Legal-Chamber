@@ -1,0 +1,50 @@
+{
+  "$comment": "Scotland, Criminal Procedure - the solemn/summary mode-of-trial classification under the Criminal Procedure (Scotland) Act 1995 s.292, and the constitutional/common-law 'master of the instance' doctrine underlying the prosecutor's control of criminal process, structurally distinct from England & Wales's either-way-offence election system (a Scottish accused has no statutory right to elect jury trial). Honest scoping note: s.292 fixes which category an offence falls into but does not itself state in terms that the prosecutor selects the forum - that allocation is long-settled common-law/constitutional practice, not codified in a single section. The researching agent searched extensively and could not find a case squarely on forum-election itself, so this entry pairs s.292 with a case on the closely related 'master of the instance' doctrine generally, scoped accurately rather than mis-described.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Criminal Procedure (Scotland) Act 1995 s.292 fetched live and directly from legislation.gov.uk, independently re-fetched by the orchestrating session and word-for-word consistent. Arthur v HM Advocate [2002] ScotHC 324 fetched live directly from bailii.org via a genuine browser session, independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on the key quotation.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-CRIMPROC-001",
+      "authority_type": "statute",
+      "name": "Criminal Procedure (Scotland) Act 1995, section 292",
+      "citation": "Criminal Procedure (Scotland) Act 1995, s.292(1) and (4)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "scotland",
+      "date": "1995-11-08",
+      "date_note": "Royal Assent date. Subsection (3) was repealed with effect from 10 December 2007; the version verified this session is the current text.",
+      "proposition": "Fixes the mode-of-trial classification for offences: those in Schedule 10 are triable only summarily, subject to subsection (6) (s.292(1)); a statutory offence is summary-only if the creating enactment so provides, or (subject to exceptions) if created by an Act passed on or before 29 July 1977 with a penalty below specified thresholds (s.292(2)); a statutory offence triable only on indictment continues to be so triable (s.292(4)); otherwise a statutory offence is triable either way if the enactment so provides or neither subsection (2) nor (4) applies (s.292(5)). This provision fixes which category an offence falls into - it does not itself state that the prosecutor chooses the forum for either-way offences; that allocation power rests on long-settled common-law/constitutional practice (the Lord Advocate/procurator fiscal as 'master of the instance'), not a single codifying section.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1995/46/section/292",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from legislation.gov.uk by the researching agent, independently re-fetched by the orchestrating session and word-for-word consistent on subsections (1) and (4)."
+    },
+    {
+      "authority_id": "AUTH-SCOT-CRIMPROC-002",
+      "authority_type": "case",
+      "name": "Arthur v HM Advocate",
+      "citation": "Arthur v HM Advocate [2002] ScotHC 324",
+      "court": "High Court of Justiciary, Appeal Court",
+      "jurisdiction": "scotland",
+      "date": "2002-11-22",
+      "judge_or_panel": "Lord Justice General, Lord Hamilton, Lord Kingarth",
+      "proposition": "Confirms the 'master of the instance' doctrine as live Scots law governing the Crown's control of criminal process, quoting Hume on Crimes ii, 134: 'The Lord Advocate is master of his instance in this other sense, that even after he has brought his libel into Court, it is a matter at his discretion, to what extent or effect he will insist against the pannel; and he may freely, at any period of the process, before return of the verdict, nay after it has been returned, restrict his libel to an arbitrary punishment in the clearest case even of a capital crime.' This is applied in Arthur to the prosecutor's discretion over sentencing submissions after verdict, not to forum election specifically - it is cited here as the constitutional foundation for prosecutorial control of Scottish criminal process generally, of which the mode-of-trial classification in s.292 forms one part, rather than as authority directly on the forum-election question. Scoped honestly: no case squarely construing 'the accused has no right to elect jury trial' was found reachable this session, and none is force-fitted here.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/scot/cases/ScotHC/2002/324.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent via a genuine browser session at bailii.org, the full judgment retrieved and read. Independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on the Hume quotation."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-CRIMPROC-002",
+      "to": "AUTH-SCOT-CRIMPROC-001",
+      "relationship": "OTHER",
+      "verified_via": "Arthur v HM Advocate [2002] ScotHC 324, fetched via a genuine browser session at bailii.org and independently re-confirmed: establishes the general 'master of the instance' doctrine underlying the constitutional/common-law practice of prosecutorial control of criminal process, of which s.292's mode-of-trial classification is one statutory component - not a direct construction of s.292 itself, deliberately marked OTHER rather than APPLIES to reflect the honest scoping gap."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the mode-of-trial classification and the constitutional doctrine of prosecutorial control that underlies forum allocation for either-way offences. This is explicitly NOT a case squarely on forum election itself - a genuine gap in reachable case law, reported honestly (see $comment) rather than force-fitted with a mismatched citation. Does not cover Schedule 10's specific offence list, the either-way classification criteria in detail, or any other Scots criminal-procedure subject beyond this - all remain unbuilt."
+}

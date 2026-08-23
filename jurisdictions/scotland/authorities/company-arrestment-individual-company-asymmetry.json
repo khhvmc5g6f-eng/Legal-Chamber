@@ -1,0 +1,50 @@
+{
+  "$comment": "Scotland, Company Law - diligence (Scots enforcement of debts/court orders) against a company's assets via arrestment, the Scots equivalent of a third-party debt order/garnishee, with a genuinely distinctive individual/company asymmetry: an individual debtor's bank account gets a statutory minimum-balance protection that a company's account does not. Genuinely different procedure from England & Wales's third-party-debt-order regime under the CPR.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Debtors (Scotland) Act 1987 ss.73E-73F (as inserted by the Bankruptcy and Diligence etc. (Scotland) Act 2007 s.206) fetched live and directly from legislation.gov.uk, independently re-fetched by the orchestrating session and word-for-word consistent. Anwar v The Advocate General for Scotland [2021] UKSC 44 fetched live directly from bailii.org via a genuine browser session, independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on the key facts.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-COMPANY-001",
+      "authority_type": "statute",
+      "name": "Debtors (Scotland) Act 1987, sections 73E-73F",
+      "citation": "Debtors (Scotland) Act 1987, s.73E, s.73F (both inserted by the Bankruptcy and Diligence etc. (Scotland) Act 2007, s.206)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "scotland",
+      "date": "2007-01-01",
+      "date_note": "The 2007 Act inserted Part 3A (ss.73A-73T) into the 1987 Act; the operative mechanism for arrestment of funds due by a third party lives in this inserted Part, not in the 2007 Act's own numbering. The text verified this session is the current consolidated version.",
+      "proposition": "Section 73E sets the sum an arrestment attaches: the lesser of the sum the arrestee owes the debtor, or the aggregate of the principal sum, expenses, and interest owed by the debtor to the creditor (s.73E(1)-(2)). Section 73F then creates a genuinely distinctive individual/company asymmetry: where an arrestment attaches funds in a bank account held by an INDIVIDUAL debtor, the arrestment attaches only the balance above £1,000, or no funds at all if the balance is below that sum (s.73F(1), (3)). This protection does not apply where the account is held in the name of a company, LLP, partnership, or unincorporated association, or operated as a trading account (s.73F(2)) - a company's account has no statutory minimum-balance floor at all, exposing the whole balance (up to the s.73E(2) sum) to arrestment. No equivalent concept exists in England & Wales's CPR third-party-debt-order regime.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1987/18/section/73F",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from legislation.gov.uk by the researching agent (cross-checked against two URLs, word-for-word identical), independently re-fetched by the orchestrating session and word-for-word consistent on s.73F(2) and (3)."
+    },
+    {
+      "authority_id": "AUTH-SCOT-COMPANY-002",
+      "authority_type": "case",
+      "name": "Anwar v The Advocate General for Scotland",
+      "citation": "Anwar v The Advocate General for Scotland [2021] UKSC 44; on appeal from [2019] CSIH 43, 2020 SC 95",
+      "court": "UK Supreme Court, on a Scottish appeal from the Inner House of the Court of Session",
+      "jurisdiction": "scotland",
+      "date": "2021-10-13",
+      "judge_or_panel": "Lord Hodge, delivering the leading judgment",
+      "proposition": "Supplies a real fact pattern of arrestment executed against a company's bank account, illustrating s.73F(2)'s exclusion in practice: the appellant, having obtained an employment tribunal award of £74,647.96 against a charity ('Roshni', a company limited by guarantee), instructed sheriff officers to arrest the charity's funds at its bank - 'he was later informed that the arrestment had attached only £2967.32' (para 7), despite Roshni having over £68,000 in the account shortly before. The Court traces this shortfall to the absence of a diligence-on-the-dependence power in the employment tribunal itself, and to Karl Construction Ltd v Palisade Properties plc 2002 SC 270's article-1-protocol-1 proportionality test (quoted at para 18) as the trigger for the Scottish Parliament's 2007 Act reforms creating the parallel dependence-arrestment regime in ss.15A-15N of the 1987 Act. The Court dismissed the appeal, holding that the unavailability of diligence-on-the-dependence power in the tribunal itself did not breach EU-law effectiveness/equivalence principles, since a claimant could bring separate Court of Session/sheriff court proceedings solely to obtain the warrant.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKSC/2021/44.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent via a genuine browser session at bailii.org, the full judgment retrieved and read. Independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on paragraph 7's key fact (the £2967.32 arrestment shortfall)."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-COMPANY-002",
+      "to": "AUTH-SCOT-COMPANY-001",
+      "relationship": "OTHER",
+      "verified_via": "Anwar v The Advocate General for Scotland [2021] UKSC 44, paragraph 7, fetched via a genuine browser session at bailii.org and independently re-confirmed: illustrates arrestment against a company's bank account in practice, though the Court's own holding concerns diligence-on-the-dependence in employment tribunal proceedings rather than construing s.73E/73F directly - marked OTHER rather than APPLIES to reflect that the statutory provision and the case's central holding are adjacent, not directly construing each other."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the arrestment-attachment mechanism and its individual/company asymmetry, illustrated by a real company-arrestment fact pattern. Karl Construction Ltd v Palisade Properties plc 2002 SC 270 (the case that triggered the 2007 Act reforms) is quoted only as reproduced inside the Anwar judgment, not independently fetched as its own node in this file. Does not cover inhibition (the Scots equivalent of a freezing order against heritable property), directors' duties, or any other Scots company-law subject - all remain unbuilt."
+}
