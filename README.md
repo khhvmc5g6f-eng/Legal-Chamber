@@ -2,6 +2,10 @@
 
 ![Legal Chambers](docs/assets/banner.png)
 
+[![CI](https://github.com/khhvmc5g6f-eng/legal-chamber/actions/workflows/ci.yml/badge.svg)](https://github.com/khhvmc5g6f-eng/legal-chamber/actions/workflows/ci.yml)
+[![Licence: BUSL-1.1](https://img.shields.io/badge/licence-BUSL--1.1-blue)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](.github/workflows/ci.yml)
+
 Global legal intelligence, research, drafting, evidence, litigation, transaction, academic, and adversarial reasoning system, built as a Claude Code Agent Skill / plugin. Current version: **0.1.7** - see [`CHANGELOG.md`](CHANGELOG.md) for the full version history.
 
 Primary router skill: **`legal-work`**
