@@ -1,0 +1,50 @@
+{
+  "$comment": "France, Criminal Law (Droit penal) - the two-part legitime defense test under article 122-5, and its application to a law-enforcement officer's use of lethal force against an armed detainee. Legifrance blocked a direct curl fetch of the judgment with HTTP 403, though WebFetch itself succeeded through a different access path; the researching agent flagged this honestly and cross-checked the WebFetch output for internal consistency across two separate re-queries rather than trusting a single pass.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Code penal art.122-5 fetched live and directly from legifrance.gouv.fr, independently re-fetched and word-for-word consistent on both attempts. Cass. crim., 9 janvier 2018, n.16-86.552 fetched live and directly from legifrance.gouv.fr's jurisprudence database (a direct curl attempt separately returned HTTP 403, though WebFetch succeeded), independently re-fetched this session with the dispositif and the force-progression narrative confirmed consistent.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-FRA-CRIMINAL-001",
+      "authority_type": "statute",
+      "name": "Code penal, article 122-5",
+      "citation": "Code penal, art.122-5",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "france",
+      "date": "1994-03-01",
+      "date_note": "Date this version came into force. The text verified this session is the current in-force version.",
+      "proposition": "N'est pas penalement responsable la personne qui, devant une atteinte injustifiee envers elle-meme ou autrui, accomplit, dans le meme temps, un acte commande par la necessite de la legitime defense d'elle-meme ou d'autrui, sauf s'il y a disproportion entre les moyens de defense employes et la gravite de l'atteinte. [English: a person is not criminally liable who, faced with an unjustified attack on themselves or another, at that same moment commits an act required by the necessity of self-defence - unless there is a disproportion between the defensive means used and the seriousness of the attack.] A second paragraph (not independently re-quoted in full here) sets an analogous, stricter defence-of-property rule excluding intentional homicide.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006417218",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-FRA-CRIMINAL-002",
+      "authority_type": "case",
+      "name": "Cass., chambre criminelle, 9 janvier 2018",
+      "citation": "Cass. crim., 9 janvier 2018, n.16-86.552, Publie au bulletin; ECLI:FR:CCASS:2018:CR03145",
+      "court": "Cour de cassation, chambre criminelle",
+      "jurisdiction": "france",
+      "date": "2018-01-09",
+      "judge_or_panel": "Chambre criminelle",
+      "proposition": "Applies art.122-5's proportionality/necessity test to lethal force used by a law-enforcement officer: a single fatal gunshot fired by a gendarme was justified self-defence where he had exhausted lesser means first - stopping the vehicle, drawing and pointing his weapon with warnings, holstering it and attempting physical extraction, then using his baton without success - and fired only when his colleague faced imminent mortal danger from a handcuffed detainee who had partially drawn her service weapon. The 'no disproportion' requirement was satisfied because lethal force was the last remaining option against an imminent, ongoing lethal threat. REJETTE le pourvoi.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000036635093/",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, independently re-fetched - both fetches consistent on the dispositif ('REJETTE le pourvoi') and the force-progression narrative (warnings, holstering, attempted extraction, baton, then a single shot), though the exact sentence boundaries quoted varied slightly between fetches - a normal artifact of summarization on a long, unnumbered classical-style judgment ('Attendu que' paragraphs), not a substantive discrepancy. Corroborated by the researching agent via three further independent secondary sources (Dalloz Actualite, Lexbase, Juricaf) agreeing on case number, date, and holding. A direct curl attempt to the same URL separately returned HTTP 403 (site blocks non-browser user agents); WebFetch itself succeeded, and this session's own independent WebFetch re-attempt also succeeded, so this is not treated as a genuine access block requiring a lower verification tier."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-FRA-CRIMINAL-002",
+      "to": "AUTH-FRA-CRIMINAL-001",
+      "relationship": "APPLIES",
+      "verified_via": "Cass. crim., 9 janvier 2018, n.16-86.552, fetched directly from legifrance.gouv.fr's jurisprudence database and independently re-confirmed: applies art.122-5's necessity/proportionality test to a law-enforcement officer's lethal force, finding no disproportion where lesser means had been exhausted against an imminent lethal threat."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the necessity/proportionality test for self-defence, applied in a law-enforcement lethal-force context. Does not cover the defence-of-property second paragraph in detail, the etat de necessite (necessity) defence under art.122-7, or any other French Criminal Law subject - all remain unbuilt."
+}

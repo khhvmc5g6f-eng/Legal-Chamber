@@ -1,0 +1,27 @@
+{
+  "$comment": "France, Administrative Law - the detournement de pouvoir (misuse of power) ground of judicial review, one of the four classic grounds of the recours pour exces de pouvoir, alongside incompetence, vice de forme/procedure, and violation de la loi. A genuinely distinctive feature of French law with no direct common-law equivalent: a separate administrative court order (Conseil d'Etat at its apex) with its own body of judge-made doctrine for claims against public administration. Deliberately a single-node, zero-edge entry: the foundational 1875 arret both establishes and applies the doctrine in the same judgment, so there is no separate second node to pair it with. The researching agent found and corrected two real issues before finalising this entry: the case's doctrinal name 'Pariset' does not appear anywhere in the primary Legifrance text (the applicant is anonymised as 'le sieur X...'), and a second candidate case (Barel, CE Ass. 1954) was investigated and correctly rejected because its actual annulment ground, verified directly against the primary text, is erreur de droit, not detournement de pouvoir - a genuinely different ground that would have mischaracterised the case if used here.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Conseil d'Etat, 26 novembre 1875, n.47544 (known in doctrine as 'Pariset') fetched live and directly from legifrance.gouv.fr, independently re-fetched and word-for-word consistent on the key considerant and the dispositif.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-FRA-ADMIN-001",
+      "authority_type": "case",
+      "name": "Conseil d'Etat, 26 novembre 1875 (arret 'Pariset')",
+      "citation": "CE, 26 novembre 1875, n.47544, publie au recueil Lebon",
+      "court": "Conseil d'Etat",
+      "jurisdiction": "france",
+      "date": "1875-11-26",
+      "date_note": "The doctrinal case name 'Pariset' does not appear in the primary Legifrance text - the applicant is anonymised there as 'le sieur X..., fabricant d'allumettes, demeurant a Saintines.' The name is a secondary-literature/casebook convention, recorded honestly rather than presented as text that appears in the primary source.",
+      "judge_or_panel": "Conseil d'Etat",
+      "proposition": "Establishes detournement de pouvoir as a freestanding ground of judicial review, distinct from incompetence or procedural defect: a prefect who genuinely possessed statutory police powers to order the closure of dangerous, unhealthy, or noxious establishments used that power to close a match factory not to protect the public-health interests those powers existed to safeguard, but on Finance Ministry instructions, in the interest of a state financial service - 'il a ainsi use des pouvoirs de police qui lui appartenaient sur les etablissements dangereux, incommodes ou insalubres pour un objet autre que celui a raison desquels ils lui etaient conferes.' [English: he thereby used police powers he genuinely held over dangerous, unhealthy or noxious establishments for a purpose other than that for which they were conferred on him.] Because the power was exercised for a purpose other than the one for which it was conferred, the order was annulled: 'L'arrete du prefet de l'Oise du 10 avril 1874 est annule pour exces de pouvoirs.' The judge thus looks past an act's formal legality to the true purpose actually pursued by its author.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legifrance.gouv.fr/ceta/id/CETATEXT000007633030/",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from legifrance.gouv.fr this session, independently re-fetched - both fetches word-for-word consistent on the key considerant (ministerial-instructions passage) and the dispositif. The researching agent fetched this successfully three separate times with identical wording each time (no 403/404/block encountered), a clean contrast to the access difficulties seen in Spain's research passes. Facts and holding further corroborated by two independent secondary sources via WebSearch, though several other secondary sources returned access blocks that were correctly not bypassed."
+    }
+  ],
+  "edges": [],
+  "what_this_is_not": "A single, deliberately narrow node establishing the detournement de pouvoir doctrine - both the origin and the application are in the same 1875 judgment, so no second node/edge is needed. Does not cover the other three classic grounds of recours pour exces de pouvoir (incompetence, vice de forme/procedure, violation de la loi - the latter including erreur de droit, illustrated by the rejected Barel candidate, not independently verified as a node in this file), the exces de pouvoir review standard generally, or any other French Administrative Law subject - all remain unbuilt."
+}

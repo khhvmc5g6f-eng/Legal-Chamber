@@ -1,0 +1,50 @@
+{
+  "$comment": "France, Civil Law (Responsabilite civile) - THE FIRST POPULATED AUTHORITY GRAPH ENTRY FOR FRANCE. Article 1240 Code civil's general fault-based extracontractual liability provision, and the Assemblee pleniere's construction of 'faute' as an objective standard not requiring the actor's subjective capacity to understand the consequences of their conduct - applied here to a 5-year-old child. Both nodes fetched cleanly from Legifrance with no access issues, a clean counterpoint to the access difficulties encountered in Spain's research passes.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Code civil art.1240 fetched live and directly from legifrance.gouv.fr, independently re-fetched and word-for-word consistent on both attempts. Cass., Assemblee pleniere, 9 mai 1984 (arret Derguini), n.80-93.481 fetched live and directly from legifrance.gouv.fr's jurisprudence database, independently re-fetched and word-for-word consistent on the holding quote.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-FRA-CIVIL-001",
+      "authority_type": "statute",
+      "name": "Code civil, article 1240",
+      "citation": "Code civil, art.1240 (formerly art.1382, renumbered without substantive change by Ordonnance n.2016-131 of 10 February 2016)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "france",
+      "date": "2016-10-01",
+      "date_note": "Date the renumbering to art.1240 took effect. The provision's substance dates to the original 1804 Code civil (as art.1382); the text verified this session is the current in-force version.",
+      "proposition": "Tout fait quelconque de l'homme, qui cause a autrui un dommage, oblige celui par la faute duquel il est arrive a le reparer. [English: any human act whatsoever that causes damage to another obliges the person by whose fault it occurred to make reparation for it - France's general, catch-all provision of extracontractual liability, requiring only fault (faute), damage (dommage), and a causal link (lien de causalite) between them.]",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041571",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-FRA-CIVIL-002",
+      "authority_type": "case",
+      "name": "Arret Derguini",
+      "citation": "Cass., Assemblee pleniere, 9 mai 1984, n.80-93.481, Publie au bulletin",
+      "court": "Cour de cassation, Assemblee pleniere",
+      "jurisdiction": "france",
+      "date": "1984-05-09",
+      "judge_or_panel": "Assemblee pleniere (the Cour de cassation's highest formation, empowered to resolve conflicts between lower courts and set doctrine)",
+      "proposition": "Construes the 'faute' element of art.1382 (now art.1240) objectively: liability for fault does not depend on the actor's subjective capacity to understand or foresee the consequences of their conduct. A 5-year-old child, struck by a car while crossing at a protected pedestrian crossing, was found to have committed a fault contributing to her own injury even though she lacked the capacity to discern (discernement) the consequences of her acts - 'la Cour d'appel, qui n'etait pas tenue de verifier si la mineure etait capable de discerner les consequences de tels actes, a pu, sans se contredire, retenir, sur le fondement de l'article 1382 du Code civil, que la victime avait commis une faute qui avait concouru... a la realisation du dommage.' [English: the Court of Appeal was not required to verify whether the minor was capable of discerning the consequences of her acts before finding, under article 1382, that she had committed a fault.] This ruling, alongside a companion decision the same day (arret Lemaire, not independently verified in this file) and later extended to the mentally incapacitated (arret Fullenwarth, Ass. plen., 9 mai 1984, not independently verified in this file), remains the foundational authority for the objective standard of fault under French delictual liability.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007013642/",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from legifrance.gouv.fr's jurisprudence database this session, independently re-fetched - both fetches word-for-word consistent on the holding quote. No ECLI identifier is displayed on the Legifrance record for this pre-ECLI-era 1984 judgment, consistent with that era's citation practice rather than an omission. The case's identity, formation, and doctrinal significance were also cross-checked against two independent secondary sources (legavox.fr, fiches-droit.com), both agreeing on the same date, formation, pourvoi number, and holding, though neither reproduces the verbatim attendu."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-FRA-CIVIL-002",
+      "to": "AUTH-FRA-CIVIL-001",
+      "relationship": "APPLIES",
+      "verified_via": "Arret Derguini, Cass. Ass. plen., 9 mai 1984, fetched directly from legifrance.gouv.fr's jurisprudence database and independently re-confirmed: construes art.1382/1240's fault requirement as an objective standard, not dependent on the actor's subjective capacity for discernement."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the objective fault standard under France's general extracontractual liability provision - France's first-ever populated Authority Graph entry in this repository. Does not cover the causation or damage elements in detail, vicarious/parental liability under art.1242, or any other French Civil Law subject - all remain unbuilt."
+}

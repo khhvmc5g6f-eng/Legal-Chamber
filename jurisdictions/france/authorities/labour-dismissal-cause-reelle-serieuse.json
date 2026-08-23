@@ -1,0 +1,50 @@
+{
+  "$comment": "France, Labour Law (Droit du travail) - the 'cause reelle et serieuse' (real and serious cause) threshold for personal-reason dismissal, and its very recent (June 2024) application holding that an employer's prior toleration of similar misconduct does not bar later reliance on it as dismissal grounds. Both nodes fetched cleanly from Legifrance with no access issues.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Code du travail art.L1232-1 fetched live and directly from legifrance.gouv.fr, independently re-fetched and word-for-word consistent on both attempts. Cass. soc., 12 juin 2024, n.23-14.292 fetched live and directly from legifrance.gouv.fr's jurisprudence database, independently re-fetched and word-for-word consistent on paragraph 10's key holding.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-FRA-LABOUR-001",
+      "authority_type": "statute",
+      "name": "Code du travail, article L1232-1",
+      "citation": "Code du travail, art.L1232-1",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "france",
+      "date": "2008-06-27",
+      "date_note": "Date this version came into force (Loi n.2008-596 du 25 juin 2008, art.4). The text verified this session is the current in-force version.",
+      "proposition": "Tout licenciement pour motif personnel est motive dans les conditions definies par le present chapitre. Il est justifie par une cause reelle et serieuse. [English: any dismissal for personal reasons must be given reasons in accordance with the conditions defined in this chapter, and must be justified by a real and serious cause - an objectively-established, sufficiently grave threshold, not mere suspicion or a disproportionate reaction.]",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019071126",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-FRA-LABOUR-002",
+      "authority_type": "case",
+      "name": "Cour de cassation, chambre sociale, 12 juin 2024",
+      "citation": "Cass. soc., 12 juin 2024, n.23-14.292, Publie au bulletin; ECLI:FR:CCASS:2024:SO00620",
+      "court": "Cour de cassation, chambre sociale",
+      "jurisdiction": "france",
+      "date": "2024-06-12",
+      "judge_or_panel": "Chambre sociale",
+      "proposition": "Construes 'cause reelle et serieuse' by fixing what counts as sufficiently grave misconduct and rejecting an employer's prior leniency as a legal bar to relying on it later. On the facts, an employee's repeated sexually-connoted, insulting, and degrading remarks toward two female colleagues constituted 'un comportement fautif constitutif d'une cause reelle et serieuse fondant le licenciement' [English: culpable conduct constituting a real and serious cause underpinning the dismissal] - regardless of the employer's prior attitude, given the employer's own statutory safety obligation toward workers' health and dignity (arts.L4121-1, L4121-2). The Court of Appeal's contrary finding, that the dismissal was disproportionate because the employer had previously tolerated similar remarks, was quashed as a failure to draw the legal consequences from its own factual findings.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000049733690",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from legifrance.gouv.fr this session, independently re-fetched - both fetches word-for-word consistent on paragraph 10's key holding quote."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-FRA-LABOUR-002",
+      "to": "AUTH-FRA-LABOUR-001",
+      "relationship": "APPLIES",
+      "verified_via": "Cass. soc., 12 juin 2024, n.23-14.292, paragraph 10, fetched directly from legifrance.gouv.fr and independently re-confirmed: construes art.L1232-1's cause-reelle-et-serieuse threshold as satisfied by repeated sexually offensive workplace remarks, regardless of the employer's prior toleration of similar conduct."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the cause-reelle-et-serieuse dismissal threshold and a very recent application to it. Does not cover the procedure requirements for dismissal, licenciement economique (economic dismissal), or any other French Labour Law subject - all remain unbuilt."
+}
