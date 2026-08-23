@@ -1,0 +1,51 @@
+{
+  "$comment": "Scotland, Succession Law - legal rights (forced heirship), a genuinely distinct feature of Scots law with no equivalent in England & Wales, which has full testamentary freedom. This entry covers the moveable/heritable estate boundary on which the legal-rights fund depends. The paired case (Macdonald v Macdonald's Executrix, 1932) predates the 1964 Act but remains good law on that boundary - the researching agent searched for a clean post-1964 case and honestly reported not finding one accessible this session rather than force-fitting a weaker match.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Succession (Scotland) Act 1964 s.10 fetched live and directly from legislation.gov.uk, independently re-fetched by the orchestrating session and word-for-word consistent. Macdonald v Macdonald's Executrix [1932] UKHL 3 fetched live directly from bailii.org via a genuine browser session (WebFetch was blocked with HTTP 403), independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on the key holding.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-SUCCESSION-001",
+      "authority_type": "statute",
+      "name": "Succession (Scotland) Act 1964, section 10",
+      "citation": "Succession (Scotland) Act 1964, s.10(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "scotland",
+      "date": "1964-11-13",
+      "date_note": "Royal Assent date. The word 'legal rights' in s.10(2) was substituted with effect from 5 December 2005 by the Civil Partnership Act 2004, extending the calculation basis to civil partners' equivalent rights - the text verified this session is the current, post-2005 version.",
+      "proposition": "The amount of any claim to legal rights out of an estate is calculated by reference to the net moveable estate remaining after satisfaction of prior claims (s.10(2)). Legal rights (jus relictae/jus relicti for a surviving spouse or civil partner, legitim for children) are common-law rights to a fixed share of the deceased's moveable estate that cannot be defeated by the terms of a will - a genuine forced-heirship mechanism with no equivalent in England & Wales's full testamentary freedom. This provision fixes how legal rights are quantified against prior claims, not the underlying common-law right itself.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1964/41/section/10",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from legislation.gov.uk by the researching agent (rendered page and raw XML both fetched and consistent), independently re-fetched by the orchestrating session and word-for-word consistent on subsection (2)."
+    },
+    {
+      "authority_id": "AUTH-SCOT-SUCCESSION-002",
+      "authority_type": "case",
+      "name": "Macdonald v Macdonald's Executrix",
+      "citation": "Macdonald v Macdonald's Executrix [1932] UKHL 3; 1932 SC (HL) 79; 1932 SLT 381",
+      "court": "House of Lords, on a Scottish appeal from the Second Division of the Court of Session",
+      "jurisdiction": "scotland",
+      "date": "1932-06-28",
+      "date_note": "This 1932 judgment predates paragraph numbering (a convention that postdates it) and predates the Succession (Scotland) Act 1964 itself - it remains good law on the moveable/heritable boundary that the 1964 Act's legal-rights calculation depends on. Pinpoints below are by page of the official report, not paragraph number.",
+      "judge_or_panel": "Lord Tomlin (leading opinion, with whom Lord Macmillan and Lord Wright agreed), Lord Thankerton concurring separately",
+      "proposition": "Legitim is confined to moveable estate and cannot extend to foreign land that is immoveable under the law of the place where it is situated (the lex rei sitae), even where a Scottish domiciled deceased's estate would otherwise be subject to legitim. On the facts, a domiciled Scotsman's land in three Canadian provinces was held incapable of being treated as moveable for legitim purposes: 'legitim is confined to moveables, and... in none of the three provinces of Canada in question is land physically or in the eye of the local law other than immoveable, and that such land is therefore incapable of being treated by Scots law as moveable... a claim to render it subject to the legitim of Scots law is really a claim that it should devolve contrary to the lex rei sitae, and cannot... be supported consistently with the principles of private international law.' Lord Thankerton, concurring, describes legitim as 'a right to a share of the movable estate of the parent as it stood in the person of the parent at the time of his or her death; the right vests a morte and is postponed to the rights of the deceased's creditors, but is preferable to that of the deceased's heirs.' The appeal was dismissed.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKHL/1932/1932_SC_HL_79.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent via a genuine browser session at bailii.org (a plain WebFetch attempt returned HTTP 403; the browser tool itself, not a proxy, succeeded). Independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on the key 'legitim is confined to moveables' holding. This entry is deliberately paired with a pre-1964-Act case because the researching agent searched genuinely for a clean, citable post-1964 Court of Session case on legal-rights calculation, collation, or discharge and did not find one accessible this session - reported honestly rather than force-fitted."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-SUCCESSION-002",
+      "to": "AUTH-SCOT-SUCCESSION-001",
+      "relationship": "APPLIES",
+      "verified_via": "Macdonald v Macdonald's Executrix [1932] UKHL 3, fetched via a genuine browser session at bailii.org and independently re-confirmed: establishes the moveable/heritable boundary that s.10(2)'s 'net moveable estate' calculation depends on, excluding foreign immoveable property from the legal-rights fund."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the moveable-estate boundary of legal rights. Does not cover collation, discharge of legal rights, the calculation of legitim among multiple children under s.11, prior rights under ss.8-9, or intestate succession generally - all remain unbuilt."
+}

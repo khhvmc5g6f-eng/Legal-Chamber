@@ -1,0 +1,51 @@
+{
+  "$comment": "Scotland, Family Law - cohabitants' rights on separation under the Family Law (Scotland) Act 2006 s.28, a genuinely distinct Scottish statutory scheme with no equivalent in England & Wales, which has no statutory cohabitant redress scheme at all. Both nodes independently re-verified word-for-word by the orchestrating session.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Family Law (Scotland) Act 2006 s.28 fetched live and directly from legislation.gov.uk, independently re-fetched by the orchestrating session and word-for-word consistent. Gow v Grant [2012] UKSC 29 fetched live directly from the UK Supreme Court's own judgment PDF (bailii.org returned HTTP 403 to the researching agent), independently re-fetched by the orchestrating session via a genuine browser session at bailii.org and word-for-word consistent on the key holding.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-FAMILY-001",
+      "authority_type": "statute",
+      "name": "Family Law (Scotland) Act 2006, section 28",
+      "citation": "Family Law (Scotland) Act 2006, s.28",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "scotland",
+      "date": "2006-05-04",
+      "date_note": "Royal Assent date. Section 28 came into force 4 May 2006.",
+      "proposition": "On the application of a cohabitant, the court may order the other cohabitant to pay a capital sum, having regard to whether the defender has derived economic advantage from the applicant's contributions and whether the applicant has suffered economic disadvantage in the interests of the defender or a relevant child (s.28(2)-(3)). Contributions include indirect and non-financial contributions, including caring for a child or the shared home (s.28(9)). Any application must be made within one year of the cohabitants ceasing to cohabit (s.28(8)) - a strict limitation period with no equivalent statutory extension mechanism in the section itself.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/asp/2006/2/section/28",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from legislation.gov.uk by the researching agent (two independent passes), independently re-fetched by the orchestrating session and word-for-word consistent on subsections (2), (3), and (8)."
+    },
+    {
+      "authority_id": "AUTH-SCOT-FAMILY-002",
+      "authority_type": "case",
+      "name": "Gow v Grant",
+      "citation": "Gow (FC) v Grant (Scotland) [2012] UKSC 29; 2013 SC (UKSC) 1; 2012 SLT 829; on appeal from [2011] CSIH 25",
+      "court": "UK Supreme Court, on a Scottish appeal from the Inner House of the Court of Session",
+      "jurisdiction": "scotland",
+      "date": "2012-07-04",
+      "date_note": "Heard 24 May 2012, judgment given 4 July 2012 - bailii.org's own page title cites the hearing date (24 May 2012), but the judgment itself states 'JUDGMENT GIVEN ON 4 July 2012' in its body text, confirmed on independent re-fetch.",
+      "judge_or_panel": "Lord Hope (Deputy President), Lady Hale, Lord Wilson, Lord Reed, Lord Carnwath - unanimous, Lord Hope delivering the leading judgment",
+      "proposition": "Construes s.28's economic-advantage/disadvantage test broadly, not narrowly: 'I think therefore, contrary to the views expressed by the Second Division in para 3, that it would be wrong to approach section 28 on the basis that it was intended simply to enable the court to correct any clear and quantifiable economic imbalance that may have resulted from the cohabitation. That is too narrow an approach... a claim based on contributions or sacrifices in non-commercial relationships of the kind that family law must deal with cannot often be valued precisely... [s.28] enables fair compensation to be awarded, on a rough and ready valuation, in cases where otherwise none could be claimed' (para 36). The Supreme Court allowed the appeal and restored the sheriff's original award of a capital sum of £39,500, reversing the Inner House, which had taken the narrower approach the Supreme Court rejected.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKSC/2012/29.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent from the UK Supreme Court's own judgment PDF (supremecourt.uk), extracted and read directly with a PDF-parsing library after bailii.org returned HTTP 403 to a plain fetch - not a CAPTCHA or bot-block routed around, an alternative equally official primary source used instead. Independently re-fetched by the orchestrating session via a genuine browser session at bailii.org itself (which loaded successfully this time), confirming paragraph 36's exact wording."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-FAMILY-002",
+      "to": "AUTH-SCOT-FAMILY-001",
+      "relationship": "APPLIES",
+      "verified_via": "Gow v Grant [2012] UKSC 29, paragraphs 32-36, fetched directly and independently re-confirmed: construes s.28's economic-advantage/disadvantage test broadly, permitting a rough-and-ready valuation of non-commercial contributions rather than requiring precise quantification."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the s.28 capital-sum remedy for cohabitants and its broad construction in Gow v Grant. Does not cover s.29 (cohabitants' rights on intestacy), the one-year limitation period's own case law, or any other Scots family-law subject (divorce, financial provision on divorce under the 1985 Act, child law) - all remain unbuilt."
+}

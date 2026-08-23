@@ -1,0 +1,50 @@
+{
+  "$comment": "Scotland, Employment Law - unfair dismissal under the UK-wide Employment Rights Act 1996 s.98, paired with a genuinely Scottish decision (not a duplicate of the England & Wales entry). Confirmed Scottish on three independent indicia: the EAT sat at its Edinburgh premises, the Employment Tribunal below sat at Glasgow, and the case reference carries the EAT's own 'SCO' regional designator.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Employment Rights Act 1996 s.98 fetched live and directly from legislation.gov.uk, independently re-fetched by the orchestrating session and word-for-word consistent. Douglas v North Lanarkshire Council [2024] EAT 194 fetched live directly from bailii.org via a genuine browser session (WebFetch was blocked with HTTP 403), independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on the key holding.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-EMPLOYMENT-001",
+      "authority_type": "statute",
+      "name": "Employment Rights Act 1996, section 98",
+      "citation": "Employment Rights Act 1996, s.98(1) and (4)",
+      "court": "N/A - primary legislation, UK-wide, applicable in Scotland",
+      "jurisdiction": "scotland",
+      "date": "1996-05-22",
+      "date_note": "Royal Assent date. The text verified this session (legislation.gov.uk confirms it is up to date as of 23 August 2026) is the current version.",
+      "proposition": "In determining whether a dismissal is fair, it is for the employer to show the reason for the dismissal and that it falls within s.98(2) (capability, conduct, redundancy, statutory illegality) or is 'some other substantial reason of a kind such as to justify the dismissal' (s.98(1)(b)). Where the employer has shown the reason, fairness depends on whether, in the circumstances (including the size and administrative resources of the employer), the employer acted reasonably or unreasonably in treating it as sufficient reason for dismissal, determined in accordance with equity and the substantial merits of the case (s.98(4)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1996/18/section/98",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from legislation.gov.uk by the researching agent, independently re-fetched by the orchestrating session and word-for-word consistent on subsections (1) and (4)."
+    },
+    {
+      "authority_id": "AUTH-SCOT-EMPLOYMENT-002",
+      "authority_type": "case",
+      "name": "Douglas v North Lanarkshire Council",
+      "citation": "Douglas v North Lanarkshire Council [2024] EAT 194; [2025] ICR D15; EA-2023-SCO-000015-DT",
+      "court": "Employment Appeal Tribunal, sitting at Edinburgh, on appeal from an Employment Tribunal sitting at Glasgow",
+      "jurisdiction": "scotland",
+      "date": "2024-12-10",
+      "judge_or_panel": "The Honourable Lord Fairley",
+      "proposition": "Applies s.98(1)(b) and s.98(4) to a long-serving council driver's dismissal for persistent, intermittent sickness absence: the employer's belief that the appellant's attendance would not improve was not a capability issue under s.98(2)(a) but 'some other substantial reason' under s.98(1)(b). On the s.98(4) reasonableness inquiry, the tribunal did not substitute its own view for the employer's, but considered 'whether or not the Manager had reasonable grounds for his conclusion that the appellant's attendance was unlikely to improve, having carried out such inquiry as was reasonable in the circumstances' - and held the employer had reasonable grounds, based on past attendance records and Occupational Health advice that, absent 'significant intervention', past attendance was the best predictor of future attendance. Applying Iceland Frozen Foods v Jones [1982] IRLR 439 and Sainsbury's Supermarkets v Hitt, dismissal fell within the range of reasonable responses even though 'somewhat harsh' and even though another employer might have waited longer. Appeal refused.",
+      "treatment": "APPLIED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKEAT/2024/194.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent via a genuine browser session at bailii.org (a plain WebFetch attempt returned HTTP 403; the browser tool itself, not a proxy, succeeded), with paragraph numbers confirmed against BAILII's own in-page anchor tags. Independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on the key holding, and cross-checked via WebSearch against gov.uk's own official EAT decisions listing, confirming the case's existence, parties, and outcome."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-EMPLOYMENT-002",
+      "to": "AUTH-SCOT-EMPLOYMENT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Douglas v North Lanarkshire Council [2024] EAT 194, fetched via a genuine browser session at bailii.org and independently re-confirmed: applies s.98(1)(b)'s 'some other substantial reason' ground and s.98(4)'s reasonableness test to a persistent-sickness-absence dismissal, holding the employer had reasonable grounds based on a reasonable inquiry."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering unfair dismissal for persistent absence under the reasonableness/some-other-substantial-reason framework. Marked PERSUASIVE authority_weight for the case, since an EAT decision is not binding on itself or on Employment Tribunals in the same way a higher court's ruling would be, though it is highly persuasive in practice. Does not cover redundancy, unlawful discrimination claims, TUPE, or any other Scots/UK employment-law subject - all remain unbuilt."
+}

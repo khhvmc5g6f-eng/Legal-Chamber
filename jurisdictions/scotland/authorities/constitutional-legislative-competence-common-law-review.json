@@ -1,0 +1,51 @@
+{
+  "$comment": "Scotland, Constitutional Law - the limits of the Scottish Parliament's legislative competence under the Scotland Act 1998, and whether Acts of the Scottish Parliament are reviewable at common law beyond the Act's own express grounds. A genuinely distinct feature of devolved constitutional law with no equivalent in a unitary England & Wales pack.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Scotland Act 1998 s.29 fetched live and directly from legislation.gov.uk, independently re-fetched by the orchestrating session and word-for-word consistent. AXA General Insurance Ltd v Lord Advocate [2011] UKSC 46 fetched live directly from the UK Supreme Court's own judgment PDF (bailii.org returned HTTP 403 to the researching agent), independently re-fetched by the orchestrating session via a genuine browser session at bailii.org and word-for-word consistent on the key holding.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-CONSTITUTIONAL-001",
+      "authority_type": "statute",
+      "name": "Scotland Act 1998, section 29",
+      "citation": "Scotland Act 1998, s.29",
+      "court": "N/A - primary legislation (UK Parliament)",
+      "jurisdiction": "scotland",
+      "date": "1998-11-19",
+      "date_note": "Royal Assent date. s.29(2)(d) originally also referred to incompatibility 'with EU law' - that limb was omitted with effect from 31 March 2022 following EU withdrawal. AXA (2011) predates this amendment and quotes the older wording in its own text; the version verified this session (legislation.gov.uk) is the current, post-2022 text.",
+      "proposition": "An Act of the Scottish Parliament is not law so far as any provision is outside the Parliament's legislative competence (s.29(1)). A provision is outside that competence if it would form part of the law of, or confer functions exercisable in, a territory other than Scotland; relates to a reserved matter; breaches the Schedule 4 restrictions; is incompatible with any Convention right; or would remove the Lord Advocate from his position as head of criminal prosecution and investigation of deaths in Scotland (s.29(2)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1998/46/section/29",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from legislation.gov.uk by the researching agent (two independent passes), independently re-fetched by the orchestrating session and word-for-word consistent on subsections (1) and (2)."
+    },
+    {
+      "authority_id": "AUTH-SCOT-CONSTITUTIONAL-002",
+      "authority_type": "case",
+      "name": "AXA General Insurance Ltd v Lord Advocate",
+      "citation": "AXA General Insurance Ltd v Lord Advocate [2011] UKSC 46; [2012] 1 AC 868; on appeal from [2011] CSIH 31",
+      "court": "UK Supreme Court, on a Scottish appeal from the Inner House of the Court of Session",
+      "jurisdiction": "scotland",
+      "date": "2011-10-12",
+      "date_note": "Heard 13-15 June 2011 (Michaelmas Term), judgment given 12 October 2011.",
+      "judge_or_panel": "Lord Hope (Deputy President, leading judgment), Lord Brown, Lord Mance, Lord Kerr, Lord Clarke, Lord Dyson, Lord Reed (concurring separately)",
+      "proposition": "Holds that Acts of the Scottish Parliament are in principle amenable to judicial review at common law beyond the Scotland Act's own express s.29 grounds, but that the ordinary administrative-law grounds of irrationality, unreasonableness, or arbitrariness do not apply to them. Lord Hope, para 47: 'as there is no provision in the Scotland Act which excludes this possibility, I think that it must follow that in principle Acts of the Scottish Parliament are amenable to the supervisory jurisdiction of the Court of Session at common law.' Lord Hope, para 52 (the operative holding): 'As for the appellants' common law case, I would hold, in agreement with the judges in the Inner House (2011 SLT 439, para 88), that Acts of the Scottish Parliament are not subject to judicial review at common law on the grounds of irrationality, unreasonableness or arbitrariness. This is not needed, as there is already a statutory limit on the Parliament's legislative competence if a provision is incompatible with any of the Convention rights: section 29(2)(d) of the Scotland Act 1998. But it would also be quite wrong for the judges to substitute their views on these issues for the considered judgment of a democratically elected legislature unless authorised to do so.' A residual, exceptional common-law backstop protecting fundamental rights or the rule of law itself is left open but undefined on the facts (paras 49-51).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKSC/2011/46.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent from the UK Supreme Court's own judgment PDF (supremecourt.uk, case uksc-2011-0108), extracted and read directly with a text-extraction tool after bailii.org returned HTTP 403 to a plain fetch - not a CAPTCHA or bot-block routed around, an alternative equally official primary source used instead. Independently re-fetched by the orchestrating session via a genuine browser session at bailii.org itself (which loaded successfully this time), confirming paragraphs 47 and 52's exact wording."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-CONSTITUTIONAL-002",
+      "to": "AUTH-SCOT-CONSTITUTIONAL-001",
+      "relationship": "APPLIES",
+      "verified_via": "AXA General Insurance Ltd v Lord Advocate [2011] UKSC 46, paragraphs 46-52, fetched directly and independently re-confirmed: construes s.29 as not a complete code excluding common-law review, while holding that ordinary irrationality/unreasonableness grounds do not apply to a democratically elected legislature's primary legislation."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering legislative competence and the common-law reviewability question. Lord Reed's separate concurring judgment (paras 135-154) reaches the same result via a distinct route (the Parliament's 'plenary' powers within s.29's limits were not conferred for any specific identifiable purpose, so ordinary irrationality review has no purchase) - not independently verified as its own node in this file. Does not cover the Sewel Convention, the separate devolution-competence litigation route via the Supreme Court (Scotland Act 1998 Schedule 6), or any other Scots constitutional-law subject - all remain unbuilt."
+}
