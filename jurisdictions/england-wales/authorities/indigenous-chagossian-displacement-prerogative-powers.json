@@ -1,0 +1,26 @@
+{
+  "$comment": "England & Wales, Indigenous / First Nations Law - a genuinely hard fit: England & Wales has no indigenous population in the usual sense of the term, so the relevant case law is UK courts ruling on other territories' indigenous displacement, not domestic aboriginal-title doctrine. This is deliberately a single-case entry, not a statute-case pair - the researching agent investigated and explicitly rejected a second candidate (Amodu Tijani v Secretary, Southern Nigeria [1921] UKPC 80, the classic native-title Privy Council authority) because no primary source or citing judgment could be independently verified this session, and the widely-circulated quotes attributed to it came only from secondary aggregator sites - reported as an honest gap rather than used. Bancoult No 2 [2008] UKHL 61 is itself pre-2009 and inaccessible this session (BAILII bot-interstitial, publications.parliament.uk blocked, Find Case Law 404); verified via the citing-judgment method through the same case's own later Supreme Court sequel.",
+  "verified_at": "2026-08-22",
+  "verification_method": "R (Bancoult No 2) v Secretary of State for Foreign and Commonwealth Affairs [2016] UKSC 35 fetched live and directly from Find Case Law, independently re-fetched and consistent on paragraph 10's description of the Chagossians as 'indigenous inhabitants' and its quotation of Lord Hoffmann's 'callous disregard' phrase from the 2008 judgment.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-INDIGENOUS-001",
+      "authority_type": "case",
+      "name": "R (Bancoult No 2) v Secretary of State for Foreign and Commonwealth Affairs",
+      "citation": "[2008] UKHL 61; [2009] AC 453",
+      "court": "House of Lords",
+      "jurisdiction": "england-wales",
+      "date": "2008-10-22",
+      "judge_or_panel": "Lord Hoffmann, Lord Rodger of Earlsferry, Lord Carswell (majority); Lord Bingham of Cornhill, Lord Mance (dissenting)",
+      "proposition": "This is a prerogative-powers and common-law 'right of abode' case, not an aboriginal/native-title recognition case - a distinction stated explicitly rather than glossed over. The Chagossians (Ilois), described by the courts as 'indigenous inhabitants' of the British Indian Ocean Territory, were removed and resettled by the UK between 1968 and 1973 by non-forceful means, with what Lord Hoffmann himself called 'a callous disregard of their interests.' The majority held that although the Chagossians had important common-law rights of abode, those rights were not so fundamental that they could not be removed by s.9 of the British Indian Ocean Territory (Constitution) Order 2004 (a prerogative Order in Council), and the Secretary of State's decision to remove them was neither unreasonable nor an abuse of power. Lord Bingham and Lord Mance dissented, treating the right of abode as fundamental and the prerogative power as unlawfully exercised. A later application to set aside this judgment failed: R (Bancoult No 2) v Secretary of State for Foreign and Commonwealth Affairs [2016] UKSC 35 dismissed the set-aside application, so the 2008 decision stands as the governing authority.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2016/35",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The 2008 judgment itself could not be reached this session (BAILII's bot-detection interstitial, publications.parliament.uk blocked, Find Case Law 404 for this pre-2009 case). Verified via the citing-judgment method: the 2016 Supreme Court sequel judgment (fetched live and directly from Find Case Law, independently re-fetched and confirmed) quotes the 2008 majority's holding and Lord Hoffmann's 'callous disregard' phrase verbatim at paragraphs 1, 10, and 14, and confirms at paragraph 76 that the 2008 decision was not set aside and stands. The researching agent confirmed by full-text search of the 2016 judgment that no aboriginal/native-title doctrine terms ('customary,' 'native title,' 'Mabo,' 'Tijani') appear anywhere in it - the case genuinely turns on prerogative-powers/judicial-review doctrine, not any recognition test for indigenous customary land rights."
+    }
+  ],
+  "edges": [],
+  "what_this_is_not": "A single, deliberately narrow node on UK courts' treatment of a specific indigenous-displacement dispute via prerogative-powers doctrine - explicitly not an aboriginal/native-title recognition case, and not paired with a statute since none construes this point. A second candidate (Amodu Tijani v Secretary, Southern Nigeria [1921] UKPC 80) was investigated and explicitly rejected as unverifiable this session, rather than used with unconfirmed secondary-aggregator quotes - an honest gap, not a silent substitution. This is the only entry in this repository's taxonomy that engages indigenous/First Nations legal questions at all; it does not cover aboriginal title doctrine, UNDRIP's domestic status, or any other Indigenous/First Nations Law subject in general - all remain unbuilt."
+}

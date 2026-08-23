@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Welfare / Social Security Law - the scope of a tribunal's duty on a social security appeal under s.12(8)(a). The researching agent's first two candidate cases (a suggested 'Robertson [2015] UKUT 638 (AAC)' and R (SC, CB and 8 children) v SSWP [2021] UKSC 26) were both checked and rejected before use - the first could not be verified as a real citation at all (likely fabricated/mis-recalled), and the second's link to the Welfare Reform Act 2012 was found too indirect for a clean pairing. Hooper v SSWP was used instead as a genuinely on-point, verifiable case.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Social Security Act 1998 s.12(8)(a)-(b) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Hooper v Secretary of State for Work and Pensions [2007] EWCA Civ 495 fetched live and directly from Find Case Law (BAILII returned HTTP 403 on both the researching agent's attempts - not bypassed), independently re-fetched with paragraphs 27-28 confirmed consistent, though the fetch tool's summarization layer refused a longer verbatim block as too long on the researching agent's own attempt - the short quoted sentences are treated as reliable, the surrounding paraphrase is not.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-WELFARE-001",
+      "authority_type": "statute",
+      "name": "Social Security Act 1998, s.12(8)",
+      "citation": "Social Security Act 1998 (c.14) s.12(8)(a)-(b)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1998",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "On an appeal, a tribunal need not consider any issue that is not raised by the appeal (s.12(8)(a)), and shall not take into account any circumstances not obtaining at the time the decision appealed against was made (s.12(8)(b)) - defining the scope of the tribunal's review.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1998/14/section/12",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-WELFARE-002",
+      "authority_type": "case",
+      "name": "Hooper v Secretary of State for Work and Pensions",
+      "citation": "[2007] EWCA Civ 495",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2007-05-24",
+      "judge_or_panel": "Ward LJ, Dyson LJ, Thomas LJ",
+      "proposition": "Construed 'any issue raised by the appeal' in s.12(8)(a) according to its plain and natural meaning, but held the boundary is not purely a matter of what the parties chose to argue - an issue is 'raised by the appeal' if it is clearly apparent from the evidence, following Mongan. A tribunal must apply its own legal expertise to facts plainly before it, even where a party did not expressly plead the point, though it need not investigate issues with no prospect of success regardless of the facts found. On the facts, one ground of appeal (supersession of incapacity benefit) was dismissed while another (overpayment recoverability) was allowed - a mixed outcome, applying this hybrid test to the specific issues raised.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2007/495",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched - both fetches word-for-word consistent on paragraphs 27-28's core holding. The researching agent's own attempt at a longer verbatim block (paras 20-23, 29-32) was refused by the fetch tool's summarization layer as too long and returned paraphrase only - that surrounding paraphrase is not relied on here, only the directly-quoted paras 27-28 and 58 sentences."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-WELFARE-002",
+      "to": "AUTH-EW-WELFARE-001",
+      "relationship": "APPLIES",
+      "verified_via": "Hooper v SSWP [2007] EWCA Civ 495, paras 27-28, fetched directly from Find Case Law and independently re-confirmed: construes s.12(8)(a)'s 'issue raised by the appeal' as a hybrid test - the plain words plus what is clearly apparent from the evidence, not confined to the parties' pleaded arguments."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the scope of a tribunal's issue-consideration duty. Does not cover Universal Credit eligibility/sanctions under the Welfare Reform Act 2012, the benefit cap, or any other Welfare / Social Security Law subject - all remain unbuilt. One rejected research candidate is worth recording: a suggested citation 'Secretary of State for Work and Pensions v Robertson [2015] UKUT 638 (AAC)' could not be verified as a real case after repeated search and was discarded as likely fabricated or mis-recalled, rather than used."
+}

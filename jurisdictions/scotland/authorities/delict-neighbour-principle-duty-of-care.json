@@ -1,0 +1,51 @@
+{
+  "$comment": "Scotland, Delict Law - the neighbour principle's origin in a Scottish case, and its modern UK-wide construction. Donoghue v Stevenson [1932] AC 562 is itself the foundational Scottish case (a Paisley cafe, House of Lords on appeal from the Court of Session) establishing the general duty-of-care test shared by both Scots delict and English tort law. The researching agent's first candidate case (Dawson v Threadgold [2025] SC EDIN 38, a Scottish sheriff-court case that merely lists Donoghue in an authorities list the sheriff himself flagged as 'relevance not made clear') was explicitly rejected as not substantively engaging Donoghue's reasoning - a citation in a list is not a construction. Robinson v Chief Constable of West Yorkshire Police [2018] UKSC 4 was used instead: it genuinely construes and applies the neighbour principle, and is itself the modern UK Supreme Court authority that a Scottish court (Dawson, at its own para 63) has since applied for the duty of care owed by police officers - making it the real doctrinal link, even though Robinson is not itself a Scottish-originating case. This is disclosed explicitly rather than glossed over.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Donoghue v Stevenson [1932] AC 562; [1932] UKHL 100 - BAILII returned HTTP 403 on two attempts and Find Case Law's coverage does not extend to 1932 (pre-neutral-citation); corroborated via multiple independent secondary sources on citation, facts, and the neighbour-principle wording, and independently re-confirmed via its verbatim quotation inside Robinson v Chief Constable of West Yorkshire Police [2018] UKSC 4, fetched live and directly from Find Case Law this session and independently re-fetched.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-DELICT-001",
+      "authority_type": "case",
+      "name": "Donoghue v Stevenson",
+      "citation": "[1932] AC 562; 1932 SC (HL) 31; [1932] UKHL 100",
+      "court": "House of Lords",
+      "jurisdiction": "scotland",
+      "date": "1932",
+      "date_note": "Decided 1932, on appeal from the Court of Session. Predates neutral citation conventions; not independently re-fetched from a primary source this session, see verification_note.",
+      "judge_or_panel": "Lord Atkin (leading speech)",
+      "proposition": "Established the general 'neighbour principle' duty-of-care test: a person must take reasonable care to avoid acts or omissions which they can reasonably foresee would be likely to injure their neighbour - persons so closely and directly affected by the act that one ought reasonably to have them in contemplation as being so affected. This is the foundational Scottish case for the general duty-of-care test shared by both Scots delict and English tort law, arising from a Paisley cafe where a decomposed snail was found in a ginger-beer bottle.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKHL/1932/100.html",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "BAILII returned HTTP 403 on two attempts this session; Find Case Law's coverage does not extend to this pre-neutral-citation 1932 case. The citation, facts, and neighbour-principle wording were corroborated via multiple independent secondary sources, and independently re-confirmed via a live, direct fetch of Robinson v Chief Constable of West Yorkshire Police [2018] UKSC 4, which quotes Donoghue as a 'landmark example... in relation to physical injury' at paragraph 84 - fetched and independently re-confirmed this session."
+    },
+    {
+      "authority_id": "AUTH-SCOT-DELICT-002",
+      "authority_type": "case",
+      "name": "Robinson v Chief Constable of West Yorkshire Police",
+      "citation": "[2018] UKSC 4",
+      "court": "Supreme Court",
+      "jurisdiction": "scotland",
+      "date": "2018-02-08",
+      "judge_or_panel": "Lord Reed (leading judgment), Lord Mance, and others",
+      "proposition": "The modern UK Supreme Court authority construing and applying the neighbour principle's general duty-of-care approach, identifying Donoghue v Stevenson as the 'landmark example' establishing a duty of care for physical injury. This UK-wide authority governs the general common-law duty-of-care test applicable in Scots delict as well as English tort law - a Scottish sheriff-court case (Dawson v Threadgold [2025] SC EDIN 38, not independently verified beyond this one point) has since expressly applied Robinson's holding that police officers owe a duty of care to the public when exercising powers of arrest.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2018/4",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched - both fetches consistent on paragraph 84's 'landmark example' quotation of Donoghue. Recorded as PERSUASIVE for Scotland since it is a UK Supreme Court decision on English facts, applied to Scots delict via the shared common-law duty-of-care doctrine rather than as a case of Scottish origin."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-DELICT-002",
+      "to": "AUTH-SCOT-DELICT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Robinson v Chief Constable of West Yorkshire Police [2018] UKSC 4, para 84, fetched directly from Find Case Law and independently re-confirmed: identifies Donoghue v Stevenson as the landmark authority for a duty of care in respect of physical injury, applying and restating the neighbour principle for the modern law."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the neighbour principle's origin and its modern construction, with an honestly-disclosed limitation: no Scottish-originating case that itself substantively engages Donoghue's reasoning was found this session (a candidate that merely cited Donoghue in a list was explicitly rejected). Does not cover Scots-specific delict doctrine (e.g. verbal injury, nuisance's civilian-derived elements distinct from English private nuisance), the Damages (Scotland) Act 2011, or any other Scots Delict Law subject - all remain unbuilt."
+}

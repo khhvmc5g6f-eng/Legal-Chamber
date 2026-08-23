@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Refugee & Statelessness Law - distinct from the general asylum 'well-founded fear' doctrine already covered elsewhere in this repository: statelessness determination, an ascertainable-fact inquiry decided on the ordinary civil standard rather than the lower refugee standard. The case (AS (Guinea) [2018]) construed the now-deleted Immigration Rules Part 14 para 401; the current successor provision (Appendix Statelessness rule S3.1, in force from 2024/2025) uses identical wording, and the researching agent's connection between the two is its own analytical inference from that identical language, not a holding independently verified in a later citing case - stated honestly as a gap rather than presented as a confirmed cross-reference.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Immigration Rules Appendix Statelessness rule S3.1 fetched live and directly from gov.uk (the official publisher of the Immigration Rules), independently confirmed by the researching agent on two passes. AS (Guinea) v Secretary of State for the Home Department [2018] EWCA Civ 2234 fetched live and directly from Find Case Law, independently confirmed by the researching agent on two passes for internal consistency of panel, dates, and a chain of correctly-cited authorities.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-REFUGEE-001",
+      "authority_type": "regulation",
+      "name": "Immigration Rules, Appendix Statelessness, rule S3.1",
+      "citation": "Immigration Rules, Appendix Statelessness, S3.1",
+      "court": "N/A - Immigration Rules made under Immigration Act 1971 s.3(2)",
+      "jurisdiction": "england-wales",
+      "date": "2024-01-31",
+      "date_note": "Date Appendix Statelessness took effect for new applications, succeeding the now-deleted Part 14 paragraphs 401-403. The precise wording construed by AS (Guinea) is identical between the deleted para 401 and the current S3.1 (per the researching agent's side-by-side check), though the paragraph number itself has changed.",
+      "proposition": "An applicant must be a person who is not considered as a national by any state under the operation of its law, as set out in Article 1(1) of the 1954 Statelessness Convention - importing the Convention's definition wholesale, but (like the Convention itself) stating nothing about the standard of proof an applicant must meet to satisfy it.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-statelessness",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from gov.uk this session, on two independent passes by the researching agent, word-for-word consistent both times. Not independently re-fetched a third time by the orchestrating session this cycle."
+    },
+    {
+      "authority_id": "AUTH-EW-REFUGEE-002",
+      "authority_type": "case",
+      "name": "AS (Guinea) v Secretary of State for the Home Department",
+      "citation": "[2018] EWCA Civ 2234",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2018-10-12",
+      "judge_or_panel": "Kitchin LJ (leading judgment), McCombe LJ, Lindblom LJ (UNHCR intervening)",
+      "proposition": "Unlike refugee status, which turns on a forward-looking 'reasonable degree of likelihood' of future persecution, statelessness turns on ascertainable, present-tense facts about identity and nationality that an applicant can normally establish without risk of harm - so the ordinary civil standard, balance of probabilities, applies. An applicant claiming statelessness must take all reasonably practicable steps to gather and submit documents evidencing identity and residence, and will fail to discharge the burden if those steps are not taken.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2018/2234",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, on two independent passes by the researching agent - the second, longer fetch cross-checked internally consistent, correctly-cited case law (Bradshaw, Revenko, YL, and others) consistent with genuine judgment text. Not independently re-fetched a third time by the orchestrating session this cycle."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-REFUGEE-002",
+      "to": "AUTH-EW-REFUGEE-001",
+      "relationship": "APPLIES",
+      "verified_via": "AS (Guinea) [2018] EWCA Civ 2234, paras 42, 46, 57, 59, fetched directly from Find Case Law: construed the now-deleted Part 14 para 401, worded identically to the current S3.1 - the link to the successor provision is the researching agent's own analytical inference from identical statutory language, not a holding independently confirmed in a later citing case, stated honestly here rather than presented as verified."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the standard of proof for statelessness determination, with an honestly-flagged inferential (not directly verified) link to the current successor provision. Does not cover safe-third-country removal, refugee 'well-founded fear' doctrine (covered elsewhere in this repository), or any other Refugee & Statelessness Law subject - all remain unbuilt."
+}

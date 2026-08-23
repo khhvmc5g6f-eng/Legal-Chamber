@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Biotechnology & Genetics Law - the strict, continuing bilateral-consent requirement for IVF embryo storage/use, and the court's lack of discretion to imply a hardship exception. Fresh research this session, both nodes independently re-fetched and confirmed by the orchestrating session.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Human Fertilisation and Embryology Act 1990 Sch.3 paras 4(1)-(2), 6(3) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Evans v Amicus Healthcare Ltd & Ors [2004] EWCA Civ 727 fetched live and directly from Find Case Law (BAILII returned HTTP 403 - reported honestly, not bypassed with a proxy), independently re-fetched and word-for-word consistent on paragraphs 24 and 41.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-BIOTECH-001",
+      "authority_type": "statute",
+      "name": "Human Fertilisation and Embryology Act 1990, Schedule 3",
+      "citation": "HFEA 1990 Sch.3 paras 4(1)-(2), 6(3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1990",
+      "date_note": "Enactment year. This entry uses the Schedule's as-enacted text; the 2008 amending Act made changes elsewhere in the 1990 Act not independently checked against these specific paragraphs this session.",
+      "proposition": "An embryo created in vitro must not be used for any purpose unless each person whose gametes were used to create it has given effective consent to that use, and the embryo is used in accordance with those consents (para 6(3)). Consent may be varied or withdrawn by notice at any time (para 4(1)) - but once the embryo has been used in providing treatment services or for research, consent to its use can no longer be varied or withdrawn (para 4(2)). The scheme is a strict, continuing bilateral-consent requirement, not a one-off consent obtained at creation.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1990/37/schedule/3/enacted",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-BIOTECH-002",
+      "authority_type": "case",
+      "name": "Evans v Amicus Healthcare Ltd & Ors",
+      "citation": "[2004] EWCA Civ 727",
+      "court": "Court of Appeal (Civil Division)",
+      "jurisdiction": "england-wales",
+      "date": "2004-06-25",
+      "judge_or_panel": "Thorpe LJ, Sedley LJ, Arden LJ",
+      "proposition": "Adopted 'without qualification' counsel's summary of Schedule 3: an embryo may only be stored or used while there is effective consent from both gamete providers, consent to storage can be withdrawn by either party at any time, but consent to use cannot be withdrawn once the embryo has been used in treatment. On the facts, the male gamete provider was entitled by the terms of the Act to withdraw his consent as and when he did, and the effect was to prevent both further use and continued storage of the embryo - even though the female provider had no other means of having a genetically related child. The Court held it had no discretion to imply an exception into the statutory language to relieve that hardship; the twin pillars of informed, revocable consent and welfare screening left no room for a case-by-case override.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2004/727",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched and re-confirmed a second time - both fetches word-for-word consistent on paragraph 24's summary and paragraph 41's application to the facts. BAILII returned HTTP 403 to a direct attempt; Find Case Law was used instead rather than any access-terms workaround."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-BIOTECH-002",
+      "to": "AUTH-EW-BIOTECH-001",
+      "relationship": "APPLIES",
+      "verified_via": "Evans v Amicus Healthcare [2004] EWCA Civ 727, paras 24 and 41, fetched directly from Find Case Law and independently re-confirmed: construes Sch.3's consent scheme as strict and continuing, giving the court no discretion to override a validly-exercised withdrawal of consent even where it causes serious hardship to the other party."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the bilateral-consent requirement and its strict, non-discretionary application. Does not cover the Human Tissue Act 2004's separate consent regime for other genetic material, genetic parenthood determination under HFEA 2008 ss.33-47, gene-editing/embryo-research licensing, or any other Biotechnology & Genetics Law subject - all remain unbuilt."
+}

@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Blockchain & Cryptocurrency Law - the common-law recognition of cryptoassets as property despite fitting neither traditional chose-in-possession/chose-in-action category, and its 2025 statutory codification. The relationship between the two nodes is doctrinal/sequential (the Act legislatively generalises what the case pioneered at common law) rather than the case construing the later-enacted Act - the edge below is labelled accordingly. The researching agent's own doctrinal synthesis connecting them was not cross-checked against the Act's Explanatory Notes for an explicit textual reference to the case, an honest scope limit stated here rather than silently assumed.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Property (Digital Assets etc) Act 2025 s.1 fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. AA v Persons Unknown & Ors, Re Bitcoin [2019] EWHC 3556 (Comm) fetched live and directly from Find Case Law (BAILII returned HTTP 403 - reported honestly, not bypassed), independently re-fetched and consistent on paragraph 59's four-criteria holding.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-BLOCKCHAIN-001",
+      "authority_type": "statute",
+      "name": "Property (Digital Assets etc) Act 2025, s.1",
+      "citation": "Property (Digital Assets etc) Act 2025 (c.29) s.1",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2025-12-02",
+      "date_note": "Royal Assent date; the Act came into force on the day it was passed (s.2(2)). Extends to England & Wales and Northern Ireland (s.2(1)).",
+      "proposition": "A thing, including a thing that is digital or electronic in nature, is not prevented from being the object of personal property rights merely because it is neither a thing in possession nor a thing in action - removing the traditional 'no tertium quid between the two' barrier from Colonial Bank v Whinney (1885) 30 Ch.D 261 (not independently verified in this file) that had left digital assets' proprietary status doctrinally uncertain.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2025/29/section/1",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-BLOCKCHAIN-002",
+      "authority_type": "case",
+      "name": "AA v Persons Unknown & Ors, Re Bitcoin",
+      "citation": "[2019] EWHC 3556 (Comm); [2020] 4 WLR 35",
+      "court": "High Court (Commercial Court)",
+      "jurisdiction": "england-wales",
+      "date": "2019-12-13",
+      "judge_or_panel": "Bryan J",
+      "proposition": "Bitcoin is property at common law, meeting the four criteria in Lord Wilberforce's classic definition of property in National Provincial Bank v Ainsworth [1965] 1 AC 1175 (not independently verified in this file): definable, identifiable by third parties, capable in their nature of assumption by third parties, and having some degree of permanence. Adopting the UK Jurisdiction Taskforce's Legal Statement on Cryptoassets and Smart Contracts, the court held that a cryptoasset's not being a 'thing in action' on the narrower definition does not in itself mean it cannot be treated as property - cryptocurrencies are a form of property capable of being the subject of a proprietary injunction. This was an interim-injunction ruling, judge-made and provisional, not a fully reasoned trial judgment.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/comm/2019/3556",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched - both fetches consistent on paragraph 59's four-criteria holding. BAILII returned HTTP 403 to a direct attempt; Find Case Law was used instead rather than any access-terms workaround. High Court decision, recorded as PERSUASIVE authority weight."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-BLOCKCHAIN-001",
+      "to": "AUTH-EW-BLOCKCHAIN-002",
+      "relationship": "FOLLOWED",
+      "verified_via": "The researching agent's own doctrinal synthesis (not a quoted cross-reference from the Act's own text, which was not fetched this session): the 2025 Act legislatively generalises the proprietary status the case pioneered for Bitcoin specifically, converting a judge-made, provisional recognition into a settled statutory rule."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering cryptoassets' proprietary status, connected by sequential doctrinal development rather than a direct construes/applies relationship - and that connection is the researching agent's own inference, not a verified textual link. Does not cover cryptoasset regulation under the Financial Services and Markets Act 2000 (as amended for cryptoassets), smart contract enforceability, or any other Blockchain & Cryptocurrency Law subject - all remain unbuilt."
+}

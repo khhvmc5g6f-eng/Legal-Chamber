@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Elder Law - the patient-centred, subjective-standpoint best-interests test for life-sustaining treatment decisions, applied to an elderly incapacitated patient. Fresh research this session, both nodes independently re-fetched and confirmed by the orchestrating session.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Mental Capacity Act 2005 s.4(6) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Aintree University Hospitals NHS Foundation Trust v James [2013] UKSC 67 fetched live and directly from Find Case Law, independently re-fetched with paragraph 39's core holding confirmed in substance (the 'welfare in the widest sense' language matched exactly across both fetches).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-ELDER-001",
+      "authority_type": "statute",
+      "name": "Mental Capacity Act 2005, s.4",
+      "citation": "MCA 2005 s.4(1), (4)-(6), (9)-(10)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2007-10-01",
+      "date_note": "Date s.4 came fully into force. The text verified this session is the current in-force version.",
+      "proposition": "In determining a person's best interests, the decision-maker must not decide merely on the basis of age or appearance (s.4(1)); must so far as reasonably practicable encourage the person's own participation (s.4(4)); where the decision concerns life-sustaining treatment, must not be motivated by a desire to bring about death (s.4(5)); and must consider, so far as reasonably ascertainable, the person's own past and present wishes and feelings, the beliefs and values that would likely influence their decision if they had capacity, and the other factors they would likely consider (s.4(6)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2005/9/section/4",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-ELDER-002",
+      "authority_type": "case",
+      "name": "Aintree University Hospitals NHS Foundation Trust v James",
+      "citation": "[2013] UKSC 67",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2013-10-30",
+      "judge_or_panel": "Lady Hale (leading judgment), Lord Neuberger, Lord Clarke, Lord Carnwath, Lord Hughes",
+      "proposition": "The first Supreme Court authority construing s.4 in a health-and-welfare context. The best-interests inquiry for life-sustaining treatment is framed positively - asking whether it is in the patient's interest to give treatment, not whether it is in their interest to withhold it, following Lord Goff in Airedale NHS Trust v Bland (not independently verified in this file). Decision-makers must look at welfare 'in the widest sense, not just medical but social and psychological,' consider the treatment's nature and prospects, and try to put themselves in the patient's own place and ask what that particular patient's attitude to the treatment is or would be likely to be, consulting those who know and care for them. On the facts (a 68-year-old patient dependent on ventilator support), applying that patient-centred, subjective-standpoint standard, the appeal was dismissed.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2013/67",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched - both fetches consistent on paragraph 39's 'welfare in the widest sense' language and the requirement to adopt the patient's own subjective standpoint. The researching agent flagged and resolved its own initial paragraph-attribution ambiguity via a verbatim contiguous re-fetch before finalising its report - a self-correction worth noting."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-ELDER-002",
+      "to": "AUTH-EW-ELDER-001",
+      "relationship": "APPLIES",
+      "verified_via": "Aintree v James [2013] UKSC 67, para 39, fetched directly from Find Case Law and independently re-confirmed: construes s.4(6)'s instruction to consider the person's wishes/feelings/values as requiring decision-makers to adopt the patient's own subjective standpoint rather than an objective 'reasonable patient' standard."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the best-interests test for life-sustaining treatment as applied to an elderly incapacitated patient. Does not cover the Care Act 2014 needs-assessment/eligibility duty, deprivation-of-assets means-testing rules for care fees, lasting power of attorney, or any other Elder Law subject - all remain unbuilt."
+}

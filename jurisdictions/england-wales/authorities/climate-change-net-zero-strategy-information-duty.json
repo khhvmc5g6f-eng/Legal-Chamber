@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Climate Change Law - the Secretary of State's s.13(1) duty to be properly informed before deciding whether proposals will meet a carbon budget. IMPORTANT VERIFICATION NOTE: this session's own independent re-fetch of the case's key paragraphs (213, 221) initially returned the OPPOSITE outcome to what actually happened - claiming the Minister's approach was upheld and the claimants' argument rejected. This was wrong. A third, independent check via WebSearch against multiple genuine secondary sources (LinkedIn commentary, Local Government Lawyer, Herbert Smith Freehills Kramer, and the judiciary.uk press summary) confirmed the researching agent's original account was correct: the claimants won on ground 1, the Net Zero Strategy was found unlawful because the Minister lacked individual-policy-contribution information. This is a real, demonstrated instance of this session's own re-verification tooling being wrong on a re-fetch, caught only by a further independent secondary-source check rather than trusted - exactly the failure mode this repository's 'never trust one fetch' discipline exists to catch, this time on the orchestrating session's own verification pass rather than a subagent's. The suggested candidate citation in the original research brief ([2022] EWCA Civ 1580) was also wrong - that citation belongs to an unrelated case - and was correctly identified and discarded by the researching agent before use.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Climate Change Act 2008 ss.1(1), 13(1), (3) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. R (Friends of the Earth Ltd, ClientEarth, Good Law Project & Joanna Wheatley) v Secretary of State for BEIS [2022] EWHC 1841 (Admin) fetched live and directly from Find Case Law by the researching agent (via the XML data endpoint after markdown conversion truncated), cross-corroborated against the judiciary.uk official press summary. This session's own independent re-fetch of the outcome paragraphs initially returned an incorrect (inverted) account, corrected via a third-pass WebSearch against multiple independent secondary sources before this file was written.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-CLIMATE-001",
+      "authority_type": "statute",
+      "name": "Climate Change Act 2008, ss.1 and 13",
+      "citation": "Climate Change Act 2008 (c.27) s.1(1), s.13(1), (3)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "2019-06-27",
+      "date_note": "Date the '100%' net zero target in s.1(1) came into force (amended from an earlier percentage by SI 2019/1056). Section 13 dates from the Act's 2008 enactment. The text verified this session is the current in-force version.",
+      "proposition": "The Secretary of State has a duty to ensure the net UK carbon account for 2050 is at least 100% lower than the 1990 baseline (s.1(1)). The Secretary of State must prepare such proposals and policies as they consider will enable the carbon budgets set under the Act to be met (s.13(1)), and those proposals and policies, taken as a whole, must contribute to sustainable development (s.13(3)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/2008/27/section/13",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-EW-CLIMATE-002",
+      "authority_type": "case",
+      "name": "R (Friends of the Earth Ltd, ClientEarth, Good Law Project & Joanna Wheatley) v Secretary of State for Business, Energy and Industrial Strategy",
+      "citation": "[2022] EWHC 1841 (Admin)",
+      "court": "High Court (Administrative Court)",
+      "jurisdiction": "england-wales",
+      "date": "2022-07-18",
+      "judge_or_panel": "Holgate J",
+      "proposition": "S.13(1)'s duty is not merely procedural - the Secretary of State's judgment about whether proposals will meet a carbon budget must be properly informed. While a 'light touch' rationality review applies to which policies to adopt, and quantified measures need not cover 100% of a carbon budget (partial reliance on qualitative judgment for the remainder is permissible in principle), the Minister could not rationally decide for himself how much weight to give the quantitative assessment without information on individual policies' contributions to it. On the facts, the Net Zero Strategy was found unlawful on this ground: the Minister lacked the individual-policy-contribution figures needed to make the s.13(1) judgment, and the linked s.14 Parliamentary-reporting duty required the same transparency. The government was ordered to lay a fresh report before Parliament by end of March 2023 and did not appeal.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/ewhc/admin/2022/1841",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law by the researching agent this session (via the XML data endpoint after WebFetch's markdown conversion repeatedly truncated the long judgment), cross-corroborated against the official judiciary.uk press summary. This session's own attempted re-verification of paragraphs 213/221 initially returned an inverted (incorrect) account of the outcome; corrected via a third-pass WebSearch against multiple independent secondary sources (Local Government Lawyer, Herbert Smith Freehills Kramer, and a case commentary), all of which confirm the Net Zero Strategy was found unlawful and the claimants succeeded on this ground - matching the researching agent's original report. High Court decision, recorded as PERSUASIVE authority weight."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-CLIMATE-002",
+      "to": "AUTH-EW-CLIMATE-001",
+      "relationship": "APPLIES",
+      "verified_via": "FoE v BEIS [2022] EWHC 1841 (Admin), paras 194, 213, 221, per the researching agent's direct fetch and confirmed via independent secondary-source triangulation after this session's own re-fetch attempt initially gave the wrong outcome: construes s.13(1) as requiring the Secretary of State to be properly informed, not merely to hold a bare rational belief, before deciding proposals will meet a carbon budget."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the information-duty gloss on s.13(1), with an explicit note about a real verification error this session made and caught on its own re-fetch attempt before the file was written. Does not cover the Environment Act 2021's separate targets regime, planning law's climate considerations, or any other Climate Change Law subject - all remain unbuilt."
+}

@@ -1,0 +1,50 @@
+{
+  "$comment": "Scotland, Property Law - THE FIRST POPULATED AUTHORITY GRAPH ENTRY FOR SCOTLAND. Section 3(7)'s anti-monopoly rule for real burdens, and its application to the 'land-owning maintenance model' widely used on Scottish housing estates - a structural feature with no direct English freehold-covenant analogue. The case is a Lands Tribunal for Scotland decision, not a court judgment: BAILII returned HTTP 403 across its entire Scottish archive, and scotcourts.gov.uk does not index Lands Tribunal decisions at all (a separate statutory tribunal, not a court) - the researching agent instead fetched the judgment directly from the deciding tribunal's own official publication site, a legitimate primary source since the tribunal is the document's author. This session's own independent re-fetch of the same PDF failed to decode, matching a recurring pattern with this environment's PDF handling - the case is recorded at a correspondingly lower tier.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Title Conditions (Scotland) Act 2003 s.3(1), (2), (7) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. Marriott and another v Greenbelt Group Limited, Lands Tribunal for Scotland LTS/TC/2014/27 - the researching agent reported fetching and reading the tribunal's own 42-page PDF opinion directly; this session's own independent re-fetch of the same PDF returned an explicit 'cannot render this compressed PDF' failure.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-PROPERTY-001",
+      "authority_type": "statute",
+      "name": "Title Conditions (Scotland) Act 2003, s.3",
+      "citation": "Title Conditions (Scotland) Act 2003 (asp 9) s.3(1), (2), (7)",
+      "court": "N/A - primary legislation (Act of the Scottish Parliament)",
+      "jurisdiction": "scotland",
+      "date": "2003",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "A real burden must relate in some way to the burdened property (s.3(1)); that relationship may be direct or indirect but cannot merely be that the obligated person owns the burdened property (s.3(2)). Except where expressly permitted by the Act, a real burden must not have the effect of creating a monopoly - for example by providing for a particular person to be or to appoint the manager of property or the supplier of services in relation to property (s.3(7)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/asp/2003/9/section/3",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-SCOT-PROPERTY-002",
+      "authority_type": "case",
+      "name": "Marriott and another v Greenbelt Group Limited",
+      "citation": "Lands Tribunal for Scotland, LTS/TC/2014/27",
+      "court": "Lands Tribunal for Scotland",
+      "jurisdiction": "scotland",
+      "date": "2015-12-02",
+      "judge_or_panel": "Lord Minginish (President), R A Smith QC (dissenting on the s.3(7) point), D J Gillespie FRICS",
+      "proposition": "A maintenance-cost real burden requiring homeowners to pay a landowning company a perpetual share of landscape maintenance costs does not automatically offend s.3(7)'s anti-monopoly rule merely because that company is the sole, un-replaceable service provider - the majority held land ownership is itself inherently monopolistic, and s.3(7) targets burdens that impose a manager or supplier on land the payer does not own, not an owner managing their own retained land. The panel split 2-1 on this point (Mr Smith QC dissenting, on the view the burden fell within the plain words of s.3(7) since the respondent was specified by name with no ability for owners to change provider), illustrating genuine interpretive difficulty. The burden was nonetheless struck down on a separate, stricter ground: failure to identify the benefited property on the face of the deed, applying the common-law 'four corners rule' held to survive the 2003 Act (s.4(2)(c)(ii)).",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://s3-eu-west-1.amazonaws.com/s3.spanglefish.com/s/39469/documents/opinion_-michael-joseph-marriott-and-another-v-greenbelt-group-limited.pdf",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "BAILII returned HTTP 403 across its entire Scottish case archive, and scotcourts.gov.uk does not index Lands Tribunal decisions - the researching agent fetched the judgment directly from the deciding tribunal's own official publication site instead of using any access-terms workaround. This session's own independent re-fetch attempt of the same PDF failed to decode it, matching a recurring PDF-handling limitation of this environment seen elsewhere in this build (Napp Pharmaceutical, Gaming Law's Ivey case). Recorded at VERIFIED_SECONDARY_SOURCE rather than upgraded to primary on the researching agent's claim alone."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-PROPERTY-002",
+      "to": "AUTH-SCOT-PROPERTY-001",
+      "relationship": "APPLIES",
+      "verified_via": "Marriott v Greenbelt Group Ltd, LTS/TC/2014/27, paras 104-113, per the researching agent's direct read of the tribunal's own PDF (not independently re-verified at the pinpoint level this session, see verification_note): a 2-1 split majority holding that s.3(7)'s anti-monopoly rule does not automatically catch a landowning-company maintenance charge."
+    }
+  ],
+  "what_this_is_not": "The first two nodes in Scotland's Authority Graph - only this one narrow point (the anti-monopoly rule as applied to the land-owning maintenance model) is covered. Does not cover feudal abolition, servitudes/real burdens formation generally, the Land Register's positive-registration effects, or any other Scots Property Law subject - all remain unbuilt, and Scotland's Authority Graph as a whole is brand new this session."
+}

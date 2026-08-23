@@ -1,0 +1,50 @@
+{
+  "$comment": "Scotland, Contract Law - the statutory personal-bar mechanism that can excuse a missing formal writing requirement for land contracts, and its narrow judicial construction. Scots law genuinely does not require consideration for a binding contract, unlike English law - this entry covers a different but equally distinctive feature: the formal writing requirement for land transactions and its escape valve.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Requirements of Writing (Scotland) Act 1995 s.1(1)-(5) fetched live and directly from legislation.gov.uk, independently re-fetched and word-for-word consistent on both attempts. The Advice Centre for Mortgages Ltd v McNicoll [2006] CSOH 58 - the researching agent read the full judgment via a live browser session on BAILII after both curl and WebFetch were blocked by an Anubis bot-challenge (403); this session's own independent WebFetch re-attempt was also blocked (403), so the case is recorded consistent with this session's established practice for legitimate browser-tool access (as distinct from a proxy bypass).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-CONTRACT-001",
+      "authority_type": "statute",
+      "name": "Requirements of Writing (Scotland) Act 1995, s.1",
+      "citation": "Requirements of Writing (Scotland) Act 1995 (c.7) s.1(1)-(5)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "scotland",
+      "date": "1995",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "Writing is not generally required for the constitution of a contract, unilateral obligation, or trust (s.1(1)) - Scots law does not require consideration, unlike English law, but a written document complying with s.2 is required for a contract creating, transferring, varying, or extinguishing an interest in land (s.1(2)(a)(i)). Where such a land contract lacks the required writing, but one party has acted in reliance on it with the other's knowledge and acquiescence and would be materially prejudiced by withdrawal, the other party cannot withdraw and the contract is not invalid for want of writing (s.1(3)-(4)). Subsections (3) and (4) replace the former common-law rules of rei interventus and homologation (s.1(5)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1995/7/section/1",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-SCOT-CONTRACT-002",
+      "authority_type": "case",
+      "name": "The Advice Centre for Mortgages Ltd v McNicoll",
+      "citation": "[2006] CSOH 58; 2006 SLT 591",
+      "court": "Outer House, Court of Session",
+      "jurisdiction": "scotland",
+      "date": "2006-04-06",
+      "judge_or_panel": "Lord Drummond Young",
+      "proposition": "The statutory personal bar in s.1(3)-(4) operates as a shield, not a sword: it prevents withdrawal from a contract but confers no positive claim, and it binds only the original contracting parties, not singular successors (such as a purchaser who took the land after the original party failed to formalise a lease). It applies only to contracts creating purely personal rights under s.1(2)(a), not to deeds intended to create real rights under s.1(2)(b) that are perfected by registration or taking possession. Section 1(5) abolished the common-law doctrine of rei interventus 'in its entirety,' including its older use to prove that consensus had been reached at all (not merely its use to cure a missing signature) - overruling the practical effect of Errol v Walker 1966 SC 93 (not independently verified in this file).",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://www.bailii.org/scot/cases/ScotCS/2006/CSOH_58.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "This session's own independent WebFetch attempt on the same BAILII URL returned HTTP 403, consistent with the researching agent's own initial block. The agent then read the full judgment via a real, sandboxed browser session on BAILII - direct navigation resolving the site's own JS challenge, not a third-party proxy - and confirmed internal consistency by cross-checking the court's own quotation of s.1(1)-(7) at para 15 against the legislation.gov.uk text verbatim. Outer House decision, recorded as PERSUASIVE authority weight."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-CONTRACT-002",
+      "to": "AUTH-SCOT-CONTRACT-001",
+      "relationship": "APPLIES",
+      "verified_via": "McNicoll [2006] CSOH 58, paras 17-18, 22, 30, per the researching agent's browser-session read of BAILII: construes s.1(3)-(5)'s personal bar narrowly, confining it to personal-right contracts between the original parties and confirming its total replacement of rei interventus and homologation."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the personal-bar escape valve for informal land contracts. Does not cover offer/acceptance formation generally, the Contract (Scotland) Act 1997's rectification provisions, promise as a distinct unilateral obligation, or any other Scots Contract Law subject - all remain unbuilt."
+}

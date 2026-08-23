@@ -1,0 +1,50 @@
+{
+  "$comment": "England & Wales, Housing Law - homelessness (distinct from the private-sector Landlord & Tenant s.21 entry already in this repository): Article 6 ECHR does not attach to a local authority's final-offer decision-making, and review letters are read generously as a whole. The researching agent flagged that the current in-force text of s.193(7) differs slightly from the text Poshteh actually applied (the current version adds 'or acceptance' and restructures (7F)) - both readings are recorded rather than conflated, and this session's own independent re-fetch of the current text confirmed the researching agent's account.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Housing Act 1996 s.193(7) fetched live and directly from legislation.gov.uk (current text), independently re-fetched and word-for-word consistent on both attempts; the historic text as applied in Poshteh was read directly from the Supreme Court's own quotation of it at para 4. Poshteh v Royal Borough of Kensington and Chelsea [2017] UKSC 36 fetched live and directly from Find Case Law, independently re-fetched with paragraphs 39 and 43 confirmed in substance.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EW-HOUSING-001",
+      "authority_type": "statute",
+      "name": "Housing Act 1996, s.193(7)",
+      "citation": "Housing Act 1996 (c.52) s.193(7)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "england-wales",
+      "date": "1996",
+      "date_note": "Enactment year. The current text (fetched and confirmed live this session) differs from the version Poshteh applied in 2017 - the current s.193(7) adds 'or acceptance' after 'possible consequence of refusal,' and the current s.193(7F) now ties into subsection (8)'s contractual-obligation reasons rather than the free-standing 'reasonable for him to accept' formula the court construed. Both versions are recorded rather than conflated - this is a real, subsequent statutory amendment, not a sourcing error.",
+      "proposition": "A local housing authority's main homelessness duty ceases if an applicant, having been informed of the possible consequence of refusal (or, under the current text, acceptance) and of their right to request a review of suitability, refuses a final offer of accommodation under Part 6.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1996/52/section/193",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Current text fetched live and directly this session, on two independent passes, word-for-word consistent both times. The historic text as applied in Poshteh was read directly from the Supreme Court's own verbatim quotation of it at para 4, not independently re-fetched from an archived legislation.gov.uk version."
+    },
+    {
+      "authority_id": "AUTH-EW-HOUSING-002",
+      "authority_type": "case",
+      "name": "Poshteh v Royal Borough of Kensington and Chelsea",
+      "citation": "[2017] UKSC 36",
+      "court": "Supreme Court",
+      "jurisdiction": "england-wales",
+      "date": "2017-05-10",
+      "judge_or_panel": "Lord Carnwath (giving the judgment), Lord Neuberger, Lord Clarke, Lord Reed, Lord Hughes agreeing",
+      "proposition": "Article 6 ECHR does not apply to a local authority's Part 7 decision-making, including a s.202 review of a s.193(7) final-offer refusal, because the entitlement depends on the authority's own evaluative judgment rather than being a precisely-defined civil right - reaffirming Ali v Birmingham City Council [2010] 2 AC 39 (not independently verified in this file) over a contrary Strasbourg Chamber decision. Applying Holmes-Moorhouse v Richmond upon Thames LBC [2009] UKHL 7 (not independently verified in this file), a reviewing officer's decision letter must be read benevolently as a whole - 'a conscientious attempt by a hard-pressed housing officer to cover every conceivable issue raised in the case' - not subjected to over-zealous linguistic analysis like a contract or statute. Appeal dismissed on both issues.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://caselaw.nationalarchives.gov.uk/uksc/2017/36",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly from Find Case Law this session, independently re-fetched - both fetches consistent on the paragraph 39 'benevolent reading' principle (though quoting different specific sentences within it) and paragraph 43's dismissal."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EW-HOUSING-002",
+      "to": "AUTH-EW-HOUSING-001",
+      "relationship": "APPLIES",
+      "verified_via": "Poshteh v RBKC [2017] UKSC 36, paras 37-43, fetched directly from Find Case Law and independently re-confirmed: narrows the avenues for challenging a s.193(7) final-offer decision by excluding Article 6 and requiring a generous, whole-letter reading of the reviewing officer's reasoning."
+    }
+  ],
+  "what_this_is_not": "Two verified nodes covering the standard of review for a s.193(7) final-offer refusal decision, distinct from the private-sector possession law already covered elsewhere in this repository. Does not cover the s.184 inquiry duty, priority need/intentional homelessness determinations, or any other Housing Law subject - all remain unbuilt."
+}
