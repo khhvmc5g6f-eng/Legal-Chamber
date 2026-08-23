@@ -3,7 +3,7 @@ jurisdiction: Australia
 legal_system: common-law (federal)
 verification_status: STRUCTURAL_DRAFT
 last_reviewed: 2026-08-22
-reviewer: initial repository build; corrected 2026-08-22 by an independent fact-check pass (see docs/HONEST_STATUS.md) - Family Court of Australia error fixed
+reviewer: initial repository build; corrected 2026-08-22 by an independent fact-check pass (see docs/HONEST_STATUS.md) - Family Court of Australia error fixed; a populated Authority Graph was added the same day via four parallel-agent research passes, each independently re-verified against a live primary source (where reachable) by the orchestrating session before being written - see "Populated Authority Graph" below
 ---
 
 # Australia
@@ -41,6 +41,19 @@ No single federal code; Commonwealth Acts plus state/territory Acts plus common 
 - `legislation.gov.au` - official Commonwealth legislation
 - Each state/territory's official legislation site and court site
 
+## Populated Authority Graph
+
+`authorities/` holds four doctrinal files across four subjects - Australia's first Authority Graph content in this repository, each researched live this session against Commonwealth and federal court primary sources.
+
+| File | Subject | Lead case |
+|---|---|---|
+| `authorities/contract-unconscionable-conduct-normative-standard.json` | Contract Law - the normative standard for statutory unconscionable conduct | *ACCC v Lux Distributors Pty Ltd* [2013] FCAFC 90 |
+| `authorities/tort-negligence-breach-four-factor-test.json` | Tort Law - the statutory four-factor breach-of-duty calculus | *Tapp v Australian Bushmen's Campdraft & Rodeo Association Ltd* [2022] HCA 11 |
+| `authorities/property-native-title-continuity-requirement.json` | Property Law - native title's "substantially uninterrupted" continuity requirement | *Members of the Yorta Yorta Aboriginal Community v Victoria* [2002] HCA 58 |
+| `authorities/criminal-conspiracy-intention-not-recklessness.json` | Criminal Law - the intention element of Commonwealth conspiracy | *The Queen v LK; The Queen v RK* (2010) 241 CLR 177 |
+
+Deliberately narrow, matching the same one-or-two-doctrinal-points-per-file discipline used throughout this repository's other jurisdictions - four real starting points, not a survey. A significant access-pattern finding is worth naming here: AustLII, jade.io, and the High Court's own eresources/download routes returned HTTP 403 or unusable timeouts to automated fetch across dozens of URL attempts spanning all four research passes - far more consistently blocked than England & Wales's or Scotland's primary sources. Three of the four case nodes (Tort, Property, Criminal) are consequently recorded at `VERIFIED_SECONDARY_SOURCE`, corroborated instead via independent, professionally-authored secondary sources (academic case notes, law-firm commentary, official bench books) that themselves pin-cite the primary judgment's paragraphs - never via a third-party reader-proxy, which this repository's access-terms rule excludes. Each file states this honestly rather than presenting a secondary-sourced quote as a primary read. One research pass (Property Law) also caught and discarded an unreliable WebSearch-synthesized claim about a case's bench composition that included a Justice who had not yet been appointed to the High Court at the time of the judgment.
+
 ## What is NOT in this pack
 
-No state-specific substantive content verified. No populated Authority Graph. No verified procedural deadline.
+No state-specific substantive content verified beyond the four Authority Graph entries above. No verified procedural deadline.

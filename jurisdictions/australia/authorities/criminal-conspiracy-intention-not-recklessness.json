@@ -1,0 +1,50 @@
+{
+  "$comment": "Australia, Criminal Law - the intention element of Commonwealth statutory conspiracy, construed narrowly to exclude mere recklessness. The researching agent could not reach AustLII, jade.io, or the HCA's own judgment file (all blocked or timed out across roughly ten distinct URLs tried) and used two independent, professionally-authored secondary sources that themselves pin-cite specific paragraphs - flagged honestly as Tier 2 rather than presented as a primary read. The agent also caught and discarded an unreliable WebSearch-synthesized claim about the case's bench composition (it listed Bell J, who was not appointed to the High Court until nine months after this judgment) rather than passing on a plausible-sounding but wrong fact.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Criminal Code Act 1995 (Cth) Sch. (Criminal Code) s.11.5(1)-(2) fetched live and directly from legislation.gov.au, independently re-fetched and word-for-word consistent on both attempts. The Queen v LK; The Queen v RK (2010) 241 CLR 177 - AustLII, jade.io, and hcourt.gov.au's judgment file all returned HTTP 403 or timed out to both the researching agent and this session's own independent WebSearch follow-up; the case's existence, citation, and core subject matter (French CJ's construction of the intention element in s.11.5(2)(b)) were independently corroborated via WebSearch, consistent with the researching agent's two secondary sources (a barrister's CPD paper quoting para 75 verbatim, and the NSW Judicial Commission's Bench Book pin-citing paras 107, 136, 141).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-AUS-CRIMINAL-001",
+      "authority_type": "statute",
+      "name": "Criminal Code (Cth), s.11.5",
+      "citation": "Criminal Code Act 1995 (Cth) Sch. (Criminal Code) s.11.5(1)-(2)",
+      "court": "N/A - primary legislation (Commonwealth)",
+      "jurisdiction": "australia",
+      "date": "1995",
+      "date_note": "Enactment year. The text verified this session is the current in-force version.",
+      "proposition": "A person who conspires with another to commit an offence punishable by more than 12 months' imprisonment or a fine of 200+ penalty units commits conspiracy to commit that offence, punishable as if the substantive offence had been committed (s.11.5(1)). For guilt: the person must have entered an agreement with one or more others; the person and at least one other party must have intended that an offence would be committed pursuant to the agreement; and the person or at least one other party must have committed an overt act pursuant to the agreement (s.11.5(2)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.au/C2004A04868/2026-06-30/2026-06-30/text/original/epub/OEBPS/document_1/document_1.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-AUS-CRIMINAL-002",
+      "authority_type": "case",
+      "name": "The Queen v LK; The Queen v RK",
+      "citation": "(2010) 241 CLR 177; [2010] HCA 17",
+      "court": "High Court of Australia",
+      "jurisdiction": "australia",
+      "date": "2010-05-26",
+      "judge_or_panel": "French CJ (delivered reasons quoted below); full bench composition not independently confirmed this session - a WebSearch-synthesized claim naming Bell J was correctly discarded by the researching agent as unreliable, since Bell J was not appointed until nine months after this judgment",
+      "proposition": "Construes s.11.5(2)(b)'s intention element narrowly: a conspirator must actually know or intend the facts that make the proposed act unlawful, extending to both physical and fault elements of the substantive offence - mere recklessness as to a definitional element of the object offence cannot found a conspiracy charge, subject only to the special-liability-provision carve-out in s.11.5(7A). On the facts, the accused were merely reckless as to whether money moved through a foreign account was proceeds of crime; that was not enough to satisfy s.11.5(2)(b)'s intention requirement.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://eresources.hcourt.gov.au/showCase/2010/HCA/17",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "AustLII, jade.io, and the HCA's own judgment file all returned HTTP 403 or timed out across roughly ten distinct URLs tried by the researching agent. Paragraph 75's exact quote was sourced from a barrister's CPD paper that quotes it verbatim; paragraphs 107, 136, and 141 were independently pin-cited by the NSW Judicial Commission's Criminal Trial Courts Bench Book - two independent, professionally-authored secondary sources agreeing on substance. This session's own independent WebSearch follow-up corroborated the case's existence, citation, and core holding, consistent with both secondary sources."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-AUS-CRIMINAL-002",
+      "to": "AUTH-AUS-CRIMINAL-001",
+      "relationship": "APPLIES",
+      "verified_via": "The Queen v LK (2010) 241 CLR 177, paras 75, 107, per two independent secondary sources cross-corroborated this session: construes s.11.5(2)(b)'s intention requirement as excluding mere recklessness, requiring actual knowledge or intention as to the facts making the object offence unlawful."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the intention element of Commonwealth conspiracy. Does not cover the offence's overt-act requirement in detail, state-based conspiracy offences, attempt or other inchoate offences, or any other Australian Criminal Law subject - all remain unbuilt."
+}

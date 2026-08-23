@@ -1,0 +1,50 @@
+{
+  "$comment": "Australia, Tort Law - the statutory four-factor breach-of-duty test that replaced the common-law Wyong Shire Council v Shirt formulation, and its application by the High Court. Both nodes were genuinely difficult to verify this session: legislation.nsw.gov.au, AustLII (all mirrors), jade.io, and hcourt.gov.au all returned HTTP 403 or unusable redirects/timeouts to the researching agent AND to this session's own independent follow-up re-fetch attempts. This is recorded honestly at VERIFIED_SECONDARY_SOURCE rather than papered over, following this repository's established practice for genuine, repeated primary-source access failures.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Civil Liability Act 2002 (NSW) s.5B - primary source blocked (legislation.nsw.gov.au 403 on multiple URL formats, AustLII 403 on all mirrors, jade.io 403), corroborated via two independent live-fetched secondary sources (Mondaq's case commentary quoting s.5B(1)-(2) in full, and a WebSearch-indexed AustLII page) agreeing verbatim; this session's own follow-up re-fetch attempts hit the same blocks. Tapp v Australian Bushmen's Campdraft & Rodeo Association Ltd [2022] HCA 11 - primary source blocked (AustLII 403, hcourt.gov.au timeouts/redirect-without-content), the key paragraph 127 quote sourced from a CC-BY-licensed QUT academic case note that block-quotes it verbatim with a pinpoint citation, with the case's risk-characterisation language independently cross-checked against a genuinely primary-fetched related judgment (the NSWCA decision below it) where the same wording appears verbatim in the dissenting judge's reasons the majority later adopted.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-AUS-TORT-001",
+      "authority_type": "statute",
+      "name": "Civil Liability Act 2002 (NSW), s.5B",
+      "citation": "Civil Liability Act 2002 (NSW) s.5B(1)-(2)",
+      "court": "N/A - primary legislation (New South Wales)",
+      "jurisdiction": "australia",
+      "date": "2002",
+      "date_note": "Enactment year. Not independently re-fetched by this session's own follow-up attempt - see verification_note for the access-block chain.",
+      "proposition": "A person is not negligent in failing to take precautions against a risk of harm unless the risk was foreseeable, was not insignificant, and a reasonable person in the person's position would have taken those precautions in the circumstances (s.5B(1)). In determining whether a reasonable person would have taken precautions, the court considers the probability that harm would occur if care were not taken, the likely seriousness of the harm, the burden of taking precautions, and the social utility of the risk-creating activity (s.5B(2)) - a four-factor statutory calculus replacing the earlier common-law formulation from Wyong Shire Council v Shirt (1980) (not independently verified in this file).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.nsw.gov.au/view/html/inforce/current/act-2002-022",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "legislation.nsw.gov.au, AustLII (all mirrors), and jade.io all returned HTTP 403 to both the researching agent and this session's own independent follow-up attempts. Corroborated via two independent live-fetched secondary sources (Mondaq's case commentary, quoting s.5B(1)-(2) in full and verbatim; a WebSearch-indexed AustLII page with matching text/structure) agreeing on wording and subsection structure, and internally consistent with the Tapp case's own paragraph-127 application of the identical four factors in the same order."
+    },
+    {
+      "authority_id": "AUTH-AUS-TORT-002",
+      "authority_type": "case",
+      "name": "Tapp v Australian Bushmen's Campdraft & Rodeo Association Ltd",
+      "citation": "[2022] HCA 11",
+      "court": "High Court of Australia",
+      "jurisdiction": "australia",
+      "date": "2022-04-06",
+      "judge_or_panel": "Kiefel CJ, Keane J, Gordon J, Edelman J, Gleeson J (majority: Gordon, Edelman, Gleeson JJ)",
+      "proposition": "Applies s.5B(2)'s four-factor calculus in sequence to a concrete risk: having characterised the relevant risk with appropriate particularity (a rider falling from a horse that slipped because of a deteriorating campdrafting arena surface), the majority held a reasonable event organiser, facing a substantially elevated probability of catastrophic injury against only the trivial burden of pausing to inspect the ground, was bound to stop the competition - so the failure to do so breached the duty of care. The case operationalises s.5B's abstract statutory factors into a concrete, judicially-endorsed method running from risk characterisation through to a breach finding.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://eresources.hcourt.gov.au/downloadPdf/2022/HCA/11",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "AustLII returned HTTP 403 and hcourt.gov.au's download/case-page routes returned timeouts or a redirect to a generic listing page with no document content, to both the researching agent and this session's own independent follow-up attempts. Paragraph 127's exact four-factor quote was sourced from a CC-BY-licensed QUT academic case note (McGregor-Lowndes & Hannah, May 2022) that block-quotes it verbatim with a pinpoint citation - standard scholarly citation practice. The case's risk-characterisation language was independently cross-checked against a genuinely primary-fetched related judgment, Tapp v Australian Bushmen's Campdraft & Rodeo Association Ltd [2020] NSWCA 263, fetched live from caselaw.nsw.gov.au, where the identical wording appears verbatim at paragraph 166 of the dissenting judgment the High Court majority later adopted."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-AUS-TORT-002",
+      "to": "AUTH-AUS-TORT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Tapp v Australian Bushmen's Campdraft & Rodeo Association [2022] HCA 11, para 127, sourced from a QUT academic case note and cross-checked for wording accuracy against the independently-fetched NSWCA judgment below it: works through each of s.5B(2)'s four factors in turn to find a breach of duty."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the statutory breach-of-duty calculus, both recorded honestly at secondary tier after genuine, repeated primary-source access failures across multiple official Australian legal databases. Does not cover causation under s.5D, contributory negligence, or any other Australian Tort Law subject - all remain unbuilt."
+}

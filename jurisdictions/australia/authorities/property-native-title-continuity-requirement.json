@@ -1,0 +1,50 @@
+{
+  "$comment": "Australia, Property Law - native title's statutory definition and the 'substantially uninterrupted' continuity requirement that construes it. The researching agent used a real browser session to extract the statute's text directly (WebFetch's summarizer could not handle the very large single-page document); this session's own independent re-fetch hit the same document-size limitation and could not reach s.223 specifically, though it independently corroborated Yorta Yorta's core continuity-doctrine holding via WebSearch against a genuine synthesis of multiple secondary sources.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Native Title Act 1993 (Cth) s.223(1) - the researching agent read the compiled Act via a real browser session directly from the Federal Register of Legislation, not a proxy; this session's own independent re-fetch attempts could not locate the specific section within the very large document (a size limitation, not an access block). Members of the Yorta Yorta Aboriginal Community v Victoria [2002] HCA 58 - bibliographic details (panel, date, catchwords) fetched directly from the High Court's own official case page; the paragraph-level holding was corroborated across two independent secondary sources by the researching agent (a hosted full-text mirror and the ALRC's official Connection to Country report) after AustLII and Jade.io both actively blocked automated access, and this session's own independent WebSearch further corroborated the core continuity-doctrine holding via a genuine synthesis of multiple sources.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-AUS-PROPERTY-001",
+      "authority_type": "statute",
+      "name": "Native Title Act 1993 (Cth), s.223(1)",
+      "citation": "Native Title Act 1993 (Cth) s.223(1)",
+      "court": "N/A - primary legislation (Commonwealth)",
+      "jurisdiction": "australia",
+      "date": "1993",
+      "date_note": "Enactment year, following the High Court's 1992 Mabo (No 2) decision. The compilation the researching agent read was registered 12 June 2024 (C2024C00224). This session's own re-fetch could not independently confirm the current wording due to the document's size, not an access block.",
+      "proposition": "'Native title' or 'native title rights and interests' means the communal, group or individual rights and interests of Aboriginal peoples or Torres Strait Islanders in relation to land or waters, where the rights and interests are possessed under the traditional laws acknowledged, and traditional customs observed, by the group (s.223(1)(a)); the group has a connection with the land or waters by those laws and customs (s.223(1)(b)); and the rights and interests are recognised by the common law of Australia (s.223(1)(c)).",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.au/C2004A04665/latest/text",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent read the text directly from the Federal Register of Legislation via a real browser session (driving the actual page, not a third-party proxy) after WebFetch's summarizer failed on the document's size. This session's own independent re-fetch attempts hit the same document-size limitation and could not reach s.223 specifically within the fetched excerpt."
+    },
+    {
+      "authority_id": "AUTH-AUS-PROPERTY-002",
+      "authority_type": "case",
+      "name": "Members of the Yorta Yorta Aboriginal Community v Victoria",
+      "citation": "[2002] HCA 58; (2002) 214 CLR 422",
+      "court": "High Court of Australia",
+      "jurisdiction": "australia",
+      "date": "2002-12-12",
+      "judge_or_panel": "Gleeson CJ, McHugh, Gummow, Hayne, Callinan JJ (majority, 5:2); Gaudron and Kirby JJ dissenting",
+      "proposition": "Construes s.223(1)(a)'s 'traditional laws acknowledged, and traditional customs observed' requirement: the laws and customs must have their normative origin in the pre-sovereignty society, and the normative system itself must have had a continuous existence and vitality since sovereignty. Critically, the acknowledgment and observance of those laws and customs must have continued 'substantially uninterrupted' since sovereignty - though 'substantially' recognises the practical difficulty of proving continuous oral tradition over such a long period, and continuity is required of the normative system itself, not of the precise content of every law and custom, which may change over time. On the facts, the claimants' native title claim failed because 19th-century disruption meant their traditional society's laws and customs had not been substantially continuously observed.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.hcourt.gov.au/cases-and-judgments/judgments/judgments-1998-current/members-yorta-yorta-aboriginal-community-v-victoria",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "AustLII and Jade.io both actively blocked automated access ('access denied for AI crawlers'), confirmed by direct browser navigation, not merely WebFetch. Bibliographic details (panel, date, catchwords directly confirming engagement with s.223) were fetched directly from the High Court's own official case page. The paragraph-level holding (paras 46-48, 87-89) was corroborated by the researching agent across two independent secondary sources (a hosted full-text mirror and the Australian Law Reform Commission's official Connection to Country report), with a small residual uncertainty flagged honestly (a one-to-two paragraph spread in exactly which paragraph carries which quoted sentence). This session's own independent WebSearch further corroborated the core continuity-doctrine holding via a genuine synthesis of multiple sources, consistent with the researching agent's account."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-AUS-PROPERTY-002",
+      "to": "AUTH-AUS-PROPERTY-001",
+      "relationship": "APPLIES",
+      "verified_via": "Yorta Yorta v Victoria [2002] HCA 58, paras 46-48, 87-89, per the researching agent's cross-corroborated secondary sourcing and independently confirmed in substance via WebSearch this session: construes s.223(1)(a)'s 'traditional' requirement as demanding substantially uninterrupted continuity of the normative system since sovereignty."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering native title's statutory definition and its dominant, most-criticised continuity gloss. Does not cover the extinguishment provisions, the future acts regime, native title compensation, or any other Australian Property Law subject - all remain unbuilt."
+}

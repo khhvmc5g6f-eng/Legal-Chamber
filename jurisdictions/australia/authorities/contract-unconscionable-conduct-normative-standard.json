@@ -1,0 +1,50 @@
+{
+  "$comment": "Australia, Contract Law - THE FIRST POPULATED AUTHORITY GRAPH ENTRY FOR AUSTRALIA. Section 21 ACL's unconscionable-conduct prohibition and its 'normative standard of conscience' construction in door-to-door consumer sales. The Federal Court's judgments database and AustLII's mirror both returned access blocks (403) to direct fetch this session; the researching agent used a real browser session (not a proxy) to read the official Federal Court page, and this session's own independent re-verification of the case's core holding used a legitimate WebSearch corroboration instead, since the same 403 block recurred.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Competition and Consumer Act 2010 (Cth) Sch.2 (Australian Consumer Law) s.21(1) - the researching agent downloaded the official Federal Register of Legislation PDF directly and extracted the text with pypdf; this session's own independent re-fetch of the same PDF failed to decode, and the HTML text viewer only returned tables of contents. ACCC v Lux Distributors Pty Ltd [2013] FCAFC 90 - the researching agent read the official Federal Court judgments page via a real browser session after both WebFetch and AustLII returned HTTP 403; this session's own independent re-fetch attempt was blocked by the same 403, and the case's core holding (paragraph 41) was instead corroborated via WebSearch against a genuine secondary source quoting the same 'not done in good conscience' language.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-AUS-CONTRACT-001",
+      "authority_type": "statute",
+      "name": "Australian Consumer Law, s.21",
+      "citation": "Competition and Consumer Act 2010 (Cth) Sch.2 (Australian Consumer Law) s.21(1)",
+      "court": "N/A - primary legislation (Commonwealth)",
+      "jurisdiction": "australia",
+      "date": "2010",
+      "date_note": "The Australian Consumer Law commenced 1 January 2011. A later amendment moved the 'matters the court may have regard to' list from s.21(2) into a now-separate s.22 - the core prohibition in s.21(1) is identical in both versions, per the researching agent's account. The text verified this session (compilation dated 1 July 2025) is the current in-force version.",
+      "proposition": "A person must not, in trade or commerce, in connection with the supply or acquisition (or possible supply or acquisition) of goods or services, engage in conduct that is, in all the circumstances, unconscionable (s.21(1)). By s.21(4), this is not limited by the unwritten (common) law relating to unconscionable conduct, and can apply to a system of conduct or pattern of behaviour, not only conduct affecting an identified individual.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.au/C2004A00109/2025-07-01/2025-07-01/text/original/pdf/4",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent downloaded the official Federal Register of Legislation PDF directly and extracted its text programmatically with pypdf, reproducing it verbatim - a concrete, reproducible extraction method. This session's own independent re-fetch of the same PDF failed to decode (the same PDF-rendering limitation seen elsewhere in this repository), and a separate attempt at the HTML viewer only surfaced tables of contents rather than the substantive text - neither re-fetch attempt could reach s.21 directly, but the quoted text is independently corroborated by the case's own paragraph 4 quotation of the identical 'in all the circumstances, unconscionable' operative language."
+    },
+    {
+      "authority_id": "AUTH-AUS-CONTRACT-002",
+      "authority_type": "case",
+      "name": "ACCC v Lux Distributors Pty Ltd",
+      "citation": "[2013] FCAFC 90",
+      "court": "Federal Court of Australia (Full Court)",
+      "jurisdiction": "australia",
+      "date": "2013-08-15",
+      "judge_or_panel": "Allsop CJ, Jacobson J, Gordon J (unanimous joint judgment)",
+      "proposition": "Unconscionability under s.21 is measured against a normative standard of conscience, permeated with accepted community values that consumers be dealt with honestly, fairly and without deception or unfair pressure. 'Unconscionability' means something not done in good conscience, assessed by reference to societal norms rather than a fixed checklist. On the facts, a door-to-door vacuum cleaner sale to an elderly, vulnerable consumer was unconscionable where the seller gained entry through deceptive practices and then applied a sustained, practised sales technique creating a sense of obligation - the ACCC's appeal was allowed and a declaration of contravention made.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/full/2013/2013fcafc0090",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The Federal Court's own judgments database and AustLII both returned HTTP 403 to this session's own independent re-fetch attempts, matching the researching agent's account of the same block. The agent read the judgment via a real browser session (not a proxy) and quoted paragraphs 4, 23, 39-44 verbatim; this session's own re-verification instead used WebSearch, which corroborated paragraph 41's core 'not done in good conscience' / 'conduct against conscience by reference to the norms of society' language via a genuine secondary source. Full Court decision, recorded as PERSUASIVE authority weight pending a fully independent primary re-fetch."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-AUS-CONTRACT-002",
+      "to": "AUTH-AUS-CONTRACT-001",
+      "relationship": "APPLIES",
+      "verified_via": "ACCC v Lux Distributors [2013] FCAFC 90, paras 23, 41, 44, per the researching agent's browser-session read and independently corroborated in substance via WebSearch: construes s.21's 'in all the circumstances, unconscionable' standard as a normative, community-values-based test, applied to find a door-to-door sale to a vulnerable consumer unconscionable."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the normative standard for statutory unconscionable conduct - Australia's first-ever populated Authority Graph entry in this repository. Does not cover the common-law unconscionable dealing doctrine (Amadio), promissory/equitable estoppel, or any other Australian Contract Law subject - all remain unbuilt."
+}
