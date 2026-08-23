@@ -1,0 +1,50 @@
+{
+  "$comment": "Canada (common-law provinces), Contract Law - the general organizing principle of good faith and its concrete manifestation as a non-excludable duty of honest performance, and its extension to the exercise of contractual rights. CanLII presented an interactive bot-verification CAPTCHA to the researching agent's attempt, which was correctly declined rather than solved/bypassed; the researching agent used the Supreme Court's own official decisions database instead. This session's own independent re-fetch of the same SCC URLs returned HTTP 403, so the core holdings are corroborated here via WebSearch against genuine secondary sources.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Bhasin v. Hrynew, 2014 SCC 71 and C.M. Callow Inc. v. Zollinger, 2020 SCC 45 - the researching agent fetched both directly from decisions.scc-csc.ca (the Supreme Court's own official decisions database) via a genuine sandboxed browser session, after CanLII presented a bot-verification CAPTCHA that was correctly declined rather than solved. This session's own independent re-fetch of the same SCC URLs returned HTTP 403, so the core holdings (paragraph 73 of Bhasin) were instead corroborated via WebSearch against a genuine secondary-source synthesis, consistent with the researching agent's account.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-CAN-CONTRACT-001",
+      "authority_type": "case",
+      "name": "Bhasin v. Hrynew",
+      "citation": "2014 SCC 71; [2014] 3 SCR 494",
+      "court": "Supreme Court of Canada",
+      "jurisdiction": "canada",
+      "date": "2014-11-13",
+      "judge_or_panel": "Cromwell J (McLachlin CJ, LeBel, Abella, Rothstein, Karakatsanis, Wagner JJ concurring)",
+      "proposition": "Recognises good faith contractual performance as a general organizing principle of the common law of contract, and, as one concrete manifestation of it, a new common law duty of honest performance applying to all contracts: parties must not lie or otherwise knowingly mislead each other about matters directly linked to the performance of the contract. This is not an implied term but a general doctrine of contract law operating irrespective of the parties' intentions - they cannot contract out of it. On the facts, a party breached this duty by acting dishonestly in exercising a non-renewal clause.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://decisions.scc-csc.ca/scc-csc/scc-csc/en/item/14438/index.do",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent fetched this directly from the Supreme Court's own official decisions database via a genuine browser session (not a proxy), quoting paragraphs 33, 63, 73-75, and 93-94 verbatim. This session's own independent re-fetch of the same SCC URL returned HTTP 403; paragraph 73's exact wording was instead independently corroborated via WebSearch against a genuine secondary-source quotation."
+    },
+    {
+      "authority_id": "AUTH-CAN-CONTRACT-002",
+      "authority_type": "case",
+      "name": "C.M. Callow Inc. v. Zollinger",
+      "citation": "2020 SCC 45; [2020] 3 SCR 908",
+      "court": "Supreme Court of Canada",
+      "jurisdiction": "canada",
+      "date": "2020-12-18",
+      "judge_or_panel": "Kasirer J (Wagner CJ, Abella, Karakatsanis, Martin JJ concurring); Brown J concurring in result; Côté J dissenting",
+      "proposition": "Confirms and extends Bhasin's duty of honest performance: it applies not only to the performance of one's own obligations but to the exercise of one's contractual rights (here, a unilateral termination clause). 'Knowingly misleading' conduct is not confined to spoken lies - it can include half-truths, omissions, and even silence, depending on the circumstances, so long as that operates as active deception rather than mere passive non-disclosure of a material fact. On the facts, a party breached the duty by knowingly misleading the other into believing an agreement would not be terminated, even though the required notice period was technically satisfied.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://decisions.scc-csc.ca/scc-csc/scc-csc/en/item/18613/index.do",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent fetched this directly from the Supreme Court's own official decisions database via the same genuine browser-session method, quoting paragraphs 2, 5, 42, and 91 verbatim. This session's own independent re-fetch of the same SCC URL returned HTTP 403; not independently re-confirmed at the pinpoint level by this session, recorded at VERIFIED_SECONDARY_SOURCE consistent with the parallel treatment of the Bhasin node."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-CAN-CONTRACT-002",
+      "to": "AUTH-CAN-CONTRACT-001",
+      "relationship": "APPLIES",
+      "verified_via": "C.M. Callow v. Zollinger, 2020 SCC 45, paras 2, 5, 42, 91, per the researching agent's SCC-site browser-session fetch: expressly applies Bhasin's organizing-principle framework, extending the duty of honest performance to the exercise of contractual rights and clarifying that misleading conduct can include half-truths, omissions, or silence operating as active deception."
+    }
+  ],
+  "what_this_is_not": "Two nodes forming a single doctrinal line on the duty of honest performance - Bhasin creates the duty, Callow defines how far 'misleading' conduct reaches. Deliberately excludes Quebec (a distinct civil-law jurisdiction for private law, covered separately in this repository). Does not cover unconscionability, undue influence, the broader good-faith doctrine beyond honest performance, or any other Canadian common-law Contract Law subject - all remain unbuilt."
+}

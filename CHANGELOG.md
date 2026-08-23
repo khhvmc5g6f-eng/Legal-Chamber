@@ -2,6 +2,19 @@
 
 All notable changes to this project are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/). Each entry corresponds to one real commit - see the git history for exact diffs.
 
+### Added - Canada's first Authority Graph entries (Contract, Tort, Criminal Law, plus a dedicated Quebec civil-law entry)
+
+Continuing the "every other country" instruction, four foundational entries were added to `jurisdictions/canada/authorities/` - this repository's first-ever populated Authority Graph content for Canada, previously `STRUCTURAL_DRAFT` with zero case-law content. Canada's mixed common-law/civil-law structure (common-law provinces plus civil-law Quebec for private law) genuinely warranted a fifth entry rather than forcing Quebec's distinct doctrine into a common-law row.
+
+- `contract-duty-of-honest-performance.json` - the non-excludable duty of honest contractual performance, common-law provinces (Bhasin v. Hrynew, 2014 SCC 71; C.M. Callow Inc. v. Zollinger, 2020 SCC 45).
+- `tort-duty-of-care-proximity-foreseeability.json` - the modern Anns/Cooper duty-of-care test (Cooper v. Hobart, 2001 SCC 79; Rankin (Rankin's Garage & Sales) v. J.J., 2018 SCC 19).
+- `criminal-self-defence-role-in-incident.json` - the "role in the incident" self-defence factor (Criminal Code s.34; R. v. Khill, 2021 SCC 37).
+- `quebec-civil-liability-defamation-fault-standard.json` - Quebec's general extracontractual liability provision applied to defamation, showing there is no free-standing Quebec tort of defamation (Civil Code of Quebec art.1457; Prud'homme v. Prud'homme, 2002 SCC 85).
+
+The dominant finding across this pass, worth naming plainly: **CanLII - Canada's primary case-law database, already flagged in this pack's own README as requiring a non-self-serve API key - turned out to block plain browser-based research too**, not only the documented API. Every research pass hit either an interactive bot-verification CAPTCHA ("slide right to secure your access") or an active DataDome bot-detection block on CanLII, across all four topics. Per this repository's rules, no pass attempted to solve or bypass these challenges; each instead used the deciding court's own official site (the Supreme Court of Canada's `decisions.scc-csc.ca`, or the relevant federal/Quebec statute site) as the primary source. This session's own independent re-verification pass then found that even the SCC's own site intermittently returned HTTP 403 to fresh fetch attempts (a different session/rate-limiting pattern than the researching agents experienced), so most case nodes in this batch are recorded at `VERIFIED_SECONDARY_SOURCE`, corroborated via independent secondary sources (academic case comments, law-firm summaries, WebSearch syntheses) rather than upgraded to primary without a reproducible re-fetch.
+
+`docs/PRACTICE_AREAS.md`'s Contract/Tort/Criminal Law rows now carry Canada alongside England & Wales, Scotland, and Australia; `jurisdictions/canada/README.md` gained its first "Populated Authority Graph" section, cross-referencing the pre-existing CanLII API note; `docs/HONEST_STATUS.md` and the top-level `README.md`'s jurisdictions table updated to show five (not four) jurisdictions with real Authority Graph content. Full regression: all 12 script selftests pass, all 4 Canada authority files pass schema validation and citation/style/year checks with zero findings.
+
 ### Added - Australia's first Authority Graph entries (Contract, Tort, Property, Criminal Law)
 
 Continuing the user's instruction to extend the England & Wales/Scotland build-out to the remaining jurisdictions, four foundational entries were added to `jurisdictions/australia/authorities/` - this repository's first-ever populated Authority Graph content for Australia, previously `STRUCTURAL_DRAFT` with zero case-law content.

@@ -1,0 +1,50 @@
+{
+  "$comment": "Canada, Tort Law - the modern two-stage Anns/Cooper duty-of-care test (foreseeability plus proximity) and its rigorous application to a novel factual context. The researching agent successfully fetched both judgments directly from the Supreme Court of Canada's own site after CanLII returned an active bot-detection block (DataDome, confirmed via response headers, not a proxy workaround); this session's own independent re-fetch attempts on the same SCC URLs were themselves blocked (403), so the case holdings are corroborated here via WebSearch against genuine secondary sources instead.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Cooper v. Hobart, 2001 SCC 79 and Rankin (Rankin's Garage & Sales) v. J.J., 2018 SCC 19 - the researching agent fetched both directly from decisions.scc-csc.ca (the Supreme Court's own official site) after CanLII returned HTTP 403 with DataDome bot-protection headers; this session's own independent re-fetch of the same SCC URLs also returned HTTP 403, so the core holdings were instead corroborated via WebSearch against a genuine secondary-source synthesis (law-firm case summaries), consistent with the researching agent's account.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-CAN-TORT-001",
+      "authority_type": "case",
+      "name": "Cooper v. Hobart",
+      "citation": "2001 SCC 79; [2001] 3 SCR 537",
+      "court": "Supreme Court of Canada",
+      "jurisdiction": "canada",
+      "date": "2001-10-18",
+      "judge_or_panel": "McLachlin CJ and Major J (joint reasons)",
+      "proposition": "Re-articulates the Anns test into its modern Canadian two-stage form. At stage one, a prima facie duty of care requires both reasonable foreseeability of harm and proximity - a 'close and direct' relationship, tracing to Lord Atkin's description in Donoghue v Stevenson (not independently verified in this file), assessed via expectations, representations, reliance, and analogous categories (which are not closed). Only if foreseeability and proximity are established does stage two's residual policy analysis - whether there are reasons tort liability should nonetheless not be recognised - come into play.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://decisions.scc-csc.ca/scc-csc/scc-csc/en/item/1920/index.do",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent fetched this directly from the Supreme Court of Canada's own official site (decisions.scc-csc.ca), quoting paragraphs 30-34 verbatim, after CanLII returned an active DataDome bot-detection block rather than a simple 403. This session's own independent re-fetch of the same SCC URL also returned HTTP 403, so this file cannot certify the quotes as independently re-confirmed this session - recorded at VERIFIED_SECONDARY_SOURCE accordingly, though the researching agent's own access was a genuine primary-source fetch, not a proxy."
+    },
+    {
+      "authority_id": "AUTH-CAN-TORT-002",
+      "authority_type": "case",
+      "name": "Rankin (Rankin's Garage & Sales) v. J.J.",
+      "citation": "2018 SCC 19; [2018] 1 SCR 587",
+      "court": "Supreme Court of Canada",
+      "jurisdiction": "canada",
+      "date": "2018-05-11",
+      "judge_or_panel": "Karakatsanis J (majority, 7-2); Brown J (dissenting)",
+      "proposition": "Applies and sharpens the Cooper/Anns foreseeability requirement: a business will owe a duty of care to someone injured following the theft of a vehicle from its premises only where, in addition to the theft itself, the unsafe operation of the stolen vehicle was reasonably foreseeable - foreseeability of one type of harm (theft) does not automatically import foreseeability of a distinct, more remote harm (injury from the stolen vehicle's dangerous operation). On the facts, a garage that left an unlocked car with keys in the ashtray owed no duty to a minor catastrophically injured when his friend stole and crashed it, because there was insufficient evidentiary basis connecting the risk of theft to a foreseeable risk of unsafe operation causing personal injury.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://decisions.scc-csc.ca/scc-csc/scc-csc/en/17085/1/document.do",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent fetched the official bilingual SCR PDF directly from decisions.scc-csc.ca, quoting paragraphs 18, 23, and 26 verbatim. This session's own independent re-fetch of the same SCC URL returned HTTP 403; the core holding was instead independently corroborated via WebSearch against genuine secondary sources (law-firm case summaries), consistent with the researching agent's account of the 7-2 split and the 'theft plus foreseeable unsafe operation' test."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-CAN-TORT-002",
+      "to": "AUTH-CAN-TORT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Rankin v. J.J. [2018] SCC 19, paras 18, 23, 26, per the researching agent's SCC-site fetch and independently corroborated in substance via WebSearch this session: expressly invokes Cooper's proximity/foreseeability framework, then sharpens it by requiring the specific type of harm alleged to itself be foreseeable, not merely the general risk category."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the modern duty-of-care test and its rigorous application. Does not cover novel-duty policy considerations under stage two in detail, standard of care/breach, or any other Canadian Tort Law subject - all remain unbuilt."
+}

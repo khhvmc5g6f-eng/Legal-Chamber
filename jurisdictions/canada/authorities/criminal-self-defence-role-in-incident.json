@@ -1,0 +1,50 @@
+{
+  "$comment": "Canada, Criminal Law - THE FIRST POPULATED AUTHORITY GRAPH ENTRY FOR CANADA. Section 34's unified self-defence test (2013 reform) and its first Supreme Court construction, holding that the 'role in the incident' factor requires holistic assessment of the accused's conduct across the whole incident, not just the moment force was used. CanLII and the SCC's own decisions mirror both returned HTTP 403 to direct fetch this session; the case's holding was corroborated via independent secondary sources and further confirmed via WebSearch by this session.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Criminal Code, RSC 1985, c C-46, s.34(1), (2)(c) fetched live and directly from laws-lois.justice.gc.ca, independently re-fetched and word-for-word consistent on both attempts. R. v. Khill, 2021 SCC 37 - CanLII and the SCC's own decisions.scc-csc.ca mirror both returned HTTP 403 to the researching agent; the SCC's own 'Case in Brief' page was fetched successfully for bibliographic details and disposition, and the paragraph-level holding was corroborated via two independent secondary sources (TheCourt.ca, an Osgoode Hall Law School case comment, and RobsonCrim, a University of Manitoba criminal law blog); this session's own independent WebSearch further corroborated the core holding in substance.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-CAN-CRIMINAL-001",
+      "authority_type": "statute",
+      "name": "Criminal Code, s.34",
+      "citation": "Criminal Code, RSC 1985, c C-46, s.34(1), (2)(c)",
+      "court": "N/A - primary legislation (federal, uniform across Canada)",
+      "jurisdiction": "canada",
+      "date": "2013",
+      "date_note": "Date of the substantial 2013 reform that replaced the prior multi-provision self-defence scheme with the current unified s.34. The text verified this session is the current in-force version (current to 2026-06-21 per the source page).",
+      "proposition": "A person is not guilty of an offence if they believe on reasonable grounds that force or a threat of force is being used against them or another, the act is committed for the purpose of defending against that force, and the act is reasonable in the circumstances (s.34(1)). Reasonableness under s.34(1)(c) is assessed against a non-exhaustive list of factors including the person's role in the incident (s.34(2)(c)), among others such as the nature of the threat, imminence, and proportionality of the response.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://laws-lois.justice.gc.ca/eng/acts/c-46/section-34.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "Fetched live and directly this session, on two independent passes, word-for-word consistent both times."
+    },
+    {
+      "authority_id": "AUTH-CAN-CRIMINAL-002",
+      "authority_type": "case",
+      "name": "R. v. Khill",
+      "citation": "2021 SCC 37; [2021] 2 SCR 948",
+      "court": "Supreme Court of Canada",
+      "jurisdiction": "canada",
+      "date": "2021-10-14",
+      "judge_or_panel": "Martin J. (majority, joined by Wagner CJ, Abella, Karakatsanis, Kasirer JJ); Moldaver J. (concurring, joined by Brown, Rowe JJ); Côté J. (dissenting)",
+      "proposition": "The Supreme Court's first construction of the reformed s.34, holding that 'role in the incident' under s.34(2)(c) is not limited to unlawful conduct or provocation - it requires the jury to weigh the accused's conduct across the entire incident, from beginning to end, including conduct that was not independently unlawful but increased the risk of a violent confrontation. On the facts, the trial judge's failure to instruct the jury to consider the accused's decisions not to call police, to retrieve and load a firearm, and to confront a suspected intruder rather than retreat was a reversible error of law, since the jury might have reached a different verdict on reasonableness had it considered his conduct from the start of the incident. Appeal dismissed, new trial ordered.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.scc-csc.ca/judgments-jugements/cb/2021/39112/",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "CanLII and the SCC's own decisions.scc-csc.ca mirror both returned HTTP 403 to the researching agent's direct fetch attempts. The SCC's own 'Case in Brief' summary page was fetched successfully for bibliographic details, panel breakdown, and disposition. Paragraph-numbered quotes on the core holding were sourced from two independent secondary sources (TheCourt.ca, an Osgoode Hall Law School case comment; RobsonCrim, a University of Manitoba criminal law blog) which cite different specific paragraphs (86/114 vs 94) but describe the same holding consistently. This session's own independent WebSearch further corroborated the core 'role in the incident' holding and its application to the facts."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-CAN-CRIMINAL-002",
+      "to": "AUTH-CAN-CRIMINAL-001",
+      "relationship": "APPLIES",
+      "verified_via": "R. v. Khill, 2021 SCC 37, per two independent secondary sources cross-corroborated and independently confirmed via WebSearch this session: construes s.34(2)(c)'s 'role in the incident' factor as requiring holistic assessment of the accused's conduct throughout the incident, not merely at the moment of the defensive act."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the 'role in the incident' construction of s.34's self-defence test - Canada's first-ever populated Authority Graph entry in this repository. Does not cover the other s.34(2) factors in detail, the defence of property provisions (s.35), or any other Canadian Criminal Law subject - all remain unbuilt."
+}

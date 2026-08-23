@@ -1,0 +1,50 @@
+{
+  "$comment": "Canada (Quebec), Civil Law - Quebec's general extracontractual civil liability provision (the functional equivalent of common-law tort/negligence) and its application to defamation, showing there is no free-standing Quebec tort of defamation - it is simply an ordinary article 1457 fault/injury/causation claim. Quebec is a distinct civil-law jurisdiction for private law within Canada; this entry is deliberately separate from the common-law Contract and Tort entries elsewhere in jurisdictions/canada/authorities/.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Civil Code of Quebec art.1457 - the researching agent fetched the official consolidated text directly from legisquebec.gouv.qc.ca via a browser session after WebFetch returned HTTP 403; this session's own independent WebFetch re-attempt also returned HTTP 403, so the text is corroborated here via WebSearch against a genuine secondary-source quotation matching verbatim. Prud'homme v. Prud'homme, 2002 SCC 85 - the researching agent fetched the judgment directly from the Supreme Court's own official decisions database after CanLII presented an interactive CAPTCHA that was correctly declined rather than solved.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-CAN-QUEBEC-001",
+      "authority_type": "statute",
+      "name": "Civil Code of Quebec, art.1457",
+      "citation": "Civil Code of Quebec, CQLR c. CCQ-1991, art.1457",
+      "court": "N/A - primary legislation (Quebec)",
+      "jurisdiction": "canada",
+      "date": "1991",
+      "date_note": "Enacted 1991, in force 1994, with later amendments (1991, c.64, a.1457; 2002, c.19, s.15; 2016, c.4, s.177). The text verified this session is the current consolidated version.",
+      "proposition": "Every person has a duty to abide by the rules of conduct incumbent on them, according to the circumstances, usage or law, so as not to cause injury to another. A person endowed with reason who fails in this duty is liable for any injury caused by that fault - bodily, moral, or material - and must make reparation. This is Quebec's general, codal source of extracontractual liability - the civil-law functional equivalent of common-law negligence/tort, applying as a jus commune default for any non-contractual injury rather than through discrete named torts.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legisquebec.gouv.qc.ca/en/document/cs/ccq-1991?code=se:1457",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent fetched the official consolidated text directly from legisquebec.gouv.qc.ca via a browser session (extracting the DOM directly, not a cache or proxy) after WebFetch returned HTTP 403. This session's own independent WebFetch re-attempt also returned HTTP 403; the exact text was independently corroborated via WebSearch against a genuine secondary source (BAC Copropriete's article-by-article Civil Code reference) quoting the identical wording verbatim, sufficient to treat this as a reliable, if not independently re-fetched, primary text."
+    },
+    {
+      "authority_id": "AUTH-CAN-QUEBEC-002",
+      "authority_type": "case",
+      "name": "Prud'homme v. Prud'homme",
+      "citation": "2002 SCC 85; [2002] 4 SCR 663",
+      "court": "Supreme Court of Canada",
+      "jurisdiction": "canada",
+      "date": "2002-12-20",
+      "judge_or_panel": "McLachlin CJ, L'Heureux-Dube, Gonthier, Iacobucci, Major, Bastarache, Binnie, Arbour, LeBel JJ (unanimous)",
+      "proposition": "Quebec civil law does not provide a specific, free-standing cause of action for defamation - the basis for a defamation claim is article 1457, the general civil liability provision, requiring the plaintiff to establish injury, fault, and causation on a balance of probabilities, exactly as in any other delictual liability claim. The Court identifies three fact patterns in which defamatory remarks give rise to fault: knowing falsehood, remarks that should have been known to be false (negligent falsehood), and true but gratuitously unfavourable statements made by a scandalmonger without valid reason. On the facts, a municipal councillor's public criticism of ratepayers at a council meeting was not a fault - he acted in good faith on a matter of legitimate public interest and did not abuse his right to comment on municipal affairs. Appeal dismissed.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://decisions.scc-csc.ca/scc-csc/scc-csc/en/item/2029/index.do",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent fetched this directly from the Supreme Court's own official decisions database via a genuine browser session, quoting paragraphs 32, 36, 84, and 85 verbatim, after CanLII presented an interactive slider CAPTCHA that was correctly declined rather than solved, consistent with this repository's rules against completing bot-detection challenges."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-CAN-QUEBEC-002",
+      "to": "AUTH-CAN-QUEBEC-001",
+      "relationship": "APPLIES",
+      "verified_via": "Prud'homme v. Prud'homme, 2002 SCC 85, paras 32, 36, per the researching agent's direct fetch from the Supreme Court's own decisions database: holds that defamation in Quebec is simply an art.1457 fault/injury/causation claim, and particularises the 'reasonable person' fault standard into three defamatory-conduct fact patterns."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering Quebec's general civil liability provision and its application to defamation - deliberately separate from the common-law Contract and Tort entries elsewhere in this jurisdiction, since Quebec is civil-law for private law. Does not cover contractual civil liability under art.1458, the specific liability regimes for custodians of things (art.1465-1469), or any other Quebec Civil Law subject - all remain unbuilt."
+}
