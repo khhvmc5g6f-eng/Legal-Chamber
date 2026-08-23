@@ -1,0 +1,50 @@
+{
+  "$comment": "New Zealand, Criminal Law - THE FIRST POPULATED AUTHORITY GRAPH ENTRY FOR NEW ZEALAND. Section 48's self-defence justification test, and the Supreme Court's confirmation that excessive (as opposed to no) self-defence is not a partial defence reducing murder to manslaughter. legislation.govt.nz presented an AWS WAF JavaScript bot-challenge (not a simple 403) to both the researching agent's and this session's own independent fetch attempts; nzlii.org was also blocked outright. A genuine wording discrepancy between two secondary sources (gender-neutral vs non-gender-neutral phrasing) was flagged by the researching agent and resolved here via a further independent WebSearch confirming the gender-neutral version.",
+  "verified_at": "2026-08-22",
+  "verification_method": "Crimes Act 1961 s.48 - legislation.govt.nz returned an AWS WAF bot-challenge (not solved or bypassed) to both the researching agent (six distinct attempts) and this session's own independent follow-up; nzlii.org also returned HTTP 403 outright. The exact wording was corroborated via WebSearch this session, resolving a discrepancy the researching agent had flagged between two secondary sources. Murray v R [2018] NZSC 15 - the researching agent fetched the official PDF directly from courtsofnz.govt.nz and extracted its text locally with pypdf after WebFetch's own extraction failed; this session's own independent re-fetch of the same PDF also failed to decode, so the case's holding is corroborated here via WebSearch against genuine secondary sources (an academic case note, a law journal case note) instead.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-NZ-CRIMINAL-001",
+      "authority_type": "statute",
+      "name": "Crimes Act 1961, s.48",
+      "citation": "Crimes Act 1961 s.48",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "new-zealand",
+      "date": "1961",
+      "date_note": "Enactment year; s.48 in its current form was substituted by the Crimes Amendment Act 1980. legislation.govt.nz's own indexed page title (surfaced via WebSearch) shows the current version is 'as at 27 November 2025'. Not independently re-fetched at the raw-page level this session due to a persistent bot-challenge - see verification_note.",
+      "proposition": "Every one is justified in using, in the defence of himself or herself or another, such force as, in the circumstances as he or she believes them to be, it is reasonable to use. This sets a two-part test: the circumstances are assessed subjectively (as the defendant believed them to be), but the force used must be objectively reasonable given those believed circumstances - it is not enough that the defendant believed their own reaction was reasonable.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.govt.nz/act/public/1961/0043/latest/DLM328268.html",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "legislation.govt.nz returned an AWS WAF JavaScript bot-challenge (header x-amzn-waf-action: challenge) rather than a simple block, to both the researching agent's six distinct attempts and this session's own independent follow-up attempt - not solved or bypassed, per this repository's rules. nzlii.org also returned HTTP 403 outright, so no mirror was available either. The researching agent found two secondary sources disagreeing on gender-neutral phrasing ('himself or herself'/'he or she' vs 'himself'/'he') and flagged this honestly rather than picking one silently; this session's own independent WebSearch resolved the discrepancy, confirming the gender-neutral version matches legislation.govt.nz's own indexed page content."
+    },
+    {
+      "authority_id": "AUTH-NZ-CRIMINAL-002",
+      "authority_type": "case",
+      "name": "Murray v R",
+      "citation": "[2018] NZSC 15",
+      "court": "Supreme Court of New Zealand",
+      "jurisdiction": "new-zealand",
+      "date": "2018-02-23",
+      "judge_or_panel": "Elias CJ, William Young J, Glazebrook J",
+      "proposition": "Confirms that where a jury rejects a s.48 defence solely because the force used was excessive or disproportionate - not because the defendant lacked a genuine belief that defensive force was needed at all - New Zealand law does not treat this as a partial defence reducing murder to manslaughter. The legislative scheme in ss.20, 48 and 62 provides a comprehensive framework for excessive use of force in defence, and introducing a common-law partial defence would be inconsistent with that codified scheme; if excessive self-defence is to be recognised as a partial defence, that is a matter for Parliament, not judicial development. The Court noted this position is consistent with the High Court of Australia (Zecevic v DPP (Vic)), the Privy Council (Palmer v The Queen), the House of Lords (R v Clegg), and the Supreme Court of Canada (R v Faid). Application for leave to appeal dismissed.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.courtsofnz.govt.nz/assets/cases/2018/2018-NZSC-15.pdf",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent fetched the official PDF directly from courtsofnz.govt.nz and extracted its text locally with pypdf from the exact fetched bytes (not a cache or proxy), quoting paragraphs 2, 4, 6, 7, 8, and 10 verbatim. This session's own independent re-fetch of the same PDF also failed to decode (WebFetch's built-in extraction, not the researching agent's local pypdf method). The case's core holding was independently corroborated via WebSearch against genuine secondary sources (an Auckland University of Technology case note and a New Zealand Criminal Law Review case note), consistent with the researching agent's account."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-NZ-CRIMINAL-002",
+      "to": "AUTH-NZ-CRIMINAL-001",
+      "relationship": "DISTINGUISHED",
+      "verified_via": "Murray v R [2018] NZSC 15, paras 6-8, per the researching agent's pypdf extraction and independently corroborated via WebSearch this session: confirms s.48's comprehensive statutory scheme (with ss.20 and 62) leaves no room for a common-law partial defence of excessive force, distinguishing the case where no defensive belief existed at all from the case where the force used merely exceeded what was reasonable."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the self-defence justification test and the closed door on excessive-force as a partial defence - New Zealand's first-ever populated Authority Graph entry in this repository. Does not cover the murder mens rea provisions (ss.167-168), the separate excess-force framework in s.62, or any other New Zealand Criminal Law subject - all remain unbuilt."
+}

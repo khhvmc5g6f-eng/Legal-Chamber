@@ -1,0 +1,50 @@
+{
+  "$comment": "New Zealand, Tort Law - the ACC scheme's statutory bar on tort claims for personal injury, and the Supreme Court's construction of 'damages' as confined to compensatory (not exemplary) damages. New Zealand's no-fault accident compensation scheme is a genuinely distinctive structural feature not present in other common-law jurisdictions covered by this repository. legislation.govt.nz presented an active bot-check gate to the researching agent; the statute's exact wording was instead confirmed via the citing-judgment method (the case itself quotes s.317(1) verbatim for the purpose of construing it).",
+  "verified_at": "2026-08-22",
+  "verification_method": "Accident Compensation Act 2001 s.317(1) - legislation.govt.nz presented an active 'Human Verification' bot-check gate to the researching agent, and nzlii.org returned HTTP 403; the exact text was instead confirmed via the citing-judgment method, since Couch v Attorney-General (No 2) [2010] NZSC 27 quotes s.317(1) verbatim at para 84 for the purpose of construing it, corroborated by a WebSearch-indexed snippet of the legislation.govt.nz page itself and a professional case-note (Wynn Williams, via Mondaq). Couch v Attorney-General (No 2) [2010] NZSC 27 - the researching agent fetched the full judgment directly from courtsofnz.govt.nz; this session's own independent re-fetch of the same PDF failed to decode, so the core holding was independently corroborated via WebSearch against genuine secondary sources instead.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-NZ-TORT-001",
+      "authority_type": "statute",
+      "name": "Accident Compensation Act 2001, s.317(1)",
+      "citation": "Accident Compensation Act 2001 s.317(1)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "new-zealand",
+      "date": "2001",
+      "date_note": "Enactment year, replacing earlier accident compensation legislation dating to 1972. Not independently re-fetched at the raw legislation.govt.nz page level this session due to a persistent bot-check gate - see verification_note.",
+      "proposition": "No person may bring proceedings independently of the Act, whether under any rule of law or any enactment, in any New Zealand court, for damages arising directly or indirectly out of personal injury covered by the Act or the former Acts. This is New Zealand's no-fault trade-off: statutory ACC cover for personal injury bars an ordinary tort claim for damages arising from that injury.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.govt.nz/act/public/2001/0049/latest/DLM101468.html",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "legislation.govt.nz presented an active bot-check gate rather than a simple block, and nzlii.org returned HTTP 403 outright - neither solved nor bypassed, per this repository's rules. The exact subsection text was instead confirmed via the citing-judgment method: the Supreme Court's own verbatim recitation of s.317(1) at paragraph 84 of Couch v Attorney-General (No 2), which this session treats as sufficiently authoritative given the court's own reproduction of the operative text for construction purposes, corroborated by a WebSearch-indexed snippet of the legislation.govt.nz page itself and an independent professional case-note describing the same subsection in matching terms."
+    },
+    {
+      "authority_id": "AUTH-NZ-TORT-002",
+      "authority_type": "case",
+      "name": "Couch v Attorney-General (No 2)",
+      "citation": "[2010] NZSC 27; [2010] 3 NZLR 149",
+      "court": "Supreme Court of New Zealand",
+      "jurisdiction": "new-zealand",
+      "date": "2010-03-24",
+      "judge_or_panel": "Elias CJ, Blanchard J, Tipping J, McGrath J, Wilson J (unanimous on this point; the Court split 3-2 on a separate question about the test for exemplary damages)",
+      "proposition": "The word 'damages' in s.317(1) is confined to compensatory damages (including aggravated damages) - it does not include exemplary damages, which are not designed to compensate the plaintiff's loss but to punish outrageous conduct. Because exemplary damages do not compensate for the injury, a claim confined to exemplary damages is not a claim 'for damages arising out of personal injury' within the section's meaning, so the s.317(1) bar does not touch it. Following Donselaar v Donselaar (not independently verified in this file), which reached the same conclusion on the similarly-worded predecessor provision, and unanimous on this point across all five judges. On the facts, the claimant - who had statutory ACC cover for injuries inflicted by a parolee - could still sue the Crown in negligence, provided her claim was confined to exemplary rather than compensatory damages.",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.courtsofnz.govt.nz/assets/cases/2010/sc-49-2006-susan-couch-v-the-attorney-general-civil-judgment.pdf",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-22",
+      "verification_note": "The researching agent fetched the full judgment directly from courtsofnz.govt.nz and read it in full, quoting paragraphs 84, 86-89, 7, 181, and 199-203 verbatim. This session's own independent re-fetch of the same PDF failed to decode. The core holding (exemplary damages fall outside the s.317 bar; compensatory damages remain barred) was independently corroborated via WebSearch against genuine secondary sources (a university case summary, a law-report case entry), consistent with the researching agent's account."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-NZ-TORT-002",
+      "to": "AUTH-NZ-TORT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Couch v Attorney-General (No 2) [2010] NZSC 27, paras 84, 86-89, per the researching agent's direct fetch and independently corroborated via WebSearch this session: construes 'damages' in s.317(1) as confined to compensatory damages, leaving a narrow exemplary-damages claim available outside the statutory bar."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the scope of the s.317 bar and its exemplary-damages exception - New Zealand's second populated Authority Graph entry in this repository. Does not cover the exemplary-damages entitlement test itself (the Bottrill outrageousness/recklessness question the Court split on), what counts as 'personal injury' for cover purposes, or any other New Zealand Tort Law subject - all remain unbuilt."
+}
