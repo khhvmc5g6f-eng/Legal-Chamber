@@ -1,0 +1,50 @@
+{
+  "$comment": "Scotland, Landlord & Tenant Law - the Private Residential Tenancy under the Private Housing (Tenancies) (Scotland) Act 2016, a genuinely distinct Scottish statutory scheme structurally different from England & Wales's assured shorthold tenancy regime. Scotland has no equivalent to a no-fault Section 21 notice: landlords may only recover possession on one of the exhaustive statutory grounds in Schedule 3.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Private Housing (Tenancies) (Scotland) Act 2016 s.51 fetched live and directly from legislation.gov.uk, independently re-fetched by the orchestrating session and word-for-word consistent. First-tier Tribunal for Scotland (Housing and Property Chamber) decision FTS/HPC/EV/26/1444 fetched live and directly as a PDF from the Chamber's own official domain, independently re-fetched and text-extracted directly by the orchestrating session and word-for-word consistent.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-LANDLORDTENANT-001",
+      "authority_type": "statute",
+      "name": "Private Housing (Tenancies) (Scotland) Act 2016, section 51",
+      "citation": "Private Housing (Tenancies) (Scotland) Act 2016, s.51(1)-(2)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "scotland",
+      "date": "2017-12-01",
+      "date_note": "The Private Residential Tenancy regime came into force 1 December 2017. Schedule 3's eviction grounds have since been amended to add Grounds 1A, 4A, and 12A by later legislation - the version verified this session is the current text.",
+      "proposition": "The First-tier Tribunal is to issue an eviction order against a tenant under a private residential tenancy if, on the landlord's application, it finds that one of the eviction grounds named in Schedule 3 applies (s.51(1)). Schedule 3's grounds are exhaustive of the circumstances in which the Tribunal is entitled to find that a ground applies (s.51(2)) - there is no residual, no-fault power to evict outside the named grounds, structurally distinct from England & Wales's assured shorthold tenancy regime and its Section 21 no-fault route.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/asp/2016/19/section/51",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from legislation.gov.uk by the researching agent (two independent passes, current version and a point-in-time view, word-for-word identical), independently re-fetched by the orchestrating session and word-for-word consistent on subsections (1) and (2)."
+    },
+    {
+      "authority_id": "AUTH-SCOT-LANDLORDTENANT-002",
+      "authority_type": "case",
+      "name": "Wawrzonek v Galewski",
+      "citation": "Wawrzonek v Galewski, First-tier Tribunal for Scotland (Housing and Property Chamber), Chamber Ref FTS/HPC/EV/26/1444",
+      "court": "First-tier Tribunal for Scotland (Housing and Property Chamber)",
+      "jurisdiction": "scotland",
+      "date": "2026-08-10",
+      "judge_or_panel": "Julie McKinlay (Legal Member, presiding), Greig Adams (Ordinary Member)",
+      "proposition": "Applies s.51/Schedule 3's exhaustive-grounds requirement to a landlord's application relying on two grounds: Ground 12 (rent arrears) and Ground 11 (breach of tenancy agreement). The Tribunal rejected Ground 12 because the tenant had not been in arrears for three consecutive months at the date the notice to leave was served (paras 16-18: 'it is the length of time that arrears have existed which is crucial not the amount of arrears involved'), but granted the order on Ground 11 for the tenant's refusal to allow access for a statutory gas safety inspection, quoting Ground 11 verbatim (para 19: 'The First-tier Tribunal may find that the ground... applies if - (a) The tenant has failed to comply with a term of the tenancy and (b) The Tribunal considers it to be reasonable to issue an eviction order on account of that fact') and holding the refusal 'a serious breach of the tenancy agreement' posing a safety risk 'not just to the Respondent but for others living in the vicinity' (para 27). Demonstrates the exhaustive, ground-by-ground nature of s.51: one ground failing on the facts does not prevent the order being granted on a different, properly-made-out ground.",
+      "treatment": "APPLIED",
+      "authority_weight": "PERSUASIVE",
+      "primary_source_link": "https://www.housingandpropertychamber.scot/sites/default/files/2026-08/Written%20Decision%20%28with%20Statement%20of%20Reasons%29%20FTS.HPC_.EV_.26.1444_Redacted.pdf",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent as a PDF from the Housing and Property Chamber's own official domain, read directly with a PDF-text-extraction tool rather than a lossy web-summarization pass. Independently re-fetched and re-extracted by the orchestrating session (also via direct PDF text extraction, since the web-fetch summarizer could not parse the binary) and word-for-word consistent on the property address, tribunal members, and the Ground 11 quotation at paragraph 19."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-LANDLORDTENANT-002",
+      "to": "AUTH-SCOT-LANDLORDTENANT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Wawrzonek v Galewski, FTS/HPC/EV/26/1444, fetched directly as a PDF from the Chamber's own site and independently re-extracted: applies s.51's exhaustive-grounds requirement, rejecting one pleaded ground on the facts while granting the order on a separately made-out ground."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the exhaustive-grounds mechanism and a live tribunal application of it. The tribunal decision's PERSUASIVE (not BINDING) authority_weight reflects that a First-tier Tribunal decision does not bind other First-tier Tribunal panels the way an appellate authority would, though it is a genuine primary-source illustration of s.51 in live operation. Does not cover the pre-action requirements/notice-to-leave procedure in detail, the Upper Tribunal for Scotland's appellate case law on Schedule 3 grounds (two Upper Tribunal decisions - Rafique v Morgan and Majid v Gaffney - are cited inside this file's own case but were not independently fetched or verified), rent pressure zones, or any other Scots landlord-and-tenant subject - all remain unbuilt."
+}

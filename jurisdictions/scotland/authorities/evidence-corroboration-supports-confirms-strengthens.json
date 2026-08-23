@@ -1,0 +1,51 @@
+{
+  "$comment": "Scotland, Criminal Evidence Law - the corroboration requirement, a genuinely distinctive feature of Scots criminal procedure with no equivalent requirement in England & Wales. Corroboration is NOT codified in a single section of the Criminal Procedure (Scotland) Act 1995 - it remains a common-law requirement traced to Hume's Commentaries, restated (not created) by modern case law. An abolition attempt (following the Bonomy review, 2013-2015) failed to build political agreement and was dropped before enactment, so the requirement remains live and current.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Lord Advocate's Reference No 1 of 2023 (HM Advocate against CLB) [2023] HCJAC 40 fetched live directly from bailii.org via a genuine browser session, independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on the key holding. The 1995 Act's own text was checked to confirm corroboration is not itself codified there.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-EVIDENCE-001",
+      "authority_type": "case",
+      "name": "Fox v HM Advocate",
+      "citation": "Fox v HM Advocate 1998 JC 94",
+      "court": "High Court of Justiciary (Appeal Court), Full Bench",
+      "jurisdiction": "scotland",
+      "date": "1998-01-01",
+      "date_note": "Exact day-level date not independently confirmed this session - the researching agent could not locate or fetch the original 1998 JC 94 report directly (not indexed in BAILII's older Scottish collections), and neither could the orchestrating session on independent re-check. This node's content is instead verified via two independent routes that quote Fox verbatim: the 2023 full-bench judgment below (a primary source quoting a primary source) and the Scottish Judicial Institute's official Jury Manual. Recorded as VERIFIED_SECONDARY_SOURCE for this reason, despite both quoting routes themselves being official/primary documents.",
+      "judge_or_panel": "Full Bench, Lord Justice General (Rodger) delivering the leading opinion, with Lord Justice Clerk (Cullen) and Lord Coulsfield",
+      "proposition": "Establishes that circumstantial evidence is corroborative of direct testimony if it 'strengthens, or confirms, or supports' that testimony (Lord Justice General Rodger, at 99, see also 100) - overturning the narrower approach in Mackie v HM Advocate 1994 JC 132. Critically, the corroborating circumstances do not themselves need to be independently incriminating (Lord Justice Clerk Cullen at 109, Lord Coulsfield at 118). Lord Coulsfield separately observed that Hume's original treatment of corroboration was 'difficult upon which to improve.'",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/scot/cases/ScotHC/2023/2023_HCJAC_40.html",
+      "verification_status": "VERIFIED_SECONDARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Not independently fetched from the 1998 JC 94 report itself. Verified instead via two independent routes both fetched live this session: (1) Lord Advocate's Reference No 1 of 2023 [2023] HCJAC 40, paragraphs 193 and 220, quoting Fox verbatim with pinpoint page references - independently re-confirmed word-for-word by the orchestrating session via a fresh browser session at bailii.org; (2) the Scottish Judicial Institute's official Jury Manual (judiciary.scot, updated 4 December 2024), which independently quotes the same 'support or confirm' passage with the same p.100 pinpoint - not independently re-fetched by the orchestrating session, treated as corroboration of the corroboration case, not primary verification in its own right."
+    },
+    {
+      "authority_id": "AUTH-SCOT-EVIDENCE-002",
+      "authority_type": "case",
+      "name": "Lord Advocate's Reference No 1 of 2023 (HM Advocate against CLB)",
+      "citation": "Lord Advocate's Reference No 1 of 2023 [2023] HCJAC 40; 2024 JC 140",
+      "court": "High Court of Justiciary (Appeal Court), 7-judge Full Bench",
+      "jurisdiction": "scotland",
+      "date": "2023-10-18",
+      "judge_or_panel": "Lord Justice General (Carloway), Lord Justice Clerk, Lady Paton, Lord Pentland, Lord Matthews, Lord Boyd of Duncansby, Lady Wise",
+      "proposition": "Restates and applies Fox's corroboration standard as the current, authoritative rule (paras 190, 193, 220), and formally directs the modern jury-instruction formulation at para 239: 'the case against the accused must be established by corroborated evidence... where the primary evidence comes from a complainer or other eye witness who speaks to the events libelled, corroboration of the commission of the offence may be found in any evidence which supports or confirms the evidence which the complainer or eye witness has given. It is not necessary for each separate element of the alleged offence to be the subject of separate corroborated proof.' The Reference itself answers that de recenti distress evidence from a witness is capable of corroborating a complainer's direct evidence of rape (para 240).",
+      "treatment": "FOLLOWED",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/scot/cases/ScotHC/2023/2023_HCJAC_40.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent via a genuine browser session at bailii.org, the full 259,492-character judgment retrieved and read. Independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on paragraphs 193 and 220-221's key quotes."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-EVIDENCE-002",
+      "to": "AUTH-SCOT-EVIDENCE-001",
+      "relationship": "APPLIES",
+      "verified_via": "Lord Advocate's Reference No 1 of 2023 [2023] HCJAC 40, paragraphs 190-240, fetched via a genuine browser session at bailii.org and independently re-confirmed: restates and applies Fox v HM Advocate's 'strengthens, or confirms, or supports' standard for corroborating circumstantial evidence as the current, governing rule."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the corroboration standard's origin and modern restatement. Does not cover the mutual-corroboration/Moorov doctrine, de recenti distress evidence as a distinct topic beyond its role in the 2023 Reference, or the Criminal Procedure (Scotland) Act 1995's own sufficiency-of-evidence procedure under s.97A/s.97D - all remain unbuilt."
+}

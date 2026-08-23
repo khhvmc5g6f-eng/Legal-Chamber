@@ -1,0 +1,50 @@
+{
+  "$comment": "Scotland, Insolvency Law - the floating charge, a genuinely distinct feature of Scots law's history. Unlike England, where the floating charge developed at common law/equity, Scots law (having no law of equity) had no floating charge at all until it was created entirely by statute, originally the Companies (Floating Charges) (Scotland) Act 1961, now s.462 of the Companies Act 1985.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Companies Act 1985 s.462 fetched live and directly from legislation.gov.uk, independently re-fetched by the orchestrating session and word-for-word consistent. Sharp v Woolwich Building Society [1997] UKHL 8 fetched live directly from bailii.org via a genuine browser session, independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on the key holding.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-SCOT-INSOLVENCY-001",
+      "authority_type": "statute",
+      "name": "Companies Act 1985, section 462",
+      "citation": "Companies Act 1985, s.462(1)",
+      "court": "N/A - primary legislation",
+      "jurisdiction": "scotland",
+      "date": "1985-01-01",
+      "date_note": "s.462(2)-(3) were substituted then repealed by the Law Reform (Miscellaneous Provisions) (Scotland) Act 1990. s.462(1), (4), and (5) remain in force in their current form, confirmed live this session with no outstanding pending changes shown on legislation.gov.uk.",
+      "proposition": "It is competent under the law of Scotland for an incorporated company, for the purpose of securing any debt or obligation, to create in favour of the creditor a charge (a floating charge) over all or any part of the property comprised in its property and undertaking from time to time. This is the sole statutory basis for the floating charge in Scots law - a purely statutory creature with no common-law origin, unlike England's common-law/equitable development of the same security device.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.legislation.gov.uk/ukpga/1985/6/section/462",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from legislation.gov.uk by the researching agent, cross-checked against the verbatim reproduction of the same subsection quoted inside the Sharp v Woolwich judgment below. Independently re-fetched by the orchestrating session and word-for-word consistent on subsection (1)."
+    },
+    {
+      "authority_id": "AUTH-SCOT-INSOLVENCY-002",
+      "authority_type": "case",
+      "name": "Sharp v Woolwich Building Society",
+      "citation": "Sharp and Others v Woolwich Building Society [1997] UKHL 8; on appeal from the Court of Session, First Division; underlying Court of Session decision reported as Sharp v Thomson 1995 SLT 837",
+      "court": "House of Lords, on a Scottish appeal from the First Division of the Court of Session",
+      "jurisdiction": "scotland",
+      "date": "1997-02-27",
+      "judge_or_panel": "Lord Jauncey of Tullichettle, Lord Clyde, and others (majority allowing the appeal)",
+      "proposition": "Confirms the floating charge's purely statutory, non-common-law origin in Scots law: Lord Clyde, quoting Lord President Cooper's classic statement in Carse v Coppen 1951 SC 233 at 239, records that 'a floating charge is utterly repugnant to the principles of Scots Law and is not recognised by us as creating a security at all,' and that floating charges were introduced by statute - originally the Companies (Floating Charges) (Scotland) Act 1961 - specifically because they were 'foreign to Scottish common law' but considered commercially advantageous. On attachment/crystallisation: the floating charge attaches only to property the company beneficially owns at the moment of crystallisation (here, the appointment of a receiver) - since the company (Albyn) had disponed the flat to a third party before crystallisation and retained only the recorded title without beneficial interest, the floating charge did not attach to it. Lord Jauncey: 'The ability to grant deeds in fraud of the disposition to the Thomsons did not amount to a right of property in law... Since Albyn had no such interest in the flat at the date of crystallisation it follows that the floating charge did not attach thereto.'",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://www.bailii.org/uk/cases/UKHL/1997/8.html",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent via a genuine browser session at bailii.org (a plain WebFetch attempt returned HTTP 403; the browser tool itself, not a proxy, succeeded). Independently re-fetched by the orchestrating session via a fresh browser session and word-for-word consistent on the 'utterly repugnant to the principles of Scots Law' quotation from Carse v Coppen as reproduced in this judgment."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-SCOT-INSOLVENCY-002",
+      "to": "AUTH-SCOT-INSOLVENCY-001",
+      "relationship": "APPLIES",
+      "verified_via": "Sharp v Woolwich Building Society [1997] UKHL 8, fetched via a genuine browser session at bailii.org and independently re-confirmed: construes s.462(1)'s 'property and undertaking' as limited to property in which the company retains beneficial interest at the moment of crystallisation, and confirms the floating charge's purely statutory Scottish origin."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the floating charge's statutory origin and its attachment/crystallisation limits. The underlying Court of Session opinions in Sharp v Thomson 1995 SLT 837 are quoted only as reproduced verbatim inside the House of Lords judgment, not independently fetched from the SLT report itself. A candidate second case (AIB Finance Ltd v Bank of Scotland, on ranking of a floating charge against a standard security) was investigated but not used, because its citation as found via secondary aggregators appeared unreliable (an anachronistic neutral-citation format predating Scotland's 2005 adoption of neutral citations) and could not be independently verified this session - reported honestly rather than force-fitted. Does not cover ranking against fixed securities, negative-pledge clauses, or any other Scots insolvency-law subject - all remain unbuilt."
+}
