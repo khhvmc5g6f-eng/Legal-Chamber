@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/). Each entry corresponds to one real commit - see the git history for exact diffs.
 
+### Added - module-level marking grid to `rubrics/level7-distinction-standard.md`, scoped to the PgDL/Conversion Component (Level 7)
+
+The user supplied a real exam question paper (PgDL/Conversion Component, Contract Law, dated 11 May 2023) via WhatsApp and asked whether it matched this repository's rubric file. Comparison found: the existing degree/award-classification numeric bands (70%+ Distinction, 60-69% Commendation, 50-59% Pass) were consistent with the paper's discrete mark points, but two real gaps existed - no Marginal Fail/Clear Fail bands at all, and the file explicitly stated qualitative descriptors were not publicly accessible. The paper's own "Level 7 Assessment Criteria" schedule supplied exactly that missing content as a genuine primary source.
+
+Added a new "Module-level marking criteria" section reproducing the full descriptor grid (Systematic Knowledge, Cognitive skills, Practical skills, at every discrete mark point across Distinction/Commendation/Pass/Marginal fail/Clear Fail). Scoped narrowly and honestly: the Scope section now notes the PgDL/Conversion programme is very likely one of the "legacy conversion/postgraduate programmes" the original degree-classification regulations explicitly excluded, so the new grid is recorded as this programme's own separately-sourced standard, not proof the general taught-postgraduate table extends to it. The "What this file does NOT contain" section was narrowed to reflect that the gap now applies only to the institution's OTHER programmes (Bachelor's, Integrated Master's, general taught postgraduate), not to PgDL/Conversion.
+
+Per the user's explicit instruction, the institution's name remains withheld throughout, even though the supplied source document names it directly - Provenance and frontmatter updated to record the new source and this decision. `rubrics/README.md` and `skills/legal-academic/SKILL.md` updated to point at the new section and its narrow scope. Style/citation checks and the full 12-script selftest suite pass with zero findings.
+
 ### Added - Scotland's fourth Authority Graph batch (Agricultural, Mental Health, Criminal Procedure, Company Law) - now sixteen entries, completing this session's Scotland work
 
 Following the user's instruction to complete Scotland and stop there for now (leaving Australia, Canada, New Zealand, Spain, France, and the EU for a later session), four further entries were added to `jurisdictions/scotland/authorities/`, bringing Scotland to sixteen files across sixteen taxonomy areas. This is the final Scotland batch for this session.
