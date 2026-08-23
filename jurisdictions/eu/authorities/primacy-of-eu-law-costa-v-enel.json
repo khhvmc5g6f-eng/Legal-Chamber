@@ -1,0 +1,27 @@
+{
+  "$comment": "European Union, foundational constitutional doctrine - THE FIRST POPULATED AUTHORITY GRAPH ENTRY FOR THE EU. The primacy (supremacy) of EU law over conflicting national law. Deliberately a single-node, zero-edge entry with an honest structural note: primacy is a judge-made doctrine with no standalone operative Treaty article. Declaration No 17 concerning primacy, annexed to the Treaties, does no more than recall the doctrine and name this judgment as its origin - it is not itself the source of the rule. TEU art.4(3) (sincere cooperation) is often cited alongside primacy in commentary but does not itself state the doctrine, and is not treated as a paired node here for that reason.",
+  "verified_at": "2026-08-23",
+  "verification_method": "Case 6/64 (Costa v ENEL) fetched live and directly from eur-lex.europa.eu's case-law text, independently re-fetched by the orchestrating session and word-for-word consistent on the key holding, including the sentence immediately before and after it. Declaration No 17 concerning primacy fetched live and directly from eur-lex.europa.eu (in fragments, due to a fetch-tool quote-length limit, but internally consistent across two independent fetches).",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EU-CONST-001",
+      "authority_type": "case",
+      "name": "Costa v ENEL",
+      "citation": "Case 6/64, Flaminio Costa v E.N.E.L., ECLI:EU:C:1964:66; [1964] ECR 585",
+      "court": "Court of Justice of the European Communities",
+      "jurisdiction": "eu",
+      "date": "1964-07-15",
+      "date_note": "This 1964 judgment predates paragraph numbering - EUR-Lex renders the 'Grounds' section as continuous unnumbered prose in the original all-capitals house style used for pre-1990s case reports. The conventional pinpoint citation used in academic and judicial sources is [1964] ECR 585, at 594, though this session's own fetch did not visually confirm an ECR page-593/594 marker within the EUR-Lex HTML rendering - the pinpoint is offered as a well-established citation convention, not something independently confirmed against a paginated primary-source scan this session.",
+      "judge_or_panel": "Court of Justice of the European Communities, reference for a preliminary ruling from the Giudice conciliatore di Milano under (then) art.177 EEC",
+      "proposition": "Establishes the primacy (supremacy) of EU (then Community) law over conflicting national law, whatever form the national provision takes: 'THE LAW STEMMING FROM THE TREATY, AN INDEPENDENT SOURCE OF LAW, COULD NOT, BECAUSE OF ITS SPECIAL AND ORIGINAL NATURE, BE OVERRIDDEN BY DOMESTIC LEGAL PROVISIONS, HOWEVER FRAMED, WITHOUT BEING DEPRIVED OF ITS CHARACTER AS COMMUNITY LAW AND WITHOUT THE LEGAL BASIS OF THE COMMUNITY ITSELF BEING CALLED INTO QUESTION.' This is immediately preceded by 'SUCH A MEASURE CANNOT THEREFORE BE INCONSISTENT WITH THAT LEGAL SYSTEM' and immediately followed by 'THE TRANSFER BY THE STATES FROM THEIR DOMESTIC LEGAL SYSTEM TO THE COMMUNITY LEGAL SYSTEM OF THE RIGHTS AND OBLIGATIONS ARISING UNDER THE TREATY CARRIES WITH IT A PERMANENT LIMITATION OF THEIR SOVEREIGN RIGHTS.' Primacy remains, to this day, a doctrine grounded in this case law rather than in a standalone numbered Treaty article - see the structural note in this file's own $comment and the Declaration No 17 note below.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:61964CJ0006",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from eur-lex.europa.eu's case-law text this session by the researching agent, independently re-fetched by the orchestrating session - both fetches word-for-word consistent on the key holding and its surrounding sentences. curia.europa.eu's own InfoCuria document viewer was tried first and returned only a JS-rendering shell ('RPEX', no case content) - a client-side rendering limitation, not a CAPTCHA or bot-block - so the EUR-Lex case-law mirror of the same official judgment was used instead, itself an official EU primary source. Declaration No 17 concerning primacy (OJ C 202/344, 7.6.2016, also confirmed at the earlier OJ 2008 CELEX id) was independently fetched and confirms the doctrine's structural anchoring: it 'recalls that, in accordance with well settled case law of the Court of Justice of the European Union, the Treaties and the law adopted by the Union on the basis of the Treaties have primacy over the law of Member States, under the conditions laid down by the said case law,' and the annexed 2007 Council Legal Service Opinion names this exact judgment ('Costa/ENEL, 15 July 1964, Case 6/64') as the founding case - confirming primacy was not itself written into the Treaty text at the time of this judgment or since."
+    }
+  ],
+  "edges": [],
+  "what_this_is_not": "A single, deliberately narrow node establishing EU law's foundational primacy doctrine over national law - the EU's first-ever Authority Graph entry in this repository. Does not cover the later refinements or limits on primacy (e.g. national constitutional courts' own reservations, such as the German Bundesverfassungsgericht's Solange case law - not independently verified in this file), direct effect (a related but distinct doctrine from Van Gend en Loos, Case 26/62 - not verified here), or any other EU constitutional-law subject - all remain unbuilt."
+}

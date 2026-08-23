@@ -1,0 +1,50 @@
+{
+  "$comment": "European Union, Data Protection Law - GDPR articles 45-46 (international-transfer mechanisms) and their construction in Schrems II, which invalidated the EU-US Privacy Shield adequacy decision while leaving Standard Contractual Clauses valid in principle but subject to a case-by-case destination-country assessment. Both nodes fetched cleanly, though the fetch tooling repeatedly truncated before reaching the relevant sections of both very long documents - worked around by fetching the same official EUR-Lex PDF renditions directly and extracting text locally, not by using a third-party reader-proxy.",
+  "verified_at": "2026-08-23",
+  "verification_method": "GDPR arts.45(1) and 46(1) fetched live and directly from eur-lex.europa.eu's official PDF rendition (text extracted locally from the primary-source PDF), independently cross-checked word-for-word by the orchestrating session against gdpr-info.eu, a widely-used faithful mirror of the official consolidated text. Case C-311/18 (Schrems II) fetched live and directly from eur-lex.europa.eu's official PDF rendition of the judgment, independently corroborated by the orchestrating session's own WebSearch cross-check of the operative part against multiple independent professional secondary sources.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EU-DATAPROTECTION-001",
+      "authority_type": "regulation",
+      "name": "General Data Protection Regulation, articles 45(1) and 46(1)-(2)(c)",
+      "citation": "Regulation (EU) 2016/679 (GDPR), art.45(1), art.46(1), art.46(2)(c)",
+      "court": "N/A - primary legislation (directly applicable EU Regulation)",
+      "jurisdiction": "eu",
+      "date": "2018-05-25",
+      "date_note": "Date the GDPR became applicable (art.99(2)). Articles 45-46 have not been substantively amended since the 2016 Official Journal text (CELEX 32016R0679); the text verified this session is that unamended text.",
+      "proposition": "Article 45(1): a transfer of personal data to a third country or international organisation may take place where the Commission has decided that the third country (or a territory/sector within it) or the international organisation ensures an adequate level of protection, and such a transfer does not require any specific authorisation. Article 46(1): in the absence of an adequacy decision, a controller or processor may transfer personal data to a third country or international organisation only if it has provided appropriate safeguards, and on condition that enforceable data subject rights and effective legal remedies are available. Article 46(2)(c) names standard data protection clauses (Standard Contractual Clauses) adopted by the Commission as one such appropriate safeguard.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent from eur-lex.europa.eu's official PDF rendition of the Regulation (text extracted locally with a PDF-parsing library, after the tool's HTML-fetch pipeline repeatedly truncated before reaching articles 45-46). Independently re-checked by the orchestrating session, which could not get past the same truncation point via eur-lex.europa.eu's HTML or PDF routes, but confirmed both provisions word-for-word identical against gdpr-info.eu, a long-established, professionally maintained faithful mirror of the official consolidated GDPR text used throughout the data-protection legal community - treated here as a legitimate independent cross-check, not a proxy or reader service standing in for the primary source itself."
+    },
+    {
+      "authority_id": "AUTH-EU-DATAPROTECTION-002",
+      "authority_type": "case",
+      "name": "Data Protection Commissioner v Facebook Ireland Ltd and Maximillian Schrems (Schrems II)",
+      "citation": "Case C-311/18, ECLI:EU:C:2020:559",
+      "court": "Court of Justice of the European Union, Grand Chamber",
+      "jurisdiction": "eu",
+      "date": "2020-07-16",
+      "judge_or_panel": "Grand Chamber",
+      "proposition": "Invalidates the EU-US Privacy Shield adequacy decision while confirming Standard Contractual Clauses remain valid in principle subject to a case-by-case assessment. Operative part, point 5: 'Commission Implementing Decision (EU) 2016/1250 of 12 July 2016 pursuant to Directive 95/46/EC of the European Parliament and of the Council on the adequacy of the protection provided by the EU-US Privacy Shield is invalid.' The Court's reasoning (paragraphs 197-201) found the Privacy Shield's Ombudsperson mechanism offered no cause of action essentially equivalent to the Charter art.47 guarantee, so the Commission's own adequacy finding (art.45(1)) could not stand, and the whole decision was therefore invalid. Operative part, point 2, on Standard Contractual Clauses: art.46(1) and art.46(2)(c) GDPR require that the appropriate safeguards, enforceable rights, and effective remedies ensure a level of protection 'essentially equivalent' to that guaranteed within the EU by the GDPR read with the Charter, taking into account both the contractual clauses themselves and the destination third country's own law on public-authority access to the transferred data. Paragraph 134: it is 'above all, for that controller or processor to verify, on a case-by-case basis and, where appropriate, in collaboration with the recipient of the data, whether the law of the third country of destination ensures adequate protection... by providing, where necessary, additional safeguards to those offered by those clauses.' Paragraph 135 further holds that the transfer must be suspended or ended where adequate protection cannot be ensured by those means.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62018CJ0311",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent from eur-lex.europa.eu's official PDF rendition of the judgment (text extracted locally with a PDF-parsing library, after the tool's HTML-fetch pipeline repeatedly truncated before reaching the operative part and the relevant reasoning paragraphs). curia.europa.eu's own InfoCuria document viewer returned only a JS-rendering shell to plain fetch - not a CAPTCHA or bot-block - so the EUR-Lex PDF rendition was used instead, itself an equally official primary source; a CJEU press release (Press Release No 91/20) was also fetched directly from curia.europa.eu as a secondary sanity-check of the case name/date/parties only, not relied upon for any quoted wording. Independently re-checked by the orchestrating session: a direct eur-lex.europa.eu fetch returned only a shortened paraphrase of operative-part point 5 (missing the 'pursuant to Directive 95/46/EC...' clause) due to the same tool-side truncation/summarization behaviour, so the orchestrating session cross-checked the full point-5 wording via WebSearch against multiple independent professional secondary sources (law-firm client alerts), which confirmed the researching agent's fuller quote verbatim."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EU-DATAPROTECTION-002",
+      "to": "AUTH-EU-DATAPROTECTION-001",
+      "relationship": "APPLIES",
+      "verified_via": "Case C-311/18, operative part points 2 and 5 and paragraphs 134-135 and 197-201, fetched directly from eur-lex.europa.eu's official PDF rendition of the judgment and independently re-confirmed: invalidates the Privacy Shield adequacy decision under art.45(1) while construing art.46(1)/(2)(c)'s Standard Contractual Clauses mechanism as valid in principle but requiring a case-by-case, essentially-equivalent-protection assessment of the destination country's own law."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the international-transfer mechanisms and their construction in Schrems II. Does not cover the earlier Schrems I judgment (C-362/14, invalidating the prior Safe Harbour decision), the subsequent EU-US Data Privacy Framework adequacy decision that replaced Privacy Shield in 2023 (not verified in this file - a live check would be needed before relying on the current adequacy status of EU-US transfers), the GDPR's substantive processing principles or individual data-subject rights, or any other EU data-protection subject - all remain unbuilt."
+}

@@ -1,0 +1,50 @@
+{
+  "$comment": "European Union, Competition Law - TFEU article 102 (abuse of a dominant position) and its application to loyalty/exclusivity rebates in Intel. The judgment's text was corrected by two subsequent rectification orders (19 September 2017 and 24 October 2017) affecting the exact wording of paragraphs 139 and 140 - the researching agent's account already reflects the rectified text, confirmed by the orchestrating session's own independent re-fetch.",
+  "verified_at": "2026-08-23",
+  "verification_method": "TFEU art.102 fetched live and directly from eur-lex.europa.eu's consolidated-treaty text. Case C-413/14 P (Intel) fetched live and directly via a genuine in-session browser render of curia.europa.eu/InfoCuria (not a proxy service - the JS-rendered page was blocked to plain fetch, so a real rendered-browser session was used instead), independently re-fetched by the orchestrating session via eur-lex.europa.eu's case-law mirror of the same judgment and consistent on the key paragraphs, ECLI, and date.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EU-COMPETITION-001",
+      "authority_type": "treaty",
+      "name": "Treaty on the Functioning of the European Union, article 102",
+      "citation": "TFEU, art.102 (ex art.82 TEC, ex art.86 EEC)",
+      "court": "N/A - primary Treaty text",
+      "jurisdiction": "eu",
+      "date": "2009-12-01",
+      "date_note": "Date the Lisbon Treaty's renumbering to art.102 TFEU took effect. The text verified this session is the current consolidated version.",
+      "proposition": "Any abuse by one or more undertakings of a dominant position within the internal market or in a substantial part of it shall be prohibited as incompatible with the internal market in so far as it may affect trade between Member States. Such abuse may, in particular, consist in: (a) directly or indirectly imposing unfair purchase or selling prices or other unfair trading conditions; (b) limiting production, markets or technical development to the prejudice of consumers; (c) applying dissimilar conditions to equivalent transactions with other trading parties, thereby placing them at a competitive disadvantage; (d) making the conclusion of contracts subject to acceptance by the other parties of supplementary obligations which, by their nature or according to commercial usage, have no connection with the subject of such contracts.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E102",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from eur-lex.europa.eu this session. This is well-established, uncontested wording; the fetch was not independently re-confirmed via a second raw-HTML pull by the orchestrating session, but no wording discrepancy is plausible or was found in any secondary source consulted."
+    },
+    {
+      "authority_id": "AUTH-EU-COMPETITION-002",
+      "authority_type": "case",
+      "name": "Intel Corporation Inc. v European Commission",
+      "citation": "Case C-413/14 P, ECLI:EU:C:2017:632 (text as rectified by orders of 19 September 2017, ECLI:EU:C:2017:700, and 24 October 2017, ECLI:EU:C:2017:808)",
+      "court": "Court of Justice of the European Union, Grand Chamber",
+      "jurisdiction": "eu",
+      "date": "2017-09-06",
+      "judge_or_panel": "Grand Chamber; Judge-Rapporteur da Cruz Vilaca; Advocate General Wahl (Opinion of 20 October 2016, ECLI:EU:C:2016:788)",
+      "proposition": "Qualifies the near-automatic-illegality rule for dominant-undertaking loyalty rebates. Paragraph 137 restates the pre-existing Hoffmann-La Roche rule (13 February 1979, Case 85/76, EU:C:1979:36, paragraph 89): a dominant undertaking that ties purchasers through an exclusivity obligation or a system of loyalty rebates conditional on obtaining all or most requirements from it abuses its dominant position. Paragraph 138 clarifies that this rule 'must be further clarified' where the undertaking submits, during the administrative procedure, evidence that its conduct was not capable of restricting competition or producing the alleged foreclosure effects. Paragraph 139 (as rectified) then requires the Commission, in that situation, to analyse not only the dominant position's extent, the challenged practice's market coverage, and the rebate scheme's conditions/duration/amount, but also to assess the possible existence of a strategy to exclude competitors at least as efficient as the dominant undertaking - the as-efficient-competitor (AEC) test. Paragraph 140 (as rectified) links this foreclosure-capacity analysis to whether an in-principle-prohibited rebate scheme can be objectively justified, and to whether its exclusionary effect may be counterbalanced by efficiency advantages benefiting the consumer (citing British Airways v Commission, C-95/04 P, EU:C:2007:166, paragraph 86) - but only once foreclosure capacity toward equally efficient competitors has itself been established. Paragraph 141 holds that where the Commission has carried out such an analysis, the General Court must examine all of the appellant's arguments challenging the Commission's findings on foreclosure capability. On the facts, because the Commission had already run a detailed AEC test, the Court held the General Court wrongly declined to review Intel's arguments against it, and set the General Court's judgment aside.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:62014CJ0413",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly by the researching agent via a genuine in-session rendered-browser session at curia.europa.eu/InfoCuria (docid=194082) - a real browser tool, not a third-party reader-proxy - after a plain-fetch attempt returned only a JS-rendering shell, not a CAPTCHA or bot-block. Independently re-fetched by the orchestrating session via eur-lex.europa.eu's case-law mirror of the same judgment (CELEX 62014CJ0413), confirming the ECLI, judgment date, and the substance of paragraphs 137-141, though the orchestrating session's own fetch pipeline returned only short fragmentary quotes per paragraph (a tool-side quote-length limit) rather than one continuous block - the fragments obtained are consistent with the researching agent's fuller account, and no discrepancy was found."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EU-COMPETITION-002",
+      "to": "AUTH-EU-COMPETITION-001",
+      "relationship": "APPLIES",
+      "verified_via": "Case C-413/14 P, paragraphs 137-141, fetched via a genuine in-session browser render of curia.europa.eu and independently re-confirmed via eur-lex.europa.eu: construes TFEU art.102's abuse-of-dominance prohibition as applied to loyalty/exclusivity rebates, requiring the Commission to run an as-efficient-competitor analysis once the dominant undertaking submits evidence disputing capacity to restrict competition."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the qualification of the loyalty-rebate near-per-se rule and the as-efficient-competitor test it requires. Does not cover the Hoffmann-La Roche judgment itself as an independent node (referenced only within Intel's own reasoning), the separate 'by object'/'by effect' distinction for other categories of abuse, the Commission's own Guidance Paper on Article 102 enforcement priorities, or any other EU competition-law subject (merger control, state aid, cartels) - all remain unbuilt."
+}

@@ -1,0 +1,51 @@
+{
+  "$comment": "European Union, Free Movement of Goods - TFEU article 34 (ex art.30 EEC, ex art.28 TEC) and the mutual-recognition principle established in Cassis de Dijon. Both nodes fetched cleanly from eur-lex.europa.eu with no access issues on either the researching agent's pass or the orchestrating session's independent re-fetch.",
+  "verified_at": "2026-08-23",
+  "verification_method": "TFEU art.34 fetched live and directly from eur-lex.europa.eu's consolidated-treaty text. Case 120/78 (Cassis de Dijon) fetched live and directly from eur-lex.europa.eu's case-law text, independently re-fetched by the orchestrating session and word-for-word consistent on the key holding.",
+  "authorities": [
+    {
+      "authority_id": "AUTH-EU-FREEMOVEMENT-001",
+      "authority_type": "treaty",
+      "name": "Treaty on the Functioning of the European Union, article 34",
+      "citation": "TFEU, art.34 (ex art.28 TEC, ex art.30 EEC)",
+      "court": "N/A - primary Treaty text",
+      "jurisdiction": "eu",
+      "date": "2009-12-01",
+      "date_note": "Date the Lisbon Treaty's renumbering to art.34 TFEU took effect. The provision's substance dates to the original 1957 EEC Treaty (as art.30); the text verified this session is the current consolidated version.",
+      "proposition": "Quantitative restrictions on imports and all measures having equivalent effect shall be prohibited between Member States - the whole of art.34 is this single sentence, with no numbered subparagraphs.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12012E034",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from eur-lex.europa.eu this session by the researching agent (raw HTML retrieved and parsed directly, not relying on a summarizing fetch model)."
+    },
+    {
+      "authority_id": "AUTH-EU-FREEMOVEMENT-002",
+      "authority_type": "case",
+      "name": "Cassis de Dijon",
+      "citation": "Case 120/78, Rewe-Zentral AG v Bundesmonopolverwaltung fur Branntwein, ECLI:EU:C:1979:42",
+      "court": "Court of Justice of the European Communities",
+      "jurisdiction": "eu",
+      "date": "1979-02-20",
+      "date_note": "Decided under (then) art.30 of the EEC Treaty, the direct predecessor to today's TFEU art.34 - the judgment's own text naturally refers throughout to 'Article 30 of the EEC Treaty,' not to art.34 TFEU, since the Amsterdam and Lisbon renumberings postdate it.",
+      "judge_or_panel": "Court of Justice of the European Communities, reference for a preliminary ruling from the Hessisches Finanzgericht (Germany) under (then) art.177 EEC",
+      "proposition": "Establishes the mutual-recognition principle: a product lawfully produced and marketed in one Member State must in principle be admitted to the market of any other Member State, and a national rule impeding this - here, Germany's minimum 25% alcohol-content rule for the liqueur category, applied to exclude a French blackcurrant liqueur with a lower alcohol content - constitutes a measure having equivalent effect to a quantitative restriction unless justified by a mandatory requirement (paragraph 8: fiscal supervision, public health, fairness of commercial transactions, or consumer protection). Paragraph 14 (the core holding): 'the requirements relating to the minimum alcohol content of alcoholic beverages do not serve a purpose which is in the general interest... In practice, the principal effect of requirements of this nature is to promote alcoholic beverages having a high alcohol content by excluding from the national market products of other Member States which do not answer that description... There is therefore no valid reason why, provided that they have been lawfully produced and marketed in one of the Member States, alcoholic beverages should not be introduced into any other Member State; the sale of such products may not be subject to a legal prohibition on the marketing of beverages with an alcohol content lower than the limit set by the national rules.' The operative part restates this as a formal ruling that a minimum-alcohol-content rule falls within the then-art.30 prohibition where it excludes lawfully produced and marketed imports from another Member State.",
+      "treatment": "GOOD_LAW_CURRENT",
+      "authority_weight": "BINDING",
+      "primary_source_link": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:61978CJ0120",
+      "verification_status": "VERIFIED_PRIMARY_SOURCE",
+      "verified_at": "2026-08-23",
+      "verification_note": "Fetched live and directly from eur-lex.europa.eu's case-law text this session by the researching agent (raw HTML retrieved and parsed directly), independently re-fetched by the orchestrating session and word-for-word consistent on paragraph 14's key holding and the surrounding paragraphs."
+    }
+  ],
+  "edges": [
+    {
+      "from": "AUTH-EU-FREEMOVEMENT-002",
+      "to": "AUTH-EU-FREEMOVEMENT-001",
+      "relationship": "APPLIES",
+      "verified_via": "Case 120/78, paragraphs 8-15 and the operative part, fetched directly from eur-lex.europa.eu and independently re-confirmed: construes the then-art.30 EEC prohibition (now TFEU art.34) as encompassing a national minimum-alcohol-content rule that excludes lawfully produced and marketed imports, establishing the mutual-recognition principle."
+    }
+  ],
+  "what_this_is_not": "Two nodes covering the free-movement-of-goods prohibition and the mutual-recognition principle applied to it. Does not cover the 'mandatory requirements' justification test in detail beyond naming its categories, the later Keck (Cases C-267/91 and C-268/91) refinement distinguishing product requirements from selling arrangements, or any other EU free-movement subject (persons, services, capital) - all remain unbuilt."
+}

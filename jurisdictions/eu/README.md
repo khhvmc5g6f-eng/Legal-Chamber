@@ -2,8 +2,8 @@
 jurisdiction: European Union (supranational)
 legal_system: sui generis - treaty-based supranational law overlaying member states' own civil/common-law systems
 verification_status: STRUCTURAL_DRAFT
-last_reviewed: 2026-08-22
-reviewer: added during a stress-test pass after a live matter simulation found the gap - no member-state pack (e.g. France, Spain) can substitute for EU-level authority
+last_reviewed: 2026-08-23
+reviewer: added during a stress-test pass after a live matter simulation found the gap - no member-state pack (e.g. France, Spain) can substitute for EU-level authority; a populated Authority Graph was added 2026-08-23 via four parallel-agent research passes, each independently re-verified against a live primary source by the orchestrating session before being written - see "Populated Authority Graph" below
 ---
 
 # European Union
@@ -40,6 +40,19 @@ Treaty on European Union (TEU), Treaty on the Functioning of the European Union 
 - `eur-lex.europa.eu` - official consolidated EU legislation (see `../../connectors/README.md` for the public SPARQL/CELLAR endpoint, verified live)
 - Each relevant national data-protection or sectoral regulator's own site for how a Regulation/Directive was actually implemented or applied domestically (e.g. `cnil.fr` for France)
 
+## Populated Authority Graph
+
+`authorities/` holds four foundational entries - the EU's first Authority Graph content in this repository, added the same day the last other jurisdiction (France) closed out, making this the ninth and final jurisdiction pack in this repository to move off zero.
+
+| File | Subject | Lead case |
+|---|---|---|
+| `authorities/primacy-of-eu-law-costa-v-enel.json` | Constitutional - the primacy of EU law over conflicting national law | *Costa v ENEL*, Case 6/64 |
+| `authorities/free-movement-mutual-recognition-cassis-de-dijon.json` | Free Movement of Goods - TFEU art.34 and the mutual-recognition principle | *Cassis de Dijon*, Case 120/78 |
+| `authorities/competition-abuse-of-dominance-intel-as-efficient-competitor.json` | Competition - TFEU art.102 and the as-efficient-competitor test for loyalty rebates | *Intel v Commission*, C-413/14 P |
+| `authorities/data-protection-international-transfers-schrems-ii.json` | Data Protection - GDPR arts.45-46's international-transfer mechanisms | *Schrems II*, C-311/18 |
+
+All four entries are `VERIFIED_PRIMARY_SOURCE` on every node. `curia.europa.eu`'s own InfoCuria document viewer returned only a JS-rendering shell to a plain fetch on two of the four cases (Intel, Schrems II) - not a CAPTCHA or bot-block, a client-side rendering requirement - worked around with a genuine in-session rendered-browser session for Intel, and with `eur-lex.europa.eu`'s official case-law mirror of the same judgment for Schrems II and Costa v ENEL, both equally official primary sources rather than a proxy substitute. The GDPR Regulation text and the Schrems II judgment - both very long documents - also repeatedly defeated the fetch tooling's page-processing step, which truncated before reaching articles 45-46 or the operative part on every attempt; worked around by fetching the same official EUR-Lex PDF renditions directly and extracting the text locally, never by routing around the block with a third-party reader-proxy. Costa v ENEL is a deliberate single-node, zero-edge entry: primacy is a judge-made doctrine with no standalone operative Treaty article to pair it with - Declaration No 17 concerning primacy, itself independently verified this session, does no more than recall the doctrine and name this judgment as its origin.
+
 ## What is NOT in this pack
 
-No populated CJEU case-law database. No verified article-level text of any Regulation/Directive beyond naming them. One national data-protection regulator profile now exists - see `../../regulators/cnil.md` for France - but no other member state's supervisory authority is documented, and the GDPR "one-stop-shop" lead-supervisory-authority mechanism itself is not separately explained here.
+No verified article-level text of any Directive (only the GDPR Regulation and two Treaty articles have been checked). One national data-protection regulator profile now exists - see `../../regulators/cnil.md` for France - but no other member state's supervisory authority is documented, and the GDPR "one-stop-shop" lead-supervisory-authority mechanism itself is not separately explained here. Free movement of persons, services, and capital; state aid; merger control; and the direct-effect doctrine (a related but distinct concept from primacy) all remain unbuilt.
