@@ -152,7 +152,7 @@ def cmd_validate(_args):
             rc = 1
 
     print("\n=== deterministic script selftests ===")
-    for script in ["citation_lint.py", "deadline_calculator.py", "verify_matter_refs.py", "verify_matter_persistence.py"]:
+    for script in ["citation_lint.py", "oscola_lint.py", "deadline_calculator.py", "verify_matter_refs.py", "verify_matter_persistence.py"]:
         path = os.path.join(REPO_ROOT, "scripts", script)
         result = subprocess.run([sys.executable, path, "--selftest"], capture_output=True, text=True)
         print(f"{script}: {result.stdout.strip()}")
@@ -165,6 +165,15 @@ def cmd_lint(args):
     script = os.path.join(REPO_ROOT, "scripts", "citation_lint.py")
     result = subprocess.run([sys.executable, script] + args.files)
     return result.returncode
+
+
+def cmd_oscola(args):
+    script = os.path.join(REPO_ROOT, "scripts", "oscola_lint.py")
+    command = [sys.executable, script]
+    if args.as_json:
+        command.append("--json")
+    command.extend(args.files)
+    return subprocess.run(command).returncode
 
 
 def cmd_deadline(args):
@@ -288,7 +297,7 @@ def selftest():
             globals()["REPO_ROOT"] = tmp
             os.makedirs(os.path.join(tmp, "scripts"))
             # copy the real deterministic scripts in so subprocess calls resolve
-            for name in ["citation_lint.py", "deadline_calculator.py", "verify_matter_refs.py", "verify_matter_persistence.py"]:
+            for name in ["citation_lint.py", "oscola_lint.py", "deadline_calculator.py", "verify_matter_refs.py", "verify_matter_persistence.py"]:
                 shutil.copy2(os.path.join(old_root, "scripts", name), os.path.join(tmp, "scripts", name))
 
             class Args:
@@ -342,6 +351,10 @@ def build_parser():
     sp = sub.add_parser("lint", help="Run the citation/house-style linter (deterministic)")
     sp.add_argument("files", nargs="+")
 
+    sp = sub.add_parser("oscola", help="Lint deterministic OSCOLA 5 format mistakes")
+    sp.add_argument("--json", action="store_true", dest="as_json")
+    sp.add_argument("files", nargs="+")
+
     sp = sub.add_parser("deadline", help="Run the deadline calculator - pass its own flags after --")
     sp.add_argument("rest", nargs=argparse.REMAINDER)
 
@@ -381,6 +394,7 @@ def main():
 
     deterministic = {
         "init": cmd_init, "status": cmd_status, "validate": cmd_validate, "lint": cmd_lint,
+        "oscola": cmd_oscola,
         "deadline": cmd_deadline, "verify-refs": cmd_verify_refs, "verify-persistence": cmd_verify_persistence,
         "jurisdictions": cmd_jurisdictions, "gates": cmd_gates, "bundle": cmd_bundle,
     }
