@@ -18,6 +18,8 @@ A live stress test found real, uncorrected em dashes in multiple matters' genera
 
 `scripts/style_fix.py` auto-corrects the subset of what the linter flags that has a safe, same-grammatical-slot plain-English replacement (a short, deliberately conservative list - see its docstring). It never touches a quotation, a fenced code block, an em dash, or a hedged/absolute legal claim; what it can't safely fix, it leaves for `citation_lint.py` to keep flagging. Running the fixer does not replace running the linter afterward.
 
+`scripts/style_audit.py` makes the broader style pass observable without pretending to determine authorship. It reports stock phrasing, long sentences, repeated openings, suspiciously uniform sentence/paragraph rhythm, and passive-voice candidates. `--compare BEFORE AFTER` implements the mechanical part of the substantive change lock: repeated quotations, citations, dates, numbers, measurements, URLs, and email addresses must match exactly or the command exits non-zero with `SUBSTANTIVE_REVIEW_REQUIRED`. A human must still re-check legal propositions and contextual meaning.
+
 ## House defaults
 
 - `em_dash: prohibited`, replace with comma, colon, semicolon, or a full stop; never break grammar to force the substitution.
@@ -33,6 +35,8 @@ A live stress test found real, uncorrected em dashes in multiple matters' genera
 2. **Sentence pass**, diction, punctuation, rhythm, clichés.
 
 Followed by a **substantive re-verification pass**: re-check every quotation, citation, date, number, and legal proposition survived the style passes unchanged. If a style edit changed meaning, it is reverted and flagged `SUBSTANTIVE_REVIEW_REQUIRED` rather than silently kept.
+
+The working sequence is: save a pre-style copy, run `style_audit.py`, apply the structural and sentence passes, run `style_audit.py --compare` against the saved copy, then run `citation_lint.py`. Do not release a comparison failure as finished work.
 
 ## Author voice
 
