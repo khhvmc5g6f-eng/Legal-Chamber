@@ -92,9 +92,10 @@ legal-chambers/
 ├── workflows/      matter lifecycle, five-hearing adversarial workflow,
 │                   disclosure register, interim applications, research log
 ├── connectors/     abstraction layer + status of each research data source
-├── scripts/        12 deterministic tools, all dependency-free with
+├── scripts/        14 deterministic tools, all dependency-free with
 │                   --selftest: citation_lint.py, verify_citation_years.py,
-│                   style_fix.py, verify_court_name.py, deadline_calculator.py,
+│                   oscola_lint.py, style_fix.py, style_audit.py,
+│                   verify_court_name.py, deadline_calculator.py,
 │                   verify_matter_refs.py, verify_matter_schema.py,
 │                   verify_id_conventions.py, check_conflicts.py,
 │                   verify_matter_persistence.py, legal_cli.py, legal_api.py

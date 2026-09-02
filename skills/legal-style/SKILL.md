@@ -22,11 +22,17 @@ Reading the style guide is not the same as running it. Do this, in order, agains
 
 ```bash
 python3 ../../scripts/citation_lint.py <the file>          # 1. see what's flagged
-python3 ../../scripts/style_fix.py --apply <the file>      # 2. auto-fix the safe, same-grammatical-slot subset
-python3 ../../scripts/citation_lint.py <the file>          # 3. re-check what's left
+python3 ../../scripts/style_audit.py --json <the file>     # 2. explain rhythm, repetition, length, and stock phrasing
+cp <the file> <the file>.pre-style                       # 3. preserve the source for the change lock
+python3 ../../scripts/style_fix.py --apply <the file>      # 4. auto-fix the safe, same-grammatical-slot subset
+# 5. make the structural/sentence edits that require judgement
+python3 ../../scripts/style_audit.py --compare <the file>.pre-style <the file>  # 6. exact-value lock
+python3 ../../scripts/citation_lint.py <the file>          # 7. re-check what's left
 ```
 
-`style_fix.py` only touches a short, deliberately conservative list of stock phrases with a safe plain-English replacement (see its own docstring). It never touches a quotation, a fenced code block, an em dash, or a hedged/absolute legal claim - em dashes and anything context-dependent stay flagged for a human/editorial judgement call, because the right replacement (comma, colon, semicolon, or a full stop, never breaking grammar to force it) depends on clause structure the tool can't judge safely. What step 3 still flags after step 2 is exactly that remainder - fix it by hand, then confirm `citation_lint.py` comes back clean.
+`style_audit.py` is deterministic and explainable. Its score describes editorial signals only; it is not an authorship probability. Comparison mode checks repeated occurrences of quotations, citations, dates, numbers, measurements, URLs, and email addresses, and exits non-zero with `SUBSTANTIVE_REVIEW_REQUIRED` when they drift. That exact-value check supports but cannot replace a human re-check of legal propositions.
+
+`style_fix.py` only touches a short, deliberately conservative list of stock phrases with a safe plain-English replacement (see its own docstring). It never touches a quotation, a fenced code block, an em dash, or a hedged/absolute legal claim - em dashes and anything context-dependent stay flagged for a human/editorial judgement call, because the right replacement (comma, colon, semicolon, or a full stop, never breaking grammar to force it) depends on clause structure the tool can't judge safely. What step 7 still flags after step 4 is exactly that remainder - fix it by hand, then confirm `citation_lint.py` comes back clean.
 
 ## House defaults, in brief
 

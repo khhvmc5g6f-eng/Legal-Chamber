@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/). Each entry corresponds to one real commit - see the git history for exact diffs.
 
+### Added - explainable style audit and substantive-change lock
+
+Added `scripts/style_audit.py`, a dependency-free editorial diagnostic and pre/post comparison tool. It reports concrete prose signals rather than an AI-authorship probability. Its comparison mode fails closed when repeated quotations, citations, dates, numbers, measurements, URLs, or email addresses drift, while remaining explicit that legal propositions still require human substantive review. Wired the audit into `legal-style`, `legal-draft`, the style guide, and the repository's honest capability statement.
+
 ### Added - module-level marking grid to `rubrics/level7-distinction-standard.md`, scoped to the PgDL/Conversion Component (Level 7)
 
 The user supplied a real exam question paper (PgDL/Conversion Component, Contract Law, dated 11 May 2023) via WhatsApp and asked whether it matched this repository's rubric file. Comparison found: the existing degree/award-classification numeric bands (70%+ Distinction, 60-69% Commendation, 50-59% Pass) were consistent with the paper's discrete mark points, but two real gaps existed - no Marginal Fail/Clear Fail bands at all, and the file explicitly stated qualitative descriptors were not publicly accessible. The paper's own "Level 7 Assessment Criteria" schedule supplied exactly that missing content as a genuine primary source.
